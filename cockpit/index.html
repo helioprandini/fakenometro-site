@@ -101,7 +101,20 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
-<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button></nav>
+<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button></nav>
+<div id="ig-view" hidden>
+  <div class="cartao" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <div style="flex:1;min-width:180px"><div style="font-weight:800;font-size:17px" id="ig-conta">@fakenometro</div><div class="sub" id="ig-quando">carregando…</div></div>
+    <button class="b-desc" style="border:0;border-radius:12px;padding:10px 14px;font-weight:800" onclick="carregarIG(true)">↻ Atualizar agora</button>
+  </div>
+  <div class="grade" style="margin-top:10px" id="ig-kpis"></div>
+  <div class="duas">
+    <div class="cartao"><h2>👀 Alcance por dia · 28 dias</h2><div class="dias" id="ig-dias"></div><div class="linha-dias" id="ig-dias-rot"></div></div>
+    <div class="cartao"><h2>🔀 Cruzamentos</h2><div id="ig-cruz" class="sub"></div></div>
+  </div>
+  <div class="cartao" style="margin-top:10px"><h2>📰 Posts</h2><div id="ig-posts"></div></div>
+  <div class="aviso" id="ig-nota"></div>
+</div>
 <div id="cur-view" hidden>
   <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
   <div class="sub" style="margin-bottom:10px">Toque num item para abrir. Salve as imagens (já na ordem do carrossel), copie a legenda, poste no Instagram e marque como publicado: aparece para os dois.</div>
@@ -223,9 +236,10 @@ const H = () => ({"X-Chave": chave, "ngrok-skip-browser-warning": "1"});
 let candidatos = [], filtroAtual = "pendente", abertos = {}, imgs = {};
 function toast(t){ const e = $("toast"); e.textContent = t; e.style.display = "block"; clearTimeout(e._t); e._t = setTimeout(() => e.style.display = "none", 2200); }
 function aba(qual){
-  $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur";
-  $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur");
+  $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur"; $("ig-view").hidden = qual !== "ig";
+  $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur"); $("t-ig").classList.toggle("ativa", qual === "ig");
   if (qual === "cur") carregarCur();
+  if (qual === "ig") carregarIG(false);
 }
 function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f !== "pendente"); desenharCur(); }
 async function carregarCur(){
@@ -300,7 +314,48 @@ async function acao(id, qual){
     toast(qual === "publicado" ? "Marcado como publicado ✓" : qual === "descartar" ? "Descartado" : "Voltou para a lista");
   }catch(e){ toast("Não consegui salvar: sem conexão?"); }
 }
-setInterval(() => { if (!$("cur-view").hidden) carregarCur(); }, 30000);  // vê o que o outro marcou
+setInterval(() => { if (!$("cur-view").hidden) carregarCur(); }, 30000);
+
+// ---------- Instagram: métricas da conta e dos posts, cruzadas com o Fakenômetro ----------
+const num = v => v == null ? "–" : Number(v).toLocaleString("pt-BR");
+async function carregarIG(agora){
+  $("ig-quando").textContent = agora ? "buscando no Instagram…" : "carregando…";
+  try{
+    const r = await fetch(BASE + "/cockpit/instagram" + (agora ? "?atualizar=1" : ""), {headers: H(), cache: "no-store"});
+    desenharIG(await r.json());
+  }catch(e){ $("ig-quando").textContent = "sem conexão com o robô"; }
+}
+function desenharIG(d){
+  if (!d || !d.conta){ $("ig-quando").textContent = d && d.erro ? "Instagram: " + d.erro : "Ainda sem métricas. Toque em Atualizar agora."; return; }
+  const c = d.conta, t7 = (d.totais || {})["7"] || {}, t28 = (d.totais || {})["28"] || {};
+  $("ig-conta").textContent = "@" + c.username;
+  $("ig-quando").textContent = `${num(c.followers_count)} seguidores · ${num(c.media_count)} posts · atualizado ${quando(d.atualizado_em)}` + (d.erro ? " · ⚠️ " + d.erro : "");
+  const alcance7 = (d.serie.reach || []).slice(-7).reduce((a, x) => a + x.valor, 0);
+  const kpi = (r, v, s) => `<div class="cartao"><div class="rotulo">${r}</div><div class="numero">${num(v)}</div><div class="sub">${s}</div></div>`;
+  $("ig-kpis").innerHTML = kpi("Alcance · 7 dias", alcance7, "contas diferentes que viram")
+    + kpi("Visualizações · 7 dias", t7.views, `${num(t28.views)} em 28 dias`)
+    + kpi("Interações · 7 dias", t7.total_interactions, `${num(t7.shares)} compart. · ${num(t7.saves)} salvos`)
+    + kpi("Visitas ao perfil · 7 dias", t7.profile_views, `${num(t7.accounts_engaged)} contas engajadas`);
+  const serie = d.serie.reach || [], max = Math.max(1, ...serie.map(x => x.valor));
+  $("ig-dias").innerHTML = serie.map(x => `<div class="dia" title="${x.dia}: ${x.valor}"><i style="height:${80 * x.valor / max}px;background:var(--azul);border-radius:3px 3px 0 0"></i></div>`).join("");
+  $("ig-dias-rot").innerHTML = serie.map((x, i) => `<span>${i % 4 ? "" : x.dia.slice(8, 10)}</span>`).join("");
+  const tab = (titulo, linhas) => !linhas.length ? "" : `<div style="margin:6px 0 10px"><b style="color:var(--texto)">${titulo}</b>
+    <table style="width:100%;border-collapse:collapse;margin-top:4px;font-size:13px"><tr style="text-align:left"><th></th><th>posts</th><th>alcance</th><th>compart.</th><th>salvos</th><th>seguid.</th></tr>
+    ${linhas.map(l => `<tr style="border-top:1px solid var(--linha)"><td style="color:var(--texto)">${esc(nomeRotulo(l.grupo))}</td><td>${l.posts}</td><td>${num(l.alcance)}</td><td>${num(l.compart)}</td><td>${num(l.salvos)}</td><td>${num(l.seguidores)}</td></tr>`).join("")}</table></div>`;
+  const cz = d.cruzamentos || {};
+  $("ig-cruz").innerHTML = tab("Por veredito (média por post)", cz.por_veredito || []) + tab("Por formato (média por post)", cz.por_formato || [])
+    + ((cz.demanda || []).length ? `<b style="color:var(--texto)">Pedidos no DM × alcance</b><br>` + cz.demanda.map(x => `${esc(x.titulo)}: pedido ${x.pedidos}× · alcance ${num(x.alcance)}`).join("<br>") : "");
+  const posts = [...(d.posts || [])].sort((a, b) => (b.metricas.reach || 0) - (a.metricas.reach || 0));
+  $("ig-posts").innerHTML = posts.length ? posts.map(p => {
+    const m = p.metricas, [bg, fg] = corRotulo(p.rotulo);
+    return `<div style="display:flex;gap:10px;padding:10px 0;border-top:1px solid var(--linha)">
+      ${p.miniatura ? `<img src="${p.miniatura}" style="width:56px;height:70px;object-fit:cover;border-radius:8px;flex:none" alt="">` : `<div style="width:56px;height:70px;border-radius:8px;background:var(--linha);flex:none"></div>`}
+      <div style="flex:1;min-width:0"><div class="titulo"><a href="${p.link}" target="_blank" style="color:var(--texto);text-decoration:none">${esc(p.titulo || p.legenda)}</a></div>
+        <div class="meta">${quando(p.quando)} · ${p.formato}${p.rotulo ? ` · <span class="chip" style="background:${bg};color:${fg}">${esc(nomeRotulo(p.rotulo))}</span>` : ""}${p.pedidos > 1 ? ` · pedido ${p.pedidos}× no DM` : ""}</div>
+        <div class="meta" style="color:var(--texto)">👀 ${num(m.reach)} alcance · ▶️ ${num(m.views)} · ❤️ ${num(m.likes)} · 💬 ${num(m.comments)} · ↗️ ${num(m.shares)} · 🔖 ${num(m.saved)} · ➕ ${num(m.follows)} seguidores</div></div></div>`;
+  }).join("") : '<div class="vazio">Nenhum post ainda.</div>';
+  $("ig-nota").textContent = `Com poucos posts as médias são só um indício: os cruzamentos ficam confiáveis com umas duas semanas de dados. Cidade, idade e gênero do público a Meta só libera a partir de 100 seguidores (hoje ${num(c.followers_count)}).`;
+}  // vê o que o outro marcou
 iniciar();
 </script>
 </body>
