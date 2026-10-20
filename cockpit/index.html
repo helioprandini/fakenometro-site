@@ -139,6 +139,10 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
       <div class="cartao" style="margin-top:10px"><h2>🖥️ Servidor</h2><div id="srv" class="sub"></div></div>
     </div>
   </div>
+  <div class="cartao" style="margin-top:10px"><h2>🔎 Qualidade das checagens · 14 dias</h2>
+    <div class="sub">Quanto mais fontes reconhecidas e oficiais, melhor; "sem prova" alto demais é sinal de exagero. A régua de fontes e o mapa por tema entraram em 20/10 à noite (dias marcados <b style="color:var(--verde)">●</b>).</div>
+    <div style="overflow-x:auto"><table id="qual" style="width:100%;border-collapse:collapse;margin-top:8px;font-size:13px;white-space:nowrap"></table></div>
+  </div>
 </div>
 </main>
 <script>
@@ -224,6 +228,11 @@ function desenhar(d){
 
   $("top").innerHTML = m.mais_pedidas.length ? m.mais_pedidas.map(([t, r, n]) => `<li>${esc(t) || "(sem título)"} <span class="sub">· ${esc(nomeRotulo(r))}</span> <b>${n}×</b></li>`).join("")
     : '<li class="vazio" style="list-style:none;margin-left:-20px">Nenhuma peça pedida mais de uma vez ainda.</li>';
+
+  const q = d.qualidade || [], pc = v => v == null ? "–" : v + "%";
+  $("qual").innerHTML = q.length ? `<tr style="text-align:left;color:var(--apagado)"><th>dia</th><th>checagens</th><th>fontes reconhecidas</th><th>oficiais</th><th>sem prova</th><th>tempo médio</th><th>custo médio</th></tr>` +
+    q.map(x => `<tr style="border-top:1px solid var(--linha)"><td style="color:var(--texto)">${x.regua_nova ? '<b style="color:var(--verde)">●</b> ' : ""}${x.dia.slice(8,10)}/${x.dia.slice(5,7)}</td><td>${x.checagens}</td><td>${pc(x.fontes_reconhecidas_pct)}</td><td>${pc(x.fontes_oficiais_pct)}</td><td>${pc(x.sem_prova_pct)}</td><td>${x.tempo_medio_s == null ? "–" : x.tempo_medio_s + " s"}</td><td>${x.custo_medio_usd == null ? "–" : usd(x.custo_medio_usd)}</td></tr>`).join("")
+    : '<tr><td class="sub">Ainda sem checagens nos últimos 14 dias.</td></tr>';
 
   const c = d.curadoria;
   $("cur").innerHTML = `<b style="color:var(--texto);font-size:22px">${c.pendente || 0}</b> candidatos a post · ${c.publicado_manual || 0} publicados à mão · ${c.descartado || 0} descartados<br>Publicação: <b style="color:var(--texto)">${d.publicacao === "manual" ? "só manual" : d.publicacao}</b>`;
