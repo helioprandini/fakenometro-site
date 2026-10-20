@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cockpit</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e0e14">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cockpit">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon-32.png">
+<style>
+:root{--fundo:#0e0e14;--cartao:#1a1a22;--linha:#2a2a34;--texto:#f0f0f5;--apagado:#9a9aab;
+--verde:#28be6e;--amarelo:#f5be28;--vermelho:#e62832;--azul:#3d9bff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--fundo);color:var(--texto);
+font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1100px;margin:0 auto;padding:calc(14px + env(safe-area-inset-top)) 16px calc(24px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+header img{width:40px;height:40px;border-radius:10px}
+header h1{font-size:20px;margin:0;font-weight:800;letter-spacing:-.3px}
+header small{display:block;color:var(--apagado);font-size:12px;font-weight:500}
+.vivo{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--apagado);white-space:nowrap}
+.ponto{width:9px;height:9px;border-radius:50%;background:var(--apagado)}
+.ponto.ok{background:var(--verde);box-shadow:0 0 0 0 rgba(40,190,110,.6);animation:pulso 2s infinite}
+.ponto.erro{background:var(--vermelho)}
+@keyframes pulso{70%{box-shadow:0 0 0 8px rgba(40,190,110,0)}100%{box-shadow:0 0 0 0 rgba(40,190,110,0)}}
+.grade{display:grid;gap:10px;grid-template-columns:repeat(4,1fr)}
+@media (max-width:760px){.grade{grid-template-columns:repeat(2,1fr)}}
+.cartao{background:var(--cartao);border-radius:16px;padding:14px 16px;min-width:0}
+.rotulo{color:var(--apagado);font-size:12px;text-transform:uppercase;letter-spacing:.4px}
+.numero{font-size:32px;font-weight:800;letter-spacing:-.5px;margin-top:2px;font-variant-numeric:tabular-nums}
+.sub{color:var(--apagado);font-size:12px;margin-top:2px}
+.duas{display:grid;gap:10px;grid-template-columns:1.4fr 1fr;margin-top:10px}
+@media (max-width:760px){.duas{grid-template-columns:1fr}}
+h2{font-size:14px;margin:0 0 10px;font-weight:700}
+.barra{height:10px;border-radius:6px;background:var(--linha);overflow:hidden;margin-top:8px}
+.barra i{display:block;height:100%;background:var(--verde);border-radius:6px;transition:width .5s}
+ul.feed{list-style:none;margin:0;padding:0}
+ul.feed li{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:start;padding:9px 0;border-top:1px solid var(--linha)}
+ul.feed li:first-child{border-top:0}
+.hora{color:var(--apagado);font-size:12px;font-variant-numeric:tabular-nums;padding-top:2px}
+.titulo{font-size:14px;overflow-wrap:anywhere}
+.meta{color:var(--apagado);font-size:12px;margin-top:2px}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap}
+.novo{animation:entra .8s ease}
+@keyframes entra{from{background:rgba(245,190,40,.18)}to{background:transparent}}
+ol.top{margin:0;padding-left:20px}ol.top li{margin:6px 0;font-size:14px;overflow-wrap:anywhere}
+.dias{display:flex;align-items:flex-end;gap:4px;height:90px;margin-top:6px}
+.dia{flex:1;display:flex;flex-direction:column-reverse;min-width:0}
+.dia i{display:block;width:100%}
+.legenda{display:flex;gap:12px;font-size:12px;color:var(--apagado);margin-top:8px}
+.legenda b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.linha-dias{display:flex;gap:4px;font-size:10px;color:var(--apagado);margin-top:4px}
+.linha-dias span{flex:1;text-align:center}
+.vazio{color:var(--apagado);font-size:14px;padding:6px 0}
+#chave{display:none;max-width:420px;margin:60px auto;text-align:center}
+#chave input{width:100%;padding:12px;border-radius:12px;border:1px solid var(--linha);background:var(--cartao);color:var(--texto);font-size:16px;margin:12px 0}
+#chave button{padding:12px 22px;border-radius:12px;border:0;background:var(--amarelo);color:#111;font-weight:800;font-size:16px}
+a{color:var(--azul)}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icone-192.png" alt="">
+  <div><h1>Cockpit</h1><small>Fakenômetro · ao vivo</small></div>
+  <div class="vivo"><span class="ponto" id="ponto"></span><span id="estado">conectando…</span></div>
+</header>
+
+<section id="chave">
+  <h2>Chave de acesso</h2>
+  <div class="sub">Cole a chave do cockpit uma única vez. Ela fica só neste aparelho.</div>
+  <input id="campo" type="password" autocomplete="off" placeholder="chave">
+  <button onclick="salvarChave()">Entrar</button>
+</section>
+
+<div id="painel" hidden>
+  <div class="grade">
+    <div class="cartao"><div class="rotulo">Checagens hoje</div><div class="numero" id="k-hoje">–</div><div class="sub" id="k-hoje-sub"></div></div>
+    <div class="cartao"><div class="rotulo">Do repositório hoje</div><div class="numero" id="k-repo">–</div><div class="sub" id="k-repo-sub"></div></div>
+    <div class="cartao"><div class="rotulo">Gasto no mês</div><div class="numero" id="k-gasto">–</div><div class="sub" id="k-gasto-sub"></div><div class="barra"><i id="k-gasto-barra" style="width:0"></i></div></div>
+    <div class="cartao"><div class="rotulo">Economia · 30 dias</div><div class="numero" id="k-econ" style="color:var(--verde)">–</div><div class="sub" id="k-econ-sub"></div></div>
+  </div>
+
+  <div class="duas">
+    <div class="cartao"><h2>⚡ Ao vivo</h2><ul class="feed" id="feed"></ul></div>
+    <div>
+      <div class="cartao"><h2>📈 Por dia · 14 dias</h2><div class="dias" id="dias"></div><div class="linha-dias" id="dias-rot"></div>
+        <div class="legenda"><span><b style="background:var(--amarelo)"></b>Novas (pagas)</span><span><b style="background:var(--verde)"></b>Repositório</span></div></div>
+      <div class="cartao" style="margin-top:10px"><h2>🔁 Mais pedidas · 30 dias</h2><ol class="top" id="top"></ol></div>
+      <div class="cartao" style="margin-top:10px"><h2>🗳️ Curadoria</h2><div id="cur" class="sub"></div></div>
+      <div class="cartao" style="margin-top:10px"><h2>🖥️ Servidor</h2><div id="srv" class="sub"></div></div>
+    </div>
+  </div>
+</div>
+</main>
+<script>
+// Os números vêm do servidor do robô; a chave fica só neste aparelho.
+const API = "https://protozoan-enjoyer-poncho.ngrok-free.dev/cockpit/dados";
+const CADA = 10000;
+let chave = "", vistos = new Set(), primeira = true;
+
+function ler(k){try{return localStorage.getItem(k)||""}catch(e){return ""}}
+function gravar(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function iniciar(){
+  const m = location.hash.match(/k=([^&]+)/);
+  if (m){ chave = decodeURIComponent(m[1]); gravar("cockpit_chave", chave); history.replaceState(null,"",location.pathname); }
+  else chave = ler("cockpit_chave");
+  if (!chave){ document.getElementById("chave").style.display="block"; return; }
+  document.getElementById("painel").hidden = false;
+  atualizar(); setInterval(atualizar, CADA);
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) atualizar(); });
+}
+function salvarChave(){
+  const v = document.getElementById("campo").value.trim(); if(!v) return;
+  gravar("cockpit_chave", v); location.reload();
+}
+const $ = id => document.getElementById(id);
+const usd = v => "US$ " + (v||0).toFixed(2).replace(".", ",");
+function corRotulo(r){
+  r = (r||"").toLowerCase();
+  if (r.includes("falso") || r.includes("campanha") || r.includes("fora de contexto")) return ["var(--vermelho)","#fff"];
+  if (r.includes("verdade") || r.includes("verdadeiro")) return ["var(--verde)","#08130c"];
+  if (r.includes("inconclusivo") || r.includes("parte") || r.includes("opini")) return ["var(--amarelo)","#111"];
+  return ["var(--linha)","var(--texto)"];
+}
+function nomeRotulo(r){ return r === "Inconclusivo" ? "Sem prova" : (r || "—"); }
+function esc(s){ return (s||"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+async function atualizar(){
+  try{
+    const r = await fetch(API, {headers:{"X-Chave":chave,"ngrok-skip-browser-warning":"1"}, cache:"no-store"});
+    if (r.status === 404){ estado(false, "chave recusada"); gravar("cockpit_chave",""); return; }
+    if (!r.ok) throw new Error(r.status);
+    desenhar(await r.json()); estado(true, "ao vivo · " + new Date().toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit",second:"2-digit"}));
+  }catch(e){ estado(false, "sem conexão com o robô"); }
+}
+function estado(ok, txt){ $("ponto").className = "ponto " + (ok ? "ok" : "erro"); $("estado").textContent = txt; }
+
+function desenhar(d){
+  const h = d.hoje, m = d.mes;
+  $("k-hoje").textContent = h.pedidos;
+  $("k-hoje-sub").textContent = `${h.novas} novas · ${h.repositorio} do repositório`;
+  $("k-repo").textContent = h.pedidos ? h.taxa + "%" : "–";
+  $("k-repo-sub").textContent = `${m.taxa}% nos últimos 30 dias`;
+  $("k-gasto").textContent = usd(d.gasto_mes);
+  $("k-gasto-sub").textContent = `teto ${usd(d.teto_mes)} · hoje ${usd(h.gasto_usd)}`;
+  const p = Math.min(100, 100 * d.gasto_mes / (d.teto_mes || 1));
+  $("k-gasto-barra").style.width = p + "%";
+  $("k-gasto-barra").style.background = p > 85 ? "var(--vermelho)" : p > 60 ? "var(--amarelo)" : "var(--verde)";
+  $("k-econ").textContent = usd(m.economia_usd);
+  $("k-econ-sub").textContent = `${m.no_repositorio} checagens guardadas · validade ${d.repositorio_dias} dias`;
+
+  const feed = $("feed");
+  if (!d.eventos.length) feed.innerHTML = '<li class="vazio" style="display:block">Nenhuma checagem ainda. Assim que alguém mandar uma notícia, ela aparece aqui.</li>';
+  else feed.innerHTML = d.eventos.map(e => {
+    const id = e.em + e.id + e.tipo, novo = !primeira && !vistos.has(id); vistos.add(id);
+    const [bg, fg] = corRotulo(e.rotulo);
+    const tipo = e.tipo === "nova" ? "🆕 checagem nova" + (e.custo != null ? " · " + usd(e.custo) : "") : "🗄️ repositório" + (e.como ? " (" + e.como + ")" : "");
+    const canal = e.canal ? " · " + (e.canal === "whatsapp" ? "WhatsApp" : "Instagram") : "";
+    return `<li class="${novo ? "novo" : ""}"><span class="hora">${e.em.slice(11,16)}</span>
+      <div><div class="titulo">${esc(e.titulo) || "(sem título)"}</div><div class="meta">${tipo}${canal}</div></div>
+      <span class="chip" style="background:${bg};color:${fg}">${esc(nomeRotulo(e.rotulo))}</span></li>`;
+  }).join("");
+  primeira = false;
+
+  const iso = t => `${t.getFullYear()}-${String(t.getMonth()+1).padStart(2,"0")}-${String(t.getDate()).padStart(2,"0")}`;
+  const dias = []; for (let i = 13; i >= 0; i--) dias.push(iso(new Date(Date.now() - i*864e5)));  // dia local, como no servidor
+  const max = Math.max(1, ...dias.map(x => (m.por_dia_n[x] || [0,0]).reduce((a,b)=>a+b,0)));
+  $("dias").innerHTML = dias.map(x => { const [n, r] = m.por_dia_n[x] || [0,0];
+    return `<div class="dia" title="${x}: ${n} novas, ${r} do repositório"><i style="height:${70*n/max}px;background:var(--amarelo);border-radius:0 0 3px 3px"></i><i style="height:${70*r/max}px;background:var(--verde);border-radius:3px 3px 0 0"></i></div>`; }).join("");
+  $("dias-rot").innerHTML = dias.map((x,i) => `<span>${i % 2 ? "" : x.slice(8,10)}</span>`).join("");
+
+  $("top").innerHTML = m.mais_pedidas.length ? m.mais_pedidas.map(([t, r, n]) => `<li>${esc(t) || "(sem título)"} <span class="sub">· ${esc(nomeRotulo(r))}</span> <b>${n}×</b></li>`).join("")
+    : '<li class="vazio" style="list-style:none;margin-left:-20px">Nenhuma peça pedida mais de uma vez ainda.</li>';
+
+  const c = d.curadoria;
+  $("cur").innerHTML = `<b style="color:var(--texto);font-size:22px">${c.pendente || 0}</b> candidatos a post · ${c.publicado_manual || 0} publicados à mão · ${c.descartado || 0} descartados<br>Publicação: <b style="color:var(--texto)">${d.publicacao === "manual" ? "só manual" : d.publicacao}</b>`;
+  const desde = new Date(d.no_ar_desde);
+  $("srv").innerHTML = `No ar desde ${desde.toLocaleDateString("pt-BR")} ${desde.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})} · atualiza a cada 10 s`;
+}
+iniciar();
+</script>
+</body>
+</html>
