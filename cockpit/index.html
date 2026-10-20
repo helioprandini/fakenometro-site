@@ -208,7 +208,7 @@ function desenhar(d){
     const [bg, fg] = corRotulo(e.rotulo);
     const tipo = e.tipo === "nova" ? "🆕 checagem nova" + (e.custo != null ? " · " + usd(e.custo) : "") : "🗄️ repositório" + (e.como ? " (" + e.como + ")" : "");
     // Sem canal = checagem rodada pelo Theo no Mac (testes de regra), não do público.
-    const canal = " · " + (e.canal === "whatsapp" ? "WhatsApp" : e.canal === "instagram" ? "Instagram" : "teste (Mac)");
+    const canal = " · " + (e.canal === "whatsapp" ? "WhatsApp" : e.canal === "instagram" ? "Instagram" : e.canal === "comentario" ? "comentário (menção)" : "teste (Mac)");
     return `<li class="${novo ? "novo" : ""}"><span class="hora">${e.em.slice(11,16)}</span>
       <div><div class="titulo">${esc(e.titulo) || "(sem título)"}</div><div class="meta">${tipo}${canal}</div></div>
       <span class="chip" style="background:${bg};color:${fg}">${esc(nomeRotulo(e.rotulo))}</span></li>`;
