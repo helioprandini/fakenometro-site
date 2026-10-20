@@ -288,7 +288,7 @@ function desenharCur(){
       ${aberto ? `<div class="corpo"><div class="fotos">${fotos}</div>
         <div class="acoes">${acoes}</div>
         <pre class="leg">${esc(c.legenda)}</pre>
-        <div class="aviso">${c.imagens.length === 2 ? "Salve a 1 e depois a 2. " : ""}No Instagram: + → Post → ícone de várias fotos → escolha a 1 e depois a 2 → cole a legenda.</div></div>` : ""}</div>`;
+        <div class="aviso">${c.imagens.length === 2 ? "Salve a 1 e depois a 2. " : ""}Se o botão não salvar: toque e segure cada imagem acima → <b>Adicionar às Fotos</b>. No Instagram: + → Post → ícone de várias fotos → escolha a 1 e depois a 2 → cole a legenda.</div></div>` : ""}</div>`;
   }).join("");
   lista.filter(c => abertos[c.id]).forEach(c => c.imagens.forEach(q => mostrarImg(c.id, q)));
 }
