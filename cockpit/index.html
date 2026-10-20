@@ -271,7 +271,13 @@ function desenharCur(){
     const fotos = c.imagens.map((q, i) => `<div class="n"><img id="img-${c.id}-${q}" alt=""><span>${i + 1}</span></div>`).join("");
     const acoes = c.status === "publicado_manual"
       ? `<button class="b-desc" onclick="acao('${c.id}','desfazer')">↩︎ Desfazer</button>`
-      : `<button class="b-salvar" onclick="salvar('${c.id}')">📲 Salvar imagens</button>
+      : (c.imagens.length === 2
+          // Uma imagem por vez: no iPhone, compartilhar as duas juntas às vezes
+          // só salva uma nas Fotos (Roberta, 2026-10-20).
+          ? `<button class="b-salvar" onclick="salvar('${c.id}','original')">📲 Salvar 1 · post original</button>
+             <button class="b-salvar" onclick="salvar('${c.id}','card')">📲 Salvar 2 · card</button>`
+          : `<button class="b-salvar" onclick="salvar('${c.id}')" style="grid-column:1/-1">📲 Salvar o card</button>`) +
+        `
          <button class="b-copiar" onclick="copiar('${c.id}')">📋 Copiar legenda</button>
          <a class="b-insta" href="instagram://app">📷 Abrir Instagram</a>
          <button class="b-feito" onclick="acao('${c.id}','publicado')">✅ Publiquei</button>
@@ -282,7 +288,7 @@ function desenharCur(){
       ${aberto ? `<div class="corpo"><div class="fotos">${fotos}</div>
         <div class="acoes">${acoes}</div>
         <pre class="leg">${esc(c.legenda)}</pre>
-        <div class="aviso">No Instagram: + → Post → ícone de várias fotos → escolha a 1 e depois a 2 → cole a legenda.</div></div>` : ""}</div>`;
+        <div class="aviso">${c.imagens.length === 2 ? "Salve a 1 e depois a 2. " : ""}No Instagram: + → Post → ícone de várias fotos → escolha a 1 e depois a 2 → cole a legenda.</div></div>` : ""}</div>`;
   }).join("");
   lista.filter(c => abertos[c.id]).forEach(c => c.imagens.forEach(q => mostrarImg(c.id, q)));
 }
@@ -293,11 +299,12 @@ async function blobImg(id, q){
   return imgs[k];
 }
 async function mostrarImg(id, q){ try{ const b = await blobImg(id, q); const e = $(`img-${id}-${q}`); if (e) e.src = URL.createObjectURL(b); }catch(e){} }
-async function salvar(id){
+async function salvar(id, so){
   const c = candidatos.find(x => x.id === id); if (!c) return;
   try{
-    const arquivos = await Promise.all(c.imagens.map(async (q, i) =>
-      new File([await blobImg(id, q)], `fakenometro-${id}-${i + 1}-${q}.jpg`, {type: "image/jpeg"})));
+    const quais = so ? [so] : c.imagens;
+    const arquivos = await Promise.all(quais.map(async (q) =>
+      new File([await blobImg(id, q)], `fakenometro-${id}-${c.imagens.indexOf(q) + 1}-${q}.jpg`, {type: "image/jpeg"})));
     if (navigator.canShare && navigator.canShare({files: arquivos})){
       await navigator.share({files: arquivos}); // no iPhone: "Salvar Imagens" → vão para Fotos, na ordem
     } else {
