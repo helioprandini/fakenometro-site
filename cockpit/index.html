@@ -33,7 +33,7 @@ header small{display:block;color:var(--apagado);font-size:12px;font-weight:500}
 @media (max-width:760px){.grade{grid-template-columns:repeat(2,1fr)}}
 .cartao{background:var(--cartao);border-radius:16px;padding:14px 16px;min-width:0}
 .rotulo{color:var(--apagado);font-size:12px;text-transform:uppercase;letter-spacing:.4px}
-.numero{font-size:32px;font-weight:800;letter-spacing:-.5px;margin-top:2px;font-variant-numeric:tabular-nums}
+.numero{font-size:clamp(22px,7.5vw,32px);white-space:nowrap;font-weight:800;letter-spacing:-.5px;margin-top:2px;font-variant-numeric:tabular-nums}
 .sub{color:var(--apagado);font-size:12px;margin-top:2px}
 .duas{display:grid;gap:10px;grid-template-columns:1.4fr 1fr;margin-top:10px}
 @media (max-width:760px){.duas{grid-template-columns:1fr}}
@@ -162,7 +162,8 @@ function desenhar(d){
     const id = e.em + e.id + e.tipo, novo = !primeira && !vistos.has(id); vistos.add(id);
     const [bg, fg] = corRotulo(e.rotulo);
     const tipo = e.tipo === "nova" ? "🆕 checagem nova" + (e.custo != null ? " · " + usd(e.custo) : "") : "🗄️ repositório" + (e.como ? " (" + e.como + ")" : "");
-    const canal = e.canal ? " · " + (e.canal === "whatsapp" ? "WhatsApp" : "Instagram") : "";
+    // Sem canal = checagem rodada pelo Theo no Mac (testes de regra), não do público.
+    const canal = " · " + (e.canal === "whatsapp" ? "WhatsApp" : e.canal === "instagram" ? "Instagram" : "teste (Mac)");
     return `<li class="${novo ? "novo" : ""}"><span class="hora">${e.em.slice(11,16)}</span>
       <div><div class="titulo">${esc(e.titulo) || "(sem título)"}</div><div class="meta">${tipo}${canal}</div></div>
       <span class="chip" style="background:${bg};color:${fg}">${esc(nomeRotulo(e.rotulo))}</span></li>`;
