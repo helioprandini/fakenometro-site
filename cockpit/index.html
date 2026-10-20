@@ -109,7 +109,9 @@ function ler(k){try{return localStorage.getItem(k)||""}catch(e){return ""}}
 function gravar(k,v){try{localStorage.setItem(k,v)}catch(e){}}
 function iniciar(){
   const m = location.hash.match(/k=([^&]+)/);
-  if (m){ chave = decodeURIComponent(m[1]); gravar("cockpit_chave", chave); history.replaceState(null,"",location.pathname); }
+  // A chave fica no #: o # nunca vai para servidor nenhum, e o app da Tela de
+  // Início do iPhone (memória separada do Safari) já abre com acesso.
+  if (m){ chave = decodeURIComponent(m[1]); gravar("cockpit_chave", chave); }
   else chave = ler("cockpit_chave");
   if (!chave){ document.getElementById("chave").style.display="block"; return; }
   document.getElementById("painel").hidden = false;
