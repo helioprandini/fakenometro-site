@@ -62,6 +62,28 @@ ol.top{margin:0;padding-left:20px}ol.top li{margin:6px 0;font-size:14px;overflow
 #chave input{width:100%;padding:12px;border-radius:12px;border:1px solid var(--linha);background:var(--cartao);color:var(--texto);font-size:16px;margin:12px 0}
 #chave button{padding:12px 22px;border-radius:12px;border:0;background:var(--amarelo);color:#111;font-weight:800;font-size:16px}
 a{color:var(--azul)}
+nav.abas{display:flex;gap:6px;background:var(--cartao);border-radius:12px;padding:4px;margin-bottom:12px}
+nav.abas button{flex:1;border:0;background:transparent;color:var(--apagado);font-weight:700;font-size:14px;padding:9px;border-radius:9px}
+nav.abas button.ativa{background:var(--linha);color:var(--texto)}
+.filtros{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.filtros button{border:1px solid var(--linha);background:transparent;color:var(--apagado);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600}
+.filtros button.ativa{background:var(--amarelo);border-color:var(--amarelo);color:#111}
+.cand{background:var(--cartao);border-radius:16px;padding:12px 14px;margin-bottom:10px}
+.cand .cab{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.cand .cab .titulo{flex:1}
+.cand .corpo{margin-top:12px}
+.fotos{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px}
+.fotos img{height:260px;border-radius:10px;background:var(--linha);flex:none}
+.fotos .n{position:relative}
+.fotos .n span{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,.7);color:#fff;font-size:11px;font-weight:800;border-radius:8px;padding:2px 7px}
+.acoes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.acoes button,.acoes a{border:0;border-radius:12px;padding:12px 8px;font-size:14px;font-weight:800;text-align:center;text-decoration:none}
+.b-salvar{background:var(--amarelo);color:#111}.b-copiar{background:var(--azul);color:#fff}
+.b-insta{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);color:#fff}
+.b-feito{background:var(--verde);color:#08130c}.b-desc{background:var(--linha);color:var(--texto)}
+pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:var(--fundo);border-radius:10px;padding:10px;margin:10px 0 0;max-height:220px;overflow:auto}
+.aviso{font-size:12px;color:var(--apagado);margin-top:8px}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#fff;color:#111;font-weight:700;padding:10px 16px;border-radius:24px;box-shadow:0 6px 24px rgba(0,0,0,.4);z-index:9;display:none}
 </style>
 </head>
 <body>
@@ -79,6 +101,13 @@ a{color:var(--azul)}
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
+<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button></nav>
+<div id="cur-view" hidden>
+  <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
+  <div class="sub" style="margin-bottom:10px">Toque num item para abrir. Salve as imagens (já na ordem do carrossel), copie a legenda, poste no Instagram e marque como publicado: aparece para os dois.</div>
+  <div id="cands"><div class="vazio">Carregando…</div></div>
+</div>
+<div class="toast" id="toast"></div>
 <div id="painel" hidden>
   <div class="grade">
     <div class="cartao"><div class="rotulo">Checagens hoje</div><div class="numero" id="k-hoje">–</div><div class="sub" id="k-hoje-sub"></div></div>
@@ -115,6 +144,7 @@ function iniciar(){
   else chave = ler("cockpit_chave");
   if (!chave){ document.getElementById("chave").style.display="block"; return; }
   document.getElementById("painel").hidden = false;
+  document.getElementById("abas").hidden = false;
   atualizar(); setInterval(atualizar, CADA);
   document.addEventListener("visibilitychange", () => { if (!document.hidden) atualizar(); });
 }
@@ -187,6 +217,90 @@ function desenhar(d){
   const desde = new Date(d.no_ar_desde);
   $("srv").innerHTML = `No ar desde ${desde.toLocaleDateString("pt-BR")} ${desde.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"})} · atualiza a cada 10 s`;
 }
+// ---------- Curadoria: o que é preciso para postar à mão ----------
+const BASE = API.replace("/cockpit/dados", "");
+const H = () => ({"X-Chave": chave, "ngrok-skip-browser-warning": "1"});
+let candidatos = [], filtroAtual = "pendente", abertos = {}, imgs = {};
+function toast(t){ const e = $("toast"); e.textContent = t; e.style.display = "block"; clearTimeout(e._t); e._t = setTimeout(() => e.style.display = "none", 2200); }
+function aba(qual){
+  $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur";
+  $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur");
+  if (qual === "cur") carregarCur();
+}
+function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f !== "pendente"); desenharCur(); }
+async function carregarCur(){
+  try{
+    const r = await fetch(BASE + "/cockpit/curadoria", {headers: H(), cache: "no-store"});
+    candidatos = (await r.json()).itens; desenharCur();
+  }catch(e){ $("cands").innerHTML = '<div class="vazio">Sem conexão com o robô.</div>'; }
+}
+function quando(iso){ if(!iso) return ""; const d = new Date(iso); return d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit"}) + " " + d.toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit"}); }
+function desenharCur(){
+  const lista = candidatos.filter(c => c.status === filtroAtual);
+  $("f-pend").textContent = `Para postar (${candidatos.filter(c => c.status === "pendente").length})`;
+  $("f-pub").textContent = `Já publicados (${candidatos.filter(c => c.status === "publicado_manual").length})`;
+  if (!lista.length){ $("cands").innerHTML = '<div class="vazio">Nada aqui.</div>'; return; }
+  $("cands").innerHTML = lista.map(c => {
+    const [bg, fg] = corRotulo(c.rotulo), aberto = abertos[c.id];
+    const meta = c.status === "publicado_manual"
+      ? `publicado por ${c.publicado_por === "roberta" ? "Roberta" : c.publicado_por === "helio" ? "Helio" : "?"} · ${quando(c.publicado_em)}`
+      : `${quando(c.criado_em)} · ${c.imagens.length === 2 ? "carrossel (original + card)" : "só o card"}${c.recebido > 1 ? " · pedido " + c.recebido + "×" : ""}${c.idioma === "en" ? " · 🇺🇸 @fakenometer" : ""}`;
+    const fotos = c.imagens.map((q, i) => `<div class="n"><img id="img-${c.id}-${q}" alt=""><span>${i + 1}</span></div>`).join("");
+    const acoes = c.status === "publicado_manual"
+      ? `<button class="b-desc" onclick="acao('${c.id}','desfazer')">↩︎ Desfazer</button>`
+      : `<button class="b-salvar" onclick="salvar('${c.id}')">📲 Salvar imagens</button>
+         <button class="b-copiar" onclick="copiar('${c.id}')">📋 Copiar legenda</button>
+         <a class="b-insta" href="instagram://app">📷 Abrir Instagram</a>
+         <button class="b-feito" onclick="acao('${c.id}','publicado')">✅ Publiquei</button>
+         <button class="b-desc" onclick="acao('${c.id}','descartar')" style="grid-column:1/-1">✖ Descartar este</button>`;
+    return `<div class="cand"><div class="cab" onclick="abrir('${c.id}')">
+        <div class="titulo"><div style="font-weight:700">${esc(c.titulo) || "(sem título)"}</div><div class="meta">${meta}</div></div>
+        <span class="chip" style="background:${bg};color:${fg}">${esc(nomeRotulo(c.rotulo))}</span></div>
+      ${aberto ? `<div class="corpo"><div class="fotos">${fotos}</div>
+        <div class="acoes">${acoes}</div>
+        <pre class="leg">${esc(c.legenda)}</pre>
+        <div class="aviso">No Instagram: + → Post → ícone de várias fotos → escolha a 1 e depois a 2 → cole a legenda.</div></div>` : ""}</div>`;
+  }).join("");
+  lista.filter(c => abertos[c.id]).forEach(c => c.imagens.forEach(q => mostrarImg(c.id, q)));
+}
+function abrir(id){ abertos[id] = !abertos[id]; desenharCur(); }
+async function blobImg(id, q){
+  const k = id + "/" + q;
+  if (!imgs[k]){ const r = await fetch(`${BASE}/cockpit/imagem/${id}/${q}`, {headers: H()}); if (!r.ok) throw new Error(r.status); imgs[k] = await r.blob(); }
+  return imgs[k];
+}
+async function mostrarImg(id, q){ try{ const b = await blobImg(id, q); const e = $(`img-${id}-${q}`); if (e) e.src = URL.createObjectURL(b); }catch(e){} }
+async function salvar(id){
+  const c = candidatos.find(x => x.id === id); if (!c) return;
+  try{
+    const arquivos = await Promise.all(c.imagens.map(async (q, i) =>
+      new File([await blobImg(id, q)], `fakenometro-${id}-${i + 1}-${q}.jpg`, {type: "image/jpeg"})));
+    if (navigator.canShare && navigator.canShare({files: arquivos})){
+      await navigator.share({files: arquivos}); // no iPhone: "Salvar Imagens" → vão para Fotos, na ordem
+    } else {
+      arquivos.forEach(f => { const a = document.createElement("a"); a.href = URL.createObjectURL(f); a.download = f.name; document.body.appendChild(a); a.click(); a.remove(); });
+      toast("Imagens baixadas");
+    }
+  }catch(e){ if (e.name !== "AbortError") toast("Não consegui salvar as imagens"); }
+}
+async function copiar(id){
+  const c = candidatos.find(x => x.id === id); if (!c) return;
+  try{ await navigator.clipboard.writeText(c.legenda); toast("Legenda copiada ✓"); }
+  catch(e){ toast("Selecione o texto da legenda e copie"); }
+}
+async function acao(id, qual){
+  if (qual === "descartar" && !confirm("Descartar este candidato? Ele sai da lista para os dois.")) return;
+  try{
+    const r = await fetch(`${BASE}/cockpit/curadoria/${id}/${qual}`, {method: "POST", headers: H()});
+    if (!r.ok) throw new Error(r.status);
+    const c = candidatos.find(x => x.id === id), j = await r.json();
+    if (qual === "descartar") candidatos = candidatos.filter(x => x.id !== id);
+    else { c.status = j.status; c.publicado_por = j.por; c.publicado_em = new Date().toISOString(); }
+    abertos[id] = false; desenharCur();
+    toast(qual === "publicado" ? "Marcado como publicado ✓" : qual === "descartar" ? "Descartado" : "Voltou para a lista");
+  }catch(e){ toast("Não consegui salvar: sem conexão?"); }
+}
+setInterval(() => { if (!$("cur-view").hidden) carregarCur(); }, 30000);  // vê o que o outro marcou
 iniciar();
 </script>
 </body>
