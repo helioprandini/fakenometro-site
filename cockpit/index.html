@@ -306,6 +306,12 @@ async function salvar(id, so){
     const quais = so ? [so] : c.imagens;
     const arquivos = await Promise.all(quais.map(async (q) =>
       new File([await blobImg(id, q)], `fakenometro-${id}-${c.imagens.indexOf(q) + 1}-${q}.jpg`, {type: "image/jpeg"})));
+    if (!(navigator.canShare && navigator.canShare({files: arquivos}))){
+      // Sem https o iPhone não oferece "Salvar Imagem" pelo botão: mostramos a
+      // imagem em tela cheia para tocar e segurar → "Adicionar às Fotos".
+      ampliar(URL.createObjectURL(arquivos[0]));
+      return;
+    }
     if (navigator.canShare && navigator.canShare({files: arquivos})){
       await navigator.share({files: arquivos}); // no iPhone: "Salvar Imagens" → vão para Fotos, na ordem
     } else {
@@ -314,10 +320,36 @@ async function salvar(id, so){
     }
   }catch(e){ if (e.name !== "AbortError") toast("Não consegui salvar as imagens"); }
 }
-async function copiar(id){
+// Copiar sem depender de https: a API do clipboard só existe em página
+// segura, e o cockpit ainda roda em http (Roberta, 2026-10-20). O caminho
+// antigo (textarea + execCommand) funciona no iPhone se for no mesmo toque.
+function ampliar(url){
+  let v = document.getElementById("ampliada");
+  if (!v){
+    v = document.createElement("div"); v.id = "ampliada";
+    v.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;gap:12px";
+    v.onclick = e => { if (e.target === v) v.remove(); };
+    document.body.appendChild(v);
+  }
+  v.innerHTML = `<div style="color:#fff;font-size:16px;text-align:center">Toque e segure a imagem → <b>Adicionar às Fotos</b></div>
+    <img src="${url}" style="max-width:100%;max-height:75vh;border-radius:8px">
+    <button onclick="document.getElementById('ampliada').remove()" style="padding:10px 18px;border-radius:10px;border:0;font-size:16px">Fechar</button>`;
+}
+function copiarTexto(t){
+  const a = document.createElement("textarea");
+  a.value = t; a.setAttribute("readonly", ""); a.style.position = "fixed"; a.style.top = "0"; a.style.opacity = "0";
+  a.style.fontSize = "16px";  // evita o zoom do iPhone ao focar
+  document.body.appendChild(a);
+  a.focus(); a.select(); a.setSelectionRange(0, t.length);
+  let ok = false; try { ok = document.execCommand("copy"); } catch(e) {}
+  a.remove(); return ok;
+}
+function copiar(id){
   const c = candidatos.find(x => x.id === id); if (!c) return;
-  try{ await navigator.clipboard.writeText(c.legenda); toast("Legenda copiada ✓"); }
-  catch(e){ toast("Selecione o texto da legenda e copie"); }
+  if (copiarTexto(c.legenda)) { toast("Legenda copiada ✓"); return; }
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(c.legenda).then(() => toast("Legenda copiada ✓"), () => toast("Não consegui copiar: segure o texto da legenda"));
+  } else toast("Não consegui copiar: segure o texto da legenda");
 }
 async function acao(id, qual){
   if (qual === "descartar" && !confirm("Descartar este candidato? Ele sai da lista para os dois.")) return;
