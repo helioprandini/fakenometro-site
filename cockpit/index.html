@@ -254,7 +254,7 @@ function aba(qual){
   if (qual === "ig") carregarIG(false);
 }
 function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f !== "pendente"); desenharCur(); }
-// ---------- Do dia: Reels + carrossel longo (às 9h) ----------
+// ---------- Do dia: a grade de 6 posts (às 7h) ----------
 let pacote = {}, diaBlobs = {};
 async function blobDia(nome){
   if (!diaBlobs[nome]){ const r = await fetch(`${BASE}/cockpit/dia/arquivo/${pacote.dia}/${nome}`, {headers: H()}); if (!r.ok) throw new Error(r.status); diaBlobs[nome] = await r.blob(); }
@@ -269,38 +269,41 @@ async function salvarDia(nome, tipo){
     else { const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = f.name; a.click(); }
   }catch(e){ if (e.name !== "AbortError") toast("Não consegui salvar"); }
 }
-function copiarDia(qual){ if (copiarTexto(pacote[qual].legenda)) toast("Legenda copiada ✓"); else toast("Não consegui copiar: segure o texto"); }
+function postDia(slot){ return (pacote.posts || []).find(p => p.slot === slot); }
+function copiarDia(slot){ if (copiarTexto(postDia(slot).legenda)) toast("Legenda copiada ✓"); else toast("Não consegui copiar: segure o texto"); }
 async function marcarDia(qual, acao){
   try{ const r = await fetch(`${BASE}/cockpit/dia/${pacote.dia}/${qual}/${acao}`, {method: "POST", headers: H()});
        pacote = await r.json(); desenharDia(); carregarCur(); toast(acao === "publicado" ? "Marcado como publicado ✓" : "Desfeito"); }
   catch(e){ toast("Não consegui marcar"); }
 }
 function blocoMusica(m){ return m ? `<div class="sub" style="margin:8px 0">🎵 Música: <b style="color:var(--texto)">${esc(m.clima)}</b> — no Instagram, busque “${esc(m.buscar)}” (${esc(m.como)}). ${esc(m.dica)}</div>` : ""; }
+// Grade da Roberta (2026-10-21): 08h e 09h carrossel curto · 12h e 14h carrossel longo · 18h e 20h Reels
 function desenharDia(){
-  const el = $("dia");
-  if (!pacote.reels){ el.innerHTML = ""; return; }
-  const r = pacote.reels, c = pacote.carrossel, feito = x => x.status === "publicado";
+  const el = $("dia"), posts = pacote.posts || [];
+  if (!posts.length){ el.innerHTML = ""; return; }
+  const feito = x => x.status === "publicado";
   const lado = l => ({direita: "favorece a direita", esquerda: "favorece a esquerda", neutro: "neutro / sem prova"})[l] || "";
-  el.innerHTML = `<div class="cartao" style="margin-bottom:12px"><h2>📅 Do dia · ${pacote.dia.slice(8,10)}/${pacote.dia.slice(5,7)}</h2>
-    <div style="font-weight:700;margin-top:6px">🎬 Reels ${feito(r) ? "✅" : ""}</div>
-    <div class="meta">${esc(r.titulo)} · ${lado(r.lado)}</div>
-    <video id="dia-reels" controls playsinline style="width:100%;max-width:320px;border-radius:10px;margin-top:8px;background:#000"></video>
-    ${blocoMusica(r.musica)}
-    <div class="acoes">${feito(r) ? `<button class="b-desc" onclick="marcarDia('reels','desfazer')" style="grid-column:1/-1">↩︎ Desfazer · publicado por ${esc(r.publicado_por)}</button>` :
-      `<button class="b-salvar" onclick="salvarDia('${r.arquivo}','video/mp4')">📲 Salvar Reels</button>
-       <button class="b-copiar" onclick="copiarDia('reels')">📋 Copiar legenda</button>
+  const icone = f => f === "reels" ? "🎬" : "🗂️";
+  const bloco = p => {
+    const reels = p.formato === "reels";
+    return `<div style="font-weight:700;margin-top:18px">${p.hora ? `🕗 ${p.hora.replace(":00", "h")} · ` : ""}${icone(p.formato)} ${esc(p.nome)}${reels ? "" : ` (${p.arquivos.length} telas)`} ${feito(p) ? "✅" : ""}</div>
+    <div class="meta">${esc(p.titulo)} · ${lado(p.lado)}</div>
+    ${reels ? `<video id="dia-${p.slot}-0" controls playsinline style="width:100%;max-width:320px;border-radius:10px;margin-top:8px;background:#000"></video>`
+            : `<div class="fotos">${p.arquivos.map((a, i) => `<div class="n"><img id="dia-${p.slot}-${i}" alt=""><span>${i + 1}</span></div>`).join("")}</div>`}
+    <div class="acoes">${feito(p) ? `<button class="b-desc" onclick="marcarDia('${p.slot}','desfazer')" style="grid-column:1/-1">↩︎ Desfazer · publicado por ${esc(p.publicado_por)}</button>` :
+      (reels ? `<button class="b-salvar" onclick="salvarDia('${p.arquivos[0]}','video/mp4')">📲 Salvar Reels</button>`
+             : p.arquivos.map((a, i) => `<button class="b-salvar" onclick="salvarDia('${a}','image/jpeg')">📲 Salvar ${i + 1}</button>`).join("")) +
+      `<button class="b-copiar" onclick="copiarDia('${p.slot}')">📋 Copiar legenda</button>
        <a class="b-insta" href="instagram://app">📷 Abrir Instagram</a>
-       <button class="b-feito" onclick="marcarDia('reels','publicado')">✅ Publiquei</button>`}</div>
-    ${c ? `<div style="font-weight:700;margin-top:18px">🗂️ Carrossel (${c.arquivos.length} telas) ${feito(c) ? "✅" : ""}</div>
-    <div class="meta">${esc(c.titulo)} · ${lado(c.lado)}</div>
-    <div class="fotos">${c.arquivos.map((a, i) => `<div class="n"><img id="dia-img-${i}" alt=""><span>${i + 1}</span></div>`).join("")}</div>
-    <div class="acoes">${feito(c) ? `<button class="b-desc" onclick="marcarDia('carrossel','desfazer')" style="grid-column:1/-1">↩︎ Desfazer · publicado por ${esc(c.publicado_por)}</button>` :
-      c.arquivos.map((a, i) => `<button class="b-salvar" onclick="salvarDia('${a}','image/jpeg')">📲 Salvar ${i + 1}</button>`).join("") +
-      `<button class="b-copiar" onclick="copiarDia('carrossel')">📋 Copiar legenda</button>
-       <button class="b-feito" onclick="marcarDia('carrossel','publicado')">✅ Publiquei</button>`}</div>
-    ${blocoMusica(c.musica)}` : ""}</div>`;
-  blobDia(r.arquivo).then(b => { const v = $("dia-reels"); if (v) v.src = URL.createObjectURL(b); }).catch(() => {});
-  if (c) c.arquivos.forEach((a, i) => blobDia(a).then(b => { const e = $(`dia-img-${i}`); if (e) e.src = URL.createObjectURL(b); }).catch(() => {}));
+       <button class="b-feito" onclick="marcarDia('${p.slot}','publicado')">✅ Publiquei</button>`}</div>
+    ${blocoMusica(p.musica)}`;
+  };
+  const prontos = posts.filter(feito).length;
+  el.innerHTML = `<div class="cartao" style="margin-bottom:12px"><h2>📅 Do dia · ${pacote.dia.slice(8,10)}/${pacote.dia.slice(5,7)} · ${prontos}/${posts.length} publicados</h2>
+    ${pacote.faltam ? `<div class="sub">⚠️ Faltaram ${pacote.faltam} post(s): não há checagens com print e fonte suficientes na fila.</div>` : ""}
+    ${posts.map(bloco).join("")}</div>`;
+  posts.forEach(p => p.arquivos.forEach((a, i) => blobDia(a).then(b => {
+    const e = $(`dia-${p.slot}-${i}`); if (e) e.src = URL.createObjectURL(b); }).catch(() => {})));
 }
 async function carregarDia(){
   try{ const r = await fetch(BASE + "/cockpit/dia", {headers: H(), cache: "no-store"}); const novo = await r.json();
