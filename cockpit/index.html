@@ -116,6 +116,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <div class="aviso" id="ig-nota"></div>
 </div>
 <div id="cur-view" hidden>
+  <div id="amao"></div>
   <div id="dia"></div>
   <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
   <div class="sub" style="margin:6px 2px 10px">Poste de cima para baixo: a ordem alterna um post que favorece a direita, um que favorece a esquerda e um neutro ou sem prova.</div>
@@ -307,7 +308,34 @@ async function carregarDia(){
        const mudou = JSON.stringify(novo) !== JSON.stringify(pacote); pacote = novo; if (mudou) desenharDia(); }
   catch(e){}
 }
+// ---------- Responder à mão: o Instagram recusou a resposta pela API ----------
+let amao = [];
+function desenharAmao(){
+  const el = $("amao");
+  if (!amao.length){ el.innerHTML = ""; return; }
+  el.innerHTML = `<div class="cartao" style="margin-bottom:12px"><h2>💬 Responder à mão (${amao.length})</h2>
+    <div class="sub">O Instagram não deixou o robô responder nestes posts (o perfil limita quem comenta). Abra o post no app, <b>logado como @fakenometro</b>, responda o comentário que marcou a gente e cole o texto.</div>
+    ${amao.map((m, i) => `<div style="border-top:1px solid var(--linha);margin-top:10px;padding-top:10px">
+      <div style="font-weight:700">${esc(m.autor)} · ${esc(nomeRotulo(m.veredito))}</div>
+      <pre class="leg" style="margin:6px 0">${esc(m.texto)}</pre>
+      <div class="acoes">
+        <a class="b-insta" href="${esc(m.permalink)}">📷 Abrir o post</a>
+        <button class="b-copiar" onclick="copiarAmao(${i})">📋 Copiar resposta</button>
+        <button class="b-feito" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">✅ Respondi</button>
+      </div></div>`).join("")}</div>`;
+}
+function copiarAmao(i){ if (copiarTexto(amao[i].texto)) toast("Resposta copiada ✓"); else toast("Não consegui copiar: segure o texto"); }
+async function feitoAmao(c){
+  try{ const r = await fetch(`${BASE}/cockpit/a_mao/${c}/feito`, {method: "POST", headers: H()}); amao = (await r.json()).itens; desenharAmao(); toast("Marcado ✓"); }
+  catch(e){ toast("Não consegui marcar"); }
+}
+async function carregarAmao(){
+  try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = (await r.json()).itens;
+       if (JSON.stringify(novo) !== JSON.stringify(amao)){ amao = novo; desenharAmao(); } }
+  catch(e){}
+}
 async function carregarCur(){
+  carregarAmao();
   carregarDia();
   try{
     const r = await fetch(BASE + "/cockpit/curadoria", {headers: H(), cache: "no-store"});
