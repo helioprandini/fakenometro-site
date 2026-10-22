@@ -116,6 +116,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <div class="aviso" id="ig-nota"></div>
 </div>
 <div id="cur-view" hidden>
+  <div id="licoes"></div>
   <div id="amao"></div>
   <div id="dia"></div>
   <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
@@ -318,6 +319,31 @@ async function carregarDia(){
        const mudou = JSON.stringify(novo) !== JSON.stringify(pacote); pacote = novo; if (mudou) desenharDia(); }
   catch(e){}
 }
+// ---------- Lições da auditoria: só o Helio aprova (mudam a regra do robô) ----------
+let licoes = {itens: [], pode_aprovar: false};
+function desenharLicoes(){
+  const el = $("licoes");
+  if (!licoes.itens.length){ el.innerHTML = ""; return; }
+  el.innerHTML = `<div class="cartao" style="margin-bottom:12px"><h2>🧪 Lições da auditoria (${licoes.itens.length})</h2>
+    <div class="sub">A auditoria diária revisou uma checagem e propõe uma regra nova para o robô. Aprovada, vale a partir da próxima checagem.</div>
+    ${licoes.itens.map(l => `<div style="border-top:1px solid var(--linha);margin-top:10px;padding-top:10px">
+      <div style="font-weight:700;font-size:17px">${esc(l.regra)}</div>
+      <div class="sub" style="margin-top:6px">Caso: ${esc(l.caso)}</div>
+      <details style="margin-top:6px"><summary class="sub">Por que a auditoria propôs</summary><div class="sub">${esc(l.explicacao)}</div></details>
+      ${licoes.pode_aprovar ? `<div class="acoes">
+        <button class="b-feito" onclick="decidirLicao('${esc(l.id)}','aprovar')">✅ Vira regra</button>
+        <button class="b-copiar" onclick="decidirLicao('${esc(l.id)}','recusar')">✖️ Recusar</button>
+      </div>` : `<div class="sub">Só o Helio aprova lições.</div>`}</div>`).join("")}</div>`;
+}
+async function decidirLicao(id, acao){
+  try{ const r = await fetch(`${BASE}/cockpit/licoes/${id}/${acao}`, {method: "POST", headers: H()}); licoes = await r.json(); desenharLicoes(); toast(acao === "aprovar" ? "Virou regra ✓" : "Recusada ✓"); }
+  catch(e){ toast("Não consegui registrar"); }
+}
+async function carregarLicoes(){
+  try{ const r = await fetch(BASE + "/cockpit/licoes", {headers: H(), cache: "no-store"}); const novo = await r.json();
+       if (JSON.stringify(novo) !== JSON.stringify(licoes)){ licoes = novo; desenharLicoes(); } }
+  catch(e){}
+}
 // ---------- Responder à mão: o Instagram recusou a resposta pela API ----------
 let amao = [];
 function desenharAmao(){
@@ -345,6 +371,7 @@ async function carregarAmao(){
   catch(e){}
 }
 async function carregarCur(){
+  carregarLicoes();
   carregarAmao();
   carregarDia();
   try{
