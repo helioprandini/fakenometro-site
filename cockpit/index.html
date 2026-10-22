@@ -125,6 +125,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 </div>
 <div class="toast" id="toast"></div>
 <div id="painel" hidden>
+  <div class="cartao" id="cupula" style="margin-bottom:10px;display:none"></div>
   <div class="grade">
     <div class="cartao"><div class="rotulo">Checagens hoje</div><div class="numero" id="k-hoje">–</div><div class="sub" id="k-hoje-sub"></div></div>
     <div class="cartao"><div class="rotulo">Do repositório hoje</div><div class="numero" id="k-repo">–</div><div class="sub" id="k-repo-sub"></div></div>
@@ -196,6 +197,12 @@ function estado(ok, txt){ $("ponto").className = "ponto " + (ok ? "ok" : "erro")
 
 function desenhar(d){
   const h = d.hoje, m = d.mes;
+  const cu = d.cupula || {estado: "verde", motivos: []}, el = $("cupula");
+  const info = {verde: ["🟢", "Verde", "tudo normal"], amarelo: ["🟡", "Amarelo", "veredito nos comentários só com certeza alta e 2 fontes"],
+                laranja: ["🟠", "Laranja", "sob ataque: nada publica sozinho, só repositório nos comentários"],
+                vermelho: ["🔴", "Vermelho", "comentários e publicação parados"]}[cu.estado] || ["⚪", cu.estado, ""];
+  el.style.display = cu.estado === "verde" ? "none" : "block";
+  el.innerHTML = `<b>${info[0]} Cúpula (FakeShield): ${info[1]}</b><div class="sub">${esc(info[2])}${(cu.motivos || []).length ? " · " + esc(cu.motivos.join(" · ")) : ""}</div>`;
   $("k-hoje").textContent = h.pedidos;
   $("k-hoje-sub").textContent = `${h.novas} novas · ${h.repositorio} do repositório`;
   $("k-repo").textContent = h.pedidos ? h.taxa + "%" : "–";
