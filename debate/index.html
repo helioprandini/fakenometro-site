@@ -112,6 +112,7 @@ function desenharTextos(){
   $("lista-versus").innerHTML = (dados.versus || []).map(v => `<div class="cartao"><h3>${esc(v.tema)}</h3>
     <div class="grade dois">${ORDEM.map(q => `<div><div class="linha-q">${q}</div>${esc(v[q] || "Não falou deste tema.")}</div>`).join("")}</div></div>`).join("");
   $("criterio").textContent = (dados.erros || {}).criterio || "";
+  if ((dados.erros || {}).correcao) $("criterio").insertAdjacentHTML("afterend", `<p class="nota" style="color:var(--amarelo)">Correção: ${esc(dados.erros.correcao)}</p>`);
   $("lista-erros").innerHTML = ((dados.erros || {}).erros || []).map(e => `<div class="cartao erro">
     <div class="linha-q">${esc(e.quem)} disse:</div><p class="citacao">“${esc(e.frase)}”</p>
     <span class="selo v-falso">${esc(e.rotulo)}</span><p>${esc(e.explica)}</p><p class="nota">Fonte: ${esc(e.fonte)}</p></div>`).join("");
