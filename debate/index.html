@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Debate da Globo, 23/10 · Fakenômetro</title>
+<meta name="facebook-domain-verification" content="pnf70wn1ixz6p786dz6t7g1vquiz16">
+<meta name="description" content="Todas as afirmações de fato de Lula e Flávio Bolsonaro no debate da TV Globo, checadas uma por uma, com as fontes: raio-X, os maiores erros e a biblioteca completa.">
+<meta property="og:title" content="Debate da Globo, 23/10 · Fakenômetro"><meta property="og:description" content="Todas as afirmações de fato de Lula e Flávio Bolsonaro no debate da TV Globo, checadas uma por uma, com as fontes: raio-X, os maiores erros e a biblioteca completa.">
+<meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
+<link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
+<link rel="stylesheet" href="/estilo.css">
+<link rel="stylesheet" href="/debate/debate.css">
+</head><body>
+<header class="topo"><div>
+<a class="marca" href="/"><img src="/marca/icone-192.png" alt=""><span>Fakenômetro</span></a>
+<nav><a href="/debate" class="ativo">Debate</a><a href="/#como">Como funciona</a><a href="/manifesto">Manifesto</a></nav>
+</div></header>
+<main>
+<p class="rot">DEBATE DA GLOBO · 23/10/2026</p>
+<h1>Checamos todas as falas de Lula e Flávio</h1>
+<p class="sub">Uma por uma, cada afirmação de fato dos dois candidatos, com a mesma régua e com a fonte de cada checagem. Opinião e promessa não entram.</p>
+<nav class="abas"><a href="#raiox">Raio-X</a><a href="#versus">Flávio x Lula</a><a href="#erros">Maiores erros</a><a href="#momentos">Momentos</a><a href="#todas">Todas as checagens</a></nav>
+
+<section id="raiox">
+<h2>Raio-X</h2>
+<div class="numeros" id="grandes"></div>
+<div class="grade">
+  <div class="cartao"><h3>Tempo de fala</h3><div id="tempo"></div></div>
+  <div class="cartao"><h3>Por minuto de fala</h3><div id="aproveitamento"></div></div>
+</div>
+<div class="cartao"><h3>Quem acertou mais?</h3><p class="nota">Todas as afirmações de fato de cada um, pelo termômetro do Fakenômetro.</p><div id="vereditos"></div>
+<p class="nota">“Sem prova” quer dizer que não achamos fonte que confirme nem que desminta. Não quer dizer mentira.</p></div>
+<div class="grade">
+  <div class="cartao"><h3>Do que eles falaram?</h3><p class="nota">Afirmações de fato por tema.</p><div id="temas"></div></div>
+  <div class="cartao"><h3>Quem atacou mais?</h3><p class="nota">Das afirmações de fato: quantas falavam do adversário e quantas do próprio governo ou de proposta.</p><div id="ataques"></div></div>
+</div>
+</section>
+
+<section id="versus">
+<h2>Flávio x Lula, tema a tema</h2>
+<p class="nota">Resumo neutro do que cada um disse. Mesmo espaço e mesmo tom para os dois.</p>
+<div id="lista-versus"></div>
+</section>
+
+<section id="erros">
+<h2>Os maiores erros</h2>
+<p class="nota" id="criterio"></p>
+<div class="grade" id="lista-erros"></div>
+</section>
+
+<section id="momentos">
+<h2>Momentos marcantes</h2>
+<p class="nota">Três de cada um, nas palavras deles.</p>
+<div class="grade" id="lista-momentos"></div>
+</section>
+
+<section id="todas">
+<h2>Todas as checagens</h2>
+<div class="filtros">
+  <select id="f-quem" aria-label="Candidato"><option value="">Os dois</option><option>Flávio</option><option>Lula</option></select>
+  <select id="f-grupo" aria-label="Veredito"><option value="">Todos os vereditos</option><option value="verdade">Verdade</option>
+    <option value="em_parte">Em parte</option><option value="falso">Falso ou enganoso</option><option value="sem_prova">Sem prova</option></select>
+  <select id="f-tema" aria-label="Tema"><option value="">Todos os temas</option></select>
+  <input id="f-busca" type="search" placeholder="Buscar (ex.: juros, SUS, obras)">
+</div>
+<p class="nota" id="contagem"></p>
+<div id="lista"></div>
+<button id="mais" class="botao sec" hidden>Mostrar mais</button>
+</section>
+
+<section>
+<h2>Como checamos</h2>
+<div class="cartao" id="metodo"></div>
+</section>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const num = x => String(x).replace(".", ",");
+const ORDEM = ["Flávio", "Lula"];
+const GRUPOS = [["verdade", "Verdade"], ["em_parte", "Em parte"], ["falso", "Falso ou enganoso"], ["sem_prova", "Sem prova"]];
+const SELO = {FALSO: "falso", ENGANOSO: "falso", "FORA DE CONTEXTO": "falso", "EM GRANDE PARTE FALSO": "falso"};
+let dados = {itens: []}, mostrar = 30;
+function barra(valor, maximo, rotulo){
+  return `<div class="barra"><span style="width:${maximo ? Math.max(2, 100 * valor / maximo) : 0}%"></span><b>${esc(rotulo)}</b></div>`;
+}
+function desenharRaiox(){
+  const P = dados.por_candidato, total = ORDEM.reduce((s, q) => s + P[q].afirmacoes, 0), e = dados.eventos || {};
+  $("grandes").innerHTML = `<div><b>${total}</b><span>afirmações checadas</span></div>
+    ${ORDEM.map(q => `<div><b>${P[q].pct_verdade}%</b><span>verdade · ${q}</span></div>`).join("")}
+    ${ORDEM.map(q => `<div><b>${P[q].pct_falso}%</b><span>falso · ${q}</span></div>`).join("")}`;
+  const maxMin = Math.max(...ORDEM.map(q => P[q].minutos));
+  $("tempo").innerHTML = ORDEM.map(q => `<div class="linha-q">${q}</div>${barra(P[q].minutos, maxMin, num(P[q].minutos.toFixed(1)) + " min")}
+    <p class="nota">${P[q].intervencoes} intervenções · ${P[q].palavras.toLocaleString("pt-BR")} palavras</p>`).join("")
+    + `<p class="nota">O mediador falou ${num(e.minutos_mediador)} min e encerrou falas por “tempo esgotado” ${e.tempo_esgotado} vezes.</p>`;
+  const linhas = [["Palavras", p => p.palavras_por_minuto], ["Afirmações de fato", p => num(p.fatos_por_minuto)],
+    ["Verdades", p => num((p.verdade / p.minutos).toFixed(1))], ["Falsas ou enganosas", p => num((p.falso / p.minutos).toFixed(1))]];
+  $("aproveitamento").innerHTML = `<table><tr><th></th>${ORDEM.map(q => `<th>${q}</th>`).join("")}</tr>
+    ${linhas.map(([n, f]) => `<tr><td>${n}</td>${ORDEM.map(q => `<td class="n">${f(P[q])}</td>`).join("")}</tr>`).join("")}</table>`;
+  $("vereditos").innerHTML = ORDEM.map(q => `<div class="linha-q">${q} · ${P[q].afirmacoes} afirmações</div>
+    <div class="empilhada">${GRUPOS.map(([g]) => P[q][g] ? `<span class="v-${g}" style="flex:${P[q][g]}">${P[q][g]}</span>` : "").join("")}</div>`).join("")
+    + `<div class="legenda">${GRUPOS.map(([g, n]) => `<span><i class="v-${g}"></i>${n}</span>`).join("")}</div>`;
+  const temas = (dados.temas || []).filter(([t]) => t !== "Outros").slice(0, 8);
+  const maxT = Math.max(...temas.flatMap(([, q]) => ORDEM.map(n => q[n])));
+  $("temas").innerHTML = `<table class="temas"><tr><th></th>${ORDEM.map(q => `<th>${q}</th>`).join("")}</tr>
+    ${temas.map(([t, q]) => `<tr><td>${esc(t)}</td>${ORDEM.map(n => `<td>${barra(q[n], maxT, q[n])}</td>`).join("")}</tr>`).join("")}</table>`;
+  $("ataques").innerHTML = ORDEM.map(q => {
+    const p = P[q], base = (p.sobre_adversario + p.sobre_si) || 1, pa = Math.round(100 * p.sobre_adversario / base);
+    return `<div class="linha-q">${q}</div><div class="empilhada"><span class="neutro" style="flex:${pa}">${pa}% adversário</span><span class="cinza" style="flex:${100 - pa}">${100 - pa}% si</span></div>`;
+  }).join("");
+}
+function desenharTextos(){
+  $("lista-versus").innerHTML = (dados.versus || []).map(v => `<div class="cartao"><h3>${esc(v.tema)}</h3>
+    <div class="grade dois">${ORDEM.map(q => `<div><div class="linha-q">${q}</div>${esc(v[q] || "Não falou deste tema.")}</div>`).join("")}</div></div>`).join("");
+  $("criterio").textContent = (dados.erros || {}).criterio || "";
+  $("lista-erros").innerHTML = ((dados.erros || {}).erros || []).map(e => `<div class="cartao erro">
+    <div class="linha-q">${esc(e.quem)} disse:</div><p class="citacao">“${esc(e.frase)}”</p>
+    <span class="selo v-falso">${esc(e.rotulo)}</span><p>${esc(e.explica)}</p><p class="nota">Fonte: ${esc(e.fonte)}</p></div>`).join("");
+  $("lista-momentos").innerHTML = (dados.momentos || []).map(m => `<div class="cartao"><div class="linha-q">${esc(m.quem)}</div>
+    <p class="citacao">“${esc(m.frase)}”</p><p class="nota">${esc(m.contexto || "")}</p></div>`).join("");
+  $("metodo").innerHTML = dados.metodo.map(l => `<p>${esc(l)}</p>`).join("");
+}
+function desenharLista(){
+  const q = $("f-quem").value, g = $("f-grupo").value, t = $("f-tema").value, b = $("f-busca").value.trim().toLowerCase();
+  const lista = dados.itens.filter(it => (!q || it.quem === q) && (!g || it.grupo === g) && (!t || it.tema === t)
+    && (!b || (it.resumo + " " + it.porque + " " + (it.fontes || []).join(" ")).toLowerCase().includes(b)));
+  $("contagem").textContent = `${lista.length} de ${dados.itens.length} afirmações`;
+  $("lista").innerHTML = lista.slice(0, mostrar).map(it => `<div class="item">
+    <div class="linha-q">${esc(it.quem)} · ${esc(it.tema)}</div>
+    <div class="frase">${esc(it.resumo)}</div>
+    <span class="selo v-${it.grupo}">${esc(it.story)}</span>
+    ${it.porque ? `<p>${esc(it.porque)}</p>` : ""}
+    <p class="nota">Fontes: ${esc((it.fontes || []).join(", "))}${it.cruza ? ` · Agências: ${esc(it.cruza)}` : ""}</p></div>`).join("");
+  $("mais").hidden = lista.length <= mostrar;
+}
+fetch("dados.json", {cache: "no-store"}).then(r => r.json()).then(d => {
+  dados = d;
+  desenharRaiox(); desenharTextos();
+  [...new Set(d.itens.map(it => it.tema))].sort().forEach(t => $("f-tema").insertAdjacentHTML("beforeend", `<option>${esc(t)}</option>`));
+  ["f-quem", "f-grupo", "f-tema", "f-busca"].forEach(id => $(id).addEventListener("input", () => { mostrar = 30; desenharLista(); }));
+  $("mais").addEventListener("click", () => { mostrar += 30; desenharLista(); });
+  desenharLista();
+});
+</script>
+<footer>
+<p>É inteligência artificial e pode errar. Viu algo errado? <a href="https://ig.me/m/fakenometro">Manda no DM do @fakenometro</a>.</p>
+<p><a href="/privacidade">Privacidade</a> · <a href="/exclusao-de-dados">Exclusão de dados</a> ·
+<a href="mailto:contato@fakenometro.com.br">contato@fakenometro.com.br</a> ·
+<a href="https://www.instagram.com/fakenometer/">In English: @fakenometer</a></p>
+<p>O Fakenômetro é um projeto brasileiro independente, mantido por HEPPA HOLDING PARTICIPAÇÕES LTDA · CNPJ 64.540.459/0001-60.</p>
+</footer></body></html>

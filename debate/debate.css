@@ -1,0 +1,27 @@
+.rot{font-size:13px;font-weight:700;color:var(--amarelo);letter-spacing:.6px;margin:0 0 6px}
+.abas{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.abas a{text-decoration:none;background:var(--cartao);border:1px solid var(--linha);border-radius:999px;padding:7px 14px;font-size:15px}
+section{scroll-margin-top:70px}
+.nota{color:var(--apagado);font-size:15px;margin:6px 0}
+.linha-q{font-size:13px;font-weight:700;color:var(--apagado);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 4px}
+.barra{position:relative;display:flex;align-items:center;gap:8px}
+.barra span{display:block;height:22px;background:var(--neutro);border-radius:6px;min-width:2px}
+.barra b{white-space:nowrap;font-size:15px}
+.empilhada{display:flex;height:38px;border-radius:8px;overflow:hidden;font-weight:700;font-size:15px}
+.empilhada span{display:flex;align-items:center;justify-content:center;color:#fff;min-width:0;overflow:hidden;white-space:nowrap}
+.empilhada .v-em_parte{color:#111}.empilhada .neutro{background:var(--neutro);color:#111}.empilhada .cinza{background:#3a3a46}
+.legenda{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:14px}
+.legenda i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:15px}td,th{padding:7px 4px;text-align:left;border-top:1px solid var(--linha)}
+th{color:var(--apagado);font-weight:600}td.n{font-size:22px;font-weight:700}
+table.temas td:first-child{width:42%}table.temas .barra span{height:16px}
+.grade.dois{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.citacao{font-size:19px;font-weight:600;line-height:1.4;margin:4px 0 10px}
+.erro .selo{margin-bottom:6px}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+select,input{font:inherit;font-size:15px;padding:9px 11px;border-radius:10px;border:1px solid var(--linha);background:var(--cartao);color:var(--texto)}
+input{flex:1;min-width:180px}
+.item{border-top:1px solid var(--linha);padding:14px 0}
+.item p{margin:8px 0 2px}
+.frase{font-size:18px;font-weight:600;margin:2px 0 8px}
+#mais{margin-top:14px;border:0;font:inherit;cursor:pointer}

@@ -1,0 +1,33 @@
+@font-face{font-family:Jost;src:url(/marca/Jost.ttf) format("truetype");font-weight:100 900;font-display:swap}
+:root{--fundo:#101014;--fundo2:#18181e;--cartao:#1d1d24;--linha:#2c2c35;--texto:#f5f5f8;--apagado:#a0a0ab;
+--amarelo:#ffcc00;--verde:#22b865;--ambar:#f2b926;--vermelho:#e5242c;--cinza:#6e6e7a;--neutro:#7890ff}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fundo);color:var(--texto);font:17px/1.6 Jost,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+.topo{position:sticky;top:0;z-index:10;background:rgba(16,16,20,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.topo div{max-width:960px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:20px}
+.marca img{width:34px;height:34px;border-radius:50%}
+.topo nav{margin-left:auto;display:flex;gap:16px;font-size:15px}
+.topo nav a{text-decoration:none;color:var(--apagado)}.topo nav a:hover,.topo nav a.ativo{color:var(--texto)}
+main{max-width:960px;margin:0 auto;padding:36px 16px 24px}
+.estreito{max-width:720px}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.08;margin:0 0 14px;font-weight:800;letter-spacing:-.5px}
+h2{font-size:clamp(24px,4vw,32px);line-height:1.15;margin:48px 0 14px;font-weight:700}
+h3{font-size:20px;margin:0 0 6px}
+.sub{font-size:clamp(18px,2.6vw,22px);color:var(--apagado);margin:0 0 26px;max-width:720px}
+.botao{display:inline-block;background:var(--amarelo);color:#111;font-weight:700;text-decoration:none;
+padding:14px 22px;border-radius:14px;margin:4px 8px 4px 0}
+.botao.sec{background:var(--cartao);color:var(--texto)}
+.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:18px;padding:18px 20px;margin:12px 0}
+.grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.passo b{display:block;font-size:34px;color:var(--amarelo);line-height:1}
+.selo{display:inline-block;font-size:13px;font-weight:700;padding:3px 11px;border-radius:999px;color:#fff;letter-spacing:.3px}
+.v-verdade{background:var(--verde)}.v-em_parte{background:var(--ambar);color:#111}.v-falso{background:var(--vermelho)}.v-sem_prova{background:var(--cinza)}
+.destaque{background:linear-gradient(135deg,#1d1d24,#22222c);border:1px solid var(--linha);border-radius:22px;padding:24px;margin:28px 0;display:block;text-decoration:none}
+.destaque .rotulo{font-size:13px;font-weight:700;color:var(--amarelo);letter-spacing:.6px}
+.numeros{display:flex;flex-wrap:wrap;gap:22px;margin:14px 0 4px}
+.numeros div{min-width:120px}.numeros b{display:block;font-size:34px;line-height:1.1}
+.numeros span{color:var(--apagado);font-size:14px}
+footer{max-width:960px;margin:40px auto 0;padding:24px 16px 40px;border-top:1px solid var(--linha);color:var(--apagado);font-size:14px}
+@media (max-width:560px){.topo nav{gap:12px;font-size:14px}.marca span{display:none}}
