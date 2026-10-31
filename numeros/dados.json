@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-10-31T13:02:49",
- "seguidores": 249,
+ "atualizado_em": "2026-10-31T13:58:40",
+ "seguidores": 253,
  "posts": 33,
  "t28": {
-  "views": 48223,
-  "accounts_engaged": 540,
-  "total_interactions": 1119,
-  "profile_views": 1434,
-  "likes": 807,
+  "views": 48647,
+  "accounts_engaged": 544,
+  "total_interactions": 1131,
+  "profile_views": 1444,
+  "likes": 814,
   "comments": 32,
-  "shares": 88,
-  "saves": 66,
+  "shares": 90,
+  "saves": 67,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,26 +125,26 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 660
+   "valor": 834
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 9,
-   "alcance": 1031.2,
-   "views": 1701.3,
+   "alcance": 1037.1,
+   "views": 1709.1,
    "compart": 1.9,
    "salvos": 3.2,
    "seguidores": 3.6,
-   "visitas_perfil": 22.6
+   "visitas_perfil": 22.9
   },
   {
    "grupo": "reels",
    "posts": 24,
-   "alcance": 580.3,
-   "views": 753.4,
-   "compart": 2.3,
+   "alcance": 592.0,
+   "views": 766.9,
+   "compart": 2.4,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -152,7 +152,7 @@
  ],
  "top": [
   {
-   "views": 7010,
+   "views": 7014,
    "alcance": 5398,
    "compart": 33,
    "formato": "reels",
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3815,
+   "views": 3822,
    "alcance": 2678,
    "compart": 4,
    "formato": "carrossel",
@@ -197,8 +197,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 1893,
-   "alcance": 1331,
+   "views": 1955,
+   "alcance": 1380,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-30",
