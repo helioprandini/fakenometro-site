@@ -323,7 +323,7 @@ async function carregarDia(){
        const mudou = JSON.stringify(novo) !== JSON.stringify(pacote); pacote = novo; if (mudou) desenharDia(); }
   catch(e){}
 }
-// ---------- Lições da auditoria: só o Helio aprova (mudam a regra do robô) ----------
+// ---------- Lições da auditoria: o Helio e a Roberta aprovam (mudam a regra do robô) ----------
 let licoes = {itens: [], pode_aprovar: false};
 function desenharLicoes(){
   const el = $("licoes");
@@ -337,7 +337,7 @@ function desenharLicoes(){
       ${licoes.pode_aprovar ? `<div class="acoes">
         <button class="b-feito" onclick="decidirLicao('${esc(l.id)}','aprovar')">✅ Vira regra</button>
         <button class="b-copiar" onclick="decidirLicao('${esc(l.id)}','recusar')">✖️ Recusar</button>
-      </div>` : `<div class="sub">Só o Helio aprova lições.</div>`}</div>`).join("")}</div>`;
+      </div>` : `<div class="sub">Só o Helio e a Roberta aprovam lições.</div>`}</div>`).join("")}</div>`;
 }
 async function decidirLicao(id, acao){
   try{ const r = await fetch(`${BASE}/cockpit/licoes/${id}/${acao}`, {method: "POST", headers: H()}); licoes = await r.json(); desenharLicoes(); toast(acao === "aprovar" ? "Virou regra ✓" : "Recusada ✓"); }
