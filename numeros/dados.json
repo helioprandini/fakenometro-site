@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-10-31T13:58:40",
- "seguidores": 253,
+ "atualizado_em": "2026-10-31T15:05:45",
+ "seguidores": 260,
  "posts": 33,
  "t28": {
-  "views": 48647,
-  "accounts_engaged": 544,
-  "total_interactions": 1131,
-  "profile_views": 1444,
-  "likes": 814,
+  "views": 49108,
+  "accounts_engaged": 547,
+  "total_interactions": 1138,
+  "profile_views": 1458,
+  "likes": 815,
   "comments": 32,
-  "shares": 90,
+  "shares": 93,
   "saves": 67,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 834
+   "valor": 1049
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 9,
-   "alcance": 1037.1,
-   "views": 1709.1,
+   "alcance": 1044.1,
+   "views": 1720.4,
    "compart": 1.9,
    "salvos": 3.2,
    "seguidores": 3.6,
@@ -142,9 +142,9 @@
   {
    "grupo": "reels",
    "posts": 24,
-   "alcance": 592.0,
-   "views": 766.9,
-   "compart": 2.4,
+   "alcance": 602.6,
+   "views": 778.9,
+   "compart": 2.5,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -152,7 +152,7 @@
  ],
  "top": [
   {
-   "views": 7014,
+   "views": 7015,
    "alcance": 5398,
    "compart": 33,
    "formato": "reels",
@@ -161,7 +161,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4175,
+   "views": 4178,
    "alcance": 1982,
    "compart": 6,
    "formato": "carrossel",
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3822,
+   "views": 3828,
    "alcance": 2678,
    "compart": 4,
    "formato": "carrossel",
@@ -179,8 +179,8 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3212,
-   "alcance": 2167,
+   "views": 3213,
+   "alcance": 2170,
    "compart": 0,
    "formato": "reels",
    "quando": "2026-10-26",
@@ -197,8 +197,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 1955,
-   "alcance": 1380,
+   "views": 2033,
+   "alcance": 1438,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-30",
@@ -209,7 +209,7 @@
  "canais": {
   "instagram": 204,
   "comentario": 67,
-  "whatsapp": 35
+  "whatsapp": 36
  },
  "por_dia": [
   [
@@ -258,9 +258,9 @@
   ],
   [
    "2026-10-31",
-   10
+   11
   ]
  ],
  "repositorio": 23,
- "total_publico": 306
+ "total_publico": 307
 }
