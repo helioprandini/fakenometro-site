@@ -1,27 +1,17 @@
-.rot{font-size:13px;font-weight:700;color:var(--amarelo);letter-spacing:.6px;margin:0 0 6px}
-.abas{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
-.abas a{text-decoration:none;background:var(--cartao);border:1px solid var(--linha);border-radius:999px;padding:7px 14px;font-size:15px}
-section{scroll-margin-top:70px}
-.nota{color:var(--apagado);font-size:15px;margin:6px 0}
-.linha-q{font-size:13px;font-weight:700;color:var(--apagado);text-transform:uppercase;letter-spacing:.5px;margin:12px 0 4px}
-.barra{position:relative;display:flex;align-items:center;gap:8px}
-.barra span{display:block;height:22px;background:var(--neutro);border-radius:6px;min-width:2px}
-.barra b{white-space:nowrap;font-size:15px}
-.empilhada{display:flex;height:38px;border-radius:8px;overflow:hidden;font-weight:700;font-size:15px}
-.empilhada span{display:flex;align-items:center;justify-content:center;color:#fff;min-width:0;overflow:hidden;white-space:nowrap}
-.empilhada .v-em_parte{color:#111}.empilhada .neutro{background:var(--neutro);color:#111}.empilhada .cinza{background:#3a3a46}
-.legenda{display:flex;flex-wrap:wrap;gap:14px;margin-top:12px;font-size:14px}
-.legenda i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-table{width:100%;border-collapse:collapse;font-size:15px}td,th{padding:7px 4px;text-align:left;border-top:1px solid var(--linha)}
-th{color:var(--apagado);font-weight:600}td.n{font-size:22px;font-weight:700}
-table.temas td:first-child{width:42%}table.temas .barra span{height:16px}
-.grade.dois{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.citacao{font-size:19px;font-weight:600;line-height:1.4;margin:4px 0 10px}
-.erro .selo{margin-bottom:6px}
-.filtros{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
-select,input{font:inherit;font-size:15px;padding:9px 11px;border-radius:10px;border:1px solid var(--linha);background:var(--cartao);color:var(--texto)}
-input{flex:1;min-width:180px}
-.item{border-top:1px solid var(--linha);padding:14px 0}
-.item p{margin:8px 0 2px}
-.frase{font-size:18px;font-weight:600;margin:2px 0 8px}
-#mais{margin-top:14px;border:0;font:inherit;cursor:pointer}
+.placar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:30px;margin-top:22px}
+.waffle{display:flex;flex-wrap:wrap;gap:3px;margin-top:10px}
+.waffle button{width:15px;height:15px;padding:0;border:1px solid var(--texto);cursor:pointer}
+.waffle button:hover,.waffle button.on{outline:3px solid var(--laranja)}
+.v-verdade{background:var(--amarelo)}.v-em_parte{background:repeating-linear-gradient(135deg,var(--amarelo) 0 3px,var(--pessego) 3px 6px)}.v-falso{background:var(--pessego)}.v-sem_prova{background:var(--cinza)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px 18px;margin:18px 0 0;font-size:15px}.legenda i{display:inline-block;width:15px;height:15px;margin-right:6px;vertical-align:-2px;border:1px solid var(--texto)}
+.detalhe{margin-top:20px;background:var(--cartao);border:3px solid var(--texto);padding:18px;min-height:90px}
+.num-q{font:850 clamp(44px,7vw,74px)/1 Archivo,sans-serif;font-stretch:72%}
+.selo{display:inline-block;font:800 13px Archivo,sans-serif;padding:3px 9px;letter-spacing:.04em;border:1px solid var(--texto);color:var(--texto)}
+.versus{border-top:3px solid currentColor;padding:18px 0}.versus .lados{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:20px;margin-top:10px}
+.q{font:800 13px Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:4px}
+.item{border-top:2px solid var(--texto);padding:16px 0}.item p{margin:8px 0 2px}.frase{font:850 25px/1.08 Archivo,sans-serif;font-stretch:72%;margin:4px 0 9px}
+.abas{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.abas a{font:800 13px Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;border:2px solid currentColor;padding:7px 11px}
+.abas a:hover{background:var(--amarelo);color:var(--texto);border-color:var(--amarelo)}
+details summary{cursor:pointer;font:800 15px Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.barra-t{display:grid;grid-template-columns:minmax(90px,1.4fr) 2fr 2fr;gap:8px;align-items:center;padding:7px 0;border-top:1px solid rgba(242,238,228,.3);font-size:15px}
+.barra-t .b{display:flex;align-items:center;gap:6px}.barra-t .b span{display:block;height:15px;background:var(--amarelo)}.barra-t .b+.b span{background:var(--creme)}

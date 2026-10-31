@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>O termômetro · Fakenômetro</title>
+<meta name="facebook-domain-verification" content="pnf70wn1ixz6p786dz6t7g1vquiz16">
+<meta name="description" content="Como funciona o termômetro do Fakenômetro e os cards de resposta.">
+<meta property="og:title" content="O termômetro · Fakenômetro"><meta property="og:description" content="Como funciona o termômetro do Fakenômetro e os cards de resposta.">
+<meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
+<link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="/estilo.css">
+<script src="/site.js" defer></script>
+</head><body>
+<header class="topo"><a class="marca" href="/">Fakenômetro</a><a href="/" aria-label="Início"><img src="/marca/icone-192.png" alt="" width="65" height="65"></a></header>
+<div class="menu"><nav aria-label="Seções">
+<a href="/">Início</a><a href="/golpes/">Golpes</a><a href="/termometro/" class="ativo">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="/manifesto">Manifesto</a><a href="#contato">Contato</a>
+</nav></div>
+<main>
+<section class="faixa justa"><div class="miolo">
+<p class="etiqueta">O termômetro</p>
+<h1>Não é opinião. <span class="mt">É conta.</span></h1>
+<p class="sub">A gente separa o que o post afirma, ponto por ponto, e confere cada um. O ponteiro mostra quanto da história ficou de pé.</p>
+<p class="mao">repetição não é prova</p>
+</div></section>
+
+<section class="faixa f-clara"><div class="miolo">
+<p class="etiqueta">Testa aí</p>
+<h2>Toca nos pontos.<br>O ponteiro mexe.</h2>
+<p class="sub mini">Exemplo de um post com 5 pontos. Cada toque muda o ponto: confere, não confere, sem prova.</p>
+<div class="pontos" id="pontos"></div>
+<div class="termo"><i id="ponteiro" style="left:80%"></i></div>
+<div class="termo-pontas"><span>mentira</span><span>verdade</span></div>
+<p class="sub" style="margin-top:20px" id="leitura"></p>
+<p class="mao">sem prova também pesa: não é ponto a favor</p>
+</div></section>
+
+<section class="faixa"><div class="miolo">
+<p class="etiqueta">Os cards</p>
+<h2>Dois casos. <span class="mt">Um card para repassar.</span></h2>
+<p class="sub">É ele que chega no direct e no WhatsApp, pronto para mandar no grupo.</p>
+<div class="grade cards">
+<figure class="sobe" style="margin:0"><img src="/marca/cards/card_fake.png" alt="Card FAKE: Aviso de Corte da Enel, regularize imediatamente. A notícia não confere." loading="lazy" width="1080" height="1080"><h3 style="margin-top:14px">Fake</h3>Fundo preto e selo. A prova desmente, ou teria de existir e não existe.</figure>
+<figure class="sobe" style="margin:0"><img src="/marca/cards/card_claro.png" alt="Card claro com ponteiro: O dólar disparou e a bolsa parou. A notícia confere." loading="lazy" width="1080" height="1080"><h3 style="margin-top:14px">Confere</h3>Papel e ponteiro. O ponto central confere, e o ponteiro mostra o acerto da análise toda.</figure>
+</div>
+<div class="grade" style="margin-top:30px">
+<div class="sobe"><h3>Ainda não dá para saber</h3>Sem ponteiro. Pode ser verdade, mas falta prova. Não repasse como fato.</div>
+<div class="sobe"><h3>Não é notícia</h3>Sem ponteiro. Opinião e sátira não têm grau de verdade.</div>
+</div>
+</div></section>
+
+<section class="faixa f-escura" id="como" style="scroll-margin-top:50px"><div class="miolo">
+<p class="etiqueta">Por trás do ponteiro</p>
+<h2>Quatro regras.<br><span class="amar">Para qualquer lado.</span></h2>
+<div class="grade" style="margin-top:26px">
+<div class="sobe"><div class="passo-n amar">1</div><h3>Post inteiro</h3>O vídeo na íntegra ou todas as lâminas, mais a legenda.</div>
+<div class="sobe"><div class="passo-n amar">2</div><h3>Vai à fonte</h3>Dado oficial, quem noticiou e o que os checadores já disseram.</div>
+<div class="sobe"><div class="passo-n amar">3</div><h3>Mais de uma IA</h3>Inteligências artificiais de empresas diferentes avaliam o mesmo dossiê.</div>
+<div class="sobe"><div class="passo-n amar">4</div><h3>Sem fonte, não sai</h3>A régua é uma só. A IA pode errar: achou erro, responde que a gente revê.</div>
+</div>
+</div></section>
+</main>
+<script>
+const P=[["Quem disse",0],["O número",0],["A data",0],["O lugar",0],["A conclusão",0]],C=["sim","nao","sem"],T={sim:"confere",nao:"não confere",sem:"sem prova"};
+P[4][1]=2;
+function d(){let s=0;document.getElementById("pontos").innerHTML=P.map(([n,e],i)=>{if(e==0)s++;return `<button class="ponto" data-i="${i}" data-e="${C[e]}">${n}<br><small>${T[C[e]]}</small></button>`}).join("");
+const v=Math.round(100*s/5);document.getElementById("ponteiro").style.left=Math.max(1,Math.min(99,v))+"%";
+document.getElementById("leitura").innerHTML=`<b>${s} de 5 pontos conferem.</b> O ponteiro fica em ${v}%.`}
+document.getElementById("pontos").addEventListener("click",e=>{const b=e.target.closest(".ponto");if(!b)return;P[b.dataset.i][1]=(P[b.dataset.i][1]+1)%3;d()});d();
+</script>
+<footer id="contato"><div>
+<h2>Manda pra gente.</h2>
+<div class="contatos">
+<a href="https://wa.me/5511925338619"><small>WhatsApp</small><b>(11) 92533-8619</b></a>
+<a href="https://ig.me/m/fakenometro"><small>Instagram</small><b>@fakenometro</b></a>
+<a href="mailto:contato@fakenometro.com.br"><small>E-mail</small><b>contato@fakenometro.com.br</b></a>
+</div>
+<p>É inteligência artificial e pode errar. Viu algo errado? Manda pra gente.</p>
+<p><a href="/manifesto">Manifesto</a> · <a href="/numeros/">Números</a> · <a href="/privacidade">Privacidade</a> · <a href="/exclusao-de-dados">Exclusão de dados</a> ·
+<a href="https://www.instagram.com/fakenometer/">In English: @fakenometer</a></p>
+<p>O Fakenômetro é um projeto brasileiro independente.</p>
+</div></footer></body></html>

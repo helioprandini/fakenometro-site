@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Números · Fakenômetro</title>
+<meta name="facebook-domain-verification" content="pnf70wn1ixz6p786dz6t7g1vquiz16">
+<meta name="description" content="O que o Fakenômetro produziu até aqui.">
+<meta property="og:title" content="Números · Fakenômetro"><meta property="og:description" content="O que o Fakenômetro produziu até aqui.">
+<meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
+<link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="/estilo.css">
+<meta name="robots" content="noindex">
+<script src="/site.js" defer></script>
+</head><body>
+<header class="topo"><a class="marca" href="/">Fakenômetro</a><a href="/" aria-label="Início"><img src="/marca/icone-192.png" alt="" width="65" height="65"></a></header>
+<div class="menu"><nav aria-label="Seções">
+<a href="/">Início</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="/manifesto">Manifesto</a><a href="#contato">Contato</a>
+</nav></div>
+<main>
+<section class="faixa justa f-amarela"><div class="miolo">
+<p class="etiqueta" style="color:var(--texto)">Números · Fakenômetro</p>
+<h1><span id="dias">14</span> dias de vida.</h1>
+<p class="sub">A gente está começando. Isto é o que já saiu, medido, sem projeção.</p>
+<p class="mao">nasceu em 17/10/2026</p>
+</div></section>
+<section class="faixa"><div class="miolo">
+<p class="etiqueta">Instagram · @fakenometro</p>
+<div class="grande-n" id="ig"></div>
+</div></section>
+<section class="faixa f-escura"><div class="miolo">
+<p class="etiqueta">Alcance por dia</p>
+<h2>Quantas contas <span class="amar">viram a gente.</span></h2>
+<div id="alcance"></div>
+</div></section>
+<section class="faixa"><div class="miolo">
+<p class="etiqueta">O que mais rodou</p>
+<h2>Os mais vistos.</h2>
+<div class="carrossel" id="top" style="margin-top:18px"></div>
+</div></section>
+<section class="faixa f-clara"><div class="miolo">
+<p class="etiqueta">Consultas ao robô</p>
+<h2>Gente perguntando.</h2>
+<div class="grande-n" id="cons" style="margin:22px 0"></div>
+<div id="porDia"></div>
+</div></section>
+<section class="faixa f-roxa"><div class="miolo">
+<p class="etiqueta">Eleição 2026</p>
+<div class="grande-n"><div><b class="amar" data-conta="455">455</b><span>afirmações do debate da Globo checadas</span></div></div>
+<p style="margin-top:22px"><a class="botao" href="/debate/">Ver o debate</a></p>
+</div></section>
+<section class="faixa justa"><div class="miolo">
+<p class="fontes" id="nota"></p>
+</div></section>
+</main>
+<script>
+const N=x=>Math.round(x).toLocaleString("pt-BR"),dm=s=>s.slice(8,10)+"/"+s.slice(5,7),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const NASC=Date.UTC(2026,9,17),agora=new Date(),dias=Math.floor((Date.UTC(agora.getFullYear(),agora.getMonth(),agora.getDate())-NASC)/864e5);
+document.getElementById("dias").textContent=dias;
+const per=dias<=28?`em ${dias} dias`:"nos últimos 28 dias";
+const tile=(v,r)=>`<div><b data-conta="${v}">${N(v)}</b><span>${r}</span></div>`;
+function colunas(s,r){const t=Math.max(...s.map(x=>x[1]),1);return `<div class="colunas" role="img" aria-label="${r} por dia">${s.map(([d,v])=>`<span class="${v===t?"pico":""}" style="height:${Math.max(1,100*v/t)}%" title="${dm(d)}: ${N(v)} ${r}"></span>`).join("")}</div><div class="eixo"><span>${dm(s[0][0])}</span><span>pico: ${N(t)}</span><span>${dm(s[s.length-1][0])}</span></div>`}
+fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{const t=d.t28,c=d.canais;
+document.getElementById("ig").innerHTML=tile(t.views,"visualizações "+per)+tile(d.seguidores,"seguidores")+tile(d.posts,"posts no feed")+tile(t.accounts_engaged,"contas engajadas "+per)+tile(t.shares,"compartilhamentos "+per)+tile(t.saves,"salvamentos "+per);
+document.getElementById("alcance").innerHTML=colunas(d.alcance.filter(x=>x.dia>="2026-10-17").map(x=>[x.dia,x.valor]),"contas alcançadas")+'<p class="mao">2º turno: 25/10</p>';
+document.getElementById("top").innerHTML=d.top.map((p,i)=>`<a class="lamina ${i%2?"":"esc"}" href="${esc(p.link)}" style="text-decoration:none"><div class="topo-l"><span>${p.formato} · ${dm(p.quando)}</span><i>Fakenômetro</i></div><div class="frase-l">${esc(p.titulo||"Post")}</div><div class="grande-n"><div><b style="font-size:72px">${N(p.views)}</b><span>visualizações</span></div></div><div class="rod-l">${N(p.alcance)} contas · ${N(p.compart)} compartilhamentos</div></a>`).join("");
+document.getElementById("cons").innerHTML=tile(d.total_publico,"consultas desde 20/10")+tile(c.instagram||0,"no direct")+tile(c.whatsapp||0,"no WhatsApp, desde 26/10")+tile(c.comentario||0,"nos comentários");
+document.getElementById("porDia").innerHTML=colunas(d.por_dia,"consultas");
+document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)}. Fonte: Instagram Insights (API oficial da Meta) e registro interno do robô. As consultas incluem testes da nossa equipe, que o registro não separa. O WhatsApp só tem contagem de consultas, sem alcance. A checagem em lote do debate não entra nas consultas.`;
+observar()});
+</script>
+<footer id="contato"><div>
+<h2>Manda pra gente.</h2>
+<div class="contatos">
+<a href="https://wa.me/5511925338619"><small>WhatsApp</small><b>(11) 92533-8619</b></a>
+<a href="https://ig.me/m/fakenometro"><small>Instagram</small><b>@fakenometro</b></a>
+<a href="mailto:contato@fakenometro.com.br"><small>E-mail</small><b>contato@fakenometro.com.br</b></a>
+</div>
+<p>É inteligência artificial e pode errar. Viu algo errado? Manda pra gente.</p>
+<p><a href="/manifesto">Manifesto</a> · <a href="/numeros/">Números</a> · <a href="/privacidade">Privacidade</a> · <a href="/exclusao-de-dados">Exclusão de dados</a> ·
+<a href="https://www.instagram.com/fakenometer/">In English: @fakenometer</a></p>
+<p>O Fakenômetro é um projeto brasileiro independente.</p>
+</div></footer></body></html>

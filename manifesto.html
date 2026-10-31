@@ -4,37 +4,58 @@
 <meta name="color-scheme" content="light only">
 <title>Manifesto do Fakenômetro</title>
 <meta name="description" content="Por que o Fakenômetro existe e o que ele promete.">
+<script>document.documentElement.classList.add("js")</script>
 <style>
-@font-face{font-family:Jost;src:url(/marca/Jost.ttf) format("truetype");font-weight:100 900;font-display:swap}
-html,body{background:#ffffff;color:#1d1d1f}
-body{margin:0;font-family:Jost,-apple-system,Helvetica,Arial,sans-serif;font-size:19px;line-height:1.6}
-main{max-width:680px;margin:0 auto;padding:48px 20px 64px}
-h1{font-size:34px;line-height:1.2;margin:0 0 28px}
-p{margin:0 0 18px}
-.sub{color:#3a3a3c}
-a{color:#1d1d1f}
-.fim{margin-top:36px;padding-top:18px;border-top:1px solid #e5e5ea;font-size:16px;color:#6e6e73}
+@font-face{font-family:Archivo;src:url(/marca/fontes/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+@font-face{font-family:Schibsted;src:url(/marca/fontes/schibsted-500.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:Jost;src:url(/marca/fontes/jost-700.woff2) format("woff2");font-weight:700;font-display:swap}
+html,body{background:#ffffff;color:#111}
+body{margin:0;font:500 clamp(20px,2.3vw,25px)/1.42 Schibsted,-apple-system,Helvetica,Arial,sans-serif;overflow-x:hidden}
+main{max-width:1120px;margin:0 auto;padding:22px 20px 70px}
+.nome{font:700 22px Jost,sans-serif;text-decoration:none;color:inherit}
+h1{font:900 clamp(50px,15vw,180px)/.86 Archivo,sans-serif;font-stretch:66%;text-transform:uppercase;letter-spacing:-.015em;margin:26px 0 0;padding-bottom:26px;border-bottom:12px solid #111}
+p{margin:0 0 26px;max-width:760px}
+.gigante,.grito{display:block;font-family:Archivo,sans-serif;font-stretch:68%;font-weight:900;letter-spacing:-.012em;overflow-wrap:break-word}
+.gigante{font-size:clamp(66px,14vw,168px);line-height:.92;margin:46px 0}
+.grito{font-size:clamp(46px,8.8vw,104px);line-height:.96;margin:44px 0}
+main>p:has(.gigante,.grito){max-width:none}
+.mt{background:linear-gradient(#FFE45C,#FFE45C) no-repeat 0 55%/100% 84%;padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone;transition:background-size .8s cubic-bezier(.2,.7,.2,1)}
+.nc{background:linear-gradient(#111,#111) no-repeat 0 55%/100% .08em,linear-gradient(#FFC9A3,#FFC9A3) no-repeat 0 55%/100% 84%;box-decoration-break:clone;-webkit-box-decoration-break:clone;transition:background-size 1s cubic-bezier(.2,.7,.2,1)}
+.gigante.nc{display:inline;width:auto}
+.js .mt:not(.vis){background-size:0 84%}.js .nc:not(.vis){background-size:0 .08em,0 84%}
+.js .grito:not(.vis),.js .gigante:not(.nc):not(.vis){opacity:0;transform:translateY(30px)}
+.grito,.gigante{transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.2,1),background-size .8s}
+a{color:#111;text-underline-offset:3px}
+.assina{font-style:italic;margin-top:44px}
+.fim{max-width:none;margin-top:30px;padding-top:18px;border-top:12px solid #111;font-size:18px;font-weight:500}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.js .grito,.js .gigante{opacity:1!important;transform:none!important}.js .mt{background-size:100% 84%!important}.js .nc{background-size:100% .08em,100% 84%!important}}
 </style></head>
 <body><main>
+<a class="nome" href="/">Fakenômetro</a>
 <h1>Manifesto do Fakenômetro</h1>
-<p class='sub' style='font-style:italic'>“Uma mentira contada mil vezes torna-se verdade.”</p>
-<p>Muitos veem nessa frase a grande inspiração das fake news. A ironia é que a frase, atribuída ao nefasto e abjeto Joseph Goebbels, ministro da Propaganda de Adolf Hitler, nunca foi dita por ele (ou, pelo menos, não há registro histórico de que a tenha dito). Ou seja: a mãe das fake news é, ela mesma, uma fake news!</p>
+<p><span class="gigante nc vis">“Uma mentira contada mil vezes torna-se verdade.”</span></p>
+<p>Muitos veem nessa frase a grande inspiração das fake news. A ironia é que a frase, atribuída ao nefasto e abjeto Joseph Goebbels, ministro da Propaganda de Adolf Hitler, nunca foi dita por ele (ou, pelo menos, não há registro histórico de que a tenha dito). Ou seja: <span class="grito">a mãe das fake news é, ela mesma, uma fake news!</span></p>
 <p>Vivemos hoje em um mundo onde a verdade é relativizada a todo momento. Uma “verdade” que surge amparada por aspas goza do direito de não precisar mais ser tão verdadeira.</p>
 <p>Essa “proteção” lhe dá uma licença poética, um prisma que, aos olhos e ouvidos dos espectadores, acomoda um resultado feito para agradá-los — ou, ao menos, para não lhes causar incômodo.</p>
 <p>Expressões como “a minha verdade” ou “a verdade dele” passam a ter um peso pessoal desproporcional ao que de fato é possível provar, atestar ou apoiar em alguma referência histórica.</p>
-<p>Nunca, na história da humanidade, a palavra “mentira” esteve tão em desuso quanto agora. Passou a ser usada apenas por crianças e para crianças. Nós, adultos, agora podemos ressignificar a verdade! O que no início pareceu confortável teve, com o tempo, efeitos profundamente prejudiciais à sociedade.</p>
-<p>A verdade, em essência, é feita de fatos, experiências ou acontecimentos sustentados, necessariamente, por evidências, provas, registros, ciência, matemática ou qualquer outro meio diante do qual o questionamento se torna insignificante.</p>
+<p><span class="grito">Nunca, na história da humanidade, a palavra “mentira” esteve tão em desuso quanto agora.</span> Passou a ser usada apenas por crianças e para crianças. Nós, adultos, agora podemos ressignificar a verdade! O que no início pareceu confortável teve, com o tempo, efeitos profundamente prejudiciais à sociedade.</p>
+<p>A verdade, em essência, é feita de fatos, experiências ou acontecimentos <span class="mt">sustentados, necessariamente, por evidências, provas, registros, ciência, matemática</span> ou qualquer outro meio diante do qual o questionamento se torna insignificante.</p>
 <p>A realidade que vivemos hoje é consequência de um acesso ilimitado à informação, multiplicado pelo surgimento e pela universalização da internet, e da sensação de que cada indivíduo agora tem liberdade de discurso e poder para distribuir informação.</p>
 <p>O que parecia o prelúdio de uma era de liberdade intelectual — em que todo o saber já não estava concentrado num grupo de privilegiados, nem era servido ao grande público por poucos grupos de mídia — passou a ser tratado primeiro como algo corriqueiro e acessível, depois banal e, por fim, vil.</p>
-<p>A informação e o conhecimento, antes privilégio de poucos, finalmente passaram a pertencer a todos. Mas essa conquista, por mais importante que seja para a humanidade, trouxe consigo um mal muito bem disfarçado: junto com o conhecimento, passamos a conviver com a manipulação da informação. Não uma manipulação feia e grosseira, e sim um conteúdo bem embasado, que apela às nossas crenças e aos nossos valores pessoais.</p>
+<p>A informação e o conhecimento, antes privilégio de poucos, finalmente passaram a pertencer a todos. Mas essa conquista, por mais importante que seja para a humanidade, trouxe consigo um mal muito bem disfarçado: junto com o conhecimento, passamos a conviver com a manipulação da informação. Não uma manipulação feia e grosseira, e sim <span class="mt">um conteúdo bem embasado, que apela às nossas crenças e aos nossos valores pessoais.</span></p>
 <p>Aplicativos de comunicação, redes sociais e tantas outras tecnologias nasceram com o intuito de nos aproximar, informar e entreter. Com o tempo, passaram a nos entregar, por meio de seus algoritmos, exatamente o que gostaríamos de ver e ouvir — porque assim atingiam seu propósito principal: prender a audiência.</p>
 <p>Longe de mim tratar a tecnologia como vilã! São inegáveis os benefícios que ela trouxe à humanidade. As ferramentas de tecnologia devem ser entendidas como negócios criados para prosperar; e, se a prosperidade delas depende da fidelidade da audiência, elas cumpriram seu objetivo.</p>
-<p>Contudo, a consequência disso é a formação de bolhas, um efeito sem precedentes na história. O que antes era motivado por necessidades básicas passa a ser uma escolha voluntária: ser ou estar apenas com quem pensa como você.</p>
+<p>Contudo, a consequência disso é a formação de bolhas, um efeito sem precedentes na história. O que antes era motivado por necessidades básicas passa a ser uma escolha voluntária: <span class="grito">ser ou estar apenas com quem pensa como você.</span></p>
 <p>Esse efeito da comunicação intrabolha, somado a manipulações crescentes, tem levado a sociedade a um redemoinho extremamente perigoso. Quando as pessoas só querem se comunicar com quem pensa como elas, qualquer informação dissonante — mesmo que verdadeira — passa a incomodar. Isso cria um funil de pensamento uníssono, que não traz benefício algum ao todo e afasta cada vez mais os seres humanos uns dos outros.</p>
-<p>Em tempos de rachas políticos extremos, as pessoas se surpreendem de verdade quando seu candidato ou candidata não é aclamado pelas multidões. Afinal, a verdade repetida à exaustão dentro da bolha ganhou tons de obviedade tão claros que parece impossível alguém pensar diferente — a não ser os idiotas que, por razões torpes ou por ignorância, discordam. É desse ódio que bebemos hoje!</p>
-<p>Todavia, o antídoto que mais nos apresentam hoje é a regulação das redes sociais. Regulação? Por quem? Pelo governo? Por qual governo? Por aquele que eu apoio ou por aquele que eu abomino?</p>
-<p>Uma solução biônica, que já nasce com metade da população contra ela, nunca será efetiva nem satisfatória. Talvez a independência do modelo de avaliação — em que nenhum ser humano, sujeito a vieses, decida o que é certo ou errado — seja o ponto de equilíbrio que buscamos hoje. Desde que, e somente se, esse modelo for agnóstico e auditável, para que dúvidas e acusações deixem de ocupar o centro das discussões.</p>
-<p>O Fakenômetro foi concebido com um único objetivo, e ele não é mostrar a verdade a ninguém: é mostrar a mentira a todos. Porque, se alguns ainda podem acreditar na “minha verdade”, eu ouso desafiar quem tem coragem de propagar “a minha mentira” de forma consciente e confortável. A mentira pode ser mais doce e menos indigesta, mas a verdade é viciante.</p>
-<p style='color:var(--apagado)'><i>Este texto foi escrito por uma pessoa, não por inteligência artificial.</i></p>
-<p class="fim"><a href="https://ig.me/m/fakenometro">Mandar uma notícia para checar</a> · <a href="/">fakenometro.com.br</a></p>
-</main></body></html>
+<p>Em tempos de rachas políticos extremos, as pessoas se surpreendem de verdade quando seu candidato ou candidata não é aclamado pelas multidões. Afinal, a verdade repetida à exaustão dentro da bolha ganhou tons de obviedade tão claros que parece impossível alguém pensar diferente — a não ser os idiotas que, por razões torpes ou por ignorância, discordam. <span class="grito">É desse ódio que bebemos hoje!</span></p>
+<p>Todavia, o antídoto que mais nos apresentam hoje é a regulação das redes sociais. <span class="grito">Regulação? Por quem? Pelo governo? Por qual governo? Por aquele que eu apoio ou por aquele que eu abomino?</span></p>
+<p>Uma solução biônica, que já nasce com metade da população contra ela, nunca será efetiva nem satisfatória. Talvez a independência do modelo de avaliação — em que nenhum ser humano, sujeito a vieses, decida o que é certo ou errado — seja o ponto de equilíbrio que buscamos hoje. Desde que, e somente se, esse modelo for <span class="mt">agnóstico e auditável</span>, para que dúvidas e acusações deixem de ocupar o centro das discussões.</p>
+<p>O Fakenômetro foi concebido com um único objetivo, e ele não é mostrar a verdade a ninguém: é <span class="gigante mt">mostrar a mentira a todos.</span> Porque, se alguns ainda podem acreditar na “minha verdade”, eu ouso desafiar quem tem coragem de propagar “a minha mentira” de forma consciente e confortável. A mentira pode ser mais doce e menos indigesta, mas <span class="gigante">a verdade é viciante.</span></p>
+<p class='assina'>Este texto foi escrito por uma pessoa, não por inteligência artificial.</p>
+<p class="fim"><a href="https://wa.me/5511925338619">Mandar no WhatsApp</a> · <a href="https://ig.me/m/fakenometro">Mandar no Instagram</a> · <a href="/">fakenometro.com.br</a></p>
+</main>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("vis");io.unobserve(x.target)}}),{threshold:0});
+document.querySelectorAll(".mt,.nc,.grito,.gigante").forEach(e=>io.observe(e));
+</script>
+</body></html>
