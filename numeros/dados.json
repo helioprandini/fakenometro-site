@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-10-31T15:05:45",
- "seguidores": 260,
+ "atualizado_em": "2026-10-31T15:37:48",
+ "seguidores": 261,
  "posts": 33,
  "t28": {
-  "views": 49108,
+  "views": 49223,
   "accounts_engaged": 547,
   "total_interactions": 1138,
-  "profile_views": 1458,
-  "likes": 815,
+  "profile_views": 1462,
+  "likes": 816,
   "comments": 32,
   "shares": 93,
   "saves": 67,
@@ -125,16 +125,16 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 1049
+   "valor": 1110
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 9,
-   "alcance": 1044.1,
-   "views": 1720.4,
-   "compart": 1.9,
+   "alcance": 1046.3,
+   "views": 1724.9,
+   "compart": 2.0,
    "salvos": 3.2,
    "seguidores": 3.6,
    "visitas_perfil": 22.9
@@ -142,9 +142,9 @@
   {
    "grupo": "reels",
    "posts": 24,
-   "alcance": 602.6,
-   "views": 778.9,
-   "compart": 2.5,
+   "alcance": 606.0,
+   "views": 783.3,
+   "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -172,7 +172,7 @@
   {
    "views": 3828,
    "alcance": 2678,
-   "compart": 4,
+   "compart": 5,
    "formato": "carrossel",
    "quando": "2026-10-22",
    "link": "https://www.instagram.com/p/DezA5RkFn7b/",
@@ -197,8 +197,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2033,
-   "alcance": 1438,
+   "views": 2071,
+   "alcance": 1458,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-30",
