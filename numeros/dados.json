@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-10-31T15:37:48",
- "seguidores": 261,
+ "atualizado_em": "2026-10-31T16:42:58",
+ "seguidores": 263,
  "posts": 33,
  "t28": {
-  "views": 49223,
+  "views": 49605,
   "accounts_engaged": 547,
-  "total_interactions": 1138,
-  "profile_views": 1462,
-  "likes": 816,
+  "total_interactions": 1168,
+  "profile_views": 1467,
+  "likes": 846,
   "comments": 32,
   "shares": 93,
   "saves": 67,
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 1110
+   "valor": 1231
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 9,
-   "alcance": 1046.3,
-   "views": 1724.9,
+   "alcance": 1054.4,
+   "views": 1734.2,
    "compart": 2.0,
    "salvos": 3.2,
    "seguidores": 3.6,
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 24,
-   "alcance": 606.0,
-   "views": 783.3,
+   "alcance": 614.7,
+   "views": 793.3,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
@@ -152,7 +152,7 @@
  ],
  "top": [
   {
-   "views": 7015,
+   "views": 7016,
    "alcance": 5398,
    "compart": 33,
    "formato": "reels",
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3828,
+   "views": 3830,
    "alcance": 2678,
    "compart": 5,
    "formato": "carrossel",
@@ -179,7 +179,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3213,
+   "views": 3214,
    "alcance": 2170,
    "compart": 0,
    "formato": "reels",
@@ -188,7 +188,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2275,
+   "views": 2276,
    "alcance": 1567,
    "compart": 2,
    "formato": "carrossel",
@@ -197,8 +197,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2071,
-   "alcance": 1458,
+   "views": 2135,
+   "alcance": 1524,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-30",
