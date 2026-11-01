@@ -13,64 +13,47 @@
 <link rel="stylesheet" href="/debate/debate.css">
 <script src="/site.js" defer></script>
 </head><body>
-<header class="topo"><a class="marca" href="/">Fakenômetro</a><a href="/" aria-label="Início"><img src="/marca/icone-192.png" alt="" width="65" height="65"></a></header>
+<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
 <div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/" class="ativo">Eleição 2026</a><a href="/manifesto">Manifesto</a><a href="#contato">Contato</a>
+<a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/" class="ativo">Eleição 2026</a><a href="mailto:contato@fakenometro.com.br">Contato</a>
 </nav></div>
 <main>
-<section class="faixa justa f-roxa"><div class="miolo">
+<section class="capa"><div>
 <p class="etiqueta">Edição especial · Eleição 2026 · Debate da Globo, 23/10</p>
-<h1><span class="amar" data-conta="455">455</span> falas.<br>Uma régua.</h1>
+<h1><span data-conta="455">455</span> falas.<br>Uma régua.</h1>
 <p class="sub">Cada afirmação de fato de Lula e Flávio, conferida uma a uma, com fonte. Opinião e promessa não entram.</p>
 <p class="mao">a mesma para os dois</p>
-<nav class="abas"><a href="#placar">Quadradinhos</a><a href="#erros">Maiores erros</a><a href="#reels">Reels</a><a href="#temas">Temas</a><a href="#momentos">Momentos</a><a href="#todas">Todas as checagens</a></nav>
-</div></section>
+</div><div class="cx"><div class="detalhe" id="detalhe">Escolha um quadradinho.</div></div></section>
 
-<section class="faixa" id="placar" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">Cada quadradinho é uma fala</p>
-<h2>Toca e <span class="mt">vê a checagem.</span></h2>
+<section data-aba="Quadradinhos">
 <div class="placar" id="waffles"></div>
 <div class="legenda" id="legenda"></div>
-<div class="detalhe" id="detalhe">Escolha um quadradinho.</div>
 <p class="mao">sem prova não é mentira: é falta de fonte</p>
-</div></section>
+</section>
 
-<section class="faixa f-clara" id="erros" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">Com a mesma régua</p>
-<h2>Os maiores erros.</h2>
+<section data-aba="Maiores erros">
 <p class="fontes" id="criterio"></p>
 <div class="carrossel" id="lista-erros"></div>
-<p class="mao">arrasta →</p>
-</div></section>
+</section>
 
-<section class="faixa f-escura" id="reels" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">No Instagram</p>
-<h2>Viu o <span class="amar">vídeo?</span></h2>
+<section data-aba="Reels">
 <div class="carrossel"><a class="reel" href="https://www.instagram.com/reel/De4fR5sN_gu/"><img src="/marca/reels/25_debate_maiores.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De4e43nPzI9/"><img src="/marca/reels/26_debate_bets.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De5oO66syvd/"><img src="/marca/reels/20_debate_erros1.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De5okBHsenn/"><img src="/marca/reels/19_debate_erros2.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De5oz5cMKnF/"><img src="/marca/reels/18_debate_erros3.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De5ndp9sTS5/"><img src="/marca/reels/22_debate_meia1.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De5nztjs0mc/"><img src="/marca/reels/21_debate_meia2.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De7u0AfJtJp/"><img src="/marca/reels/16_stf_tse.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a><a class="reel" href="https://www.instagram.com/reel/De796_oJyzn/"><img src="/marca/reels/15_resultado.jpg" alt="Capa do Reels" loading="lazy" width="1080" height="1920"></a></div>
-</div></section>
+</section>
 
-<section class="faixa" id="numeros"><div class="miolo">
-<p class="etiqueta">Raio-X</p>
-<h2>Quem falou mais.</h2>
-<div class="grade" id="raio" style="margin-top:20px"></div>
-</div></section>
+<section data-aba="Raio-X">
+<div class="grade" id="raio"></div>
+</section>
 
-<section class="faixa f-roxa" id="temas" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">Do que eles falaram</p>
-<h2>Tema a tema.</h2>
-<div id="barras-temas" style="margin:18px 0 30px"></div>
+<section data-aba="Temas">
+<div id="barras-temas" style="margin:0 0 20px"></div>
 <div id="lista-versus"></div>
-</div></section>
+</section>
 
-<section class="faixa" id="momentos" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">Nas palavras deles</p>
-<h2>Momentos.</h2>
-<div class="carrossel" id="lista-momentos" style="margin-top:14px"></div>
-</div></section>
+<section data-aba="Momentos">
+<div class="carrossel" id="lista-momentos"></div>
+</section>
 
-<section class="faixa f-clara" id="todas" style="scroll-margin-top:50px"><div class="miolo">
-<p class="etiqueta">Biblioteca</p>
-<h2>Todas as checagens.</h2>
+<section data-aba="Todas as checagens">
 <div class="filtros">
   <select id="f-quem" aria-label="Candidato"><option value="">Os dois</option><option>Flávio</option><option>Lula</option></select>
   <select id="f-grupo" aria-label="Veredito"><option value="">Todos os vereditos</option><option value="verdade">Verdade</option><option value="em_parte">Em parte</option><option value="falso">Falso ou enganoso</option><option value="sem_prova">Sem prova</option></select>
@@ -81,7 +64,7 @@
 <div id="lista"></div>
 <button id="mais" class="botao sec" hidden>Mostrar mais</button>
 <details style="margin-top:32px"><summary>Como checamos</summary><div id="metodo"></div></details>
-</div></section>
+</section>
 </main>
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),num=x=>String(x).replace(".",",");
@@ -93,7 +76,7 @@ return `<div><div class="num-q">${q}</div><div class="fontes">${P[q].afirmacoes}
 $("legenda").innerHTML=GR.map(([g,n])=>`<span><i class="v-${g}"></i>${n}</span>`).join("");
 $("waffles").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll(".waffle .on").forEach(x=>x.classList.remove("on"));b.classList.add("on");$("detalhe").innerHTML=cartao(dados.itens.find(i=>i.n==b.dataset.n))})}
 function erros(){$("criterio").textContent=dados.erros.criterio;$("lista-erros").innerHTML=dados.erros.erros.map((e,i,a)=>{const f=e.rotulo==="FALSO";return `<div class="lamina ${f?"esc":""}"><div class="topo-l"><span>${esc(e.quem)} disse</span><span>${i+1}/${a.length}</span></div><div class="frase-l">“${esc(e.frase)}”</div>${f?'<div><span class="selo-f" style="font-size:30px">FAKE</span></div>':`<div class="mao" style="font-size:24px;margin:0">${esc(e.rotulo.toLowerCase())}.</div>`}<div class="mini">${esc(e.explica)}</div><div class="rod-l">Fonte: ${esc(e.fonte)}</div></div>`}).join("")}
-function raio(){const P=dados.por_candidato,ev=dados.eventos;$("raio").innerHTML=ORDEM.map(q=>`<div class="lamina sobe"><div class="topo-l"><span>${q}</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px">${num(P[q].minutos.toFixed(0))}</b><span>minutos de fala</span></div></div><div>${P[q].intervencoes} intervenções · ${P[q].palavras.toLocaleString("pt-BR")} palavras<br>${num(P[q].fatos_por_minuto)} afirmações de fato por minuto<br>${Math.round(100*P[q].sobre_adversario/(P[q].sobre_adversario+P[q].sobre_si))}% delas sobre o adversário</div></div>`).join("")+`<div class="lamina esc sobe"><div class="topo-l"><span>Mediador</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px" class="amar">${ev.tempo_esgotado}</b><span>vezes “tempo esgotado”</span></div></div><div>${num(ev.minutos_mediador)} minutos de fala</div></div>`}
+function raio(){const P=dados.por_candidato,ev=dados.eventos;$("raio").innerHTML=ORDEM.map(q=>`<div class="lamina sobe"><div class="topo-l"><span>${q}</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px">${num(P[q].minutos.toFixed(0))}</b><span>minutos de fala</span></div></div><div>${P[q].intervencoes} intervenções · ${P[q].palavras.toLocaleString("pt-BR")} palavras<br>${num(P[q].fatos_por_minuto)} afirmações de fato por minuto<br>${Math.round(100*P[q].sobre_adversario/(P[q].sobre_adversario+P[q].sobre_si))}% delas sobre o adversário</div></div>`).join("")+`<div class="lamina sobe"><div class="topo-l"><span>Mediador</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px" >${ev.tempo_esgotado}</b><span>vezes “tempo esgotado”</span></div></div><div>${num(ev.minutos_mediador)} minutos de fala</div></div>`}
 function temas(){const t=dados.temas.filter(([n])=>n!=="Outros").slice(0,8),m=Math.max(...t.flatMap(([,q])=>ORDEM.map(n=>q[n])));
 $("barras-temas").innerHTML=`<div class="barra-t"><span></span><b>Flávio</b><b>Lula</b></div>`+t.map(([n,q])=>`<div class="barra-t"><span>${esc(n)}</span>${ORDEM.map(o=>`<div class="b"><span style="width:${80*q[o]/m}%"></span>${q[o]}</div>`).join("")}</div>`).join("");
 $("lista-versus").innerHTML=dados.versus.map(v=>`<div class="versus"><h3>${esc(v.tema)}</h3><div class="lados">${ORDEM.map(q=>`<div><div class="q">${q}</div>${esc(v[q]||"Não falou deste tema.")}</div>`).join("")}</div></div>`).join("");
@@ -106,15 +89,5 @@ fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{dados=d;waffle
 [...new Set(d.itens.map(i=>i.tema))].sort().forEach(t=>$("f-tema").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
 ["f-quem","f-grupo","f-tema","f-busca"].forEach(id=>$(id).addEventListener("input",()=>{mostrar=30;lista()}));$("mais").addEventListener("click",()=>{mostrar+=30;lista()});lista();observar()});
 </script>
-<footer id="contato"><div>
-<h2>Manda pra gente.</h2>
-<div class="contatos">
-<a href="https://wa.me/5511925338619"><small>WhatsApp</small><b>(11) 92533-8619</b></a>
-<a href="https://ig.me/m/fakenometro"><small>Instagram</small><b>@fakenometro</b></a>
-<a href="mailto:contato@fakenometro.com.br"><small>E-mail</small><b>contato@fakenometro.com.br</b></a>
-</div>
-<p>É inteligência artificial e pode errar. Viu algo errado? Manda pra gente.</p>
-<p><a href="/manifesto">Manifesto</a> · <a href="/numeros/">Números</a> · <a href="/privacidade">Privacidade</a> · <a href="/exclusao-de-dados">Exclusão de dados</a> ·
-<a href="https://www.instagram.com/fakenometer/">In English: @fakenometer</a></p>
-<p>O Fakenômetro é um projeto brasileiro independente.</p>
-</div></footer></body></html>
+<footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
+<p><a href="/numeros/">Números</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
