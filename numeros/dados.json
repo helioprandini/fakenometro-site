@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-01T09:36:22",
- "seguidores": 265,
+ "atualizado_em": "2026-11-01T11:00:42",
+ "seguidores": 269,
  "posts": 36,
  "t28": {
-  "views": 51225,
+  "views": 51459,
   "accounts_engaged": 550,
-  "total_interactions": 1202,
-  "profile_views": 1499,
-  "likes": 871,
+  "total_interactions": 1205,
+  "profile_views": 1504,
+  "likes": 874,
   "comments": 32,
   "shares": 97,
   "saves": 68,
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 181
+   "valor": 264
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 875.3,
-   "views": 1440.5,
+   "alcance": 876.5,
+   "views": 1444.6,
    "compart": 1.7,
    "salvos": 2.6,
    "seguidores": 2.9,
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 627.6,
-   "views": 805.4,
+   "alcance": 631.7,
+   "views": 809.9,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
@@ -188,7 +188,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2276,
+   "views": 2277,
    "alcance": 1567,
    "compart": 2,
    "formato": "carrossel",
@@ -197,7 +197,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2223,
+   "views": 2226,
    "alcance": 1593,
    "compart": 2,
    "formato": "carrossel",
