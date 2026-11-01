@@ -15,7 +15,7 @@
 </head><body>
 <header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
 <div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="mailto:contato@fakenometro.com.br">Contato</a>
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="/contato/">Contato</a>
 </nav></div>
 <main>
 <section class="capa"><div>
@@ -46,7 +46,8 @@ document.addEventListener("pointerover",e=>{const b=e.target.closest(".colunas s
 fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{const t=d.t28,c=d.canais;
 document.getElementById("ig").innerHTML=tile(t.views,"visualizações "+per)+tile(d.seguidores,"seguidores")+tile(d.posts,"posts no feed")+tile(t.accounts_engaged,"contas engajadas "+per)+tile(t.shares,"compartilhamentos "+per)+tile(t.saves,"salvamentos "+per);
 document.getElementById("alcance").innerHTML=colunas(d.alcance.filter(x=>x.dia>="2026-10-17").map(x=>[x.dia,x.valor]),"contas alcançadas");
-document.getElementById("top").innerHTML=d.top.map((p,i)=>`<a class="lamina" href="${esc(p.link)}" style="text-decoration:none"><div class="topo-l"><span>${p.formato} · ${dm(p.quando)}</span></div><div class="frase-l">${esc(p.titulo||"Post")}</div><div><b style="font:850 28px Archivo,sans-serif">${N(p.views)}</b> visualizações</div><div class="rod-l">${N(p.alcance)} contas · ${N(p.compart)} compartilhamentos</div></a>`).join("");
+const corta=s=>s.length<90?s:s.slice(0,s.lastIndexOf(" "))+"…";
+document.getElementById("top").innerHTML=d.top.map((p,i)=>`<a class="lamina" href="${esc(p.link)}" style="text-decoration:none"><div class="topo-l"><span>${p.formato} · ${dm(p.quando)}</span></div><div class="frase-l">${esc(corta(p.titulo||"Post"))}</div><div><b style="font:850 28px Archivo,sans-serif">${N(p.views)}</b> visualizações</div><div class="rod-l">${N(p.alcance)} contas · ${N(p.compart)} compartilhamentos</div></a>`).join("");
 document.getElementById("cons").innerHTML=tile(d.total_publico,"consultas desde 20/10")+tile(c.instagram||0,"no direct")+tile(c.whatsapp||0,"no WhatsApp, desde 26/10")+tile(c.comentario||0,"nos comentários");
 document.getElementById("porDia").innerHTML=colunas(d.por_dia,"consultas");
 document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)}. Fonte: Instagram Insights (API oficial da Meta) e registro interno do robô. As consultas incluem testes da nossa equipe, que o registro não separa. O WhatsApp só tem contagem de consultas, sem alcance. A checagem em lote do debate não entra nas consultas.`;
