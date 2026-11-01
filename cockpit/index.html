@@ -66,6 +66,7 @@ nav.abas{display:flex;gap:6px;background:var(--cartao);border-radius:12px;paddin
 nav.abas button{flex:1;border:0;background:transparent;color:var(--apagado);font-weight:700;font-size:14px;padding:9px;border-radius:9px}
 .cartao.pd{margin-bottom:10px}.pd h2{font-size:14px;letter-spacing:.3px;margin:0 0 8px}.pd-item{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--linha)}
 .pd-item button{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid var(--apagado);background:transparent;color:var(--texto);padding:0;font-weight:800;line-height:1}
+.pd-com{margin-top:6px;padding:6px 10px;border-radius:8px;background:var(--linha);font-size:14px}.pd-com small{color:var(--apagado)}.pd-mais{display:flex;gap:14px;margin-top:6px}.pd-item .pd-mais button{width:auto;height:auto;border:0;border-radius:0;color:var(--apagado);font-size:13px;font-weight:600;text-decoration:underline}
 .pd-feita{color:var(--apagado);text-decoration:line-through}.pd-add{display:flex;gap:8px;margin-top:10px}.pd-add input{flex:1;min-width:0;border:1px solid var(--linha);border-radius:10px;background:transparent;color:var(--texto);padding:10px;font-size:16px}
 .pd-add button,.pd-novo{border:0;border-radius:10px;background:var(--amarelo);color:#111;font-weight:800;padding:10px 14px}.pd details{margin-top:8px;color:var(--apagado);font-size:13px}
 @media (max-width:420px){nav.abas button{font-size:13px;padding:9px 3px}}
@@ -280,7 +281,7 @@ async function pedirPend(caminho, corpo){
 }
 async function carregarPend(){ try{ await pedirPend(""); }catch(e){ toast("Não consegui abrir as pendências"); } }
 function desenharPend(){
-  const linha = (i, feita) => `<div class="pd-item"><button aria-label="${feita ? "Desfazer" : "Concluir"}" onclick="marcarPend(${i.id},'${feita ? "desfazer" : "feita"}')">${feita ? "✓" : ""}</button><div class="${feita ? "pd-feita" : ""}" style="flex:1;min-width:0">${esc(i.texto)}</div></div>`;
+  const linha = (i, feita) => `<div class="pd-item"><button aria-label="${feita ? "Desfazer" : "Concluir"}" onclick="marcarPend(${i.id},'${feita ? "desfazer" : "feita"}')">${feita ? "✓" : ""}</button><div style="flex:1;min-width:0"><div class="${feita ? "pd-feita" : ""}">${esc(i.texto)}</div>${(i.comentarios || []).map(c => `<div class="pd-com">${esc(c.texto)}<small> · ${esc(c.quem)}, ${fmtPend(c.quando)}</small></div>`).join("")}<div class="pd-mais"><button onclick="editarPend(${i.id})">Editar</button><button onclick="comentarPend(${i.id})">Comentar</button></div></div></div>`;
   $("pend-quadros").innerHTML = pendQuadros.map((q, n) => {
     const abertas = q.itens.filter(i => !i.feita), feitas = q.itens.filter(i => i.feita);
     return `<div class="cartao pd"><h2>${esc(q.nome)} · ${abertas.length}</h2>${abertas.map(i => linha(i, false)).join("")}${abertas.length ? "" : '<div class="sub">Nada pendente.</div>'}
@@ -293,6 +294,16 @@ async function addPend(n){
   try{ await pedirPend("", new URLSearchParams({quadro: pendQuadros[n].nome, texto})); }catch(e){ toast("Não consegui anotar"); }
 }
 async function marcarPend(id, acao){ try{ await pedirPend(`/${id}/${acao}`, new URLSearchParams()); }catch(e){ toast("Não consegui marcar"); } }
+const fmtPend = q => (q || "").slice(8, 10) + "/" + (q || "").slice(5, 7) + " " + (q || "").slice(11, 16);
+const achaPend = id => pendQuadros.flatMap(q => q.itens).find(i => i.id === id);
+async function editarPend(id){
+  const texto = (prompt("Editar pendência", achaPend(id).texto) || "").trim(); if (!texto) return;
+  try{ await pedirPend(`/${id}/editar`, new URLSearchParams({texto})); }catch(e){ toast("Não consegui editar"); }
+}
+async function comentarPend(id){
+  const texto = (prompt("Comentário") || "").trim(); if (!texto) return;
+  try{ await pedirPend(`/${id}/comentar`, new URLSearchParams({texto})); }catch(e){ toast("Não consegui comentar"); }
+}
 async function novoQuadro(){
   const nome = (prompt("Nome do quadro novo") || "").trim(); if (!nome) return;
   try{ await pedirPend("", new URLSearchParams({quadro: nome})); }catch(e){ toast("Não consegui criar"); }
