@@ -15,9 +15,9 @@
 *{box-sizing:border-box}html,body{height:100%;margin:0}body{background:#F3F1EC;color:#1C1C1C;font:500 16px/1.4 Schibsted,sans-serif;display:flex;flex-direction:column;height:100dvh;overflow:hidden}
 .top{display:flex;justify-content:center;align-items:center;gap:9px;padding:12px 16px 8px;font:700 32px Jost;flex:none}.top img{width:40px;height:40px;border-radius:9px}
 .mn{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;flex:none;padding:0 12px 10px;font:800 13px Archivo}.mn a{color:#1C1C1C;background:#fff;border:1.5px solid #1C1C1C;border-radius:20px;padding:5px 12px;text-decoration:none}
-main{flex:1;min-height:0;display:grid;grid-template-columns:1.2fr 1fr;gap:38px;max-width:1160px;width:100%;margin:0 auto;padding:12px 20px;align-items:center}
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:38px;max-width:1160px;width:100%;margin:0 auto;padding:12px 20px;align-items:center}
 h1{font:850 clamp(30px,4.15vw,54px)/1.14 Archivo;font-stretch:72%;margin:0 0 12px;letter-spacing:-.01em;white-space:nowrap}
-.fx{display:inline-flex;gap:.05em;vertical-align:.03em}.fx i{position:relative;display:inline-block;width:.6em;height:1.06em;line-height:1.06em;text-align:center;font-style:normal;background:#1C1C1C;color:#FFE45C;border-radius:.07em;font-stretch:80%}.fx i:after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#F3F1EC}
+.fxc{display:inline-block;min-width:6.1em}.fx{display:inline-flex;gap:.05em;vertical-align:.03em}.fx i{position:relative;display:inline-block;width:.6em;height:1.06em;line-height:1.06em;text-align:center;font-style:normal;background:#1C1C1C;color:#FFE45C;border-radius:.07em;font-stretch:80%}.fx i:after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#F3F1EC}
 .fr0{font-size:clamp(17px,1.6vw,20px);margin:0 0 18px}.bt{display:inline-block;background:#1C1C1C;color:#F3F1EC;font:800 15px Archivo;padding:11px 16px;text-decoration:none}
 .cx{background:#FFFDF8;border:1px solid #CFC9BB;padding:clamp(16px,2vw,26px)}.fr{font:850 clamp(32px,3.9vw,46px)/1.12 Archivo;font-stretch:72%}.mt{background:#FFE45C;padding:0 .08em}
 .pq2{font-size:15px;margin:14px 0 0}.mao{font:400 clamp(19px,2vw,24px)/1.2 Marker;margin:14px 0 0}.cx small{display:block;font-size:11px;color:#6A6152;margin-top:12px}
@@ -25,7 +25,7 @@ h1{font:850 clamp(30px,4.15vw,54px)/1.14 Archivo;font-stretch:72%;margin:0 0 12p
 @media(max-width:760px){main{grid-template-columns:1fr;gap:14px;align-content:center;padding:4px 16px}h1{font-size:7.6vw}.fr0{font-size:15px;margin-bottom:12px}.fr{font-size:31px}.pq2{font-size:14px;margin-top:9px}.mao{margin-top:9px;font-size:18px}.bt{padding:10px 14px}}</style></head><body>
 <header class="top"><img src="/marca/icone-192.png" alt="">Fakenômetro</header>
 <nav class="mn"><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="mailto:contato@fakenometro.com.br">Contato</a></nav>
-<main><div><h1>A mentira tem pressa.<br>A gente tem <span class="fx" id="fx" aria-label="fonte"><i>f</i><i>o</i><i>n</i><i>t</i><i>e</i></span>.</h1>
+<main><div><h1>A mentira tem pressa.<br>A gente tem <span class="fxc"><span class="fx" id="fx" aria-label="fonte"><i>f</i><i>o</i><i>n</i><i>t</i><i>e</i></span>.</span></h1>
 <p class="fr0">Boato e golpe vivem da urgência. Encaminha para a nossa IA: ela confere antes de você repassar ou pagar.</p>
 <a class="bt" href="https://wa.me/5511925338619">Testar no WhatsApp</a></div>
 <div class="cx"><div class="fr">Em <span class="mt"><span id="dias">15</span> dias</span> de vida,<br><span id="vis">51.779</span> visualizações.</div><p class="pq2"><span id="seg">275</span> seguidores e <span id="cons">332</span> consultas ao robô até agora.</p><p class="mao">grupo de WhatsApp não é bibliografia</p><small>Consultas incluem testes da equipe.</small></div></main>
@@ -34,9 +34,9 @@ h1{font:850 clamp(30px,4.15vw,54px)/1.14 Archivo;font-stretch:72%;margin:0 0 12p
 const P=["fonte","prova","documento","dado","registro","evidência"],F=document.getElementById("fx"),L="abcdefghijlmnoprstuvxz";let n=0;
 const calmo=matchMedia("(prefers-reduced-motion:reduce)").matches;
 function mostra(p){F.setAttribute("aria-label",p);if(calmo){F.innerHTML=[...p].map(c=>`<i>${c}</i>`).join("");return}
-F.innerHTML=[...p].map(()=>"<i></i>").join("");[...F.children].forEach((c,k)=>{let g=0;const para=7+k*3;const t=setInterval(()=>{g++;if(g>=para){c.textContent=p[k];clearInterval(t)}else c.textContent=L[Math.random()*L.length|0]},55)})}
-function roda(){n=(n+1)%P.length;mostra(P[n]);setTimeout(roda,P[n]==="fonte"?4500:2400)}
-setTimeout(roda,3500);
+F.innerHTML=[...p].map(()=>`<i>${L[Math.random()*L.length|0]}</i>`).join("");[...F.children].forEach((c,k)=>{let g=0;const para=4+k*2;const t=setInterval(()=>{g++;if(g>=para){c.textContent=p[k];clearInterval(t)}else c.textContent=L[Math.random()*L.length|0]},35)})}
+function roda(){n=(n+1)%P.length;mostra(P[n]);setTimeout(roda,P[n]==="fonte"?3000:1500)}
+setTimeout(roda,2500);
 const h=new Date(),e=i=>document.getElementById(i),N=x=>Math.round(x).toLocaleString("pt-BR");
 e("dias").textContent=Math.floor((Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())-Date.UTC(2026,9,17))/864e5);
 fetch("/numeros/dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{e("vis").textContent=N(d.t28.views);e("seg").textContent=N(d.seguidores);e("cons").textContent=N(d.total_publico)}).catch(()=>{});
