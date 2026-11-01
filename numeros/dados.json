@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-10-31T23:38:01",
+ "atualizado_em": "2026-11-01T00:43:56",
  "seguidores": 264,
  "posts": 35,
  "t28": {
-  "views": 50643,
+  "views": 50727,
   "accounts_engaged": 550,
   "total_interactions": 1198,
-  "profile_views": 1484,
+  "profile_views": 1485,
   "likes": 867,
   "comments": 32,
   "shares": 97,
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 1749
+   "valor": 1782
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 10,
-   "alcance": 960.2,
-   "views": 1577.9,
+   "alcance": 960.6,
+   "views": 1579.0,
    "compart": 1.9,
    "salvos": 2.9,
    "seguidores": 3.2,
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 615.4,
-   "views": 790.7,
+   "alcance": 617.4,
+   "views": 793.2,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
@@ -197,7 +197,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2220,
+   "views": 2222,
    "alcance": 1593,
    "compart": 2,
    "formato": "carrossel",
@@ -207,7 +207,7 @@
   }
  ],
  "canais": {
-  "instagram": 210,
+  "instagram": 212,
   "comentario": 71,
   "whatsapp": 36
  },
@@ -259,8 +259,12 @@
   [
    "2026-10-31",
    21
+  ],
+  [
+   "2026-11-01",
+   2
   ]
  ],
  "repositorio": 24,
- "total_publico": 317
+ "total_publico": 319
 }
