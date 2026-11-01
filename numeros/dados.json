@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-01T16:46:09",
+ "atualizado_em": "2026-11-01T17:56:07",
  "seguidores": 278,
  "posts": 36,
  "t28": {
-  "views": 51865,
+  "views": 51899,
   "accounts_engaged": 551,
-  "total_interactions": 1222,
-  "profile_views": 1533,
-  "likes": 887,
+  "total_interactions": 1225,
+  "profile_views": 1538,
+  "likes": 890,
   "comments": 32,
   "shares": 99,
   "saves": 68,
@@ -125,16 +125,16 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 383
+   "valor": 393
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 881.9,
-   "views": 1458.0,
-   "compart": 1.7,
+   "alcance": 882.3,
+   "views": 1458.7,
+   "compart": 1.9,
    "salvos": 2.6,
    "seguidores": 2.9,
    "visitas_perfil": 19.0
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 635.9,
-   "views": 815.6,
+   "alcance": 636.2,
+   "views": 815.7,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
@@ -172,7 +172,7 @@
   {
    "views": 3854,
    "alcance": 2685,
-   "compart": 5,
+   "compart": 7,
    "formato": "carrossel",
    "quando": "2026-10-22",
    "link": "https://www.instagram.com/p/DezA5RkFn7b/",
@@ -207,7 +207,7 @@
   }
  ],
  "canais": {
-  "instagram": 224,
+  "instagram": 225,
   "comentario": 72,
   "whatsapp": 41
  },
@@ -262,9 +262,9 @@
   ],
   [
    "2026-11-01",
-   20
+   21
   ]
  ],
  "repositorio": 25,
- "total_publico": 337
+ "total_publico": 338
 }
