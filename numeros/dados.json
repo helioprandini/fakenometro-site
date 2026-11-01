@@ -1,9 +1,9 @@
 {
- "atualizado_em": "2026-11-01T20:10:48",
+ "atualizado_em": "2026-11-01T20:49:01",
  "seguidores": 280,
  "posts": 37,
  "t28": {
-  "views": 52017,
+  "views": 52067,
   "accounts_engaged": 551,
   "total_interactions": 1242,
   "profile_views": 1543,
@@ -125,15 +125,130 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 406
+   "valor": 408
   }
  ],
+ "seguidores_serie": [
+  {
+   "dia": "2026-10-05",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-06",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-07",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-08",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-09",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-10",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-11",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-12",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-13",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-14",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-15",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-16",
+   "valor": 1
+  },
+  {
+   "dia": "2026-10-17",
+   "valor": 2
+  },
+  {
+   "dia": "2026-10-18",
+   "valor": 4
+  },
+  {
+   "dia": "2026-10-19",
+   "valor": 1
+  },
+  {
+   "dia": "2026-10-20",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-21",
+   "valor": 2
+  },
+  {
+   "dia": "2026-10-22",
+   "valor": 2
+  },
+  {
+   "dia": "2026-10-23",
+   "valor": 3
+  },
+  {
+   "dia": "2026-10-24",
+   "valor": 98
+  },
+  {
+   "dia": "2026-10-25",
+   "valor": 28
+  },
+  {
+   "dia": "2026-10-26",
+   "valor": 39
+  },
+  {
+   "dia": "2026-10-27",
+   "valor": 6
+  },
+  {
+   "dia": "2026-10-28",
+   "valor": 5
+  },
+  {
+   "dia": "2026-10-29",
+   "valor": 0
+  },
+  {
+   "dia": "2026-10-30",
+   "valor": 33
+  },
+  {
+   "dia": "2026-10-31",
+   "valor": 43
+  },
+  {
+   "dia": "2026-11-01",
+   "valor": 0
+  }
+ ],
+ "cliques_whatsapp": {},
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 883.1,
-   "views": 1461.1,
+   "alcance": 883.3,
+   "views": 1461.7,
    "compart": 1.9,
    "salvos": 2.6,
    "seguidores": 2.9,
@@ -142,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 26,
-   "alcance": 612.5,
-   "views": 785.7,
+   "alcance": 612.7,
+   "views": 786.2,
    "compart": 2.5,
    "salvos": 1.3,
    "seguidores": null,
@@ -225,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 229,
+  "instagram": 231,
   "comentario": 73,
   "whatsapp": 43
  },
@@ -280,9 +395,9 @@
   ],
   [
    "2026-11-01",
-   28
+   30
   ]
  ],
  "repositorio": 25,
- "total_publico": 345
+ "total_publico": 347
 }

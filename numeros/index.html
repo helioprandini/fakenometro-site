@@ -15,7 +15,7 @@
 </head><body>
 <header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
 <div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="/contato/">Contato</a>
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/" class="ativo">Números</a><a href="/contato/">Contato</a>
 </nav></div>
 <main>
 <section class="capa"><div>
@@ -29,6 +29,9 @@
 <section data-aba="Consultas ao robô">
 <div class="grande-n" id="cons"></div>
 <div class="painel"><p class="etiqueta" style="margin:0">Consultas por dia</p><div id="porDia"></div></div>
+</section>
+<section data-aba="Por semana">
+<div class="painel"><p class="etiqueta" style="margin:0">Semana a semana, contando do dia em que nascemos</p><div id="semanas"></div></div>
 </section>
 <section data-aba="Os mais vistos">
 <div class="carrossel" id="top"></div>
@@ -46,6 +49,10 @@ document.addEventListener("pointerover",e=>{const b=e.target.closest(".colunas s
 fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{const t=d.t28,c=d.canais;
 document.getElementById("ig").innerHTML=tile(t.views,"visualizações "+per)+tile(d.seguidores,"seguidores")+tile(d.posts,"posts no feed")+tile(t.accounts_engaged,"contas engajadas "+per)+tile(t.shares,"compartilhamentos "+per)+tile(t.saves,"salvamentos "+per);
 document.getElementById("alcance").innerHTML=colunas(d.alcance.filter(x=>x.dia>="2026-10-17").map(x=>[x.dia,x.valor]),"contas alcançadas");
+const sem=s=>{const m={};s.forEach(([dd,v])=>{const k=Math.floor((Date.parse(dd+"T00:00Z")-NASC)/6048e5);if(k>=0)m[k]=(m[k]||0)+v});return m};
+const aS=sem(d.alcance.map(x=>[x.dia,x.valor])),cS=sem(d.por_dia),fS=sem((d.seguidores_serie||[]).map(x=>[x.dia,x.valor])),kS=sem(Object.entries(d.cliques_whatsapp||{})),tot=Math.floor(dias/7);
+const lin=[];for(let k=0;k<=tot;k++){const ini=new Date(NASC+k*6048e5),fim=new Date(NASC+(k*7+6)*864e5),f=x=>x.toISOString().slice(0,10);lin.push(`<tr><td>${dm(f(ini))} a ${dm(f(fim))}${k===tot?" (em andamento)":""}</td><td>${N(aS[k]||0)}</td><td>${N(fS[k]||0)}</td><td>${N(cS[k]||0)}</td><td>${N(kS[k]||0)}</td></tr>`)}
+document.getElementById("semanas").innerHTML=`<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:clamp(12px,3.4vw,15px);margin-top:10px"><thead><tr style="text-align:left"><th>Semana</th><th>Alcance</th><th>Seguidores</th><th>Consultas</th><th>WhatsApp</th></tr></thead><tbody>${lin.join("")}</tbody></table></div><p class="fontes">Alcance: contas alcançadas, somando os dias; a mesma conta conta de novo em outro dia. Seguidores: novos na semana. WhatsApp: toques no botão do site, contados desde 01/11/2026.</p>`;
 const corta=s=>s.length<90?s:s.slice(0,s.lastIndexOf(" "))+"…";
 document.getElementById("top").innerHTML=d.top.map((p,i)=>`<a class="lamina" href="${esc(p.link)}" style="text-decoration:none"><div class="topo-l"><span>${p.formato} · ${dm(p.quando)}</span></div><div class="frase-l">${esc(corta(p.titulo||"Post"))}</div><div><b style="font:850 28px Archivo,sans-serif">${N(p.views)}</b> visualizações</div><div class="rod-l">${N(p.alcance)} contas · ${N(p.compart)} compartilhamentos</div></a>`).join("");
 document.getElementById("cons").innerHTML=tile(d.total_publico,"consultas desde 20/10")+tile(c.instagram||0,"no direct")+tile(c.whatsapp||0,"no WhatsApp, desde 26/10")+tile(c.comentario||0,"nos comentários");
@@ -54,4 +61,4 @@ document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)
 observar()});
 </script>
 <footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
-<p><a href="/numeros/">Números</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
+<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>

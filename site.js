@@ -8,3 +8,6 @@ observar()})();
 (function(){const S=[...document.querySelectorAll("[data-aba]")];if(!S.length)return;const N=document.createElement("nav");N.className="abas-p";N.setAttribute("aria-label","Partes da página");
 const vai=i=>{S.forEach((s,k)=>s.hidden=k!==i);[...N.children].forEach((b,k)=>{b.classList.toggle("on",k===i);b.setAttribute("aria-pressed",k===i)})};
 S.forEach((s,i)=>{const b=document.createElement("button");b.textContent=s.dataset.aba;b.onclick=()=>vai(i);N.append(b)});S[0].before(N);vai(0)})();
+
+// Conta o toque no botão do WhatsApp, sem guardar nada de quem tocou (Roberta, 1/11).
+document.addEventListener("click",e=>{if(e.target.closest('a[href*="wa.me/5511925338619"]'))try{navigator.sendBeacon("https://protozoan-enjoyer-poncho.ngrok-free.dev/site/clique")}catch(_){}});

@@ -4,8 +4,8 @@
 <meta name="color-scheme" content="light only">
 <title>Fakenômetro</title>
 <meta name="facebook-domain-verification" content="pnf70wn1ixz6p786dz6t7g1vquiz16">
-<meta name="description" content="Boato e golpe vivem da urgência. Encaminha para a nossa IA: ela confere antes de você repassar ou pagar.">
-<meta property="og:title" content="Fakenômetro"><meta property="og:description" content="Boato e golpe vivem da urgência. Encaminha para a nossa IA: ela confere antes de você repassar ou pagar.">
+<meta name="description" content="Boato e golpe vivem da urgência. Manda para a nossa IA antes de repassar ou pagar: ela procura as fontes e mostra o que achou. É grátis.">
+<meta property="og:title" content="Fakenômetro"><meta property="og:description" content="Boato e golpe vivem da urgência. Manda para a nossa IA antes de repassar ou pagar: ela procura as fontes e mostra o que achou. É grátis.">
 <meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
 <link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
 <style>@font-face{font-family:Archivo;src:url(/marca/fontes/archivo.woff2) format("woff2");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
@@ -25,12 +25,12 @@ h1{font:850 clamp(30px,4.15vw,54px)/1.14 Archivo;font-stretch:72%;margin:0 0 12p
 @media(max-width:600px){.mn{flex-wrap:nowrap;gap:3px;padding-left:6px;padding-right:6px}.mn a{font-size:min(3.1vw,13px);font-stretch:75%;padding:5px min(1.6vw,9px);white-space:nowrap}}
 @media(max-width:760px){main{grid-template-columns:1fr;gap:14px;align-content:center;padding:4px 16px}h1{font-size:7.6vw}.fr0{font-size:15px;margin-bottom:12px}.fr{font-size:31px}.pq2{font-size:14px;margin-top:9px}.mao{margin-top:9px;font-size:18px}.bt{padding:10px 14px}}</style></head><body>
 <header class="top"><img src="/marca/icone-192.png" alt="">Fakenômetro</header>
-<nav class="mn"><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/">Eleição 2026</a><a href="/contato/">Contato</a></nav>
+<nav class="mn"><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/">Números</a><a href="/contato/">Contato</a></nav>
 <main><div><h1>A mentira tem pressa.<br>A gente tem <span class="fxc"><span class="fx" id="fx" aria-label="fonte"><i>f</i><i>o</i><i>n</i><i>t</i><i>e</i></span>.</span></h1>
-<p class="fr0">Boato e golpe vivem da urgência. Encaminha para a nossa IA: ela confere antes de você repassar ou pagar.</p>
+<p class="fr0">Boato e golpe vivem da urgência. Manda para a nossa IA antes de repassar ou pagar: ela procura as fontes e mostra o que achou. É grátis.</p>
 <a class="bt" href="https://wa.me/5511925338619">Testar no WhatsApp</a></div>
-<div class="cx"><div class="fr">Em <span class="mt"><span id="dias">15</span> dias</span> de vida,<br><span id="vis">51.899</span> visualizações.</div><p class="pq2"><span id="seg">278</span> seguidores e <span id="cons">338</span> consultas ao robô até agora.</p><p class="mao">(grupo de WhatsApp não é bibliografia)</p><small>Consultas incluem testes da equipe.</small></div></main>
-<footer class="pe"><span>É inteligência artificial e pode errar.</span><a href="/numeros/">Números</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></footer>
+<div class="cx"><div class="fr">Em <span class="mt"><span id="dias">15</span> dias</span> de vida,<br><span id="vis">52.067</span> visualizações.</div><p class="pq2"><span id="seg">280</span> seguidores e <span id="cons">347</span> consultas ao robô até agora.</p><p class="mao">(grupo de WhatsApp não é bibliografia)</p><small>Consultas incluem testes da equipe.</small></div></main>
+<footer class="pe"><span>É inteligência artificial e pode errar.</span><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></footer>
 <script>
 const P=["fonte","prova","documento","dado","registro","evidência"],F=document.getElementById("fx"),L="abcdefghijlmnoprstuvxz";let n=0;
 const calmo=matchMedia("(prefers-reduced-motion:reduce)").matches;
@@ -38,6 +38,7 @@ function mostra(p){F.setAttribute("aria-label",p);if(calmo){F.innerHTML=[...p].m
 F.innerHTML=[...p].map(()=>`<i>${L[Math.random()*L.length|0]}</i>`).join("");[...F.children].forEach((c,k)=>{let g=0;const para=4+k*2;const t=setInterval(()=>{g++;if(g>=para){c.textContent=p[k];clearInterval(t)}else c.textContent=L[Math.random()*L.length|0]},35)})}
 function roda(){n=(n+1)%P.length;mostra(P[n]);setTimeout(roda,P[n]==="fonte"?3000:1500)}
 setTimeout(roda,2500);
+document.querySelector(".bt").addEventListener("click",()=>{try{navigator.sendBeacon("https://protozoan-enjoyer-poncho.ngrok-free.dev/site/clique")}catch(_){}});
 const h=new Date(),e=i=>document.getElementById(i),N=x=>Math.round(x).toLocaleString("pt-BR");
 e("dias").textContent=Math.floor((Date.UTC(h.getFullYear(),h.getMonth(),h.getDate())-Date.UTC(2026,9,17))/864e5);
 fetch("/numeros/dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{e("vis").textContent=N(d.t28.views);e("seg").textContent=N(d.seguidores);e("cons").textContent=N(d.total_publico)}).catch(()=>{});

@@ -15,7 +15,7 @@
 </head><body>
 <header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
 <div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/debate/" class="ativo">Eleição 2026</a><a href="/contato/">Contato</a>
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/">Números</a><a href="/contato/">Contato</a>
 </nav></div>
 <main>
 <section class="capa"><div>
@@ -90,4 +90,4 @@ fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{dados=d;waffle
 ["f-quem","f-grupo","f-tema","f-busca"].forEach(id=>$(id).addEventListener("input",()=>{mostrar=30;lista()}));$("mais").addEventListener("click",()=>{mostrar+=30;lista()});lista();observar()});
 </script>
 <footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
-<p><a href="/numeros/">Números</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
+<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
