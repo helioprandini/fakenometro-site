@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-01T13:38:18",
+ "atualizado_em": "2026-11-01T14:42:16",
  "seguidores": 276,
  "posts": 36,
  "t28": {
-  "views": 51681,
+  "views": 51738,
   "accounts_engaged": 550,
-  "total_interactions": 1208,
-  "profile_views": 1520,
-  "likes": 877,
+  "total_interactions": 1210,
+  "profile_views": 1525,
+  "likes": 879,
   "comments": 32,
   "shares": 97,
   "saves": 68,
@@ -125,25 +125,25 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 344
+   "valor": 350
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 879.4,
-   "views": 1451.7,
+   "alcance": 879.9,
+   "views": 1453.6,
    "compart": 1.7,
    "salvos": 2.6,
    "seguidores": 2.9,
-   "visitas_perfil": 18.7
+   "visitas_perfil": 18.8
   },
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 633.6,
-   "views": 812.5,
+   "alcance": 634.3,
+   "views": 813.3,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
@@ -152,8 +152,8 @@
  ],
  "top": [
   {
-   "views": 7016,
-   "alcance": 5398,
+   "views": 7017,
+   "alcance": 5399,
    "compart": 33,
    "formato": "reels",
    "quando": "2026-10-25",
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3843,
+   "views": 3850,
    "alcance": 2685,
    "compart": 5,
    "formato": "carrossel",
@@ -179,7 +179,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3215,
+   "views": 3216,
    "alcance": 2170,
    "compart": 0,
    "formato": "reels",
@@ -197,7 +197,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2226,
+   "views": 2227,
    "alcance": 1593,
    "compart": 2,
    "formato": "carrossel",
