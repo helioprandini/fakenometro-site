@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-01T19:38:34",
+ "atualizado_em": "2026-11-01T20:10:48",
  "seguidores": 280,
  "posts": 37,
  "t28": {
-  "views": 51956,
+  "views": 52017,
   "accounts_engaged": 551,
-  "total_interactions": 1230,
-  "profile_views": 1540,
-  "likes": 895,
+  "total_interactions": 1242,
+  "profile_views": 1543,
+  "likes": 907,
   "comments": 32,
   "shares": 99,
   "saves": 68,
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 403
+   "valor": 406
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 882.6,
-   "views": 1460.3,
+   "alcance": 883.1,
+   "views": 1461.1,
    "compart": 1.9,
    "salvos": 2.6,
    "seguidores": 2.9,
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 26,
-   "alcance": 612.1,
-   "views": 785.3,
+   "alcance": 612.5,
+   "views": 785.7,
    "compart": 2.5,
    "salvos": 1.3,
    "seguidores": null,
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3858,
+   "views": 3859,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -204,10 +204,28 @@
    "quando": "2026-10-30",
    "link": "https://www.instagram.com/p/DfHz_2slpMS/",
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
+  },
+  {
+   "views": 2187,
+   "alcance": 1877,
+   "compart": 16,
+   "formato": "reels",
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
+   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
+  },
+  {
+   "views": 1790,
+   "alcance": 1493,
+   "compart": 7,
+   "formato": "reels",
+   "quando": "2026-10-31",
+   "link": "https://www.instagram.com/reel/DfKTEDHESKb/",
+   "titulo": "2h24 da manhã. Você dormindo, e a \"Enel\" pensando em você."
   }
  ],
  "canais": {
-  "instagram": 228,
+  "instagram": 229,
   "comentario": 73,
   "whatsapp": 43
  },
@@ -262,9 +280,9 @@
   ],
   [
    "2026-11-01",
-   27
+   28
   ]
  ],
  "repositorio": 25,
- "total_publico": 344
+ "total_publico": 345
 }
