@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-10-31T19:30:14",
+ "atualizado_em": "2026-10-31T20:39:37",
  "seguidores": 263,
- "posts": 34,
+ "posts": 35,
  "t28": {
-  "views": 50142,
+  "views": 50260,
   "accounts_engaged": 550,
-  "total_interactions": 1184,
-  "profile_views": 1472,
-  "likes": 856,
+  "total_interactions": 1190,
+  "profile_views": 1473,
+  "likes": 860,
   "comments": 32,
-  "shares": 96,
+  "shares": 97,
   "saves": 67,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,15 +125,15 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 1472
+   "valor": 1528
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 10,
-   "alcance": 956.9,
-   "views": 1571.9,
+   "alcance": 957.7,
+   "views": 1573.6,
    "compart": 1.8,
    "salvos": 2.9,
    "seguidores": 3.2,
@@ -141,11 +141,11 @@
   },
   {
    "grupo": "reels",
-   "posts": 24,
-   "alcance": 628.0,
-   "views": 808.2,
+   "posts": 25,
+   "alcance": 605.9,
+   "views": 779.8,
    "compart": 2.6,
-   "salvos": 1.4,
+   "salvos": 1.3,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -170,7 +170,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3832,
+   "views": 3833,
    "alcance": 2681,
    "compart": 5,
    "formato": "carrossel",
@@ -207,7 +207,7 @@
   }
  ],
  "canais": {
-  "instagram": 206,
+  "instagram": 207,
   "comentario": 69,
   "whatsapp": 36
  },
@@ -258,9 +258,9 @@
   ],
   [
    "2026-10-31",
-   15
+   16
   ]
  ],
  "repositorio": 23,
- "total_publico": 311
+ "total_publico": 312
 }
