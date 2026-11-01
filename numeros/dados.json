@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-01T02:49:07",
+ "atualizado_em": "2026-11-01T03:52:16",
  "seguidores": 265,
  "posts": 35,
  "t28": {
-  "views": 50851,
+  "views": 50870,
   "accounts_engaged": 550,
   "total_interactions": 1198,
-  "profile_views": 1491,
+  "profile_views": 1492,
   "likes": 867,
   "comments": 32,
   "shares": 97,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-10-31",
-   "valor": 1825
+   "valor": 1840
   }
  ],
  "formatos": [
@@ -142,8 +142,8 @@
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 620.0,
-   "views": 795.8,
+   "alcance": 620.7,
+   "views": 796.6,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
