@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-01T08:35:09",
+ "atualizado_em": "2026-11-01T09:36:22",
  "seguidores": 265,
- "posts": 35,
+ "posts": 36,
  "t28": {
-  "views": 51130,
+  "views": 51225,
   "accounts_engaged": 550,
-  "total_interactions": 1199,
-  "profile_views": 1497,
-  "likes": 868,
+  "total_interactions": 1202,
+  "profile_views": 1499,
+  "likes": 871,
   "comments": 32,
   "shares": 97,
   "saves": 68,
@@ -125,25 +125,25 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 127
+   "valor": 181
   }
  ],
  "formatos": [
   {
    "grupo": "carrossel",
-   "posts": 10,
-   "alcance": 962.0,
-   "views": 1583.0,
-   "compart": 1.9,
-   "salvos": 2.9,
-   "seguidores": 3.2,
-   "visitas_perfil": 20.6
+   "posts": 11,
+   "alcance": 875.3,
+   "views": 1440.5,
+   "compart": 1.7,
+   "salvos": 2.6,
+   "seguidores": 2.9,
+   "visitas_perfil": 18.7
   },
   {
    "grupo": "reels",
    "posts": 25,
-   "alcance": 625.4,
-   "views": 803.4,
+   "alcance": 627.6,
+   "views": 805.4,
    "compart": 2.6,
    "salvos": 1.4,
    "seguidores": null,
