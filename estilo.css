@@ -14,7 +14,7 @@ a{color:inherit;text-underline-offset:3px}b,strong{font-weight:800}
 .marca{display:flex;align-items:center;gap:9px;font:700 32px Jost,sans-serif;text-decoration:none}
 .topo img{width:40px;height:40px;border-radius:9px;display:block}
 .menu{background:var(--papel)}
-.menu nav{max-width:1120px;margin:0 auto;padding:0 16px 12px;display:flex;flex-wrap:wrap;justify-content:center;gap:7px;font:800 13px Archivo,sans-serif;letter-spacing:.03em}
+.menu nav{max-width:1120px;margin:0 auto;padding:0 16px 12px;display:flex;flex-wrap:wrap;justify-content:center;gap:6px;font:800 13px Archivo,sans-serif}
 .menu a{text-decoration:none;color:var(--texto);background:#fff;border:1.5px solid var(--texto);border-radius:20px;padding:5px 12px}.menu a:hover{background:var(--amarelo)}
 .menu a.ativo{background:var(--amarelo)}
 .faixa{padding:clamp(30px,4.5vw,52px) 0}.faixa.justa{padding-top:clamp(22px,3vw,32px)}
