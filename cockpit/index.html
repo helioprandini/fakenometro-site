@@ -69,7 +69,7 @@ nav.abas button{flex:1;border:0;background:transparent;color:var(--apagado);font
 .pd-com{margin-top:6px;padding:6px 10px;border-radius:8px;background:var(--linha);font-size:14px}.pd-com small{color:var(--apagado)}.pd-mais{display:flex;gap:14px;margin-top:6px}.pd-item .pd-mais button{width:auto;height:auto;border:0;border-radius:0;color:var(--apagado);font-size:13px;font-weight:600;text-decoration:underline}
 .pd-feita{color:var(--apagado);text-decoration:line-through}.pd-add{display:flex;gap:8px;margin-top:10px}.pd-add input{flex:1;min-width:0;border:1px solid var(--linha);border-radius:10px;background:transparent;color:var(--texto);padding:10px;font-size:16px}
 .pd-add button,.pd-novo{border:0;border-radius:10px;background:var(--amarelo);color:#111;font-weight:800;padding:10px 14px}.pd details{margin-top:8px;color:var(--apagado);font-size:13px}
-@media (max-width:420px){nav.abas button{font-size:13px;padding:9px 3px}}
+@media (max-width:420px){nav.abas{gap:2px}nav.abas button{font-size:12px;padding:9px 2px;min-width:0}}
 nav.abas button.ativa{background:var(--linha);color:var(--texto)}
 .filtros{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
 .filtros button{border:1px solid var(--linha);background:transparent;color:var(--apagado);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600}
@@ -107,7 +107,9 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
-<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button></nav>
+<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button></nav>
+<div id="val-view" hidden><div id="amao"><div class="vazio">Carregando…</div></div></div>
+
 <div id="pend-view" hidden>
   <div id="pend-quadros"></div>
   <button class="pd-novo" onclick="novoQuadro()">+ Novo quadro</button>
@@ -127,7 +129,6 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 </div>
 <div id="cur-view" hidden>
   <div id="licoes"></div>
-  <div id="amao"></div>
   <div id="dia"></div>
   <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
   <div class="sub" style="margin:6px 2px 10px">Poste de cima para baixo: a ordem alterna um post que favorece a direita, um que favorece a esquerda e um neutro ou sem prova.</div>
@@ -266,11 +267,12 @@ const H = () => ({"X-Chave": chave, "ngrok-skip-browser-warning": "1"});
 let candidatos = [], filtroAtual = "pendente", abertos = {}, imgs = {};
 function toast(t){ const e = $("toast"); e.textContent = t; e.style.display = "block"; clearTimeout(e._t); e._t = setTimeout(() => e.style.display = "none", 2200); }
 function aba(qual){
-  $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur"; $("ig-view").hidden = qual !== "ig"; $("pend-view").hidden = qual !== "pend";
-  $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur"); $("t-ig").classList.toggle("ativa", qual === "ig"); $("t-pend").classList.toggle("ativa", qual === "pend");
+  $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur"; $("ig-view").hidden = qual !== "ig"; $("pend-view").hidden = qual !== "pend"; $("val-view").hidden = qual !== "val";
+  $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur"); $("t-ig").classList.toggle("ativa", qual === "ig"); $("t-pend").classList.toggle("ativa", qual === "pend"); $("t-val").classList.toggle("ativa", qual === "val");
   if (qual === "cur") carregarCur();
   if (qual === "ig") carregarIG(false);
   if (qual === "pend") carregarPend();
+  if (qual === "val") carregarAmao();
 }
 // ---------- Pendências: um quadro por frente de trabalho ----------
 let pendQuadros = [];
@@ -395,35 +397,64 @@ async function carregarLicoes(){
        if (JSON.stringify(novo) !== JSON.stringify(licoes)){ licoes = novo; desenharLicoes(); } }
   catch(e){}
 }
-// ---------- Responder à mão: o Instagram recusou a resposta pela API ----------
+// ---------- Validações: casos que pedem decisão (Roberta, 1º/11) ----------
 let amao = [];
+const CANAIS = {whatsapp: "WhatsApp", direct: "Direct", comentario: "Comentário"};
+function janelaAmao(m){
+  if (m.canal === "comentario") return "";
+  const resta = 24 - (Date.now() - new Date(m.em).getTime()) / 36e5;
+  return resta > 0 ? ` · faltam ${Math.ceil(resta)} h para a janela de resposta fechar` : " · janela de 24 h já fechou";
+}
+function blocoAmao(titulo, texto){ return texto ? `<div class="sub" style="margin-top:10px;font-weight:700">${titulo}</div><div style="white-space:pre-wrap">${esc(texto)}</div>` : ""; }
+function cartaoAmao(m, i){
+  const titulo = String(m.veredito || "").startsWith("CONTESTAÇÃO") ? "Contestação" : nomeRotulo(m.veredito);
+  const sobre = m.checagem || (String(m.veredito || "").startsWith("CONTESTAÇÃO:") ? m.veredito.slice(12).trim() : "");
+  let acoes;
+  if (m.canal === "comentario") acoes = `${m.permalink ? `<a class="b-insta" href="${esc(m.permalink)}">Abrir o post</a>` : ""}
+      <button class="b-copiar" onclick="copiarAmao(${i})">Copiar resposta</button>
+      <button class="b-feito" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Já respondi</button>`;
+  else acoes = `${m.pode_enviar ? `<button class="b-feito" onclick="enviarAmao(${i})">Enviar para a pessoa</button>` : ""}
+      <button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')" ${m.pode_enviar ? "" : 'style="grid-column:1/-1"'}>Revisar com o Theo</button>
+      <button class="b-desc" onclick="encerrarAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`;
+  return `<div class="cartao" style="margin-bottom:12px">
+    <div style="font-weight:800">${esc(titulo)}</div>
+    <div class="sub">${m.canal === "whatsapp" ? "" : esc(CANAIS[m.canal]) + " · "}${esc(m.autor)} · ${esc((m.em || "").slice(8, 10) + "/" + (m.em || "").slice(5, 7) + ", " + (m.em || "").slice(11, 16))}${janelaAmao(m)}</div>
+    ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">Marcado para revisão. O Theo recebe o aviso na sessão.${m.sessao ? ` <a href="${esc(m.sessao)}">Abrir a sessão</a>` : ""}</div>` : ""}
+    ${blocoAmao("O que a pessoa disse", m.pergunta)}
+    ${blocoAmao("Sobre a checagem", sobre)}
+    ${blocoAmao("O que ela mandou", m.recebido)}
+    ${blocoAmao("Resultado que demos", nomeRotulo(m.resultado || "") === "—" ? "" : nomeRotulo(m.resultado))}
+    ${m.resposta ? `<div class="sub" style="margin-top:10px;font-weight:700">Resposta proposta (pode editar)</div>
+      <textarea id="amao-t-${i}" rows="9" style="width:100%;box-sizing:border-box;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit">${esc(m.resposta)}</textarea>`
+      : blocoAmao("O que temos", m.texto)}
+    <div class="acoes">${acoes}</div></div>`;
+}
 function desenharAmao(){
-  const el = $("amao");
-  if (!amao.length){ el.innerHTML = ""; return; }
-  el.innerHTML = `<div class="cartao" style="margin-bottom:12px"><h2>💬 Responder à mão (${amao.length})</h2>
-    <div class="sub">O Instagram não deixou o robô responder nestes posts (o perfil limita quem comenta). Abra o post no app, <b>logado como @fakenometro</b>, responda o comentário que marcou a gente e cole o texto.</div>
-    ${amao.map((m, i) => `<div style="border-top:1px solid var(--linha);margin-top:10px;padding-top:10px">
-      <div style="font-weight:700">${esc(m.autor)} · ${esc(nomeRotulo(m.veredito))}</div>
-      <pre class="leg" style="margin:6px 0">${esc(m.texto)}</pre>
-      <div class="acoes">
-        <a class="b-insta" href="${esc(m.permalink)}">📷 Abrir o post</a>
-        <button class="b-copiar" onclick="copiarAmao(${i})">📋 Copiar resposta</button>
-        <button class="b-feito" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">✅ Respondi</button>
-      </div></div>`).join("")}</div>`;
+  $("val-n").textContent = amao.length ? ` (${amao.length})` : "";
+  $("amao").innerHTML = amao.length ? amao.map(cartaoAmao).join("") : '<div class="vazio">Nenhum caso esperando decisão.</div>';
 }
-function copiarAmao(i){ if (copiarTexto(amao[i].texto)) toast("Resposta copiada ✓"); else toast("Não consegui copiar: segure o texto"); }
-async function feitoAmao(c){
-  try{ const r = await fetch(`${BASE}/cockpit/a_mao/${c}/feito`, {method: "POST", headers: H()}); amao = (await r.json()).itens; desenharAmao(); toast("Marcado ✓"); }
-  catch(e){ toast("Não consegui marcar"); }
+function copiarAmao(i){ if (copiarTexto(amao[i].resposta || amao[i].texto)) toast("Resposta copiada"); else toast("Não consegui copiar: segure o texto"); }
+async function pedirAmao(c, acao, corpo){
+  const r = await fetch(`${BASE}/cockpit/a_mao/${encodeURIComponent(c)}/${acao}`, {method: "POST", headers: H(), body: corpo});
+  if (!r.ok) throw new Error(r.status);
+  const d = await r.json(); amao = d.itens; desenharAmao(); return d;
 }
+async function enviarAmao(i){
+  const m = amao[i], campo = $(`amao-t-${i}`);
+  if (!confirm(`Enviar esta resposta para ${m.autor}?`)) return;
+  try{ const d = await pedirAmao(m.comentario, "enviar", new URLSearchParams({texto: campo ? campo.value : ""})); toast(d.mensagem); }
+  catch(e){ toast("Não consegui enviar"); }
+}
+async function revisarAmao(c){ try{ await pedirAmao(c, "revisar"); toast("Marcado para revisão"); }catch(e){ toast("Não consegui marcar"); } }
+async function encerrarAmao(c){ if (!confirm("Encerrar sem responder?")) return; try{ await pedirAmao(c, "feito"); toast("Encerrado"); }catch(e){ toast("Não consegui encerrar"); } }
+async function feitoAmao(c){ try{ await pedirAmao(c, "feito"); toast("Marcado"); }catch(e){ toast("Não consegui marcar"); } }
 async function carregarAmao(){
   try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = (await r.json()).itens;
-       if (JSON.stringify(novo) !== JSON.stringify(amao)){ amao = novo; desenharAmao(); } }
+       if (JSON.stringify(novo) !== JSON.stringify(amao) && !(document.activeElement && document.activeElement.tagName === "TEXTAREA")){ amao = novo; desenharAmao(); } }
   catch(e){}
 }
 async function carregarCur(){
   carregarLicoes();
-  carregarAmao();
   carregarDia();
   try{
     const r = await fetch(BASE + "/cockpit/curadoria", {headers: H(), cache: "no-store"});
@@ -537,6 +568,7 @@ async function acao(id, qual){
   }catch(e){ toast("Não consegui salvar: sem conexão?"); }
 }
 setInterval(() => { if (!$("cur-view").hidden) carregarCur(); }, 30000);
+setInterval(carregarAmao, 30000);
 
 // ---------- Instagram: métricas da conta e dos posts, cruzadas com o Fakenômetro ----------
 const num = v => v == null ? "–" : Number(v).toLocaleString("pt-BR");
