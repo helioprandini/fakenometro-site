@@ -34,7 +34,7 @@
 <div class="painel"><p class="etiqueta" style="margin:0">Semana a semana, contando do dia em que nascemos</p><div id="semanas"></div></div>
 </section>
 <section data-aba="Os mais vistos">
-<div class="carrossel" id="top"></div>
+<div class="capas-top" id="top"></div>
 </section>
 <p class="fontes corpo-p" id="nota"></p>
 </main>
@@ -54,7 +54,7 @@ const aS=sem(d.alcance.map(x=>[x.dia,x.valor])),cS=sem(d.por_dia),fS=sem((d.segu
 const lin=[];for(let k=0;k<=tot;k++){const ini=new Date(NASC+k*6048e5),fim=new Date(NASC+(k*7+6)*864e5),f=x=>x.toISOString().slice(0,10);lin.push(`<tr><td>${dm(f(ini))} a ${dm(f(fim))}${k===tot?" (em andamento)":""}</td><td>${N(aS[k]||0)}</td><td>${N(fS[k]||0)}</td><td>${N(cS[k]||0)}</td><td>${N(kS[k]||0)}</td></tr>`)}
 document.getElementById("semanas").innerHTML=`<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:clamp(12px,3.4vw,15px);margin-top:10px"><thead><tr style="text-align:left"><th>Semana</th><th>Alcance</th><th>Seguidores</th><th>Consultas</th><th>WhatsApp</th></tr></thead><tbody>${lin.join("")}</tbody></table></div><p class="fontes">Alcance: contas alcançadas, somando os dias; a mesma conta conta de novo em outro dia. Seguidores: novos na semana. WhatsApp: toques no botão do site, contados desde 01/11/2026.</p>`;
 const corta=s=>s.length<90?s:s.slice(0,s.lastIndexOf(" "))+"…";
-document.getElementById("top").innerHTML=d.top.map((p,i)=>`<a class="lamina" href="${esc(p.link)}" style="text-decoration:none"><div class="topo-l"><span>${p.formato} · ${dm(p.quando)}</span></div><div class="frase-l">${esc(corta(p.titulo||"Post"))}</div><div><b style="font:850 28px Archivo,sans-serif">${N(p.views)}</b> visualizações</div><div class="rod-l">${N(p.alcance)} contas · ${N(p.compart)} compartilhamentos</div></a>`).join("");
+document.getElementById("top").innerHTML=d.top.map(p=>`<a href="${esc(p.link)}"><img src="capas/${esc(p.link.replace(/\/$/,"").split("/").pop())}.jpg" alt="${esc(p.titulo||"Post")}" loading="lazy" width="600" height="800"><span>${N(p.views)}</span></a>`).join("")+`<p class="fontes">Visualizações por post. Toque na capa para abrir no Instagram.</p>`;
 document.getElementById("cons").innerHTML=tile(d.total_publico,"consultas desde 20/10")+tile(c.instagram||0,"no direct")+tile(c.whatsapp||0,"no WhatsApp, desde 26/10")+tile(c.comentario||0,"nos comentários");
 document.getElementById("porDia").innerHTML=colunas(d.por_dia,"consultas");
 document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)}. Fonte: Instagram Insights (API oficial da Meta) e registro interno do robô. As consultas incluem testes da nossa equipe, que o registro não separa. O WhatsApp só tem contagem de consultas, sem alcance. A checagem em lote do debate não entra nas consultas.`;
