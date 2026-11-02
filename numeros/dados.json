@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-02T12:59:39",
+ "atualizado_em": "2026-11-02T14:02:32",
  "seguidores": 282,
  "posts": 38,
  "t28": {
-  "views": 56194,
-  "accounts_engaged": 555,
-  "total_interactions": 1260,
-  "profile_views": 1635,
-  "likes": 921,
-  "comments": 32,
-  "shares": 101,
+  "views": 56917,
+  "accounts_engaged": 556,
+  "total_interactions": 1268,
+  "profile_views": 1654,
+  "likes": 924,
+  "comments": 33,
+  "shares": 103,
   "saves": 68,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 914
+   "valor": 1256
   }
  ],
  "seguidores_serie": [
@@ -248,7 +248,7 @@
    "grupo": "carrossel",
    "posts": 11,
    "alcance": 885.0,
-   "views": 1467.8,
+   "views": 1467.9,
    "compart": 1.9,
    "salvos": 2.6,
    "seguidores": 2.9,
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 27,
-   "alcance": 639.9,
-   "views": 826.9,
+   "alcance": 654.5,
+   "views": 842.9,
    "compart": 2.5,
    "salvos": 1.3,
    "seguidores": null,
@@ -267,7 +267,7 @@
  ],
  "top": [
   {
-   "views": 7019,
+   "views": 7022,
    "alcance": 5399,
    "compart": 33,
    "formato": "reels",
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3862,
+   "views": 3863,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -294,7 +294,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3217,
+   "views": 3221,
    "alcance": 2170,
    "compart": 0,
    "formato": "reels",
@@ -321,8 +321,8 @@
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   },
   {
-   "views": 2189,
-   "alcance": 1885,
+   "views": 2194,
+   "alcance": 1887,
    "compart": 16,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -330,8 +330,8 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2005,
-   "alcance": 1535,
+   "views": 2077,
+   "alcance": 1601,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -340,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 242,
+  "instagram": 245,
   "comentario": 74,
   "whatsapp": 44
  },
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   13
+   16
   ]
  ],
  "repositorio": 25,
- "total_publico": 360
+ "total_publico": 363
 }
