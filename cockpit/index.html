@@ -108,7 +108,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 </section>
 
 <nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button></nav>
-<div id="val-view" hidden><div id="amao"><div class="vazio">Carregando…</div></div></div>
+<div id="val-view" hidden><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
 
 <div id="pend-view" hidden>
   <div id="pend-quadros"></div>
@@ -398,6 +398,28 @@ async function carregarLicoes(){
   catch(e){}
 }
 // ---------- Validações: casos que pedem decisão (Roberta, 1º/11) ----------
+let amostra = null;
+function desenharAmostra(){
+  if (!amostra || !amostra.itens.length){ $("amostra").innerHTML = ""; return; }
+  const p = amostra.placar, feitas = amostra.itens.filter(m => m.voto).length;
+  const cab = p.votadas ? `Últimos ${p.dias} dias: ${p.aprovadas} de ${p.votadas} aprovadas sem mexer.` : "Ainda sem votos.";
+  $("amostra").innerHTML = `<div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Amostra do dia: ${feitas} de ${amostra.itens.length}</div><div class="sub">${esc(cab)}</div></div>` + amostra.itens.map(m => `<div class="cartao" style="margin-bottom:12px">
+    <div style="font-weight:800">${esc(m.titulo)}</div>
+    ${m.selo ? `<div class="sub">Selo: ${esc(m.selo)}</div>` : ""}
+    ${blocoAmao("Pergunta central", m.pergunta)}
+    ${blocoAmao("A resposta do robô", m.resposta)}
+    ${m.link ? `<div class="sub" style="margin-top:8px"><a href="${esc(m.link)}" target="_blank" rel="noopener">Abrir o post</a></div>` : ""}
+    <div class="acoes" style="margin-top:10px">${m.voto ? `<div class="sub" style="font-weight:700">Você marcou: ${m.voto === "aprovaria" ? "aprovaria" : "mudaria"}</div>` : `<button class="b-feito" onclick="votarAmostra('${esc(m.id)}','aprovaria')">Aprovaria</button><button class="b-desc" onclick="votarAmostra('${esc(m.id)}','mudaria')">Mudaria</button>`}</div>
+  </div>`).join("");
+}
+async function carregarAmostra(){
+  try{ const r = await fetch(BASE + "/cockpit/amostra", {headers: H(), cache: "no-store"}); amostra = await r.json(); desenharAmostra(); }catch(e){}
+}
+async function votarAmostra(id, voto){
+  try{ const r = await fetch(`${BASE}/cockpit/amostra/${amostra.dia}/${encodeURIComponent(id)}/${voto}`, {method: "POST", headers: H()});
+       if (!r.ok) throw 0; amostra = await r.json(); desenharAmostra(); }
+  catch(e){ toast("Não consegui marcar"); }
+}
 let amao = [];
 const CANAIS = {whatsapp: "WhatsApp", direct: "Direct", comentario: "Comentário"};
 function janelaAmao(m){
