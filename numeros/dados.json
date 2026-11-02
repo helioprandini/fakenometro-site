@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-02T18:54:12",
- "seguidores": 296,
+ "atualizado_em": "2026-11-02T20:01:09",
+ "seguidores": 298,
  "posts": 40,
  "t28": {
-  "views": 60916,
-  "accounts_engaged": 565,
-  "total_interactions": 1299,
-  "profile_views": 1723,
+  "views": 61399,
+  "accounts_engaged": 568,
+  "total_interactions": 1306,
+  "profile_views": 1740,
   "likes": 943,
   "comments": 33,
-  "shares": 107,
-  "saves": 72,
+  "shares": 110,
+  "saves": 73,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -121,11 +121,11 @@
   },
   {
    "dia": "2026-11-01",
-   "valor": 2780
+   "valor": 2784
   },
   {
    "dia": "2026-11-02",
-   "valor": 3099
+   "valor": 3264
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 869.0,
-   "views": 1433.9,
-   "compart": 2.0,
-   "salvos": 2.6,
+   "alcance": 876.6,
+   "views": 1446.8,
+   "compart": 2.2,
+   "salvos": 2.7,
    "seguidores": 3.4,
    "visitas_perfil": 18.9
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 662.7,
-   "views": 849.2,
+   "alcance": 668.0,
+   "views": 855.9,
    "compart": 2.5,
    "salvos": 1.2,
    "seguidores": null,
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3867,
+   "views": 3871,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -303,8 +303,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2357,
-   "alcance": 1855,
+   "views": 2422,
+   "alcance": 1890,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -330,7 +330,7 @@
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   },
   {
-   "views": 2198,
+   "views": 2200,
    "alcance": 1890,
    "compart": 16,
    "formato": "reels",
@@ -340,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 252,
+  "instagram": 256,
   "comentario": 75,
   "whatsapp": 45
  },
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   25
+   29
   ]
  ],
  "repositorio": 25,
- "total_publico": 372
+ "total_publico": 376
 }
