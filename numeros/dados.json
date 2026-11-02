@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-02T10:46:03",
+ "atualizado_em": "2026-11-02T11:48:25",
  "seguidores": 280,
  "posts": 37,
  "t28": {
-  "views": 55867,
-  "accounts_engaged": 553,
-  "total_interactions": 1254,
+  "views": 56065,
+  "accounts_engaged": 555,
+  "total_interactions": 1257,
   "profile_views": 1630,
-  "likes": 917,
+  "likes": 918,
   "comments": 32,
-  "shares": 100,
+  "shares": 101,
   "saves": 68,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 717
+   "valor": 847
   }
  ],
  "seguidores_serie": [
@@ -247,8 +247,8 @@
   {
    "grupo": "carrossel",
    "posts": 11,
-   "alcance": 884.7,
-   "views": 1467.4,
+   "alcance": 884.9,
+   "views": 1467.7,
    "compart": 1.9,
    "salvos": 2.6,
    "seguidores": 2.9,
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 26,
-   "alcance": 657.4,
-   "views": 845.4,
+   "alcance": 662.3,
+   "views": 850.9,
    "compart": 2.5,
    "salvos": 1.3,
    "seguidores": null,
@@ -313,7 +313,7 @@
   },
   {
    "views": 2233,
-   "alcance": 1593,
+   "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-30",
@@ -330,17 +330,17 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 1793,
-   "alcance": 1493,
-   "compart": 7,
+   "views": 1926,
+   "alcance": 1485,
+   "compart": 1,
    "formato": "reels",
-   "quando": "2026-10-31",
-   "link": "https://www.instagram.com/reel/DfKTEDHESKb/",
-   "titulo": "2h24 da manhã. Você dormindo, e a \"Enel\" pensando em você."
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/reel/DfIyqdrpnyM/",
+   "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   }
  ],
  "canais": {
-  "instagram": 237,
+  "instagram": 238,
   "comentario": 73,
   "whatsapp": 44
  },
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   7
+   8
   ]
  ],
  "repositorio": 25,
- "total_publico": 354
+ "total_publico": 355
 }
