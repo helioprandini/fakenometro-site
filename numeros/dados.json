@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-02T16:39:07",
- "seguidores": 292,
+ "atualizado_em": "2026-11-02T17:41:48",
+ "seguidores": 294,
  "posts": 39,
  "t28": {
-  "views": 59615,
-  "accounts_engaged": 560,
-  "total_interactions": 1287,
-  "profile_views": 1698,
-  "likes": 934,
+  "views": 60230,
+  "accounts_engaged": 563,
+  "total_interactions": 1293,
+  "profile_views": 1710,
+  "likes": 938,
   "comments": 33,
   "shares": 107,
-  "saves": 69,
+  "saves": 71,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 2745
+   "valor": 2900
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 839.7,
-   "views": 1397.4,
-   "compart": 1.8,
-   "salvos": 2.5,
-   "seguidores": 3.0,
-   "visitas_perfil": 18.6
+   "alcance": 854.4,
+   "views": 1421.0,
+   "compart": 2.0,
+   "salvos": 2.6,
+   "seguidores": 3.3,
+   "visitas_perfil": 18.9
   },
   {
    "grupo": "reels",
    "posts": 27,
-   "alcance": 674.7,
-   "views": 866.8,
+   "alcance": 680.4,
+   "views": 874.0,
    "compart": 2.6,
    "salvos": 1.3,
    "seguidores": null,
@@ -303,6 +303,15 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
+   "views": 2310,
+   "alcance": 1794,
+   "compart": 2,
+   "formato": "reels",
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/reel/DfIyqdrpnyM/",
+   "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
+  },
+  {
    "views": 2288,
    "alcance": 1567,
    "compart": 2,
@@ -310,15 +319,6 @@
    "quando": "2026-10-24",
    "link": "https://www.instagram.com/p/De5U7Ssie4-/",
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
-  },
-  {
-   "views": 2252,
-   "alcance": 1758,
-   "compart": 2,
-   "formato": "reels",
-   "quando": "2026-10-30",
-   "link": "https://www.instagram.com/reel/DfIyqdrpnyM/",
-   "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
    "views": 2233,
@@ -340,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 247,
+  "instagram": 252,
   "comentario": 75,
   "whatsapp": 45
  },
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   20
+   25
   ]
  ],
  "repositorio": 25,
- "total_publico": 367
+ "total_publico": 372
 }
