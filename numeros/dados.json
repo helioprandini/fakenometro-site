@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-02T17:41:48",
- "seguidores": 294,
- "posts": 39,
+ "atualizado_em": "2026-11-02T18:54:12",
+ "seguidores": 296,
+ "posts": 40,
  "t28": {
-  "views": 60230,
-  "accounts_engaged": 563,
-  "total_interactions": 1293,
-  "profile_views": 1710,
-  "likes": 938,
+  "views": 60916,
+  "accounts_engaged": 565,
+  "total_interactions": 1299,
+  "profile_views": 1723,
+  "likes": 943,
   "comments": 33,
   "shares": 107,
-  "saves": 71,
+  "saves": 72,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 2900
+   "valor": 3099
   }
  ],
  "seguidores_serie": [
@@ -247,20 +247,20 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 854.4,
-   "views": 1421.0,
+   "alcance": 869.0,
+   "views": 1433.9,
    "compart": 2.0,
    "salvos": 2.6,
-   "seguidores": 3.3,
+   "seguidores": 3.4,
    "visitas_perfil": 18.9
   },
   {
    "grupo": "reels",
-   "posts": 27,
-   "alcance": 680.4,
-   "views": 874.0,
-   "compart": 2.6,
-   "salvos": 1.3,
+   "posts": 28,
+   "alcance": 662.7,
+   "views": 849.2,
+   "compart": 2.5,
+   "salvos": 1.2,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -303,8 +303,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2310,
-   "alcance": 1794,
+   "views": 2357,
+   "alcance": 1855,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -330,7 +330,7 @@
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   },
   {
-   "views": 2197,
+   "views": 2198,
    "alcance": 1890,
    "compart": 16,
    "formato": "reels",
