@@ -272,7 +272,7 @@ function aba(qual){
   if (qual === "cur") carregarCur();
   if (qual === "ig") carregarIG(false);
   if (qual === "pend") carregarPend();
-  if (qual === "val") carregarAmao();
+  if (qual === "val") { carregarAmostra(); carregarAmao(); }
 }
 // ---------- Pendências: um quadro por frente de trabalho ----------
 let pendQuadros = [];
