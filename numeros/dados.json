@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-02T21:55:25",
+ "atualizado_em": "2026-11-02T22:50:54",
  "seguidores": 307,
  "posts": 40,
  "t28": {
-  "views": 62650,
-  "accounts_engaged": 571,
-  "total_interactions": 1328,
-  "profile_views": 1772,
-  "likes": 959,
+  "views": 63385,
+  "accounts_engaged": 572,
+  "total_interactions": 1331,
+  "profile_views": 1786,
+  "likes": 961,
   "comments": 33,
   "shares": 112,
-  "saves": 75,
+  "saves": 76,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 3601
+   "valor": 3880
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 897.7,
-   "views": 1478.6,
+   "alcance": 906.4,
+   "views": 1492.4,
    "compart": 2.2,
    "salvos": 2.6,
-   "seguidores": 3.8,
-   "visitas_perfil": 19.7
+   "seguidores": 3.9,
+   "visitas_perfil": 20.1
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 681.6,
-   "views": 875.4,
+   "alcance": 689.5,
+   "views": 883.9,
    "compart": 2.5,
    "salvos": 1.4,
    "seguidores": null,
@@ -267,7 +267,7 @@
  ],
  "top": [
   {
-   "views": 7022,
+   "views": 7023,
    "alcance": 5399,
    "compart": 33,
    "formato": "reels",
@@ -276,7 +276,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4189,
+   "views": 4192,
    "alcance": 1982,
    "compart": 6,
    "formato": "carrossel",
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3873,
+   "views": 3874,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -294,7 +294,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3221,
+   "views": 3222,
    "alcance": 2170,
    "compart": 0,
    "formato": "reels",
@@ -303,8 +303,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2615,
-   "alcance": 2022,
+   "views": 2695,
+   "alcance": 2090,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -312,8 +312,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2290,
-   "alcance": 1567,
+   "views": 2292,
+   "alcance": 1569,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-24",
@@ -321,7 +321,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2233,
+   "views": 2235,
    "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
@@ -330,7 +330,7 @@
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   },
   {
-   "views": 2202,
+   "views": 2203,
    "alcance": 1890,
    "compart": 16,
    "formato": "reels",
@@ -340,9 +340,9 @@
   }
  ],
  "canais": {
-  "instagram": 262,
-  "comentario": 76,
-  "whatsapp": 46
+  "instagram": 274,
+  "comentario": 77,
+  "whatsapp": 47
  },
  "por_dia": [
   [
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   37
+   51
   ]
  ],
- "repositorio": 25,
- "total_publico": 384
+ "repositorio": 26,
+ "total_publico": 398
 }
