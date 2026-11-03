@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-03T10:44:28",
- "seguidores": 321,
+ "atualizado_em": "2026-11-03T11:38:39",
+ "seguidores": 322,
  "posts": 40,
  "t28": {
-  "views": 67735,
+  "views": 68490,
   "accounts_engaged": 579,
-  "total_interactions": 1364,
-  "profile_views": 1895,
-  "likes": 965,
+  "total_interactions": 1365,
+  "profile_views": 1915,
+  "likes": 966,
   "comments": 33,
   "shares": 124,
   "saves": 79,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 2341
+   "valor": 2871
   }
  ],
  "seguidores_serie": [
@@ -247,19 +247,19 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 940.6,
-   "views": 1543.8,
+   "alcance": 942.3,
+   "views": 1547.2,
    "compart": 2.2,
    "salvos": 2.7,
    "seguidores": 4.5,
-   "visitas_perfil": 21.5
+   "visitas_perfil": 21.6
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 707.2,
-   "views": 906.4,
-   "compart": 2.9,
+   "alcance": 708.0,
+   "views": 907.4,
+   "compart": 3.0,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -303,13 +303,22 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2750,
+   "views": 2752,
    "alcance": 2121,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
    "link": "https://www.instagram.com/reel/DfIyqdrpnyM/",
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
+  },
+  {
+   "views": 2311,
+   "alcance": 1531,
+   "compart": 6,
+   "formato": "carrossel",
+   "quando": "2026-11-02",
+   "link": "https://www.instagram.com/p/DfP64KUicug/",
+   "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
    "views": 2299,
@@ -319,15 +328,6 @@
    "quando": "2026-10-24",
    "link": "https://www.instagram.com/p/De5U7Ssie4-/",
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
-  },
-  {
-   "views": 2270,
-   "alcance": 1510,
-   "compart": 6,
-   "formato": "carrossel",
-   "quando": "2026-11-02",
-   "link": "https://www.instagram.com/p/DfP64KUicug/",
-   "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
    "views": 2238,
@@ -340,8 +340,8 @@
   }
  ],
  "canais": {
-  "instagram": 287,
-  "comentario": 78,
+  "instagram": 289,
+  "comentario": 79,
   "whatsapp": 50
  },
  "por_dia": [
@@ -403,9 +403,9 @@
   ],
   [
    "2026-11-03",
-   15
+   18
   ]
  ],
  "repositorio": 27,
- "total_publico": 415
+ "total_publico": 418
 }
