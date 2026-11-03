@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-03T15:49:30",
+ "atualizado_em": "2026-11-03T16:52:15",
  "seguidores": 330,
  "posts": 41,
  "t28": {
-  "views": 70690,
-  "accounts_engaged": 581,
-  "total_interactions": 1392,
-  "profile_views": 1951,
-  "likes": 983,
+  "views": 70863,
+  "accounts_engaged": 583,
+  "total_interactions": 1396,
+  "profile_views": 1956,
+  "likes": 985,
   "comments": 33,
-  "shares": 129,
+  "shares": 130,
   "saves": 79,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 4408
+   "valor": 4532
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 0
+   "valor": 32
   },
   {
    "dia": "2026-11-03",
@@ -247,8 +247,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 880.2,
-   "views": 1448.9,
+   "alcance": 880.5,
+   "views": 1449.5,
    "compart": 2.2,
    "salvos": 2.5,
    "seguidores": 4.4,
@@ -257,9 +257,9 @@
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 725.2,
-   "views": 931.4,
-   "compart": 3.0,
+   "alcance": 729.7,
+   "views": 936.4,
+   "compart": 3.1,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -303,7 +303,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2753,
+   "views": 2755,
    "alcance": 2121,
    "compart": 2,
    "formato": "reels",
@@ -312,7 +312,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2489,
+   "views": 2490,
    "alcance": 1623,
    "compart": 6,
    "formato": "carrossel",
@@ -330,7 +330,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2239,
+   "views": 2240,
    "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
@@ -340,8 +340,8 @@
   }
  ],
  "canais": {
-  "instagram": 297,
-  "comentario": 81,
+  "instagram": 298,
+  "comentario": 83,
   "whatsapp": 50
  },
  "por_dia": [
@@ -403,9 +403,9 @@
   ],
   [
    "2026-11-03",
-   28
+   31
   ]
  ],
  "repositorio": 27,
- "total_publico": 428
+ "total_publico": 431
 }
