@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-02T20:52:26",
- "seguidores": 300,
+ "atualizado_em": "2026-11-02T21:55:25",
+ "seguidores": 307,
  "posts": 40,
  "t28": {
-  "views": 61837,
+  "views": 62650,
   "accounts_engaged": 571,
-  "total_interactions": 1312,
-  "profile_views": 1749,
-  "likes": 946,
+  "total_interactions": 1328,
+  "profile_views": 1772,
+  "likes": 959,
   "comments": 33,
-  "shares": 111,
-  "saves": 74,
+  "shares": 112,
+  "saves": 75,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 3381
+   "valor": 3601
   }
  ],
  "seguidores_serie": [
@@ -247,20 +247,20 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 885.4,
-   "views": 1460.1,
+   "alcance": 897.7,
+   "views": 1478.6,
    "compart": 2.2,
-   "salvos": 2.7,
-   "seguidores": 3.5,
-   "visitas_perfil": 19.4
+   "salvos": 2.6,
+   "seguidores": 3.8,
+   "visitas_perfil": 19.7
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 672.6,
-   "views": 863.2,
+   "alcance": 681.6,
+   "views": 875.4,
    "compart": 2.5,
-   "salvos": 1.3,
+   "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -276,7 +276,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4188,
+   "views": 4189,
    "alcance": 1982,
    "compart": 6,
    "formato": "carrossel",
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3872,
+   "views": 3873,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -303,8 +303,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2500,
-   "alcance": 1933,
+   "views": 2615,
+   "alcance": 2022,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -312,7 +312,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2288,
+   "views": 2290,
    "alcance": 1567,
    "compart": 2,
    "formato": "carrossel",
@@ -330,7 +330,7 @@
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   },
   {
-   "views": 2201,
+   "views": 2202,
    "alcance": 1890,
    "compart": 16,
    "formato": "reels",
@@ -340,9 +340,9 @@
   }
  ],
  "canais": {
-  "instagram": 258,
-  "comentario": 75,
-  "whatsapp": 45
+  "instagram": 262,
+  "comentario": 76,
+  "whatsapp": 46
  },
  "por_dia": [
   [
@@ -399,9 +399,9 @@
   ],
   [
    "2026-11-02",
-   31
+   37
   ]
  ],
  "repositorio": 25,
- "total_publico": 378
+ "total_publico": 384
 }
