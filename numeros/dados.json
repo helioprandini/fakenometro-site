@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-03T00:55:46",
- "seguidores": 310,
+ "atualizado_em": "2026-11-03T01:58:03",
+ "seguidores": 311,
  "posts": 40,
  "t28": {
-  "views": 64368,
-  "accounts_engaged": 572,
-  "total_interactions": 1331,
-  "profile_views": 1813,
+  "views": 64497,
+  "accounts_engaged": 573,
+  "total_interactions": 1352,
+  "profile_views": 1815,
   "likes": 961,
   "comments": 33,
-  "shares": 112,
-  "saves": 76,
+  "shares": 122,
+  "saves": 77,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 4299
+   "valor": 4324
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 918.6,
-   "views": 1508.4,
+   "alcance": 921.8,
+   "views": 1512.5,
    "compart": 2.2,
    "salvos": 2.6,
    "seguidores": 3.9,
-   "visitas_perfil": 20.5
+   "visitas_perfil": 20.6
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 696.5,
-   "views": 892.8,
+   "alcance": 697.6,
+   "views": 894.2,
    "compart": 2.5,
    "salvos": 1.4,
    "seguidores": null,
@@ -321,7 +321,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2235,
+   "views": 2236,
    "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
