@@ -109,7 +109,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 
 <nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Respostas</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button></nav>
 <div id="com-view" hidden><div id="com"><div class="vazio">Carregando…</div></div></div>
-<div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Respostas</div><div class="sub">O que entrou e saiu em cada canal. Só leitura.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
+<div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Respostas</div><div class="sub">Para ver o que o robô respondeu, sem abrir cada conversa. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
 <div id="val-view" hidden><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
 
 <div id="pend-view" hidden>
@@ -481,15 +481,25 @@ async function votarCom(chave, voto, tipo){
 }
 // ---------- Respostas: o que entrou e saiu em cada canal, só leitura (Roberta, 2/11) ----------
 const NOME_CANAL = {whatsapp: "WhatsApp", direct: "Direct", comentario: "Comentário"};
+let respDados = null, respCanal = "";
+const RESP_AVISOS = /^(Recebi|Anotado|Quer saber mais|Want to know|Por nada|Para avisar o grupo|Got it)/;
 async function carregarResp(){
   const dia = $("resp-dia").value;
-  try{ const r = await fetch(`${BASE}/cockpit/respostas${dia ? "?dia=" + dia : ""}`, {headers: H(), cache: "no-store"}); const d = await r.json();
-    if (!dia) $("resp-dia").value = d.dia;
-    $("resp").innerHTML = d.conversas.length ? d.conversas.map(c => `<div class="cartao" style="margin-bottom:12px">
-      <div style="font-weight:800">${esc(NOME_CANAL[c.canal] || c.canal)} · ${esc(c.quem)}</div>
-      ${c.mensagens.map(m => `<div class="sub" style="margin-top:10px;font-weight:700">${m.sentido === "robo" ? "Robô" : "Pessoa"} · ${esc(m.em.slice(11, 16))}</div><div style="white-space:pre-wrap">${esc(m.texto)}</div>${m.link ? `<div class="sub"><a href="${esc(m.link)}" target="_blank" rel="noopener">Abrir o post</a></div>` : ""}`).join("")}
-    </div>`).join("") : '<div class="vazio">Nada registrado neste dia.</div>';
+  try{ const r = await fetch(`${BASE}/cockpit/respostas${dia ? "?dia=" + dia : ""}`, {headers: H(), cache: "no-store"}); respDados = await r.json();
+    if (!dia) $("resp-dia").value = respDados.dia;
+    desenharResp();
   }catch(e){ $("resp").innerHTML = '<div class="vazio">Não consegui abrir as respostas.</div>'; }
+}
+function filtrarResp(c){ respCanal = c; desenharResp(); }
+function desenharResp(){
+  const lista = respDados.conversas.filter(c => !respCanal || c.canal === respCanal);
+  const n = c => respDados.conversas.filter(x => x.canal === c).length;
+  const botoes = [["", "Todos", respDados.conversas.length], ["direct", "Direct", n("direct")], ["whatsapp", "WhatsApp", n("whatsapp")], ["comentario", "Comentários", n("comentario")]]
+    .map(([c, t, q]) => `<button class="${respCanal === c ? "b-feito" : "b-copiar"}" onclick="filtrarResp('${c}')">${t} (${q})</button>`).join("");
+  $("resp").innerHTML = `<div class="acoes" style="margin-bottom:12px">${botoes}</div>` + (lista.length ? lista.map(c => `<div class="cartao" style="margin-bottom:12px">
+    <div style="font-weight:800">${esc(c.quem)}</div><div class="sub">${esc(NOME_CANAL[c.canal] || c.canal)}</div>
+    ${c.mensagens.filter(m => !(m.sentido === "robo" && RESP_AVISOS.test(m.texto))).map(m => `<div class="sub" style="margin-top:12px;font-weight:700">${m.sentido === "robo" ? "O que respondemos" : "O que a pessoa mandou"} · ${esc(m.em.slice(11, 16))}</div><div style="white-space:pre-wrap">${esc(m.texto)}</div>${m.link ? `<div class="sub"><a href="${esc(m.link)}" target="_blank" rel="noopener">Abrir o post</a></div>` : ""}`).join("")}
+  </div>`).join("") : '<div class="vazio">Nada registrado neste canal, neste dia.</div>');
 }
 let amao = [];
 const CANAIS = {whatsapp: "WhatsApp", direct: "Direct", comentario: "Comentário"};
