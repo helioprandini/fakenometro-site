@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-03T17:55:11",
+ "atualizado_em": "2026-11-03T18:39:38",
  "seguidores": 330,
  "posts": 41,
  "t28": {
-  "views": 71008,
+  "views": 71118,
   "accounts_engaged": 583,
   "total_interactions": 1399,
-  "profile_views": 1956,
+  "profile_views": 1957,
   "likes": 986,
   "comments": 33,
   "shares": 131,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 4645
+   "valor": 4744
   }
  ],
  "seguidores_serie": [
@@ -247,8 +247,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 880.8,
-   "views": 1449.8,
+   "alcance": 881.2,
+   "views": 1450.4,
    "compart": 2.2,
    "salvos": 2.5,
    "seguidores": 4.4,
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 733.5,
-   "views": 940.6,
+   "alcance": 736.0,
+   "views": 943.6,
    "compart": 3.1,
    "salvos": 1.4,
    "seguidores": null,
@@ -312,8 +312,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2490,
-   "alcance": 1623,
+   "views": 2495,
+   "alcance": 1626,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -340,9 +340,9 @@
   }
  ],
  "canais": {
-  "instagram": 299,
-  "comentario": 83,
-  "whatsapp": 50
+  "instagram": 304,
+  "comentario": 84,
+  "whatsapp": 53
  },
  "por_dia": [
   [
@@ -403,9 +403,9 @@
   ],
   [
    "2026-11-03",
-   32
+   41
   ]
  ],
  "repositorio": 27,
- "total_publico": 432
+ "total_publico": 441
 }
