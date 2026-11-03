@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-03T14:45:46",
- "seguidores": 329,
+ "atualizado_em": "2026-11-03T15:49:30",
+ "seguidores": 330,
  "posts": 41,
  "t28": {
-  "views": 70459,
-  "accounts_engaged": 580,
-  "total_interactions": 1388,
-  "profile_views": 1947,
-  "likes": 979,
+  "views": 70690,
+  "accounts_engaged": 581,
+  "total_interactions": 1392,
+  "profile_views": 1951,
+  "likes": 983,
   "comments": 33,
   "shares": 129,
   "saves": 79,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 4299
+   "valor": 4408
   }
  ],
  "seguidores_serie": [
@@ -247,8 +247,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 877.8,
-   "views": 1445.3,
+   "alcance": 880.2,
+   "views": 1448.9,
    "compart": 2.2,
    "salvos": 2.5,
    "seguidores": 4.4,
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 721.3,
-   "views": 926.1,
+   "alcance": 725.2,
+   "views": 931.4,
    "compart": 3.0,
    "salvos": 1.4,
    "seguidores": null,
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3885,
+   "views": 3891,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -294,8 +294,8 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3227,
-   "alcance": 2172,
+   "views": 3228,
+   "alcance": 2175,
    "compart": 0,
    "formato": "reels",
    "quando": "2026-10-26",
@@ -303,7 +303,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2752,
+   "views": 2753,
    "alcance": 2121,
    "compart": 2,
    "formato": "reels",
@@ -312,8 +312,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2461,
-   "alcance": 1601,
+   "views": 2489,
+   "alcance": 1623,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -330,7 +330,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2238,
+   "views": 2239,
    "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
@@ -340,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 296,
+  "instagram": 297,
   "comentario": 81,
   "whatsapp": 50
  },
@@ -403,9 +403,9 @@
   ],
   [
    "2026-11-03",
-   27
+   28
   ]
  ],
  "repositorio": 27,
- "total_publico": 427
+ "total_publico": 428
 }
