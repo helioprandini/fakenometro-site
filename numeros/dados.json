@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-03T05:06:00",
+ "atualizado_em": "2026-11-03T05:37:13",
  "seguidores": 313,
  "posts": 40,
  "t28": {
-  "views": 64685,
+  "views": 64767,
   "accounts_engaged": 575,
   "total_interactions": 1353,
-  "profile_views": 1820,
+  "profile_views": 1823,
   "likes": 961,
   "comments": 33,
   "shares": 122,
@@ -121,11 +121,11 @@
   },
   {
    "dia": "2026-11-02",
-   "valor": 4408
+   "valor": 4434
   },
   {
    "dia": "2026-11-03",
-   "valor": 0
+   "valor": 27
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 925.2,
-   "views": 1517.8,
+   "alcance": 925.7,
+   "views": 1519.1,
    "compart": 2.2,
    "salvos": 2.6,
-   "seguidores": 4.0,
-   "visitas_perfil": 20.7
+   "seguidores": 4.1,
+   "visitas_perfil": 20.8
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 699.0,
-   "views": 895.9,
+   "alcance": 699.5,
+   "views": 896.4,
    "compart": 2.9,
    "salvos": 1.4,
    "seguidores": null,
@@ -294,7 +294,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3223,
+   "views": 3224,
    "alcance": 2172,
    "compart": 0,
    "formato": "reels",
@@ -321,7 +321,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2236,
+   "views": 2237,
    "alcance": 1595,
    "compart": 2,
    "formato": "carrossel",
@@ -340,7 +340,7 @@
   }
  ],
  "canais": {
-  "instagram": 276,
+  "instagram": 277,
   "comentario": 77,
   "whatsapp": 47
  },
@@ -400,8 +400,12 @@
   [
    "2026-11-02",
    53
+  ],
+  [
+   "2026-11-03",
+   1
   ]
  ],
  "repositorio": 26,
- "total_publico": 400
+ "total_publico": 401
 }
