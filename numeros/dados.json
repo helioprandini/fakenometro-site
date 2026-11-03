@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-03T09:41:53",
+ "atualizado_em": "2026-11-03T10:44:28",
  "seguidores": 321,
  "posts": 40,
  "t28": {
-  "views": 66811,
-  "accounts_engaged": 577,
-  "total_interactions": 1357,
-  "profile_views": 1867,
-  "likes": 963,
+  "views": 67735,
+  "accounts_engaged": 579,
+  "total_interactions": 1364,
+  "profile_views": 1895,
+  "likes": 965,
   "comments": 33,
-  "shares": 122,
-  "saves": 78,
+  "shares": 124,
+  "saves": 79,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 1657
+   "valor": 2341
   }
  ],
  "seguidores_serie": [
@@ -247,18 +247,18 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 933.6,
-   "views": 1536.7,
+   "alcance": 940.6,
+   "views": 1543.8,
    "compart": 2.2,
-   "salvos": 2.6,
-   "seguidores": 4.2,
-   "visitas_perfil": 21.2
+   "salvos": 2.7,
+   "seguidores": 4.5,
+   "visitas_perfil": 21.5
   },
   {
    "grupo": "reels",
    "posts": 28,
-   "alcance": 704.8,
-   "views": 904.0,
+   "alcance": 707.2,
+   "views": 906.4,
    "compart": 2.9,
    "salvos": 1.4,
    "seguidores": null,
@@ -285,7 +285,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3880,
+   "views": 3883,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -303,7 +303,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2749,
+   "views": 2750,
    "alcance": 2121,
    "compart": 2,
    "formato": "reels",
@@ -312,13 +312,22 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2297,
-   "alcance": 1569,
+   "views": 2299,
+   "alcance": 1571,
    "compart": 2,
    "formato": "carrossel",
    "quando": "2026-10-24",
    "link": "https://www.instagram.com/p/De5U7Ssie4-/",
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
+  },
+  {
+   "views": 2270,
+   "alcance": 1510,
+   "compart": 6,
+   "formato": "carrossel",
+   "quando": "2026-11-02",
+   "link": "https://www.instagram.com/p/DfP64KUicug/",
+   "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
    "views": 2238,
@@ -328,21 +337,12 @@
    "quando": "2026-10-30",
    "link": "https://www.instagram.com/p/DfHz_2slpMS/",
    "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
-  },
-  {
-   "views": 2208,
-   "alcance": 1895,
-   "compart": 16,
-   "formato": "reels",
-   "quando": "2026-10-30",
-   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
-   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   }
  ],
  "canais": {
   "instagram": 287,
   "comentario": 78,
-  "whatsapp": 48
+  "whatsapp": 50
  },
  "por_dia": [
   [
@@ -403,9 +403,9 @@
   ],
   [
    "2026-11-03",
-   13
+   15
   ]
  ],
  "repositorio": 27,
- "total_publico": 413
+ "total_publico": 415
 }
