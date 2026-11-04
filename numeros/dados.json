@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T17:46:53",
- "seguidores": 384,
- "posts": 44,
+ "atualizado_em": "2026-11-04T18:59:15",
+ "seguidores": 389,
+ "posts": 45,
  "t28": {
-  "views": 77635,
-  "accounts_engaged": 665,
-  "total_interactions": 1633,
-  "profile_views": 2075,
-  "likes": 1076,
-  "comments": 35,
-  "shares": 184,
-  "saves": 103,
+  "views": 77992,
+  "accounts_engaged": 674,
+  "total_interactions": 1655,
+  "profile_views": 2084,
+  "likes": 1091,
+  "comments": 37,
+  "shares": 185,
+  "saves": 104,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 3099
+   "valor": 3284
   }
  ],
  "seguidores_serie": [
@@ -250,20 +250,20 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 877.8,
-   "views": 1434.9,
+   "alcance": 888.7,
+   "views": 1450.6,
    "compart": 2.3,
    "salvos": 2.3,
-   "seguidores": 4.1,
-   "visitas_perfil": 19.1
+   "seguidores": 4.2,
+   "visitas_perfil": 19.2
   },
   {
    "grupo": "reels",
-   "posts": 29,
-   "alcance": 748.0,
-   "views": 954.8,
-   "compart": 4.6,
-   "salvos": 1.5,
+   "posts": 30,
+   "alcance": 723.6,
+   "views": 923.7,
+   "compart": 4.4,
+   "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -288,9 +288,9 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3907,
+   "views": 3908,
    "alcance": 2689,
-   "compart": 7,
+   "compart": 8,
    "formato": "carrossel",
    "quando": "2026-10-22",
    "link": "https://www.instagram.com/p/DezA5RkFn7b/",
@@ -333,8 +333,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2255,
-   "alcance": 1928,
+   "views": 2261,
+   "alcance": 1930,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -343,7 +343,7 @@
   }
  ],
  "canais": {
-  "instagram": 284,
+  "instagram": 287,
   "comentario": 84,
   "whatsapp": 49
  },
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   15
+   18
   ]
  ],
  "repositorio": 27,
- "total_publico": 417
+ "total_publico": 420
 }
