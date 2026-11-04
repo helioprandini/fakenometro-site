@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-03T21:47:51",
- "seguidores": 341,
+ "atualizado_em": "2026-11-03T22:50:33",
+ "seguidores": 343,
  "posts": 43,
  "t28": {
-  "views": 72168,
-  "accounts_engaged": 583,
-  "total_interactions": 1492,
-  "profile_views": 1981,
-  "likes": 997,
+  "views": 72599,
+  "accounts_engaged": 585,
+  "total_interactions": 1496,
+  "profile_views": 1990,
+  "likes": 998,
   "comments": 33,
-  "shares": 172,
-  "saves": 79,
+  "shares": 173,
+  "saves": 80,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 5149
+   "valor": 5250
   }
  ],
  "seguidores_serie": [
@@ -249,19 +249,19 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 847.4,
-   "views": 1397.2,
+   "alcance": 860.7,
+   "views": 1412.6,
    "compart": 2.2,
    "salvos": 2.3,
    "seguidores": 4.2,
-   "visitas_perfil": 19.3
+   "visitas_perfil": 19.4
   },
   {
    "grupo": "reels",
    "posts": 29,
-   "alcance": 721.3,
-   "views": 925.2,
-   "compart": 3.0,
+   "alcance": 726.8,
+   "views": 930.7,
+   "compart": 4.3,
    "salvos": 1.3,
    "seguidores": null,
    "visitas_perfil": null
@@ -287,7 +287,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3892,
+   "views": 3894,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -296,7 +296,7 @@
    "titulo": "O nosso Manifesto."
   },
   {
-   "views": 3228,
+   "views": 3229,
    "alcance": 2175,
    "compart": 0,
    "formato": "reels",
@@ -314,7 +314,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2505,
+   "views": 2508,
    "alcance": 1628,
    "compart": 6,
    "formato": "carrossel",
@@ -342,8 +342,8 @@
   }
  ],
  "canais": {
-  "instagram": 317,
-  "comentario": 85,
+  "instagram": 320,
+  "comentario": 86,
   "whatsapp": 58
  },
  "por_dia": [
@@ -405,9 +405,9 @@
   ],
   [
    "2026-11-03",
-   60
+   64
   ]
  ],
- "repositorio": 27,
- "total_publico": 460
+ "repositorio": 28,
+ "total_publico": 464
 }
