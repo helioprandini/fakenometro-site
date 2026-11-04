@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T15:42:01",
- "seguidores": 374,
+ "atualizado_em": "2026-11-04T16:57:10",
+ "seguidores": 379,
  "posts": 44,
  "t28": {
-  "views": 76085,
-  "accounts_engaged": 634,
-  "total_interactions": 1590,
-  "profile_views": 2059,
-  "likes": 1051,
+  "views": 77253,
+  "accounts_engaged": 660,
+  "total_interactions": 1629,
+  "profile_views": 2068,
+  "likes": 1073,
   "comments": 35,
-  "shares": 180,
-  "saves": 96,
+  "shares": 184,
+  "saves": 102,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 2009
+   "valor": 2888
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 0
+   "valor": 33
   },
   {
    "dia": "2026-11-04",
@@ -244,26 +244,26 @@
  ],
  "cliques_whatsapp": {
   "2026-11-03": 1,
-  "2026-11-04": 1
+  "2026-11-04": 2
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 845.9,
-   "views": 1385.2,
-   "compart": 2.1,
+   "alcance": 867.4,
+   "views": 1420.8,
+   "compart": 2.3,
    "salvos": 2.2,
    "seguidores": 4.1,
-   "visitas_perfil": 18.8
+   "visitas_perfil": 19.0
   },
   {
    "grupo": "reels",
    "posts": 29,
-   "alcance": 747.0,
-   "views": 953.9,
+   "alcance": 747.6,
+   "views": 954.3,
    "compart": 4.6,
-   "salvos": 1.4,
+   "salvos": 1.5,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -288,8 +288,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3902,
-   "alcance": 2685,
+   "views": 3905,
+   "alcance": 2689,
    "compart": 7,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -333,19 +333,19 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2245,
-   "alcance": 1597,
-   "compart": 2,
-   "formato": "carrossel",
+   "views": 2249,
+   "alcance": 1925,
+   "compart": 18,
+   "formato": "reels",
    "quando": "2026-10-30",
-   "link": "https://www.instagram.com/p/DfHz_2slpMS/",
-   "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
+   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
+   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   }
  ],
  "canais": {
-  "instagram": 348,
+  "instagram": 355,
   "comentario": 88,
-  "whatsapp": 62
+  "whatsapp": 63
  },
  "por_dia": [
   [
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   33
+   41
   ]
  ],
  "repositorio": 30,
- "total_publico": 498
+ "total_publico": 506
 }
