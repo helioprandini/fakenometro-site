@@ -1,9 +1,9 @@
 {
- "atualizado_em": "2026-11-04T03:01:56",
+ "atualizado_em": "2026-11-04T04:04:43",
  "seguidores": 344,
  "posts": 43,
  "t28": {
-  "views": 73156,
+  "views": 73177,
   "accounts_engaged": 588,
   "total_interactions": 1503,
   "profile_views": 1995,
@@ -15,10 +15,6 @@
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-07",
-   "valor": 0
-  },
   {
    "dia": "2026-10-08",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-03",
-   "valor": 5444
+   "valor": 5449
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-07",
-   "valor": 0
-  },
   {
    "dia": "2026-10-08",
    "valor": 0
@@ -249,8 +241,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 875.2,
-   "views": 1431.1,
+   "alcance": 875.9,
+   "views": 1431.8,
    "compart": 2.2,
    "salvos": 2.3,
    "seguidores": 4.2,
@@ -259,8 +251,8 @@
   {
    "grupo": "reels",
    "posts": 29,
-   "alcance": 733.4,
-   "views": 937.7,
+   "alcance": 733.7,
+   "views": 938.1,
    "compart": 4.4,
    "salvos": 1.3,
    "seguidores": null,
