@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T12:52:01",
- "seguidores": 358,
- "posts": 43,
+ "atualizado_em": "2026-11-04T14:01:16",
+ "seguidores": 367,
+ "posts": 44,
  "t28": {
-  "views": 74228,
-  "accounts_engaged": 596,
-  "total_interactions": 1523,
-  "profile_views": 2033,
-  "likes": 1010,
+  "views": 74709,
+  "accounts_engaged": 611,
+  "total_interactions": 1544,
+  "profile_views": 2046,
+  "likes": 1022,
   "comments": 34,
   "shares": 177,
-  "saves": 83,
+  "saves": 87,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 449
+   "valor": 873
   }
  ],
  "seguidores_serie": [
@@ -249,19 +249,19 @@
  "formatos": [
   {
    "grupo": "carrossel",
-   "posts": 14,
-   "alcance": 898.9,
-   "views": 1471.7,
-   "compart": 2.3,
-   "salvos": 2.4,
-   "seguidores": 4.4,
-   "visitas_perfil": 20.0
+   "posts": 15,
+   "alcance": 841.2,
+   "views": 1376.7,
+   "compart": 2.1,
+   "salvos": 2.2,
+   "seguidores": 4.1,
+   "visitas_perfil": 18.7
   },
   {
    "grupo": "reels",
    "posts": 29,
-   "alcance": 743.7,
-   "views": 950.3,
+   "alcance": 744.3,
+   "views": 951.0,
    "compart": 4.5,
    "salvos": 1.4,
    "seguidores": null,
@@ -288,7 +288,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3899,
+   "views": 3900,
    "alcance": 2685,
    "compart": 7,
    "formato": "carrossel",
@@ -315,8 +315,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2517,
-   "alcance": 1632,
+   "views": 2520,
+   "alcance": 1637,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -324,7 +324,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2303,
+   "views": 2304,
    "alcance": 1573,
    "compart": 2,
    "formato": "carrossel",
@@ -343,8 +343,8 @@
   }
  ],
  "canais": {
-  "instagram": 338,
-  "comentario": 87,
+  "instagram": 341,
+  "comentario": 88,
   "whatsapp": 62
  },
  "por_dia": [
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   22
+   26
   ]
  ],
- "repositorio": 28,
- "total_publico": 487
+ "repositorio": 29,
+ "total_publico": 491
 }
