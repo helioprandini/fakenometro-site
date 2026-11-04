@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T11:55:20",
- "seguidores": 355,
+ "atualizado_em": "2026-11-04T12:52:01",
+ "seguidores": 358,
  "posts": 43,
  "t28": {
-  "views": 74092,
-  "accounts_engaged": 593,
-  "total_interactions": 1520,
-  "profile_views": 2024,
-  "likes": 1009,
+  "views": 74228,
+  "accounts_engaged": 596,
+  "total_interactions": 1523,
+  "profile_views": 2033,
+  "likes": 1010,
   "comments": 34,
   "shares": 177,
-  "saves": 82,
+  "saves": 83,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 371
+   "valor": 449
   }
  ],
  "seguidores_serie": [
@@ -250,19 +250,19 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 896.9,
-   "views": 1466.8,
+   "alcance": 898.9,
+   "views": 1471.7,
    "compart": 2.3,
    "salvos": 2.4,
    "seguidores": 4.4,
-   "visitas_perfil": 19.9
+   "visitas_perfil": 20.0
   },
   {
    "grupo": "reels",
    "posts": 29,
-   "alcance": 742.7,
-   "views": 949.3,
-   "compart": 4.4,
+   "alcance": 743.7,
+   "views": 950.3,
+   "compart": 4.5,
    "salvos": 1.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -306,7 +306,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2759,
+   "views": 2761,
    "alcance": 2121,
    "compart": 2,
    "formato": "reels",
@@ -315,7 +315,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2515,
+   "views": 2517,
    "alcance": 1632,
    "compart": 6,
    "formato": "carrossel",
@@ -343,9 +343,9 @@
   }
  ],
  "canais": {
-  "instagram": 336,
+  "instagram": 338,
   "comentario": 87,
-  "whatsapp": 60
+  "whatsapp": 62
  },
  "por_dia": [
   [
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   18
+   22
   ]
  ],
  "repositorio": 28,
- "total_publico": 483
+ "total_publico": 487
 }
