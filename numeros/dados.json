@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-05T00:01:28",
- "seguidores": 478,
+ "atualizado_em": "2026-11-05T01:04:03",
+ "seguidores": 506,
  "posts": 46,
  "t28": {
-  "views": 81359,
-  "accounts_engaged": 789,
-  "total_interactions": 1823,
-  "profile_views": 2180,
-  "likes": 1204,
-  "comments": 49,
-  "shares": 191,
-  "saves": 121,
+  "views": 82279,
+  "accounts_engaged": 841,
+  "total_interactions": 1896,
+  "profile_views": 2206,
+  "likes": 1245,
+  "comments": 50,
+  "shares": 195,
+  "saves": 131,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 5288
+   "valor": 6011
   }
  ],
  "seguidores_serie": [
@@ -244,26 +244,27 @@
  ],
  "cliques_whatsapp": {
   "2026-11-03": 1,
-  "2026-11-04": 3
+  "2026-11-04": 3,
+  "2026-11-05": 2
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 937.4,
-   "views": 1516.5,
-   "compart": 2.4,
-   "salvos": 2.5,
+   "alcance": 942.2,
+   "views": 1524.0,
+   "compart": 2.5,
+   "salvos": 2.6,
    "seguidores": 4.2,
    "visitas_perfil": 19.6
   },
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 729.3,
-   "views": 931.1,
+   "alcance": 735.4,
+   "views": 938.1,
    "compart": 4.3,
-   "salvos": 1.4,
+   "salvos": 1.5,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -279,7 +280,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4202,
+   "views": 4204,
    "alcance": 1985,
    "compart": 6,
    "formato": "carrossel",
@@ -288,8 +289,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3920,
-   "alcance": 2700,
+   "views": 3924,
+   "alcance": 2704,
    "compart": 8,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -315,8 +316,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2534,
-   "alcance": 1646,
+   "views": 2538,
+   "alcance": 1648,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -333,8 +334,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2283,
-   "alcance": 1956,
+   "views": 2291,
+   "alcance": 1961,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -345,7 +346,7 @@
  "canais": {
   "instagram": 302,
   "comentario": 84,
-  "whatsapp": 50
+  "whatsapp": 51
  },
  "por_dia": [
   [
@@ -411,8 +412,12 @@
   [
    "2026-11-04",
    34
+  ],
+  [
+   "2026-11-05",
+   1
   ]
  ],
  "repositorio": 27,
- "total_publico": 436
+ "total_publico": 437
 }
