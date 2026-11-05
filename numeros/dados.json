@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-05T05:47:06",
- "seguidores": 520,
+ "atualizado_em": "2026-11-05T06:59:28",
+ "seguidores": 537,
  "posts": 46,
  "t28": {
-  "views": 82994,
-  "accounts_engaged": 872,
-  "total_interactions": 1953,
-  "profile_views": 2233,
-  "likes": 1281,
+  "views": 83303,
+  "accounts_engaged": 884,
+  "total_interactions": 1964,
+  "profile_views": 2240,
+  "likes": 1292,
   "comments": 53,
   "shares": 197,
   "saves": 137,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 46
+   "valor": 283
   }
  ],
  "seguidores_serie": [
@@ -251,8 +251,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 950.5,
-   "views": 1533.4,
+   "alcance": 951.5,
+   "views": 1535.6,
    "compart": 2.5,
    "salvos": 2.6,
    "seguidores": 4.2,
@@ -261,8 +261,8 @@
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 744.6,
-   "views": 947.0,
+   "alcance": 748.8,
+   "views": 953.3,
    "compart": 4.3,
    "salvos": 1.5,
    "seguidores": null,
@@ -316,13 +316,22 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2546,
-   "alcance": 1659,
+   "views": 2549,
+   "alcance": 1661,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
    "link": "https://www.instagram.com/p/DfP64KUicug/",
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
+  },
+  {
+   "views": 2304,
+   "alcance": 1964,
+   "compart": 18,
+   "formato": "reels",
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
+   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
    "views": 2304,
@@ -332,15 +341,6 @@
    "quando": "2026-10-24",
    "link": "https://www.instagram.com/p/De5U7Ssie4-/",
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
-  },
-  {
-   "views": 2300,
-   "alcance": 1964,
-   "compart": 18,
-   "formato": "reels",
-   "quando": "2026-10-30",
-   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
-   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   }
  ],
  "canais": {
