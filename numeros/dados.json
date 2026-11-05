@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-05T08:01:59",
- "seguidores": 550,
+ "atualizado_em": "2026-11-05T09:04:45",
+ "seguidores": 560,
  "posts": 45,
  "t28": {
-  "views": 83699,
-  "accounts_engaged": 909,
-  "total_interactions": 1995,
-  "profile_views": 2269,
-  "likes": 1315,
-  "comments": 53,
+  "views": 83960,
+  "accounts_engaged": 920,
+  "total_interactions": 2012,
+  "profile_views": 2280,
+  "likes": 1326,
+  "comments": 55,
   "shares": 199,
-  "saves": 139,
+  "saves": 142,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 591
+   "valor": 781
   }
  ],
  "seguidores_serie": [
@@ -251,18 +251,18 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 952.6,
-   "views": 1536.9,
+   "alcance": 952.9,
+   "views": 1537.7,
    "compart": 2.5,
    "salvos": 2.6,
-   "seguidores": 4.2,
+   "seguidores": 4.3,
    "visitas_perfil": 19.7
   },
   {
    "grupo": "reels",
    "posts": 30,
-   "alcance": 777.5,
-   "views": 989.9,
+   "alcance": 780.9,
+   "views": 993.4,
    "compart": 4.5,
    "salvos": 1.5,
    "seguidores": null,
@@ -289,7 +289,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3933,
+   "views": 3935,
    "alcance": 2711,
    "compart": 9,
    "formato": "carrossel",
@@ -316,7 +316,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2550,
+   "views": 2551,
    "alcance": 1664,
    "compart": 6,
    "formato": "carrossel",
@@ -325,8 +325,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2310,
-   "alcance": 1969,
+   "views": 2319,
+   "alcance": 1977,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -345,7 +345,7 @@
  ],
  "canais": {
   "instagram": 302,
-  "comentario": 84,
+  "comentario": 85,
   "whatsapp": 52
  },
  "por_dia": [
@@ -415,9 +415,9 @@
   ],
   [
    "2026-11-05",
-   2
+   3
   ]
  ],
  "repositorio": 27,
- "total_publico": 438
+ "total_publico": 439
 }
