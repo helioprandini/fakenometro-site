@@ -1,24 +1,20 @@
 {
- "atualizado_em": "2026-11-05T03:41:41",
- "seguidores": 512,
+ "atualizado_em": "2026-11-05T04:44:12",
+ "seguidores": 517,
  "posts": 46,
  "t28": {
-  "views": 82745,
-  "accounts_engaged": 858,
-  "total_interactions": 1929,
-  "profile_views": 2221,
-  "likes": 1265,
+  "views": 82853,
+  "accounts_engaged": 867,
+  "total_interactions": 1940,
+  "profile_views": 2228,
+  "likes": 1273,
   "comments": 52,
-  "shares": 196,
-  "saves": 135,
+  "shares": 197,
+  "saves": 136,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-08",
-   "valor": 0
-  },
   {
    "dia": "2026-10-09",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 6254
+   "valor": 6328
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-08",
-   "valor": 0
-  },
   {
    "dia": "2026-10-09",
    "valor": 0
@@ -251,18 +243,18 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 947.7,
-   "views": 1529.5,
+   "alcance": 948.8,
+   "views": 1532.1,
    "compart": 2.5,
    "salvos": 2.6,
    "seguidores": 4.2,
-   "visitas_perfil": 19.6
+   "visitas_perfil": 19.7
   },
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 741.3,
-   "views": 943.5,
+   "alcance": 742.7,
+   "views": 945.4,
    "compart": 4.3,
    "salvos": 1.5,
    "seguidores": null,
@@ -289,9 +281,9 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3926,
+   "views": 3930,
    "alcance": 2707,
-   "compart": 8,
+   "compart": 9,
    "formato": "carrossel",
    "quando": "2026-10-22",
    "link": "https://www.instagram.com/p/DezA5RkFn7b/",
@@ -316,7 +308,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2544,
+   "views": 2545,
    "alcance": 1659,
    "compart": 6,
    "formato": "carrossel",
@@ -334,7 +326,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2295,
+   "views": 2299,
    "alcance": 1964,
    "compart": 18,
    "formato": "reels",
