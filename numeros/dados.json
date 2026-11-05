@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-05T17:56:23",
- "seguidores": 675,
+ "atualizado_em": "2026-11-05T18:58:17",
+ "seguidores": 680,
  "posts": 45,
  "t28": {
-  "views": 86806,
-  "accounts_engaged": 1079,
-  "total_interactions": 2265,
-  "profile_views": 2398,
-  "likes": 1511,
+  "views": 86914,
+  "accounts_engaged": 1093,
+  "total_interactions": 2286,
+  "profile_views": 2406,
+  "likes": 1526,
   "comments": 58,
-  "shares": 204,
+  "shares": 205,
   "saves": 168,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 2792
+   "valor": 2859
   }
  ],
  "seguidores_serie": [
@@ -251,8 +251,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 958.8,
-   "views": 1545.1,
+   "alcance": 959.2,
+   "views": 1545.3,
    "compart": 2.5,
    "salvos": 2.7,
    "seguidores": 4.3,
@@ -261,8 +261,8 @@
   {
    "grupo": "reels",
    "posts": 30,
-   "alcance": 809.7,
-   "views": 1029.7,
+   "alcance": 810.2,
+   "views": 1031.0,
    "compart": 4.6,
    "salvos": 1.7,
    "seguidores": null,
@@ -290,7 +290,7 @@
   },
   {
    "views": 3948,
-   "alcance": 2719,
+   "alcance": 2723,
    "compart": 9,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -307,6 +307,15 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
+   "views": 2792,
+   "alcance": 2231,
+   "compart": 5,
+   "formato": "reels",
+   "quando": "2026-11-05",
+   "link": "https://www.instagram.com/reel/DfVsbrcgkZ2/",
+   "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
+  },
+  {
    "views": 2771,
    "alcance": 2132,
    "compart": 2,
@@ -316,17 +325,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2757,
-   "alcance": 2222,
-   "compart": 5,
-   "formato": "reels",
-   "quando": "2026-11-05",
-   "link": "https://www.instagram.com/reel/DfVsbrcgkZ2/",
-   "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
-  },
-  {
-   "views": 2569,
-   "alcance": 1684,
+   "views": 2571,
+   "alcance": 1686,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -344,7 +344,7 @@
   }
  ],
  "canais": {
-  "instagram": 303,
+  "instagram": 306,
   "comentario": 86,
   "whatsapp": 54
  },
@@ -415,9 +415,9 @@
   ],
   [
    "2026-11-05",
-   7
+   10
   ]
  ],
  "repositorio": 28,
- "total_publico": 443
+ "total_publico": 446
 }
