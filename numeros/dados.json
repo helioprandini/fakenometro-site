@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T21:05:47",
- "seguidores": 414,
+ "atualizado_em": "2026-11-04T22:02:47",
+ "seguidores": 433,
  "posts": 46,
  "t28": {
-  "views": 78837,
-  "accounts_engaged": 707,
-  "total_interactions": 1711,
-  "profile_views": 2105,
-  "likes": 1121,
-  "comments": 42,
-  "shares": 188,
-  "saves": 111,
+  "views": 79557,
+  "accounts_engaged": 741,
+  "total_interactions": 1749,
+  "profile_views": 2129,
+  "likes": 1150,
+  "comments": 46,
+  "shares": 189,
+  "saves": 112,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 3802
+   "valor": 4203
   }
  ],
  "seguidores_serie": [
@@ -250,18 +250,18 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 908.7,
-   "views": 1477.4,
+   "alcance": 917.3,
+   "views": 1494.1,
    "compart": 2.4,
-   "salvos": 2.3,
+   "salvos": 2.4,
    "seguidores": 4.2,
-   "visitas_perfil": 19.5
+   "visitas_perfil": 19.6
   },
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 701.1,
-   "views": 895.5,
+   "alcance": 709.0,
+   "views": 910.0,
    "compart": 4.3,
    "salvos": 1.4,
    "seguidores": null,
@@ -288,7 +288,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3909,
+   "views": 3915,
    "alcance": 2689,
    "compart": 8,
    "formato": "carrossel",
@@ -306,8 +306,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2763,
-   "alcance": 2121,
+   "views": 2764,
+   "alcance": 2124,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -315,8 +315,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2523,
-   "alcance": 1637,
+   "views": 2528,
+   "alcance": 1643,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -333,8 +333,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2270,
-   "alcance": 1938,
+   "views": 2273,
+   "alcance": 1943,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
