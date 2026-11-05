@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T22:58:04",
- "seguidores": 454,
+ "atualizado_em": "2026-11-05T00:01:28",
+ "seguidores": 478,
  "posts": 46,
  "t28": {
-  "views": 80378,
-  "accounts_engaged": 766,
-  "total_interactions": 1782,
-  "profile_views": 2148,
-  "likes": 1174,
+  "views": 81359,
+  "accounts_engaged": 789,
+  "total_interactions": 1823,
+  "profile_views": 2180,
+  "likes": 1204,
   "comments": 49,
-  "shares": 190,
-  "saves": 115,
+  "shares": 191,
+  "saves": 121,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 4616
+   "valor": 5288
   }
  ],
  "seguidores_serie": [
@@ -244,14 +244,14 @@
  ],
  "cliques_whatsapp": {
   "2026-11-03": 1,
-  "2026-11-04": 2
+  "2026-11-04": 3
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 928.9,
-   "views": 1506.5,
+   "alcance": 937.4,
+   "views": 1516.5,
    "compart": 2.4,
    "salvos": 2.5,
    "seguidores": 4.2,
@@ -260,8 +260,8 @@
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 720.8,
-   "views": 921.0,
+   "alcance": 729.3,
+   "views": 931.1,
    "compart": 4.3,
    "salvos": 1.4,
    "seguidores": null,
@@ -288,8 +288,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3915,
-   "alcance": 2693,
+   "views": 3920,
+   "alcance": 2700,
    "compart": 8,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -306,7 +306,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2764,
+   "views": 2765,
    "alcance": 2124,
    "compart": 2,
    "formato": "reels",
@@ -315,7 +315,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2533,
+   "views": 2534,
    "alcance": 1646,
    "compart": 6,
    "formato": "carrossel",
@@ -333,8 +333,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2276,
-   "alcance": 1948,
+   "views": 2283,
+   "alcance": 1956,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -345,7 +345,7 @@
  "canais": {
   "instagram": 302,
   "comentario": 84,
-  "whatsapp": 49
+  "whatsapp": 50
  },
  "por_dia": [
   [
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   33
+   34
   ]
  ],
  "repositorio": 27,
- "total_publico": 435
+ "total_publico": 436
 }
