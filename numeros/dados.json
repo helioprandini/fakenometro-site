@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-04T22:02:47",
- "seguidores": 433,
+ "atualizado_em": "2026-11-04T22:58:04",
+ "seguidores": 454,
  "posts": 46,
  "t28": {
-  "views": 79557,
-  "accounts_engaged": 741,
-  "total_interactions": 1749,
-  "profile_views": 2129,
-  "likes": 1150,
-  "comments": 46,
-  "shares": 189,
-  "saves": 112,
+  "views": 80378,
+  "accounts_engaged": 766,
+  "total_interactions": 1782,
+  "profile_views": 2148,
+  "likes": 1174,
+  "comments": 49,
+  "shares": 190,
+  "saves": 115,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-04",
-   "valor": 4203
+   "valor": 4616
   }
  ],
  "seguidores_serie": [
@@ -250,18 +250,18 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 917.3,
-   "views": 1494.1,
+   "alcance": 928.9,
+   "views": 1506.5,
    "compart": 2.4,
-   "salvos": 2.4,
+   "salvos": 2.5,
    "seguidores": 4.2,
    "visitas_perfil": 19.6
   },
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 709.0,
-   "views": 910.0,
+   "alcance": 720.8,
+   "views": 921.0,
    "compart": 4.3,
    "salvos": 1.4,
    "seguidores": null,
@@ -289,7 +289,7 @@
   },
   {
    "views": 3915,
-   "alcance": 2689,
+   "alcance": 2693,
    "compart": 8,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -315,8 +315,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2528,
-   "alcance": 1643,
+   "views": 2533,
+   "alcance": 1646,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -333,8 +333,8 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2273,
-   "alcance": 1943,
+   "views": 2276,
+   "alcance": 1948,
    "compart": 18,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -343,7 +343,7 @@
   }
  ],
  "canais": {
-  "instagram": 299,
+  "instagram": 302,
   "comentario": 84,
   "whatsapp": 49
  },
@@ -410,9 +410,9 @@
   ],
   [
    "2026-11-04",
-   30
+   33
   ]
  ],
  "repositorio": 27,
- "total_publico": 432
+ "total_publico": 435
 }
