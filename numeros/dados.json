@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-05T19:48:12",
- "seguidores": 686,
- "posts": 45,
+ "atualizado_em": "2026-11-05T20:53:09",
+ "seguidores": 690,
+ "posts": 46,
  "t28": {
-  "views": 87002,
-  "accounts_engaged": 1103,
-  "total_interactions": 2300,
-  "profile_views": 2409,
-  "likes": 1535,
+  "views": 87088,
+  "accounts_engaged": 1105,
+  "total_interactions": 2307,
+  "profile_views": 2413,
+  "likes": 1541,
   "comments": 58,
   "shares": 205,
   "saves": 170,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 2963
+   "valor": 3023
   }
  ],
  "seguidores_serie": [
@@ -252,7 +252,7 @@
    "grupo": "carrossel",
    "posts": 15,
    "alcance": 959.3,
-   "views": 1545.3,
+   "views": 1545.4,
    "compart": 2.5,
    "salvos": 2.7,
    "seguidores": 4.3,
@@ -260,11 +260,11 @@
   },
   {
    "grupo": "reels",
-   "posts": 30,
-   "alcance": 811.8,
-   "views": 1032.3,
-   "compart": 4.6,
-   "salvos": 1.7,
+   "posts": 31,
+   "alcance": 786.4,
+   "views": 1001.8,
+   "compart": 4.5,
+   "salvos": 1.6,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -307,8 +307,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2830,
-   "alcance": 2276,
+   "views": 2860,
+   "alcance": 2298,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -344,7 +344,7 @@
   }
  ],
  "canais": {
-  "instagram": 308,
+  "instagram": 312,
   "comentario": 86,
   "whatsapp": 54
  },
@@ -415,9 +415,9 @@
   ],
   [
    "2026-11-05",
-   12
+   16
   ]
  ],
  "repositorio": 28,
- "total_publico": 448
+ "total_publico": 452
 }
