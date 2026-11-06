@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-06T04:01:49",
- "seguidores": 733,
+ "atualizado_em": "2026-11-06T05:04:47",
+ "seguidores": 734,
  "posts": 46,
  "t28": {
-  "views": 88357,
+  "views": 88382,
   "accounts_engaged": 1157,
   "total_interactions": 2442,
-  "profile_views": 2448,
+  "profile_views": 2449,
   "likes": 1617,
   "comments": 59,
   "shares": 212,
@@ -121,7 +121,11 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 3815
+   "valor": 3834
+  },
+  {
+   "dia": "2026-11-06",
+   "valor": 0
   }
  ],
  "seguidores_serie": [
@@ -232,6 +236,10 @@
   {
    "dia": "2026-11-05",
    "valor": 0
+  },
+  {
+   "dia": "2026-11-06",
+   "valor": 0
   }
  ],
  "cliques_whatsapp": {
@@ -243,7 +251,7 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 961.5,
+   "alcance": 961.7,
    "views": 1548.3,
    "compart": 2.5,
    "salvos": 2.9,
@@ -253,8 +261,8 @@
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 804.7,
-   "views": 1022.4,
+   "alcance": 805.2,
+   "views": 1022.9,
    "compart": 4.5,
    "salvos": 1.7,
    "seguidores": null,
@@ -281,8 +289,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3958,
-   "alcance": 2723,
+   "views": 3959,
+   "alcance": 2726,
    "compart": 9,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -299,8 +307,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2890,
-   "alcance": 2328,
+   "views": 2891,
+   "alcance": 2332,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -326,7 +334,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2350,
+   "views": 2351,
    "alcance": 2006,
    "compart": 19,
    "formato": "reels",
