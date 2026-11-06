@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-05T23:48:19",
- "seguidores": 717,
+ "atualizado_em": "2026-11-06T00:52:09",
+ "seguidores": 729,
  "posts": 46,
  "t28": {
-  "views": 87901,
-  "accounts_engaged": 1141,
-  "total_interactions": 2380,
-  "profile_views": 2428,
-  "likes": 1581,
+  "views": 88132,
+  "accounts_engaged": 1150,
+  "total_interactions": 2414,
+  "profile_views": 2441,
+  "likes": 1599,
   "comments": 58,
-  "shares": 209,
-  "saves": 180,
+  "shares": 211,
+  "saves": 182,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 3532
+   "valor": 3708
   }
  ],
  "seguidores_serie": [
@@ -251,18 +251,18 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 960.1,
-   "views": 1546.8,
+   "alcance": 960.7,
+   "views": 1547.5,
    "compart": 2.5,
-   "salvos": 2.8,
+   "salvos": 2.9,
    "seguidores": 4.3,
    "visitas_perfil": 19.7
   },
   {
    "grupo": "reels",
    "posts": 31,
-   "alcance": 800.3,
-   "views": 1017.5,
+   "alcance": 802.9,
+   "views": 1020.3,
    "compart": 4.5,
    "salvos": 1.7,
    "seguidores": null,
@@ -280,7 +280,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4209,
+   "views": 4210,
    "alcance": 1988,
    "compart": 6,
    "formato": "carrossel",
@@ -289,7 +289,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3952,
+   "views": 3956,
    "alcance": 2723,
    "compart": 9,
    "formato": "carrossel",
@@ -308,7 +308,7 @@
   },
   {
    "views": 2886,
-   "alcance": 2322,
+   "alcance": 2325,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -326,7 +326,7 @@
   },
   {
    "views": 2573,
-   "alcance": 1691,
+   "alcance": 1693,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -334,8 +334,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2346,
-   "alcance": 2001,
+   "views": 2348,
+   "alcance": 2003,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
