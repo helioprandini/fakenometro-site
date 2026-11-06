@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-06T14:40:10",
- "seguidores": 866,
+ "atualizado_em": "2026-11-06T16:00:47",
+ "seguidores": 887,
  "posts": 47,
  "t28": {
-  "views": 90572,
-  "accounts_engaged": 1339,
-  "total_interactions": 2985,
-  "profile_views": 2600,
-  "likes": 1804,
-  "comments": 70,
-  "shares": 346,
-  "saves": 214,
+  "views": 91103,
+  "accounts_engaged": 1380,
+  "total_interactions": 3060,
+  "profile_views": 2642,
+  "likes": 1843,
+  "comments": 81,
+  "shares": 351,
+  "saves": 221,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-06",
-   "valor": 1573
+   "valor": 1935
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-05",
-   "valor": 0
+   "valor": 217
   },
   {
    "dia": "2026-11-06",
@@ -246,14 +246,14 @@
   "2026-11-03": 1,
   "2026-11-04": 3,
   "2026-11-05": 5,
-  "2026-11-06": 9
+  "2026-11-06": 10
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 966.9,
-   "views": 1558.1,
+   "alcance": 968.6,
+   "views": 1559.1,
    "compart": 2.7,
    "salvos": 2.9,
    "seguidores": 4.3,
@@ -262,10 +262,10 @@
   {
    "grupo": "reels",
    "posts": 32,
-   "alcance": 794.4,
-   "views": 1012.1,
-   "compart": 8.0,
-   "salvos": 1.8,
+   "alcance": 798.0,
+   "views": 1016.7,
+   "compart": 8.2,
+   "salvos": 1.9,
    "seguidores": null,
    "visitas_perfil": null
   }
@@ -290,8 +290,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 3998,
-   "alcance": 2749,
+   "views": 4004,
+   "alcance": 2757,
    "compart": 10,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -308,7 +308,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2932,
+   "views": 2933,
    "alcance": 2354,
    "compart": 5,
    "formato": "reels",
@@ -317,8 +317,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2779,
-   "alcance": 2138,
+   "views": 2782,
+   "alcance": 2144,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -326,7 +326,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2595,
+   "views": 2596,
    "alcance": 1707,
    "compart": 6,
    "formato": "carrossel",
@@ -335,8 +335,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2368,
-   "alcance": 2017,
+   "views": 2372,
+   "alcance": 2025,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -345,9 +345,9 @@
   }
  ],
  "canais": {
-  "instagram": 329,
+  "instagram": 331,
   "comentario": 88,
-  "whatsapp": 59
+  "whatsapp": 60
  },
  "por_dia": [
   [
@@ -420,9 +420,9 @@
   ],
   [
    "2026-11-06",
-   15
+   18
   ]
  ],
  "repositorio": 30,
- "total_publico": 476
+ "total_publico": 479
 }
