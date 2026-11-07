@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-07T13:57:46",
- "seguidores": 1106,
+ "atualizado_em": "2026-11-07T15:01:03",
+ "seguidores": 1116,
  "posts": 49,
  "t28": {
-  "views": 95949,
-  "accounts_engaged": 1670,
-  "total_interactions": 3858,
-  "profile_views": 2904,
-  "likes": 2187,
+  "views": 96172,
+  "accounts_engaged": 1677,
+  "total_interactions": 3899,
+  "profile_views": 2916,
+  "likes": 2205,
   "comments": 105,
-  "shares": 477,
-  "saves": 294,
+  "shares": 485,
+  "saves": 297,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 1269
+   "valor": 1390
   }
  ],
  "seguidores_serie": [
@@ -253,8 +253,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 980.3,
-   "views": 1581.4,
+   "alcance": 980.7,
+   "views": 1582.5,
    "compart": 2.8,
    "salvos": 3.0,
    "seguidores": 4.3,
@@ -263,9 +263,9 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 797.9,
-   "views": 1016.1,
-   "compart": 10.4,
+   "alcance": 799.3,
+   "views": 1018.1,
+   "compart": 10.6,
    "salvos": 2.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -282,7 +282,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4226,
+   "views": 4227,
    "alcance": 1995,
    "compart": 6,
    "formato": "carrossel",
@@ -291,7 +291,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4044,
+   "views": 4046,
    "alcance": 2784,
    "compart": 10,
    "formato": "carrossel",
@@ -309,8 +309,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2954,
-   "alcance": 2376,
+   "views": 2955,
+   "alcance": 2379,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -318,7 +318,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2796,
+   "views": 2797,
    "alcance": 2149,
    "compart": 2,
    "formato": "reels",
@@ -327,7 +327,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2626,
+   "views": 2627,
    "alcance": 1718,
    "compart": 6,
    "formato": "carrossel",
@@ -346,7 +346,7 @@
   }
  ],
  "canais": {
-  "instagram": 356,
+  "instagram": 359,
   "comentario": 90,
   "whatsapp": 68
  },
@@ -425,9 +425,9 @@
   ],
   [
    "2026-11-07",
-   13
+   16
   ]
  ],
- "repositorio": 30,
- "total_publico": 514
+ "repositorio": 31,
+ "total_publico": 517
 }
