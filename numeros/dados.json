@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-07T16:36:59",
- "seguidores": 1130,
+ "atualizado_em": "2026-11-07T17:40:12",
+ "seguidores": 1145,
  "posts": 49,
  "t28": {
-  "views": 96468,
-  "accounts_engaged": 1688,
-  "total_interactions": 3941,
-  "profile_views": 2928,
-  "likes": 2229,
+  "views": 96793,
+  "accounts_engaged": 1700,
+  "total_interactions": 3990,
+  "profile_views": 2942,
+  "likes": 2258,
   "comments": 107,
-  "shares": 489,
-  "saves": 300,
+  "shares": 495,
+  "saves": 303,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 1619
+   "valor": 1830
   }
  ],
  "seguidores_serie": [
@@ -247,15 +247,15 @@
   "2026-11-04": 3,
   "2026-11-05": 5,
   "2026-11-06": 14,
-  "2026-11-07": 3
+  "2026-11-07": 4
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 981.7,
-   "views": 1584.0,
-   "compart": 2.8,
+   "alcance": 982.4,
+   "views": 1584.7,
+   "compart": 2.9,
    "salvos": 3.0,
    "seguidores": 4.3,
    "visitas_perfil": 19.7
@@ -263,9 +263,9 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 801.9,
-   "views": 1021.1,
-   "compart": 10.6,
+   "alcance": 805.4,
+   "views": 1025.5,
+   "compart": 10.7,
    "salvos": 2.5,
    "seguidores": null,
    "visitas_perfil": null
@@ -291,9 +291,9 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4050,
+   "views": 4051,
    "alcance": 2784,
-   "compart": 10,
+   "compart": 11,
    "formato": "carrossel",
    "quando": "2026-10-22",
    "link": "https://www.instagram.com/p/DezA5RkFn7b/",
@@ -327,8 +327,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2633,
-   "alcance": 1721,
+   "views": 2635,
+   "alcance": 1725,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -336,8 +336,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2398,
-   "alcance": 2041,
+   "views": 2400,
+   "alcance": 2044,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -346,9 +346,9 @@
   }
  ],
  "canais": {
-  "instagram": 359,
+  "instagram": 362,
   "comentario": 91,
-  "whatsapp": 68
+  "whatsapp": 70
  },
  "por_dia": [
   [
@@ -425,9 +425,9 @@
   ],
   [
    "2026-11-07",
-   17
+   22
   ]
  ],
  "repositorio": 31,
- "total_publico": 518
+ "total_publico": 523
 }
