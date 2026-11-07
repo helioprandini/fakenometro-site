@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-07T16:05:22",
- "seguidores": 1123,
+ "atualizado_em": "2026-11-07T16:36:59",
+ "seguidores": 1130,
  "posts": 49,
  "t28": {
-  "views": 96372,
-  "accounts_engaged": 1684,
-  "total_interactions": 3919,
-  "profile_views": 2924,
-  "likes": 2215,
+  "views": 96468,
+  "accounts_engaged": 1688,
+  "total_interactions": 3941,
+  "profile_views": 2928,
+  "likes": 2229,
   "comments": 107,
-  "shares": 486,
-  "saves": 299,
+  "shares": 489,
+  "saves": 300,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 1554
+   "valor": 1619
   }
  ],
  "seguidores_serie": [
@@ -253,8 +253,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 981.5,
-   "views": 1583.5,
+   "alcance": 981.7,
+   "views": 1584.0,
    "compart": 2.8,
    "salvos": 3.0,
    "seguidores": 4.3,
@@ -263,8 +263,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 800.8,
-   "views": 1019.6,
+   "alcance": 801.9,
+   "views": 1021.1,
    "compart": 10.6,
    "salvos": 2.5,
    "seguidores": null,
@@ -291,7 +291,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4046,
+   "views": 4050,
    "alcance": 2784,
    "compart": 10,
    "formato": "carrossel",
@@ -309,7 +309,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2955,
+   "views": 2956,
    "alcance": 2379,
    "compart": 5,
    "formato": "reels",
@@ -319,7 +319,7 @@
   },
   {
    "views": 2798,
-   "alcance": 2149,
+   "alcance": 2152,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -336,7 +336,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2396,
+   "views": 2398,
    "alcance": 2041,
    "compart": 19,
    "formato": "reels",
@@ -347,7 +347,7 @@
  ],
  "canais": {
   "instagram": 359,
-  "comentario": 90,
+  "comentario": 91,
   "whatsapp": 68
  },
  "por_dia": [
@@ -425,9 +425,9 @@
   ],
   [
    "2026-11-07",
-   16
+   17
   ]
  ],
  "repositorio": 31,
- "total_publico": 517
+ "total_publico": 518
 }
