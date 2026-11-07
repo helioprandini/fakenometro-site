@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-06T20:48:13",
- "seguidores": 952,
+ "atualizado_em": "2026-11-06T21:51:57",
+ "seguidores": 965,
  "posts": 48,
  "t28": {
-  "views": 92551,
-  "accounts_engaged": 1472,
-  "total_interactions": 3284,
-  "profile_views": 2735,
-  "likes": 1952,
-  "comments": 93,
-  "shares": 372,
-  "saves": 250,
+  "views": 92827,
+  "accounts_engaged": 1501,
+  "total_interactions": 3338,
+  "profile_views": 2752,
+  "likes": 1981,
+  "comments": 94,
+  "shares": 375,
+  "saves": 258,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-06",
-   "valor": 2912
+   "valor": 3076
   }
  ],
  "seguidores_serie": [
@@ -246,14 +246,14 @@
   "2026-11-03": 1,
   "2026-11-04": 3,
   "2026-11-05": 5,
-  "2026-11-06": 12
+  "2026-11-06": 13
  },
  "formatos": [
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 972.7,
-   "views": 1566.2,
+   "alcance": 973.8,
+   "views": 1567.3,
    "compart": 2.7,
    "salvos": 2.9,
    "seguidores": 4.3,
@@ -262,8 +262,8 @@
   {
    "grupo": "reels",
    "posts": 33,
-   "alcance": 784.7,
-   "views": 999.9,
+   "alcance": 786.8,
+   "views": 1002.1,
    "compart": 8.5,
    "salvos": 2.0,
    "seguidores": null,
@@ -281,7 +281,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4217,
+   "views": 4218,
    "alcance": 1990,
    "compart": 6,
    "formato": "carrossel",
@@ -290,8 +290,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4022,
-   "alcance": 2772,
+   "views": 4024,
+   "alcance": 2776,
    "compart": 10,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -308,8 +308,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2938,
-   "alcance": 2366,
+   "views": 2939,
+   "alcance": 2369,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -317,7 +317,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2790,
+   "views": 2791,
    "alcance": 2147,
    "compart": 2,
    "formato": "reels",
@@ -326,7 +326,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2602,
+   "views": 2603,
    "alcance": 1707,
    "compart": 6,
    "formato": "carrossel",
@@ -335,7 +335,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2382,
+   "views": 2385,
    "alcance": 2030,
    "compart": 19,
    "formato": "reels",
@@ -345,7 +345,7 @@
   }
  ],
  "canais": {
-  "instagram": 340,
+  "instagram": 343,
   "comentario": 90,
   "whatsapp": 65
  },
@@ -420,9 +420,9 @@
   ],
   [
    "2026-11-06",
-   34
+   37
   ]
  ],
  "repositorio": 30,
- "total_publico": 495
+ "total_publico": 498
 }
