@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-07T18:53:41",
- "seguidores": 1158,
+ "atualizado_em": "2026-11-07T19:56:44",
+ "seguidores": 1177,
  "posts": 50,
  "t28": {
-  "views": 97029,
-  "accounts_engaged": 1718,
-  "total_interactions": 4055,
-  "profile_views": 2960,
-  "likes": 2283,
+  "views": 97320,
+  "accounts_engaged": 1742,
+  "total_interactions": 4102,
+  "profile_views": 2978,
+  "likes": 2312,
   "comments": 108,
-  "shares": 509,
-  "saves": 306,
+  "shares": 513,
+  "saves": 309,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 2030
+   "valor": 2207
   }
  ],
  "seguidores_serie": [
@@ -253,8 +253,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 982.8,
-   "views": 1585.5,
+   "alcance": 983.2,
+   "views": 1586.5,
    "compart": 2.9,
    "salvos": 3.0,
    "seguidores": 4.3,
@@ -263,9 +263,9 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 784.0,
-   "views": 998.6,
-   "compart": 10.4,
+   "alcance": 785.5,
+   "views": 1000.9,
+   "compart": 10.7,
    "salvos": 2.5,
    "seguidores": null,
    "visitas_perfil": null
@@ -291,7 +291,7 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4054,
+   "views": 4057,
    "alcance": 2784,
    "compart": 11,
    "formato": "carrossel",
@@ -309,7 +309,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2959,
+   "views": 2960,
    "alcance": 2382,
    "compart": 5,
    "formato": "reels",
@@ -318,7 +318,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2799,
+   "views": 2800,
    "alcance": 2152,
    "compart": 2,
    "formato": "reels",
@@ -327,7 +327,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2637,
+   "views": 2641,
    "alcance": 1728,
    "compart": 6,
    "formato": "carrossel",
@@ -336,7 +336,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2402,
+   "views": 2404,
    "alcance": 2044,
    "compart": 19,
    "formato": "reels",
@@ -346,9 +346,9 @@
   }
  ],
  "canais": {
-  "instagram": 363,
+  "instagram": 367,
   "comentario": 91,
-  "whatsapp": 70
+  "whatsapp": 71
  },
  "por_dia": [
   [
@@ -425,9 +425,9 @@
   ],
   [
    "2026-11-07",
-   23
+   28
   ]
  ],
- "repositorio": 31,
- "total_publico": 524
+ "repositorio": 32,
+ "total_publico": 529
 }
