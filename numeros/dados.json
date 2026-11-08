@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T01:42:38",
- "seguidores": 1266,
+ "atualizado_em": "2026-11-08T02:46:10",
+ "seguidores": 1271,
  "posts": 50,
  "t28": {
-  "views": 99018,
-  "accounts_engaged": 1850,
-  "total_interactions": 4792,
-  "profile_views": 3085,
-  "likes": 2444,
+  "views": 99108,
+  "accounts_engaged": 1852,
+  "total_interactions": 4799,
+  "profile_views": 3087,
+  "likes": 2450,
   "comments": 121,
   "shares": 748,
-  "saves": 345,
+  "saves": 346,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 3314
+   "valor": 3360
   }
  ],
  "seguidores_serie": [
@@ -254,8 +254,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 986.2,
-   "views": 1592.8,
+   "alcance": 986.5,
+   "views": 1593.3,
    "compart": 2.9,
    "salvos": 3.1,
    "seguidores": 4.3,
@@ -264,8 +264,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 805.0,
-   "views": 1023.2,
+   "alcance": 805.9,
+   "views": 1024.1,
    "compart": 11.0,
    "salvos": 2.7,
    "seguidores": null,
@@ -319,7 +319,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2802,
+   "views": 2803,
    "alcance": 2152,
    "compart": 2,
    "formato": "reels",
