@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T17:44:28",
- "seguidores": 1473,
- "posts": 52,
+ "atualizado_em": "2026-11-08T18:48:32",
+ "seguidores": 1489,
+ "posts": 53,
  "t28": {
-  "views": 105067,
-  "accounts_engaged": 2130,
-  "total_interactions": 5536,
-  "profile_views": 3343,
-  "likes": 2806,
-  "comments": 145,
-  "shares": 858,
-  "saves": 402,
+  "views": 105889,
+  "accounts_engaged": 2167,
+  "total_interactions": 5694,
+  "profile_views": 3360,
+  "likes": 2864,
+  "comments": 156,
+  "shares": 890,
+  "saves": 412,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 3770
+   "valor": 4324
   }
  ],
  "seguidores_serie": [
@@ -253,23 +253,23 @@
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 36,
-   "alcance": 838.7,
-   "views": 1072.8,
-   "compart": 12.3,
+   "posts": 37,
+   "alcance": 828.5,
+   "views": 1062.9,
+   "compart": 13.1,
    "salvos": 3.2,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 14,
-   "alcance": 732.5,
-   "views": 1154.1,
-   "compart": 2.1,
-   "salvos": 2.4,
-   "seguidores": 2.7,
-   "visitas_perfil": 10.3
+   "posts": 13,
+   "alcance": 761.6,
+   "views": 1193.2,
+   "compart": 2.2,
+   "salvos": 2.5,
+   "seguidores": 2.9,
+   "visitas_perfil": 11.1
   }
  ],
  "top": [
@@ -292,7 +292,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3000,
+   "views": 3002,
    "alcance": 2414,
    "compart": 5,
    "formato": "reels",
@@ -301,7 +301,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2805,
+   "views": 2806,
    "alcance": 2152,
    "compart": 2,
    "formato": "reels",
@@ -310,8 +310,17 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2665,
-   "alcance": 1744,
+   "views": 2700,
+   "alcance": 1837,
+   "compart": 88,
+   "formato": "reels",
+   "quando": "2026-11-08",
+   "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
+   "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
+  },
+  {
+   "views": 2666,
+   "alcance": 1746,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -319,8 +328,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2446,
-   "alcance": 2074,
+   "views": 2448,
+   "alcance": 2077,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -329,15 +338,6 @@
   },
   {
    "views": 2318,
-   "alcance": 1578,
-   "compart": 2,
-   "formato": "carrossel",
-   "quando": "2026-10-24",
-   "link": "https://www.instagram.com/p/De5U7Ssie4-/",
-   "titulo": "QUEM CHECOU O DEBATE, E COMO"
-  },
-  {
-   "views": 2317,
    "alcance": 1632,
    "compart": 3,
    "formato": "carrossel",
@@ -347,9 +347,9 @@
   }
  ],
  "canais": {
-  "instagram": 386,
+  "instagram": 391,
   "comentario": 93,
-  "whatsapp": 89
+  "whatsapp": 91
  },
  "por_dia": [
   [
@@ -430,9 +430,9 @@
   ],
   [
    "2026-11-08",
-   28
+   35
   ]
  ],
  "repositorio": 33,
- "total_publico": 568
+ "total_publico": 575
 }
