@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T11:56:36",
- "seguidores": 1389,
- "posts": 51,
+ "atualizado_em": "2026-11-08T12:59:31",
+ "seguidores": 1410,
+ "posts": 52,
  "t28": {
-  "views": 101353,
-  "accounts_engaged": 1990,
-  "total_interactions": 5104,
-  "profile_views": 3226,
-  "likes": 2613,
-  "comments": 135,
-  "shares": 782,
-  "saves": 373,
+  "views": 101935,
+  "accounts_engaged": 2017,
+  "total_interactions": 5174,
+  "profile_views": 3252,
+  "likes": 2651,
+  "comments": 139,
+  "shares": 788,
+  "saves": 380,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 1412
+   "valor": 1796
   }
  ],
  "seguidores_serie": [
@@ -253,23 +253,23 @@
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 35,
-   "alcance": 817.0,
-   "views": 1037.4,
-   "compart": 11.4,
+   "posts": 36,
+   "alcance": 799.5,
+   "views": 1021.4,
+   "compart": 11.1,
    "salvos": 2.9,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 15,
-   "alcance": 810.6,
-   "views": 1342.7,
-   "compart": 2.3,
+   "posts": 14,
+   "alcance": 727.7,
+   "views": 1140.4,
+   "compart": 2.1,
    "salvos": 2.3,
-   "seguidores": 3.6,
-   "visitas_perfil": 17.7
+   "seguidores": 2.7,
+   "visitas_perfil": 10.3
   }
  ],
  "top": [
@@ -283,15 +283,6 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4232,
-   "alcance": 1998,
-   "compart": 6,
-   "formato": "carrossel",
-   "quando": "2026-10-24",
-   "link": "https://www.instagram.com/p/De4dx36FjSQ/",
-   "titulo": "RAIO-X DO DEBATE"
-  },
-  {
    "views": 3236,
    "alcance": 2178,
    "compart": 0,
@@ -301,7 +292,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2982,
+   "views": 2984,
    "alcance": 2408,
    "compart": 5,
    "formato": "reels",
@@ -319,8 +310,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2662,
-   "alcance": 1739,
+   "views": 2663,
+   "alcance": 1742,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -328,7 +319,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2429,
+   "views": 2433,
    "alcance": 2066,
    "compart": 19,
    "formato": "reels",
@@ -344,12 +335,21 @@
    "quando": "2026-10-24",
    "link": "https://www.instagram.com/p/De5U7Ssie4-/",
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
+  },
+  {
+   "views": 2315,
+   "alcance": 1632,
+   "compart": 3,
+   "formato": "carrossel",
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/p/DfHz_2slpMS/",
+   "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
   }
  ],
  "canais": {
-  "instagram": 379,
-  "comentario": 91,
-  "whatsapp": 83
+  "instagram": 382,
+  "comentario": 92,
+  "whatsapp": 86
  },
  "por_dia": [
   [
@@ -430,9 +430,9 @@
   ],
   [
    "2026-11-08",
-   13
+   20
   ]
  ],
  "repositorio": 33,
- "total_publico": 553
+ "total_publico": 560
 }
