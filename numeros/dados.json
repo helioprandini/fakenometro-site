@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T12:59:31",
- "seguidores": 1410,
+ "atualizado_em": "2026-11-08T14:03:02",
+ "seguidores": 1422,
  "posts": 52,
  "t28": {
-  "views": 101935,
-  "accounts_engaged": 2017,
-  "total_interactions": 5174,
-  "profile_views": 3252,
-  "likes": 2651,
-  "comments": 139,
-  "shares": 788,
-  "saves": 380,
+  "views": 102626,
+  "accounts_engaged": 2033,
+  "total_interactions": 5260,
+  "profile_views": 3277,
+  "likes": 2684,
+  "comments": 141,
+  "shares": 805,
+  "saves": 385,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 1796
+   "valor": 2234
   }
  ],
  "seguidores_serie": [
@@ -254,18 +254,18 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 799.5,
-   "views": 1021.4,
+   "alcance": 809.4,
+   "views": 1032.8,
    "compart": 11.1,
-   "salvos": 2.9,
+   "salvos": 3.0,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 727.7,
-   "views": 1140.4,
+   "alcance": 728.9,
+   "views": 1143.1,
    "compart": 2.1,
    "salvos": 2.3,
    "seguidores": 2.7,
@@ -292,7 +292,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2984,
+   "views": 2986,
    "alcance": 2408,
    "compart": 5,
    "formato": "reels",
@@ -319,8 +319,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2433,
-   "alcance": 2066,
+   "views": 2436,
+   "alcance": 2068,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -347,9 +347,9 @@
   }
  ],
  "canais": {
-  "instagram": 382,
-  "comentario": 92,
-  "whatsapp": 86
+  "instagram": 385,
+  "comentario": 93,
+  "whatsapp": 89
  },
  "por_dia": [
   [
@@ -430,9 +430,9 @@
   ],
   [
    "2026-11-08",
-   20
+   27
   ]
  ],
  "repositorio": 33,
- "total_publico": 560
+ "total_publico": 567
 }
