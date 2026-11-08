@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T15:38:09",
- "seguidores": 1441,
+ "atualizado_em": "2026-11-08T16:41:26",
+ "seguidores": 1454,
  "posts": 52,
  "t28": {
-  "views": 103552,
-  "accounts_engaged": 2079,
-  "total_interactions": 5376,
-  "profile_views": 3306,
-  "likes": 2737,
+  "views": 104199,
+  "accounts_engaged": 2099,
+  "total_interactions": 5433,
+  "profile_views": 3321,
+  "likes": 2765,
   "comments": 143,
-  "shares": 826,
-  "saves": 391,
+  "shares": 834,
+  "saves": 396,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 2726
+   "valor": 3131
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 0
+   "valor": 247
   },
   {
    "dia": "2026-11-08",
@@ -254,18 +254,18 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 820.7,
-   "views": 1049.8,
-   "compart": 11.8,
-   "salvos": 3.1,
+   "alcance": 827.8,
+   "views": 1058.8,
+   "compart": 12.3,
+   "salvos": 3.2,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 730.6,
-   "views": 1148.0,
+   "alcance": 731.7,
+   "views": 1151.6,
    "compart": 2.1,
    "salvos": 2.4,
    "seguidores": 2.7,
@@ -283,7 +283,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 3236,
+   "views": 3238,
    "alcance": 2178,
    "compart": 0,
    "formato": "reels",
@@ -292,7 +292,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 2993,
+   "views": 2996,
    "alcance": 2411,
    "compart": 5,
    "formato": "reels",
@@ -301,7 +301,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2804,
+   "views": 2805,
    "alcance": 2152,
    "compart": 2,
    "formato": "reels",
@@ -319,8 +319,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2442,
-   "alcance": 2071,
+   "views": 2445,
+   "alcance": 2074,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -337,7 +337,7 @@
    "titulo": "QUEM CHECOU O DEBATE, E COMO"
   },
   {
-   "views": 2316,
+   "views": 2317,
    "alcance": 1632,
    "compart": 3,
    "formato": "carrossel",
