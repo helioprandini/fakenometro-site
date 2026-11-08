@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T00:38:49",
- "seguidores": 1256,
+ "atualizado_em": "2026-11-08T01:42:38",
+ "seguidores": 1266,
  "posts": 50,
  "t28": {
-  "views": 98810,
-  "accounts_engaged": 1833,
-  "total_interactions": 4761,
-  "profile_views": 3071,
-  "likes": 2424,
+  "views": 99018,
+  "accounts_engaged": 1850,
+  "total_interactions": 4792,
+  "profile_views": 3085,
+  "likes": 2444,
   "comments": 121,
   "shares": 748,
-  "saves": 338,
+  "saves": 345,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-07",
-   "valor": 3192
+   "valor": 3314
   }
  ],
  "seguidores_serie": [
@@ -254,19 +254,19 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 985.7,
-   "views": 1591.8,
+   "alcance": 986.2,
+   "views": 1592.8,
    "compart": 2.9,
-   "salvos": 3.0,
+   "salvos": 3.1,
    "seguidores": 4.3,
    "visitas_perfil": 19.8
   },
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 802.6,
-   "views": 1021.2,
-   "compart": 10.9,
+   "alcance": 805.0,
+   "views": 1023.2,
+   "compart": 11.0,
    "salvos": 2.7,
    "seguidores": null,
    "visitas_perfil": null
@@ -292,8 +292,8 @@
    "titulo": "RAIO-X DO DEBATE"
   },
   {
-   "views": 4076,
-   "alcance": 2788,
+   "views": 4079,
+   "alcance": 2792,
    "compart": 11,
    "formato": "carrossel",
    "quando": "2026-10-22",
@@ -328,7 +328,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2647,
+   "views": 2649,
    "alcance": 1732,
    "compart": 6,
    "formato": "carrossel",
@@ -337,7 +337,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2412,
+   "views": 2413,
    "alcance": 2049,
    "compart": 19,
    "formato": "reels",
