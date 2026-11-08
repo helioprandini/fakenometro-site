@@ -540,9 +540,24 @@ function cartaoAmao(m, i){
       : blocoAmao("O que temos", m.texto)}
     <div class="acoes">${acoes}</div></div>`;
 }
+// Ordem da aba (Roberta, 8/11): a amostra do dia, depois o WhatsApp, depois o que ainda está pendente, e por último o
+// que o robô já enviou e só precisa de revisão.
+const GRUPOS_AMAO = [["WhatsApp", "Revisar primeiro, inclusive o que o robô já enviou: a janela de resposta é de 24 h."],
+                     ["Ainda pendentes", "Direct e comentários que pedem decisão, como post que não abriu."],
+                     ["Já enviados", "Direct e comentários que o robô já respondeu. Só conferir."]];
+function ordenarAmao(l){ return l.sort((x, y) => grupoAmao(x) - grupoAmao(y) || (String(x.veredito || "").startsWith("Já enviada") ? 1 : 0) - (String(y.veredito || "").startsWith("Já enviada") ? 1 : 0)); }
+function grupoAmao(m){ return m.canal === "whatsapp" ? 0 : String(m.veredito || "").startsWith("Já enviada") ? 2 : 1; }
 function desenharAmao(){
   $("val-n").textContent = amao.length ? ` (${amao.length})` : "";
-  $("amao").innerHTML = amao.length ? amao.map(cartaoAmao).join("") : '<div class="vazio">Nenhum caso esperando decisão.</div>';
+  ordenarAmao(amao);
+  let html = "", atual = -1;
+  amao.forEach((m, i) => {
+    const g = grupoAmao(m);
+    if (g !== atual){ atual = g; const n = amao.filter(x => grupoAmao(x) === g).length;
+      html += `<div class="cartao" style="margin:18px 0 12px"><div style="font-weight:800">${GRUPOS_AMAO[g][0]} (${n})</div><div class="sub">${GRUPOS_AMAO[g][1]}</div></div>`; }
+    html += cartaoAmao(m, i);
+  });
+  $("amao").innerHTML = amao.length ? html : '<div class="vazio">Nenhum caso esperando decisão.</div>';
   const caso = new URLSearchParams(location.hash.slice(1)).get("caso");
   if (caso && $("caso-" + caso)) $("caso-" + caso).scrollIntoView();
 }
@@ -562,7 +577,7 @@ async function revisarAmao(c){ try{ await pedirAmao(c, "revisar"); toast("Marcad
 async function encerrarAmao(c){ if (!confirm("Encerrar sem responder?")) return; try{ await pedirAmao(c, "feito"); toast("Encerrado"); }catch(e){ toast("Não consegui encerrar"); } }
 async function feitoAmao(c){ try{ await pedirAmao(c, "feito"); toast("Marcado"); }catch(e){ toast("Não consegui marcar"); } }
 async function carregarAmao(){
-  try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = (await r.json()).itens;
+  try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = ordenarAmao((await r.json()).itens);
        if (JSON.stringify(novo) !== JSON.stringify(amao) && !(document.activeElement && document.activeElement.tagName === "TEXTAREA")){ amao = novo; desenharAmao(); } }
   catch(e){}
 }
