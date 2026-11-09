@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T10:39:42",
- "seguidores": 1750,
+ "atualizado_em": "2026-11-09T11:52:17",
+ "seguidores": 1763,
  "posts": 54,
  "t28": {
-  "views": 118369,
-  "accounts_engaged": 2693,
-  "total_interactions": 6924,
-  "profile_views": 3751,
-  "likes": 3389,
-  "comments": 219,
-  "shares": 1103,
-  "saves": 514,
+  "views": 119016,
+  "accounts_engaged": 2715,
+  "total_interactions": 6993,
+  "profile_views": 3771,
+  "likes": 3415,
+  "comments": 228,
+  "shares": 1114,
+  "saves": 520,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 3572
+   "valor": 3941
   }
  ],
  "seguidores_serie": [
@@ -255,18 +255,18 @@
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 952.8,
-   "views": 1240.4,
-   "compart": 17.9,
-   "salvos": 4.8,
+   "alcance": 961.8,
+   "views": 1251.9,
+   "compart": 18.2,
+   "salvos": 5.0,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 810.1,
-   "views": 1263.6,
+   "alcance": 811.0,
+   "views": 1266.1,
    "compart": 2.4,
    "salvos": 3.0,
    "seguidores": 3.2,
@@ -284,17 +284,17 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5574,
-   "alcance": 3860,
-   "compart": 224,
+   "views": 5695,
+   "alcance": 4003,
+   "compart": 232,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 4068,
-   "alcance": 2855,
+   "views": 4264,
+   "alcance": 2980,
    "compart": 32,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -302,7 +302,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3245,
+   "views": 3246,
    "alcance": 2184,
    "compart": 0,
    "formato": "reels",
@@ -311,16 +311,16 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3048,
-   "alcance": 2444,
-   "compart": 5,
+   "views": 3055,
+   "alcance": 2450,
+   "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfVsbrcgkZ2/",
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2813,
+   "views": 2814,
    "alcance": 2161,
    "compart": 2,
    "formato": "reels",
@@ -329,7 +329,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2682,
+   "views": 2683,
    "alcance": 1758,
    "compart": 6,
    "formato": "carrossel",
@@ -338,8 +338,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2511,
-   "alcance": 2138,
+   "views": 2514,
+   "alcance": 2141,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -349,8 +349,8 @@
  ],
  "canais": {
   "instagram": 401,
-  "comentario": 97,
-  "whatsapp": 104
+  "comentario": 98,
+  "whatsapp": 106
  },
  "por_dia": [
   [
@@ -435,9 +435,9 @@
   ],
   [
    "2026-11-09",
-   14
+   17
   ]
  ],
  "repositorio": 34,
- "total_publico": 602
+ "total_publico": 605
 }
