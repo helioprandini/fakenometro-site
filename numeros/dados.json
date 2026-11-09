@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T11:52:17",
- "seguidores": 1763,
+ "atualizado_em": "2026-11-09T12:42:13",
+ "seguidores": 1765,
  "posts": 54,
  "t28": {
-  "views": 119016,
-  "accounts_engaged": 2715,
-  "total_interactions": 6993,
-  "profile_views": 3771,
-  "likes": 3415,
-  "comments": 228,
-  "shares": 1114,
-  "saves": 520,
+  "views": 119354,
+  "accounts_engaged": 2719,
+  "total_interactions": 7040,
+  "profile_views": 3777,
+  "likes": 3440,
+  "comments": 229,
+  "shares": 1117,
+  "saves": 528,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 3941
+   "valor": 4165
   }
  ],
  "seguidores_serie": [
@@ -255,18 +255,18 @@
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 961.8,
-   "views": 1251.9,
-   "compart": 18.2,
-   "salvos": 5.0,
+   "alcance": 965.8,
+   "views": 1257.0,
+   "compart": 18.4,
+   "salvos": 5.1,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 811.0,
-   "views": 1266.1,
+   "alcance": 811.3,
+   "views": 1266.6,
    "compart": 2.4,
    "salvos": 3.0,
    "seguidores": 3.2,
@@ -284,8 +284,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5695,
-   "alcance": 4003,
+   "views": 5741,
+   "alcance": 4039,
    "compart": 232,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -293,9 +293,9 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 4264,
-   "alcance": 2980,
-   "compart": 32,
+   "views": 4362,
+   "alcance": 3036,
+   "compart": 38,
    "formato": "reels",
    "quando": "2026-11-09",
    "link": "https://www.instagram.com/reel/DfgEggAE2g5/",
@@ -311,8 +311,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3055,
-   "alcance": 2450,
+   "views": 3057,
+   "alcance": 2454,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -320,7 +320,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2814,
+   "views": 2820,
    "alcance": 2161,
    "compart": 2,
    "formato": "reels",
@@ -348,9 +348,9 @@
   }
  ],
  "canais": {
-  "instagram": 401,
+  "instagram": 402,
   "comentario": 98,
-  "whatsapp": 106
+  "whatsapp": 107
  },
  "por_dia": [
   [
@@ -435,9 +435,9 @@
   ],
   [
    "2026-11-09",
-   17
+   19
   ]
  ],
  "repositorio": 34,
- "total_publico": 605
+ "total_publico": 607
 }
