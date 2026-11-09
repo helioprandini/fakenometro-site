@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T21:57:26",
- "seguidores": 1541,
+ "atualizado_em": "2026-11-08T22:59:30",
+ "seguidores": 1554,
  "posts": 54,
  "t28": {
-  "views": 108828,
-  "accounts_engaged": 2301,
-  "total_interactions": 6110,
-  "profile_views": 3428,
-  "likes": 2990,
-  "comments": 164,
-  "shares": 1005,
-  "saves": 440,
+  "views": 110181,
+  "accounts_engaged": 2338,
+  "total_interactions": 6219,
+  "profile_views": 3456,
+  "likes": 3044,
+  "comments": 173,
+  "shares": 1014,
+  "saves": 452,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 6231
+   "valor": 6758
   }
  ],
  "seguidores_serie": [
@@ -248,26 +248,26 @@
   "2026-11-05": 5,
   "2026-11-06": 14,
   "2026-11-07": 6,
-  "2026-11-08": 10
+  "2026-11-08": 11
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 841.4,
-   "views": 1083.4,
-   "compart": 15.6,
-   "salvos": 3.7,
+   "alcance": 857.7,
+   "views": 1105.5,
+   "compart": 15.9,
+   "salvos": 3.8,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 799.0,
-   "views": 1244.6,
+   "alcance": 800.2,
+   "views": 1246.5,
    "compart": 2.3,
-   "salvos": 2.8,
+   "salvos": 2.9,
    "seguidores": 3.2,
    "visitas_perfil": 11.9
   }
@@ -283,9 +283,9 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4290,
-   "alcance": 3006,
-   "compart": 173,
+   "views": 4528,
+   "alcance": 3201,
+   "compart": 185,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
@@ -301,7 +301,7 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3013,
+   "views": 3017,
    "alcance": 2418,
    "compart": 5,
    "formato": "reels",
@@ -328,7 +328,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2458,
+   "views": 2460,
    "alcance": 2082,
    "compart": 19,
    "formato": "reels",
@@ -349,7 +349,7 @@
  "canais": {
   "instagram": 396,
   "comentario": 94,
-  "whatsapp": 96
+  "whatsapp": 97
  },
  "por_dia": [
   [
@@ -430,9 +430,9 @@
   ],
   [
    "2026-11-08",
-   46
+   47
   ]
  ],
  "repositorio": 34,
- "total_publico": 586
+ "total_publico": 587
 }
