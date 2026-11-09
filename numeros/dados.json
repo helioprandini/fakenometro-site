@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T02:41:08",
- "seguidores": 1597,
+ "atualizado_em": "2026-11-09T03:44:49",
+ "seguidores": 1603,
  "posts": 54,
  "t28": {
-  "views": 112146,
-  "accounts_engaged": 2401,
-  "total_interactions": 6396,
-  "profile_views": 3522,
-  "likes": 3121,
-  "comments": 178,
-  "shares": 1040,
-  "saves": 469,
+  "views": 112390,
+  "accounts_engaged": 2414,
+  "total_interactions": 6412,
+  "profile_views": 3531,
+  "likes": 3128,
+  "comments": 180,
+  "shares": 1041,
+  "saves": 471,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 7549
+   "valor": 7681
   }
  ],
  "seguidores_serie": [
@@ -255,18 +255,18 @@
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 876.5,
-   "views": 1131.5,
-   "compart": 16.5,
-   "salvos": 4.0,
+   "alcance": 878.7,
+   "views": 1134.1,
+   "compart": 16.6,
+   "salvos": 4.1,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 803.0,
-   "views": 1251.2,
+   "alcance": 803.6,
+   "views": 1252.3,
    "compart": 2.3,
    "salvos": 3.0,
    "seguidores": 3.2,
@@ -284,9 +284,9 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4866,
-   "alcance": 3434,
-   "compart": 198,
+   "views": 4886,
+   "alcance": 3450,
+   "compart": 200,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
@@ -302,8 +302,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3028,
-   "alcance": 2431,
+   "views": 3031,
+   "alcance": 2437,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -311,8 +311,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2809,
-   "alcance": 2152,
+   "views": 2810,
+   "alcance": 2155,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -329,8 +329,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2477,
-   "alcance": 2093,
+   "views": 2479,
+   "alcance": 2096,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
