@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T16:42:35",
- "seguidores": 1797,
+ "atualizado_em": "2026-11-09T17:45:37",
+ "seguidores": 1800,
  "posts": 54,
  "t28": {
-  "views": 120424,
-  "accounts_engaged": 2761,
-  "total_interactions": 7292,
-  "profile_views": 3814,
-  "likes": 3505,
+  "views": 120607,
+  "accounts_engaged": 2768,
+  "total_interactions": 7311,
+  "profile_views": 3820,
+  "likes": 3515,
   "comments": 239,
-  "shares": 1193,
-  "saves": 536,
+  "shares": 1195,
+  "saves": 538,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 4724
+   "valor": 4848
   }
  ],
  "seguidores_serie": [
@@ -255,9 +255,9 @@
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 978.7,
-   "views": 1273.1,
-   "compart": 20.3,
+   "alcance": 980.6,
+   "views": 1276.4,
+   "compart": 20.4,
    "salvos": 5.1,
    "seguidores": null,
    "visitas_perfil": null
@@ -265,8 +265,8 @@
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 813.0,
-   "views": 1269.2,
+   "alcance": 813.6,
+   "views": 1269.4,
    "compart": 2.4,
    "salvos": 3.0,
    "seguidores": 3.2,
@@ -284,18 +284,18 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5845,
+   "views": 5864,
    "alcance": 4090,
-   "compart": 243,
+   "compart": 245,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 4757,
-   "alcance": 3381,
-   "compart": 42,
+   "views": 4839,
+   "alcance": 3434,
+   "compart": 45,
    "formato": "reels",
    "quando": "2026-11-09",
    "link": "https://www.instagram.com/reel/DfgEggAE2g5/",
@@ -311,8 +311,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3064,
-   "alcance": 2460,
+   "views": 3065,
+   "alcance": 2464,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -338,7 +338,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2515,
+   "views": 2516,
    "alcance": 2144,
    "compart": 19,
    "formato": "reels",
@@ -348,7 +348,7 @@
   }
  ],
  "canais": {
-  "instagram": 404,
+  "instagram": 406,
   "comentario": 98,
   "whatsapp": 108
  },
@@ -435,9 +435,9 @@
   ],
   [
    "2026-11-09",
-   22
+   24
   ]
  ],
  "repositorio": 34,
- "total_publico": 610
+ "total_publico": 612
 }
