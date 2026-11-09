@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-08T22:59:30",
- "seguidores": 1554,
+ "atualizado_em": "2026-11-09T00:02:24",
+ "seguidores": 1576,
  "posts": 54,
  "t28": {
-  "views": 110181,
-  "accounts_engaged": 2338,
-  "total_interactions": 6219,
-  "profile_views": 3456,
-  "likes": 3044,
+  "views": 111082,
+  "accounts_engaged": 2360,
+  "total_interactions": 6300,
+  "profile_views": 3484,
+  "likes": 3074,
   "comments": 173,
-  "shares": 1014,
-  "saves": 452,
+  "shares": 1029,
+  "saves": 462,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 6758
+   "valor": 7169
   }
  ],
  "seguidores_serie": [
@@ -248,24 +248,24 @@
   "2026-11-05": 5,
   "2026-11-06": 14,
   "2026-11-07": 6,
-  "2026-11-08": 11
+  "2026-11-08": 12
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 857.7,
-   "views": 1105.5,
-   "compart": 15.9,
-   "salvos": 3.8,
+   "alcance": 866.0,
+   "views": 1119.1,
+   "compart": 16.1,
+   "salvos": 3.9,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 12,
-   "alcance": 800.2,
-   "views": 1246.5,
+   "alcance": 801.2,
+   "views": 1248.6,
    "compart": 2.3,
    "salvos": 2.9,
    "seguidores": 3.2,
@@ -283,8 +283,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4528,
-   "alcance": 3201,
+   "views": 4718,
+   "alcance": 3304,
    "compart": 185,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -292,7 +292,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 3238,
+   "views": 3240,
    "alcance": 2181,
    "compart": 0,
    "formato": "reels",
@@ -301,8 +301,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3017,
-   "alcance": 2418,
+   "views": 3021,
+   "alcance": 2424,
    "compart": 5,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -319,7 +319,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2672,
+   "views": 2673,
    "alcance": 1751,
    "compart": 6,
    "formato": "carrossel",
@@ -328,8 +328,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2460,
-   "alcance": 2082,
+   "views": 2472,
+   "alcance": 2088,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -337,7 +337,7 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2320,
+   "views": 2321,
    "alcance": 1634,
    "compart": 3,
    "formato": "carrossel",
@@ -349,7 +349,7 @@
  "canais": {
   "instagram": 396,
   "comentario": 94,
-  "whatsapp": 97
+  "whatsapp": 98
  },
  "por_dia": [
   [
@@ -430,9 +430,9 @@
   ],
   [
    "2026-11-08",
-   47
+   48
   ]
  ],
  "repositorio": 34,
- "total_publico": 587
+ "total_publico": 588
 }
