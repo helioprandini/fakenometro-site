@@ -1,24 +1,20 @@
 {
- "atualizado_em": "2026-11-09T03:44:49",
- "seguidores": 1603,
+ "atualizado_em": "2026-11-09T04:48:03",
+ "seguidores": 1605,
  "posts": 54,
  "t28": {
-  "views": 112390,
-  "accounts_engaged": 2414,
-  "total_interactions": 6412,
-  "profile_views": 3531,
-  "likes": 3128,
+  "views": 112590,
+  "accounts_engaged": 2421,
+  "total_interactions": 6423,
+  "profile_views": 3534,
+  "likes": 3135,
   "comments": 180,
-  "shares": 1041,
-  "saves": 471,
+  "shares": 1042,
+  "saves": 473,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-12",
-   "valor": 0
-  },
   {
    "dia": "2026-10-13",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-08",
-   "valor": 7681
+   "valor": 7833
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-12",
-   "valor": 0
-  },
   {
    "dia": "2026-10-13",
    "valor": 0
@@ -255,9 +247,9 @@
   {
    "grupo": "reels",
    "posts": 38,
-   "alcance": 878.7,
-   "views": 1134.1,
-   "compart": 16.6,
+   "alcance": 879.9,
+   "views": 1136.0,
+   "compart": 16.7,
    "salvos": 4.1,
    "seguidores": null,
    "visitas_perfil": null
@@ -284,8 +276,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 4886,
-   "alcance": 3450,
+   "views": 4911,
+   "alcance": 3455,
    "compart": 200,
    "formato": "reels",
    "quando": "2026-11-08",
