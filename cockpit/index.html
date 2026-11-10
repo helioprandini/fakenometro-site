@@ -320,10 +320,12 @@ async function novoQuadro(){
 }
 function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f !== "pendente"); desenharCur(); }
 // ---------- Do dia: a grade de 6 posts (às 7h) ----------
-let pacote = {}, diaBlobs = {}, verAmanha = false;
-function dataAmanha(){ return new Date(Date.now() + 864e5).toLocaleDateString("en-CA", {timeZone: "America/Sao_Paulo"}); }
-function trocarDia(amanha){ verAmanha = amanha; pacote = {}; diaBlobs = {}; desenharDia(); carregarDia(); }
-function abasDia(){ return `<div class="acoes" style="margin-bottom:12px"><button class="${verAmanha ? "b-copiar" : "b-feito"}" onclick="trocarDia(false)">Hoje</button><button class="${verAmanha ? "b-feito" : "b-copiar"}" onclick="trocarDia(true)">Amanhã</button></div>`; }
+let pacote = {}, diaBlobs = {}, desloc = 0;
+function dataDia(k){ return new Date(Date.now() + k * 864e5).toLocaleDateString("en-CA", {timeZone: "America/Sao_Paulo"}); }
+function rotuloDia(k){ if (!k) return "Hoje"; const d = new Date(Date.now() + k * 864e5); return d.toLocaleDateString("pt-BR", {weekday: "short", timeZone: "America/Sao_Paulo"}).replace(".", "") + " " + d.toLocaleDateString("pt-BR", {day: "2-digit", timeZone: "America/Sao_Paulo"}); }
+function trocarDia(k){ desloc = k; pacote = {}; diaBlobs = {}; desenharDia(); carregarDia(); }
+// Sete dias, um botão pequeno por dia (Roberta, 9/11: "7 botoes... pequenininho mesmo").
+function abasDia(){ return `<div style="display:flex;gap:4px;margin-bottom:12px">` + [0,1,2,3,4,5,6].map(k => `<button class="${k === desloc ? "b-feito" : "b-copiar"}" onclick="trocarDia(${k})" style="flex:1;min-width:0;padding:6px 2px;font-size:11px;line-height:1.1">${rotuloDia(k)}</button>`).join("") + `</div>`; }
 async function blobDia(nome){
   if (!diaBlobs[nome]){ const r = await fetch(`${BASE}/cockpit/dia/arquivo/${pacote.dia}/${nome}`, {headers: H()}); if (!r.ok) throw new Error(r.status); diaBlobs[nome] = await r.blob(); }
   return diaBlobs[nome];
@@ -348,7 +350,7 @@ function blocoMusica(m){ return m ? `<div class="sub" style="margin:8px 0">🎵 
 // Grade da Roberta (2026-10-21): 08h e 09h carrossel curto · 12h e 14h carrossel longo · 18h e 20h Reels
 function desenharDia(){
   const el = $("dia"), posts = pacote.posts || [];
-  if (!posts.length){ el.innerHTML = abasDia() + (verAmanha ? `<div class="sub" style="margin-bottom:12px">Nada programado para amanhã ainda.</div>` : ""); return; }
+  if (!posts.length){ el.innerHTML = abasDia() + (desloc ? `<div class="sub" style="margin-bottom:12px">Nada programado para ${rotuloDia(desloc)} ainda.</div>` : ""); return; }
   const feito = x => x.status === "publicado";
   const lado = l => ({direita: "favorece a direita", esquerda: "favorece a esquerda", neutro: "neutro / sem prova"})[l] || "";
   const icone = f => f === "reels" ? "🎬" : "🗂️";
@@ -371,14 +373,14 @@ function desenharDia(){
     ${blocoMusica(p.musica)}`;
   };
   const prontos = posts.filter(feito).length;
-  el.innerHTML = abasDia() + `<div class="cartao" style="margin-bottom:12px"><h2>📅 ${verAmanha ? "Amanhã" : "Do dia"} · ${pacote.dia.slice(8,10)}/${pacote.dia.slice(5,7)} · ${prontos}/${posts.length} publicados</h2>
+  el.innerHTML = abasDia() + `<div class="cartao" style="margin-bottom:12px"><h2>📅 ${desloc ? rotuloDia(desloc) : "Do dia"} · ${pacote.dia.slice(8,10)}/${pacote.dia.slice(5,7)} · ${prontos}/${posts.length} publicados</h2>
     ${pacote.faltam ? `<div class="sub">⚠️ Faltaram ${pacote.faltam} post(s): não há checagens com print e fonte suficientes na fila.</div>` : ""}
     ${posts.map(bloco).join("")}</div>`;
   posts.forEach(p => p.arquivos.forEach((a, i) => blobDia(a).then(b => {
     const e = $(`dia-${p.slot}-${i}`); if (e) e.src = URL.createObjectURL(b); }).catch(() => {})));
 }
 async function carregarDia(){
-  try{ const r = await fetch(verAmanha ? `${BASE}/cockpit/dia/arquivo/${dataAmanha()}/dia.json` : BASE + "/cockpit/dia", {headers: H(), cache: "no-store"}); const novo = r.ok ? await r.json() : {};
+  try{ const r = await fetch(desloc ? `${BASE}/cockpit/dia/arquivo/${dataDia(desloc)}/dia.json` : BASE + "/cockpit/dia", {headers: H(), cache: "no-store"}); const novo = r.ok ? await r.json() : {};
        if (novo.gerado_em !== pacote.gerado_em) diaBlobs = {};
        const mudou = JSON.stringify(novo) !== JSON.stringify(pacote); pacote = novo; if (mudou) desenharDia(); }
   catch(e){}
