@@ -110,7 +110,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 <nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Resumo Diário</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button></nav>
 <div id="com-view" hidden><div id="com"><div class="vazio">Carregando…</div></div></div>
 <div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Resumo Diário</div><div class="sub">O que chegou e o que o robô respondeu no dia, por canal, sem os avisos automáticos. Toque num texto longo para ver inteiro. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
-<div id="val-view" hidden><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
+<div id="val-view" hidden><div class="filtros" id="val-botoes"></div><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
 
 <div id="pend-view" hidden>
   <div id="pend-quadros"></div>
@@ -411,7 +411,8 @@ async function carregarLicoes(){
 // ---------- Validações: casos que pedem decisão (Roberta, 1º/11) ----------
 let amostra = null;
 function desenharAmostra(){
-  if (!amostra || !amostra.itens.length){ $("amostra").innerHTML = ""; return; }
+  if (typeof desenharValBotoes === "function" && Array.isArray(amao)) desenharValBotoes();
+  if (!amostra || !amostra.itens.length){ $("amostra").innerHTML = '<div class="vazio">A amostra de hoje ainda não saiu.</div>'; return; }
   const p = amostra.placar, feitas = amostra.itens.filter(m => m.voto).length;
   const cab = p.votadas ? `Últimos ${p.dias} dias: ${p.aprovadas} de ${p.votadas} aprovadas sem mexer.` : "Ainda sem votos.";
   const abertas = amostra.itens.filter(m => !m.voto);
@@ -540,24 +541,30 @@ function cartaoAmao(m, i){
       : blocoAmao("O que temos", m.texto)}
     <div class="acoes">${acoes}</div></div>`;
 }
-// Ordem da aba (Roberta, 8/11): a amostra do dia, depois o WhatsApp, depois o que ainda está pendente, e por último o
-// que o robô já enviou e só precisa de revisão.
-const GRUPOS_AMAO = [["WhatsApp", "Revisar primeiro, inclusive o que o robô já enviou: a janela de resposta é de 24 h."],
-                     ["Ainda pendentes", "Direct e comentários que pedem decisão, como post que não abriu."],
-                     ["Já enviados", "Direct e comentários que o robô já respondeu. Só conferir."]];
-function ordenarAmao(l){ return l.sort((x, y) => grupoAmao(x) - grupoAmao(y) || (String(x.veredito || "").startsWith("Já enviada") ? 1 : 0) - (String(y.veredito || "").startsWith("Já enviada") ? 1 : 0)); }
-function grupoAmao(m){ return m.canal === "whatsapp" ? 0 : String(m.veredito || "").startsWith("Já enviada") ? 2 : 1; }
+// Três botões na aba (Roberta, 9/11: "To preocupada de ficar mto extenso e eu me perder. Um botão para validações,
+// que seriam as amostras diárias… Um botão para as falhas… E um para Revisar em 24h").
+// Revisar em 24 h junta o que o robô já enviou: os cartões novos e os "Já enviada: conferir".
+let valSub = ler("valSub") || "amostra";
+function enviadoAmao(m){ const v = String(m.veredito || ""); return v.startsWith("Revisar em 24 h") || v.startsWith("Já enviada"); }
+function amostraAbertas(){ return amostra && amostra.itens ? amostra.itens.filter(m => !m.voto).length : 0; }
+function desenharValBotoes(){
+  const falhas = amao.filter(m => !enviadoAmao(m)).length, revisar = amao.filter(enviadoAmao).length;
+  $("val-n").textContent = falhas ? ` (${falhas})` : "";
+  const b = [["amostra", "Amostra do dia", amostraAbertas()], ["falhas", "Falhas", falhas], ["revisar", "Revisar em 24 h", revisar]];
+  $("val-botoes").innerHTML = b.map(([k, nome, n]) => `<button class="${valSub === k ? "ativa" : ""}" onclick="trocarVal('${k}')">${nome} (${n})</button>`).join("");
+  $("amostra").hidden = valSub !== "amostra";
+  $("amao").hidden = valSub === "amostra";
+}
+function trocarVal(k){ valSub = k; gravar("valSub", k); desenharValBotoes(); desenharAmao(); }
+const TEXTO_VAL = {falhas: ["Falhas", "O que travou e não saiu, ou saiu pela metade: post que não abriu, pergunta sem resposta, resposta segurada, rascunho reprovado, comentário à mão."],
+                   revisar: ["Revisar em 24 h", "O que o robô já enviou no WhatsApp e no direct. Errado? Revisar com o Theo antes de a janela fechar."]};
 function desenharAmao(){
-  $("val-n").textContent = amao.length ? ` (${amao.length})` : "";
-  ordenarAmao(amao);
-  let html = "", atual = -1;
-  amao.forEach((m, i) => {
-    const g = grupoAmao(m);
-    if (g !== atual){ atual = g; const n = amao.filter(x => grupoAmao(x) === g).length;
-      html += `<div class="cartao" style="margin:18px 0 12px"><div style="font-weight:800">${GRUPOS_AMAO[g][0]} (${n})</div><div class="sub">${GRUPOS_AMAO[g][1]}</div></div>`; }
-    html += cartaoAmao(m, i);
-  });
-  $("amao").innerHTML = amao.length ? html : '<div class="vazio">Nenhum caso esperando decisão.</div>';
+  desenharValBotoes();
+  if (valSub === "amostra") return;
+  const lista = amao.map((m, i) => [m, i]).filter(([m]) => valSub === "revisar" ? enviadoAmao(m) : !enviadoAmao(m))
+    .sort((a, b) => String(b[0].em || "") < String(a[0].em || "") ? -1 : 1);
+  const topo = `<div class="cartao" style="margin:0 0 12px"><div style="font-weight:800">${TEXTO_VAL[valSub][0]} (${lista.length})</div><div class="sub">${TEXTO_VAL[valSub][1]}</div></div>`;
+  $("amao").innerHTML = topo + (lista.length ? lista.map(([m, i]) => cartaoAmao(m, i)).join("") : '<div class="vazio">Nada aqui agora.</div>');
   const caso = new URLSearchParams(location.hash.slice(1)).get("caso");
   if (caso && $("caso-" + caso)) $("caso-" + caso).scrollIntoView();
 }
@@ -577,7 +584,7 @@ async function revisarAmao(c){ try{ await pedirAmao(c, "revisar"); toast("Marcad
 async function encerrarAmao(c){ if (!confirm("Encerrar sem responder?")) return; try{ await pedirAmao(c, "feito"); toast("Encerrado"); }catch(e){ toast("Não consegui encerrar"); } }
 async function feitoAmao(c){ try{ await pedirAmao(c, "feito"); toast("Marcado"); }catch(e){ toast("Não consegui marcar"); } }
 async function carregarAmao(){
-  try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = ordenarAmao((await r.json()).itens);
+  try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = (await r.json()).itens;
        if (JSON.stringify(novo) !== JSON.stringify(amao) && !(document.activeElement && document.activeElement.tagName === "TEXTAREA")){ amao = novo; desenharAmao(); } }
   catch(e){}
 }
