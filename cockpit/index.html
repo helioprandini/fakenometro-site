@@ -535,7 +535,7 @@ function cartaoAmao(m, i){
   return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px${m.revisao ? ";opacity:.55" : ""}">
     <div style="font-weight:800">${esc(titulo)}</div>
     <div class="sub">${m.canal === "whatsapp" ? "" : esc(CANAIS[m.canal]) + " · "}${esc(m.autor)} · ${esc((m.em || "").slice(8, 10) + "/" + (m.em || "").slice(5, 7) + ", " + (m.em || "").slice(11, 16))}${janelaAmao(m)}</div>
-    ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">Marcado para revisão. O Theo recebe o aviso na sessão.${m.sessao ? ` <a href="${esc(m.sessao)}">Abrir a sessão</a>` : ""}</div>` : ""}
+    ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">Marcado. Na sessão do Theo, escreva: revisar os marcados.</div>` : ""}
     ${blocoAmao("O que a pessoa disse", m.pergunta)}
     ${blocoAmao("Sobre a checagem", sobre)}
     ${blocoAmao("O que ela mandou", m.recebido)}
