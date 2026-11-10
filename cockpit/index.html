@@ -696,7 +696,7 @@ function copiar(id){
   } else toast("Não consegui copiar: segure o texto da legenda");
 }
 async function acao(id, qual){
-  if (qual === "descartar" && !confirm("Descartar este candidato? Ele sai da lista para os dois.")) return;
+  // Descartar com um clique só (Roberta, 9/11).
   try{
     const r = await fetch(`${BASE}/cockpit/curadoria/${id}/${qual}`, {method: "POST", headers: H()});
     if (!r.ok) throw new Error(r.status);
