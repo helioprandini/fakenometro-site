@@ -521,11 +521,12 @@ function cartaoAmao(m, i){
   const titulo = String(m.veredito || "").startsWith("CONTESTAÇÃO") ? "Contestação" : nomeRotulo(m.veredito);
   const sobre = m.checagem || (String(m.veredito || "").startsWith("CONTESTAÇÃO:") ? m.veredito.slice(12).trim() : "");
   let acoes;
-  if (m.canal === "comentario") acoes = `${m.permalink ? `<a class="b-insta" href="${esc(m.permalink)}" target="_blank" rel="noopener">Abrir o post</a>` : ""}
+  if (m.canal === "comentario") acoes = `${(m.link_comentario || m.permalink) ? `<a class="b-insta" href="${esc(m.link_comentario || m.permalink)}" target="_blank" rel="noopener">${m.link_comentario ? "Abrir o comentário" : "Abrir o post"}</a>` : ""}
       ${m.resposta ? `<button class="b-copiar" onclick="copiarAmao(${i})">Copiar resposta</button>
       <button class="b-feito" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Já respondi</button>` : `<button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')">Revisar com o Theo</button>
       <button class="b-desc" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`}`;
-  else acoes = `${m.pode_enviar ? `<button class="b-feito" onclick="enviarAmao(${i})">Enviar para a pessoa</button>` : ""}
+  else acoes = `${m.link_conversa ? `<a class="b-insta" href="${esc(m.link_conversa)}" target="_blank" rel="noopener" style="grid-column:1/-1">Abrir a conversa</a>` : ""}
+      ${m.pode_enviar ? `<button class="b-feito" onclick="enviarAmao(${i})">Enviar para a pessoa</button>` : ""}
       <button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')" ${m.pode_enviar ? "" : 'style="grid-column:1/-1"'}>Revisar com o Theo</button>
       <button class="b-desc" onclick="encerrarAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`;
   return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px">
@@ -581,7 +582,8 @@ async function enviarAmao(i){
   catch(e){ toast("Não consegui enviar"); }
 }
 async function revisarAmao(c){ try{ await pedirAmao(c, "revisar"); toast("Marcado para revisão"); }catch(e){ toast("Não consegui marcar"); } }
-async function encerrarAmao(c){ if (!confirm("Encerrar sem responder?")) return; try{ await pedirAmao(c, "feito"); toast("Encerrado"); }catch(e){ toast("Não consegui encerrar"); } }
+// Em Revisar em 24 h, encerrar não pede confirmação (Roberta, 9/11: "só clicar no botão… não preciso clicar em cancelar ou ok").
+async function encerrarAmao(c){ const m = amao.find(x => x.comentario === c); if (!(m && enviadoAmao(m)) && !confirm("Encerrar sem responder?")) return; try{ await pedirAmao(c, "feito"); toast("Encerrado"); }catch(e){ toast("Não consegui encerrar"); } }
 async function feitoAmao(c){ try{ await pedirAmao(c, "feito"); toast("Marcado"); }catch(e){ toast("Não consegui marcar"); } }
 async function carregarAmao(){
   try{ const r = await fetch(BASE + "/cockpit/a_mao", {headers: H(), cache: "no-store"}); const novo = (await r.json()).itens;
