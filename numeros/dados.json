@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-10T17:37:29",
- "seguidores": 2016,
+ "atualizado_em": "2026-11-10T18:41:38",
+ "seguidores": 2029,
  "posts": 56,
  "t28": {
-  "views": 126238,
-  "accounts_engaged": 3019,
-  "total_interactions": 8230,
-  "profile_views": 4066,
-  "likes": 3861,
-  "comments": 280,
-  "shares": 1368,
+  "views": 126824,
+  "accounts_engaged": 3058,
+  "total_interactions": 8268,
+  "profile_views": 4081,
+  "likes": 3886,
+  "comments": 282,
+  "shares": 1370,
   "saves": 607,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 1990
+   "valor": 2199
   }
  ],
  "seguidores_serie": [
@@ -256,8 +256,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1037.7,
-   "views": 1345.3,
+   "alcance": 1038.6,
+   "views": 1346.7,
    "compart": 25.2,
    "salvos": 5.6,
    "seguidores": null,
@@ -266,8 +266,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 718.2,
-   "views": 1130.0,
+   "alcance": 719.9,
+   "views": 1134.1,
    "compart": 2.3,
    "salvos": 3.3,
    "seguidores": 2.7,
@@ -285,8 +285,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6118,
-   "alcance": 4267,
+   "views": 6137,
+   "alcance": 4283,
    "compart": 257,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5193,
+   "views": 5204,
    "alcance": 3708,
    "compart": 45,
    "formato": "reels",
@@ -313,7 +313,7 @@
   },
   {
    "views": 3083,
-   "alcance": 2491,
+   "alcance": 2494,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -330,7 +330,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2698,
+   "views": 2700,
    "alcance": 1763,
    "compart": 6,
    "formato": "carrossel",
@@ -339,8 +339,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2541,
-   "alcance": 2178,
+   "views": 2547,
+   "alcance": 2181,
    "compart": 19,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -349,7 +349,7 @@
   }
  ],
  "canais": {
-  "instagram": 431,
+  "instagram": 435,
   "comentario": 103,
   "whatsapp": 126
  },
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   27
+   31
   ]
  ],
- "repositorio": 36,
- "total_publico": 660
+ "repositorio": 38,
+ "total_publico": 664
 }
