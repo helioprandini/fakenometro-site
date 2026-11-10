@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T11:55:36",
- "seguidores": 1959,
- "posts": 55,
+ "atualizado_em": "2026-11-10T12:58:42",
+ "seguidores": 1969,
+ "posts": 56,
  "t28": {
-  "views": 123956,
-  "accounts_engaged": 2954,
-  "total_interactions": 8030,
-  "profile_views": 3998,
-  "likes": 3761,
-  "comments": 269,
-  "shares": 1351,
-  "saves": 587,
+  "views": 124123,
+  "accounts_engaged": 2976,
+  "total_interactions": 8065,
+  "profile_views": 4008,
+  "likes": 3780,
+  "comments": 270,
+  "shares": 1354,
+  "saves": 591,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 835
+   "valor": 1038
   }
  ],
  "seguidores_serie": [
@@ -250,28 +250,28 @@
   "2026-11-07": 6,
   "2026-11-08": 12,
   "2026-11-09": 9,
-  "2026-11-10": 3
+  "2026-11-10": 4
  },
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 37,
-   "alcance": 1014.8,
-   "views": 1319.4,
-   "compart": 24.4,
-   "salvos": 5.4,
+   "posts": 36,
+   "alcance": 1033.5,
+   "views": 1340.7,
+   "compart": 25.1,
+   "salvos": 5.6,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 13,
-   "alcance": 766.9,
-   "views": 1203.2,
-   "compart": 2.5,
-   "salvos": 3.5,
-   "seguidores": 2.9,
-   "visitas_perfil": 11.5
+   "posts": 14,
+   "alcance": 712.6,
+   "views": 1119.7,
+   "compart": 2.3,
+   "salvos": 3.2,
+   "seguidores": 2.7,
+   "visitas_perfil": 10.6
   }
  ],
  "top": [
@@ -285,7 +285,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6036,
+   "views": 6047,
    "alcance": 4203,
    "compart": 255,
    "formato": "reels",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5178,
+   "views": 5181,
    "alcance": 3702,
    "compart": 45,
    "formato": "reels",
@@ -321,7 +321,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2825,
+   "views": 2826,
    "alcance": 2172,
    "compart": 2,
    "formato": "reels",
@@ -339,7 +339,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2533,
+   "views": 2534,
    "alcance": 2170,
    "compart": 19,
    "formato": "reels",
@@ -350,7 +350,7 @@
  ],
  "canais": {
   "instagram": 420,
-  "comentario": 99,
+  "comentario": 101,
   "whatsapp": 121
  },
  "por_dia": [
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   7
+   9
   ]
  ],
  "repositorio": 35,
- "total_publico": 640
+ "total_publico": 642
 }
