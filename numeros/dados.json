@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T08:03:15",
- "seguidores": 1920,
+ "atualizado_em": "2026-11-10T09:06:15",
+ "seguidores": 1924,
  "posts": 55,
  "t28": {
-  "views": 123162,
-  "accounts_engaged": 2912,
-  "total_interactions": 7653,
-  "profile_views": 3959,
-  "likes": 3700,
-  "comments": 262,
-  "shares": 1215,
-  "saves": 577,
+  "views": 123354,
+  "accounts_engaged": 2921,
+  "total_interactions": 7911,
+  "profile_views": 3967,
+  "likes": 3710,
+  "comments": 268,
+  "shares": 1331,
+  "saves": 580,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 313
+   "valor": 431
   }
  ],
  "seguidores_serie": [
@@ -250,15 +250,15 @@
   "2026-11-07": 6,
   "2026-11-08": 12,
   "2026-11-09": 9,
-  "2026-11-10": 1
+  "2026-11-10": 2
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1013.1,
-   "views": 1316.0,
-   "compart": 21.2,
+   "alcance": 1013.8,
+   "views": 1317.2,
+   "compart": 21.3,
    "salvos": 5.4,
    "seguidores": null,
    "visitas_perfil": null
@@ -266,8 +266,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 763.6,
-   "views": 1197.2,
+   "alcance": 764.5,
+   "views": 1199.2,
    "compart": 2.5,
    "salvos": 3.5,
    "seguidores": 2.9,
@@ -285,7 +285,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6011,
+   "views": 6024,
    "alcance": 4203,
    "compart": 250,
    "formato": "reels",
@@ -294,8 +294,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5161,
-   "alcance": 3696,
+   "views": 5164,
+   "alcance": 3702,
    "compart": 45,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -321,8 +321,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2824,
-   "alcance": 2170,
+   "views": 2825,
+   "alcance": 2172,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -330,7 +330,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2696,
+   "views": 2697,
    "alcance": 1763,
    "compart": 6,
    "formato": "carrossel",
@@ -351,7 +351,7 @@
  "canais": {
   "instagram": 419,
   "comentario": 99,
-  "whatsapp": 118
+  "whatsapp": 119
  },
  "por_dia": [
   [
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   3
+   4
   ]
  ],
  "repositorio": 35,
- "total_publico": 636
+ "total_publico": 637
 }
