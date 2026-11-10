@@ -530,9 +530,9 @@ function cartaoAmao(m, i){
   else acoes = `${m.link_post ? `<a class="b-insta" href="${esc(m.link_post)}" target="_blank" rel="noopener" ${m.link_conversa ? "" : 'style="grid-column:1/-1"'}>Abrir o post consultado${m.link_post_pela_hora ? " (pela hora)" : ""}</a>` : ""}
       ${m.link_conversa ? `<a class="b-insta" href="${esc(m.link_conversa)}" target="_blank" rel="noopener" ${m.link_post ? "" : 'style="grid-column:1/-1"'}>Abrir a conversa</a>` : ""}
       ${m.pode_enviar ? `<button class="b-feito" onclick="enviarAmao(${i})">Enviar para a pessoa</button>` : ""}
-      <button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')" ${m.pode_enviar ? "" : 'style="grid-column:1/-1"'}>Revisar com o Theo</button>
+      <button class="${m.revisao ? "b-feito" : "b-copiar"}" onclick="revisarAmao('${esc(m.comentario)}')" ${m.pode_enviar ? "" : 'style="grid-column:1/-1"'}>${m.revisao ? "Marcado para revisão ✓" : "Revisar com o Theo"}</button>
       <button class="b-desc" onclick="encerrarAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`;
-  return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px">
+  return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px${m.revisao ? ";opacity:.55" : ""}">
     <div style="font-weight:800">${esc(titulo)}</div>
     <div class="sub">${m.canal === "whatsapp" ? "" : esc(CANAIS[m.canal]) + " · "}${esc(m.autor)} · ${esc((m.em || "").slice(8, 10) + "/" + (m.em || "").slice(5, 7) + ", " + (m.em || "").slice(11, 16))}${janelaAmao(m)}</div>
     ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">Marcado para revisão. O Theo recebe o aviso na sessão.${m.sessao ? ` <a href="${esc(m.sessao)}">Abrir a sessão</a>` : ""}</div>` : ""}
