@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T14:00:44",
- "seguidores": 1975,
+ "atualizado_em": "2026-11-10T14:54:11",
+ "seguidores": 1991,
  "posts": 56,
  "t28": {
-  "views": 124422,
-  "accounts_engaged": 2980,
-  "total_interactions": 8093,
-  "profile_views": 4022,
-  "likes": 3794,
-  "comments": 270,
-  "shares": 1358,
-  "saves": 594,
+  "views": 124812,
+  "accounts_engaged": 2997,
+  "total_interactions": 8154,
+  "profile_views": 4032,
+  "likes": 3817,
+  "comments": 277,
+  "shares": 1365,
+  "saves": 600,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 1178
+   "valor": 1362
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 0
+   "valor": 283
   },
   {
    "dia": "2026-11-10",
@@ -256,8 +256,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1035.0,
-   "views": 1342.1,
+   "alcance": 1036.2,
+   "views": 1343.3,
    "compart": 25.1,
    "salvos": 5.6,
    "seguidores": null,
@@ -266,8 +266,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 715.3,
-   "views": 1123.4,
+   "alcance": 715.9,
+   "views": 1125.4,
    "compart": 2.3,
    "salvos": 3.3,
    "seguidores": 2.7,
@@ -285,8 +285,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6075,
-   "alcance": 4227,
+   "views": 6088,
+   "alcance": 4251,
    "compart": 255,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5184,
+   "views": 5187,
    "alcance": 3708,
    "compart": 45,
    "formato": "reels",
@@ -339,7 +339,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2535,
+   "views": 2538,
    "alcance": 2175,
    "compart": 19,
    "formato": "reels",
@@ -349,9 +349,9 @@
   }
  ],
  "canais": {
-  "instagram": 422,
+  "instagram": 424,
   "comentario": 101,
-  "whatsapp": 121
+  "whatsapp": 122
  },
  "por_dia": [
   [
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   11
+   14
   ]
  ],
  "repositorio": 35,
- "total_publico": 644
+ "total_publico": 647
 }
