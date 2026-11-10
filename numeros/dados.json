@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T06:59:11",
- "seguidores": 1909,
+ "atualizado_em": "2026-11-10T08:03:15",
+ "seguidores": 1920,
  "posts": 55,
  "t28": {
-  "views": 123001,
-  "accounts_engaged": 2896,
-  "total_interactions": 7635,
-  "profile_views": 3947,
-  "likes": 3688,
+  "views": 123162,
+  "accounts_engaged": 2912,
+  "total_interactions": 7653,
+  "profile_views": 3959,
+  "likes": 3700,
   "comments": 262,
   "shares": 1215,
-  "saves": 576,
+  "saves": 577,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 211
+   "valor": 313
   }
  ],
  "seguidores_serie": [
@@ -256,8 +256,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1012.3,
-   "views": 1314.5,
+   "alcance": 1013.1,
+   "views": 1316.0,
    "compart": 21.2,
    "salvos": 5.4,
    "seguidores": null,
@@ -266,10 +266,10 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 763.0,
-   "views": 1194.8,
+   "alcance": 763.6,
+   "views": 1197.2,
    "compart": 2.5,
-   "salvos": 3.4,
+   "salvos": 3.5,
    "seguidores": 2.9,
    "visitas_perfil": 11.5
   }
@@ -285,8 +285,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5996,
-   "alcance": 4196,
+   "views": 6011,
+   "alcance": 4203,
    "compart": 250,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5152,
+   "views": 5161,
    "alcance": 3696,
    "compart": 45,
    "formato": "reels",
@@ -312,8 +312,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3080,
-   "alcance": 2477,
+   "views": 3082,
+   "alcance": 2487,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -330,7 +330,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2694,
+   "views": 2696,
    "alcance": 1763,
    "compart": 6,
    "formato": "carrossel",
@@ -339,7 +339,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2528,
+   "views": 2529,
    "alcance": 2170,
    "compart": 19,
    "formato": "reels",
