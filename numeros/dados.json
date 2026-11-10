@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T19:47:06",
- "seguidores": 1822,
- "posts": 54,
+ "atualizado_em": "2026-11-09T20:50:19",
+ "seguidores": 1834,
+ "posts": 55,
  "t28": {
-  "views": 121063,
-  "accounts_engaged": 2788,
-  "total_interactions": 7344,
-  "profile_views": 3834,
-  "likes": 3535,
-  "comments": 240,
+  "views": 121413,
+  "accounts_engaged": 2800,
+  "total_interactions": 7376,
+  "profile_views": 3854,
+  "likes": 3553,
+  "comments": 243,
   "shares": 1196,
-  "saves": 541,
+  "saves": 546,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 5317
+   "valor": 5475
   }
  ],
  "seguidores_serie": [
@@ -249,28 +249,28 @@
   "2026-11-06": 14,
   "2026-11-07": 6,
   "2026-11-08": 12,
-  "2026-11-09": 7
+  "2026-11-09": 8
  },
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 38,
-   "alcance": 986.1,
-   "views": 1282.9,
-   "compart": 20.4,
-   "salvos": 5.2,
+   "posts": 37,
+   "alcance": 1004.0,
+   "views": 1304.7,
+   "compart": 21.0,
+   "salvos": 5.3,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 12,
-   "alcance": 813.7,
-   "views": 1270.5,
-   "compart": 2.4,
+   "posts": 13,
+   "alcance": 754.4,
+   "views": 1178.6,
+   "compart": 2.2,
    "salvos": 3.0,
-   "seguidores": 3.2,
-   "visitas_perfil": 12.0
+   "seguidores": 2.9,
+   "visitas_perfil": 11.2
   }
  ],
  "top": [
@@ -284,8 +284,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5893,
-   "alcance": 4112,
+   "views": 5909,
+   "alcance": 4127,
    "compart": 245,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -293,8 +293,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5002,
-   "alcance": 3578,
+   "views": 5062,
+   "alcance": 3624,
    "compart": 45,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -321,7 +321,7 @@
   },
   {
    "views": 2821,
-   "alcance": 2164,
+   "alcance": 2167,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -329,8 +329,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2689,
-   "alcance": 1760,
+   "views": 2691,
+   "alcance": 1763,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -338,7 +338,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2518,
+   "views": 2519,
    "alcance": 2149,
    "compart": 19,
    "formato": "reels",
@@ -348,8 +348,8 @@
   }
  ],
  "canais": {
-  "instagram": 411,
-  "comentario": 98,
+  "instagram": 412,
+  "comentario": 99,
   "whatsapp": 109
  },
  "por_dia": [
@@ -435,9 +435,9 @@
   ],
   [
    "2026-11-09",
-   30
+   32
   ]
  ],
  "repositorio": 35,
- "total_publico": 618
+ "total_publico": 620
 }
