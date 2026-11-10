@@ -1,24 +1,20 @@
 {
- "atualizado_em": "2026-11-10T03:48:55",
- "seguidores": 1881,
+ "atualizado_em": "2026-11-10T04:52:51",
+ "seguidores": 1886,
  "posts": 55,
  "t28": {
-  "views": 122604,
-  "accounts_engaged": 2871,
-  "total_interactions": 7572,
-  "profile_views": 3923,
-  "likes": 3655,
+  "views": 122673,
+  "accounts_engaged": 2880,
+  "total_interactions": 7587,
+  "profile_views": 3926,
+  "likes": 3661,
   "comments": 262,
-  "shares": 1207,
-  "saves": 570,
+  "shares": 1209,
+  "saves": 572,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-13",
-   "valor": 0
-  },
   {
    "dia": "2026-10-14",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 6158
+   "valor": 6180
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-13",
-   "valor": 0
-  },
   {
    "dia": "2026-10-14",
    "valor": 0
@@ -256,8 +248,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1010.8,
-   "views": 1312.3,
+   "alcance": 1011.2,
+   "views": 1312.6,
    "compart": 21.1,
    "salvos": 5.3,
    "seguidores": null,
@@ -266,8 +258,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 761.5,
-   "views": 1191.8,
+   "alcance": 761.8,
+   "views": 1192.5,
    "compart": 2.5,
    "salvos": 3.3,
    "seguidores": 2.9,
@@ -285,7 +277,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5968,
+   "views": 5972,
    "alcance": 4188,
    "compart": 248,
    "formato": "reels",
@@ -294,8 +286,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5144,
-   "alcance": 3684,
+   "views": 5148,
+   "alcance": 3696,
    "compart": 45,
    "formato": "reels",
    "quando": "2026-11-09",
