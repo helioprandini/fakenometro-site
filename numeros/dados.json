@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-09T22:06:31",
- "seguidores": 1848,
+ "atualizado_em": "2026-11-09T22:39:26",
+ "seguidores": 1852,
  "posts": 55,
  "t28": {
-  "views": 121893,
-  "accounts_engaged": 2811,
-  "total_interactions": 7429,
-  "profile_views": 3872,
-  "likes": 3583,
+  "views": 121969,
+  "accounts_engaged": 2815,
+  "total_interactions": 7442,
+  "profile_views": 3876,
+  "likes": 3589,
   "comments": 249,
-  "shares": 1200,
-  "saves": 549,
+  "shares": 1201,
+  "saves": 550,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-09",
-   "valor": 5752
+   "valor": 5797
   }
  ],
  "seguidores_serie": [
@@ -255,8 +255,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1007.1,
-   "views": 1309.3,
+   "alcance": 1007.8,
+   "views": 1309.7,
    "compart": 21.0,
    "salvos": 5.3,
    "seguidores": null,
@@ -265,10 +265,10 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 756.6,
-   "views": 1184.3,
-   "compart": 2.2,
-   "salvos": 3.1,
+   "alcance": 757.7,
+   "views": 1185.5,
+   "compart": 2.5,
+   "salvos": 3.2,
    "seguidores": 2.9,
    "visitas_perfil": 11.2
   }
@@ -284,8 +284,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 5931,
-   "alcance": 4135,
+   "views": 5936,
+   "alcance": 4150,
    "compart": 245,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -293,7 +293,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5122,
+   "views": 5124,
    "alcance": 3678,
    "compart": 45,
    "formato": "reels",
@@ -312,7 +312,7 @@
   },
   {
    "views": 3078,
-   "alcance": 2474,
+   "alcance": 2477,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -348,9 +348,9 @@
   }
  ],
  "canais": {
-  "instagram": 418,
+  "instagram": 419,
   "comentario": 99,
-  "whatsapp": 112
+  "whatsapp": 115
  },
  "por_dia": [
   [
@@ -435,9 +435,9 @@
   ],
   [
    "2026-11-09",
-   41
+   45
   ]
  ],
  "repositorio": 35,
- "total_publico": 629
+ "total_publico": 633
 }
