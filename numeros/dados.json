@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T16:01:19",
- "seguidores": 1999,
+ "atualizado_em": "2026-11-10T16:55:46",
+ "seguidores": 2007,
  "posts": 56,
  "t28": {
-  "views": 125533,
-  "accounts_engaged": 3006,
-  "total_interactions": 8191,
-  "profile_views": 4048,
-  "likes": 3838,
+  "views": 125948,
+  "accounts_engaged": 3010,
+  "total_interactions": 8214,
+  "profile_views": 4058,
+  "likes": 3853,
   "comments": 280,
-  "shares": 1366,
-  "saves": 604,
+  "shares": 1367,
+  "saves": 605,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 1664
+   "valor": 1840
   }
  ],
  "seguidores_serie": [
@@ -256,8 +256,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1036.6,
-   "views": 1343.9,
+   "alcance": 1036.9,
+   "views": 1344.7,
    "compart": 25.2,
    "salvos": 5.6,
    "seguidores": null,
@@ -266,8 +266,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 716.8,
-   "views": 1126.2,
+   "alcance": 717.6,
+   "views": 1127.7,
    "compart": 2.3,
    "salvos": 3.3,
    "seguidores": 2.7,
@@ -285,7 +285,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6094,
+   "views": 6105,
    "alcance": 4251,
    "compart": 256,
    "formato": "reels",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5188,
+   "views": 5192,
    "alcance": 3708,
    "compart": 45,
    "formato": "reels",
@@ -339,7 +339,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2538,
+   "views": 2539,
    "alcance": 2175,
    "compart": 19,
    "formato": "reels",
@@ -349,9 +349,9 @@
   }
  ],
  "canais": {
-  "instagram": 424,
-  "comentario": 101,
-  "whatsapp": 122
+  "instagram": 427,
+  "comentario": 102,
+  "whatsapp": 126
  },
  "por_dia": [
   [
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   14
+   22
   ]
  ],
  "repositorio": 35,
- "total_publico": 647
+ "total_publico": 655
 }
