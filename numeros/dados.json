@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T18:58:15",
- "seguidores": 2355,
+ "atualizado_em": "2026-11-11T19:32:39",
+ "seguidores": 2376,
  "posts": 58,
  "t28": {
-  "views": 135268,
-  "accounts_engaged": 3466,
-  "total_interactions": 9159,
-  "profile_views": 4342,
-  "likes": 4351,
-  "comments": 329,
-  "shares": 1463,
-  "saves": 674,
+  "views": 135713,
+  "accounts_engaged": 3493,
+  "total_interactions": 9200,
+  "profile_views": 4355,
+  "likes": 4372,
+  "comments": 333,
+  "shares": 1465,
+  "saves": 678,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 3164
+   "valor": 3482
   }
  ],
  "seguidores_serie": [
@@ -251,15 +251,15 @@
   "2026-11-08": 12,
   "2026-11-09": 9,
   "2026-11-10": 8,
-  "2026-11-11": 6
+  "2026-11-11": 7
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1058.2,
-   "views": 1373.8,
-   "compart": 25.7,
+   "alcance": 1059.3,
+   "views": 1375.5,
+   "compart": 25.8,
    "salvos": 5.6,
    "seguidores": null,
    "visitas_perfil": null
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 655.9,
-   "views": 1052.7,
+   "alcance": 663.1,
+   "views": 1064.2,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,16 +286,16 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6512,
-   "alcance": 4487,
-   "compart": 267,
+   "views": 6521,
+   "alcance": 4496,
+   "compart": 268,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5266,
+   "views": 5267,
    "alcance": 3770,
    "compart": 47,
    "formato": "reels",
@@ -322,8 +322,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2854,
-   "alcance": 2193,
+   "views": 2859,
+   "alcance": 2196,
    "compart": 286,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -350,9 +350,9 @@
   }
  ],
  "canais": {
-  "instagram": 470,
+  "instagram": 471,
   "comentario": 104,
-  "whatsapp": 142
+  "whatsapp": 144
  },
  "por_dia": [
   [
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   35
+   38
   ]
  ],
  "repositorio": 41,
- "total_publico": 716
+ "total_publico": 719
 }
