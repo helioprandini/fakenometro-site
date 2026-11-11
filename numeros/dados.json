@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-10T21:45:48",
- "seguidores": 2082,
+ "atualizado_em": "2026-11-10T22:49:03",
+ "seguidores": 2089,
  "posts": 57,
  "t28": {
-  "views": 128450,
-  "accounts_engaged": 3113,
-  "total_interactions": 8450,
-  "profile_views": 4135,
-  "likes": 3971,
-  "comments": 289,
-  "shares": 1400,
-  "saves": 617,
+  "views": 129264,
+  "accounts_engaged": 3126,
+  "total_interactions": 8486,
+  "profile_views": 4154,
+  "likes": 3986,
+  "comments": 291,
+  "shares": 1406,
+  "saves": 623,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 2980
+   "valor": 3264
   }
  ],
  "seguidores_serie": [
@@ -256,9 +256,9 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1014.8,
-   "views": 1320.7,
-   "compart": 24.9,
+   "alcance": 1023.2,
+   "views": 1330.6,
+   "compart": 25.2,
    "salvos": 5.5,
    "seguidores": null,
    "visitas_perfil": null
@@ -266,9 +266,9 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 657.3,
-   "views": 1050.2,
-   "compart": 2.3,
+   "alcance": 657.9,
+   "views": 1051.0,
+   "compart": 2.4,
    "salvos": 3.7,
    "seguidores": 2.8,
    "visitas_perfil": 10.0
@@ -285,8 +285,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6263,
-   "alcance": 4332,
+   "views": 6283,
+   "alcance": 4340,
    "compart": 260,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -294,8 +294,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5223,
-   "alcance": 3714,
+   "views": 5230,
+   "alcance": 3726,
    "compart": 46,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -339,8 +339,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2585,
-   "alcance": 1943,
+   "views": 2652,
+   "alcance": 2009,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -349,7 +349,7 @@
   }
  ],
  "canais": {
-  "instagram": 444,
+  "instagram": 447,
   "comentario": 103,
   "whatsapp": 131
  },
@@ -440,9 +440,9 @@
   ],
   [
    "2026-11-10",
-   45
+   48
   ]
  ],
  "repositorio": 38,
- "total_publico": 678
+ "total_publico": 681
 }
