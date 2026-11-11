@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T17:04:45",
- "seguidores": 2311,
+ "atualizado_em": "2026-11-11T17:40:57",
+ "seguidores": 2323,
  "posts": 57,
  "t28": {
-  "views": 134536,
-  "accounts_engaged": 3397,
-  "total_interactions": 9084,
-  "profile_views": 4309,
-  "likes": 4310,
-  "comments": 325,
+  "views": 134810,
+  "accounts_engaged": 3412,
+  "total_interactions": 9093,
+  "profile_views": 4320,
+  "likes": 4315,
+  "comments": 327,
   "shares": 1457,
-  "saves": 666,
+  "saves": 668,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 2591
+   "valor": 2784
   }
  ],
  "seguidores_serie": [
@@ -257,9 +257,9 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1055.3,
-   "views": 1370.5,
-   "compart": 25.5,
+   "alcance": 1056.1,
+   "views": 1371.7,
+   "compart": 25.7,
    "salvos": 5.6,
    "seguidores": null,
    "visitas_perfil": null
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 666.5,
-   "views": 1067.8,
+   "alcance": 666.8,
+   "views": 1068.2,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,9 +286,9 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6496,
+   "views": 6501,
    "alcance": 4460,
-   "compart": 266,
+   "compart": 267,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
@@ -322,7 +322,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2839,
+   "views": 2843,
    "alcance": 2187,
    "compart": 286,
    "formato": "reels",
@@ -350,7 +350,7 @@
   }
  ],
  "canais": {
-  "instagram": 468,
+  "instagram": 470,
   "comentario": 104,
   "whatsapp": 142
  },
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   33
+   35
   ]
  ],
  "repositorio": 41,
- "total_publico": 714
+ "total_publico": 716
 }
