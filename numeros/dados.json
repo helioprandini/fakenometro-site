@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T14:46:58",
- "seguidores": 2256,
+ "atualizado_em": "2026-11-11T15:52:36",
+ "seguidores": 2285,
  "posts": 57,
  "t28": {
-  "views": 133648,
-  "accounts_engaged": 3340,
-  "total_interactions": 8930,
-  "profile_views": 4261,
-  "likes": 4236,
-  "comments": 315,
-  "shares": 1442,
-  "saves": 652,
+  "views": 134095,
+  "accounts_engaged": 3381,
+  "total_interactions": 9010,
+  "profile_views": 4285,
+  "likes": 4271,
+  "comments": 318,
+  "shares": 1452,
+  "saves": 659,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 1872
+   "valor": 2288
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 0
+   "valor": 214
   },
   {
    "dia": "2026-11-11",
@@ -251,14 +251,14 @@
   "2026-11-08": 12,
   "2026-11-09": 9,
   "2026-11-10": 8,
-  "2026-11-11": 3
+  "2026-11-11": 4
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1049.8,
-   "views": 1363.5,
+   "alcance": 1052.1,
+   "views": 1366.6,
    "compart": 25.5,
    "salvos": 5.6,
    "seguidores": null,
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 665.3,
-   "views": 1066.5,
+   "alcance": 665.4,
+   "views": 1066.8,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,8 +286,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6460,
-   "alcance": 4434,
+   "views": 6474,
+   "alcance": 4451,
    "compart": 266,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -295,8 +295,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5258,
-   "alcance": 3757,
+   "views": 5259,
+   "alcance": 3764,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -331,8 +331,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2798,
-   "alcance": 2155,
+   "views": 2807,
+   "alcance": 2158,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -350,7 +350,7 @@
   }
  ],
  "canais": {
-  "instagram": 465,
+  "instagram": 467,
   "comentario": 104,
   "whatsapp": 139
  },
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   27
+   29
   ]
  ],
  "repositorio": 41,
- "total_publico": 708
+ "total_publico": 710
 }
