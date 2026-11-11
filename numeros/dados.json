@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T00:56:59",
- "seguidores": 2098,
+ "atualizado_em": "2026-11-11T02:00:54",
+ "seguidores": 2101,
  "posts": 57,
  "t28": {
-  "views": 130098,
-  "accounts_engaged": 3140,
-  "total_interactions": 8519,
-  "profile_views": 4169,
-  "likes": 4000,
+  "views": 130261,
+  "accounts_engaged": 3145,
+  "total_interactions": 8542,
+  "profile_views": 4170,
+  "likes": 4009,
   "comments": 293,
-  "shares": 1410,
-  "saves": 627,
+  "shares": 1415,
+  "saves": 629,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 3566
+   "valor": 3589
   }
  ],
  "seguidores_serie": [
@@ -256,8 +256,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1031.5,
-   "views": 1338.3,
+   "alcance": 1032.1,
+   "views": 1339.3,
    "compart": 25.3,
    "salvos": 5.6,
    "seguidores": null,
@@ -266,8 +266,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 658.8,
-   "views": 1053.2,
+   "alcance": 659.2,
+   "views": 1053.9,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -285,7 +285,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6312,
+   "views": 6314,
    "alcance": 4374,
    "compart": 261,
    "formato": "reels",
@@ -330,7 +330,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2704,
+   "views": 2706,
    "alcance": 1763,
    "compart": 6,
    "formato": "carrossel",
@@ -339,8 +339,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2679,
-   "alcance": 2057,
+   "views": 2688,
+   "alcance": 2060,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
