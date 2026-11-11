@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T05:44:56",
- "seguidores": 2104,
+ "atualizado_em": "2026-11-11T06:48:39",
+ "seguidores": 2113,
  "posts": 57,
  "t28": {
-  "views": 130538,
+  "views": 130745,
   "accounts_engaged": 3150,
-  "total_interactions": 8556,
-  "profile_views": 4172,
-  "likes": 4020,
+  "total_interactions": 8575,
+  "profile_views": 4178,
+  "likes": 4031,
   "comments": 293,
-  "shares": 1415,
-  "saves": 630,
+  "shares": 1417,
+  "saves": 631,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 54
+   "valor": 175
   }
  ],
  "seguidores_serie": [
@@ -250,14 +250,15 @@
   "2026-11-07": 6,
   "2026-11-08": 12,
   "2026-11-09": 9,
-  "2026-11-10": 8
+  "2026-11-10": 8,
+  "2026-11-11": 1
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1034.0,
-   "views": 1341.5,
+   "alcance": 1035.3,
+   "views": 1343.3,
    "compart": 25.3,
    "salvos": 5.6,
    "seguidores": null,
@@ -266,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 659.5,
-   "views": 1054.6,
+   "alcance": 659.9,
+   "views": 1055.4,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -285,16 +286,16 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6328,
-   "alcance": 4391,
-   "compart": 261,
+   "views": 6339,
+   "alcance": 4399,
+   "compart": 263,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5230,
+   "views": 5232,
    "alcance": 3726,
    "compart": 46,
    "formato": "reels",
@@ -330,6 +331,15 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
+   "views": 2708,
+   "alcance": 2077,
+   "compart": 284,
+   "formato": "reels",
+   "quando": "2026-11-05",
+   "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
+   "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
+  },
+  {
    "views": 2706,
    "alcance": 1763,
    "compart": 6,
@@ -337,21 +347,12 @@
    "quando": "2026-11-02",
    "link": "https://www.instagram.com/p/DfP64KUicug/",
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
-  },
-  {
-   "views": 2695,
-   "alcance": 2068,
-   "compart": 284,
-   "formato": "reels",
-   "quando": "2026-11-05",
-   "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
-   "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   }
  ],
  "canais": {
   "instagram": 450,
   "comentario": 103,
-  "whatsapp": 131
+  "whatsapp": 132
  },
  "por_dia": [
   [
@@ -444,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   3
+   4
   ]
  ],
  "repositorio": 38,
- "total_publico": 684
+ "total_publico": 685
 }
