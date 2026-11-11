@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T12:40:24",
- "seguidores": 2207,
+ "atualizado_em": "2026-11-11T14:02:45",
+ "seguidores": 2240,
  "posts": 57,
  "t28": {
-  "views": 133036,
-  "accounts_engaged": 3279,
-  "total_interactions": 8840,
-  "profile_views": 4236,
-  "likes": 4181,
-  "comments": 308,
-  "shares": 1440,
-  "saves": 646,
+  "views": 133408,
+  "accounts_engaged": 3324,
+  "total_interactions": 8907,
+  "profile_views": 4253,
+  "likes": 4222,
+  "comments": 311,
+  "shares": 1441,
+  "saves": 652,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 1462
+   "valor": 1709
   }
  ],
  "seguidores_serie": [
@@ -257,9 +257,9 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1047.0,
-   "views": 1359.7,
-   "compart": 25.4,
+   "alcance": 1049.1,
+   "views": 1362.1,
+   "compart": 25.5,
    "salvos": 5.6,
    "seguidores": null,
    "visitas_perfil": null
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 664.5,
-   "views": 1065.0,
+   "alcance": 665.0,
+   "views": 1066.5,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,17 +286,17 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6437,
+   "views": 6454,
    "alcance": 4434,
-   "compart": 265,
+   "compart": 266,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5253,
-   "alcance": 3751,
+   "views": 5258,
+   "alcance": 3757,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -331,8 +331,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2770,
-   "alcance": 2135,
+   "views": 2788,
+   "alcance": 2149,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -350,9 +350,9 @@
   }
  ],
  "canais": {
-  "instagram": 459,
-  "comentario": 103,
-  "whatsapp": 137
+  "instagram": 461,
+  "comentario": 104,
+  "whatsapp": 139
  },
  "por_dia": [
   [
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   18
+   23
   ]
  ],
- "repositorio": 39,
- "total_publico": 699
+ "repositorio": 40,
+ "total_publico": 704
 }
