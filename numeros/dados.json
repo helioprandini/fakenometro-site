@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-11T03:36:12",
- "seguidores": 2101,
+ "atualizado_em": "2026-11-11T04:39:12",
+ "seguidores": 2102,
  "posts": 57,
  "t28": {
-  "views": 130364,
+  "views": 130444,
   "accounts_engaged": 3150,
   "total_interactions": 8551,
-  "profile_views": 4170,
+  "profile_views": 4172,
   "likes": 4017,
   "comments": 293,
   "shares": 1415,
@@ -15,10 +15,6 @@
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-14",
-   "valor": 0
-  },
   {
    "dia": "2026-10-15",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-10",
-   "valor": 3666
+   "valor": 3702
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-14",
-   "valor": 0
-  },
   {
    "dia": "2026-10-15",
    "valor": 0
@@ -256,8 +248,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1032.8,
-   "views": 1339.8,
+   "alcance": 1033.6,
+   "views": 1340.5,
    "compart": 25.3,
    "salvos": 5.6,
    "seguidores": null,
@@ -285,8 +277,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6315,
-   "alcance": 4382,
+   "views": 6322,
+   "alcance": 4391,
    "compart": 261,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -339,8 +331,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2689,
-   "alcance": 2063,
+   "views": 2691,
+   "alcance": 2066,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
