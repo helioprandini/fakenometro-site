@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-11T07:52:34",
- "seguidores": 2133,
+ "atualizado_em": "2026-11-11T08:55:37",
+ "seguidores": 2158,
  "posts": 57,
  "t28": {
-  "views": 131116,
-  "accounts_engaged": 3173,
-  "total_interactions": 8642,
-  "profile_views": 4190,
-  "likes": 4054,
+  "views": 131561,
+  "accounts_engaged": 3187,
+  "total_interactions": 8667,
+  "profile_views": 4202,
+  "likes": 4074,
   "comments": 294,
-  "shares": 1433,
+  "shares": 1434,
   "saves": 633,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 390
+   "valor": 671
   }
  ],
  "seguidores_serie": [
@@ -257,9 +257,9 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1037.7,
-   "views": 1346.6,
-   "compart": 25.3,
+   "alcance": 1039.7,
+   "views": 1349.8,
+   "compart": 25.4,
    "salvos": 5.6,
    "seguidores": null,
    "visitas_perfil": null
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 660.8,
-   "views": 1057.6,
+   "alcance": 661.2,
+   "views": 1058.1,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,17 +286,17 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6361,
+   "views": 6388,
    "alcance": 4408,
-   "compart": 263,
+   "compart": 264,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5238,
-   "alcance": 3726,
+   "views": 5242,
+   "alcance": 3732,
    "compart": 46,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -322,7 +322,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2829,
+   "views": 2830,
    "alcance": 2172,
    "compart": 2,
    "formato": "reels",
@@ -331,8 +331,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2718,
-   "alcance": 2088,
+   "views": 2728,
+   "alcance": 2099,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -350,7 +350,7 @@
   }
  ],
  "canais": {
-  "instagram": 450,
+  "instagram": 453,
   "comentario": 103,
   "whatsapp": 132
  },
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   4
+   7
   ]
  ],
  "repositorio": 38,
- "total_publico": 685
+ "total_publico": 688
 }
