@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-11T09:58:36",
- "seguidores": 2179,
+ "atualizado_em": "2026-11-11T11:01:56",
+ "seguidores": 2191,
  "posts": 57,
  "t28": {
-  "views": 132102,
-  "accounts_engaged": 3225,
-  "total_interactions": 8729,
-  "profile_views": 4219,
-  "likes": 4109,
-  "comments": 299,
-  "shares": 1437,
-  "saves": 641,
+  "views": 132458,
+  "accounts_engaged": 3255,
+  "total_interactions": 8773,
+  "profile_views": 4225,
+  "likes": 4134,
+  "comments": 305,
+  "shares": 1438,
+  "saves": 644,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 959
+   "valor": 1221
   }
  ],
  "seguidores_serie": [
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1041.8,
-   "views": 1353.1,
+   "alcance": 1044.3,
+   "views": 1355.8,
    "compart": 25.4,
    "salvos": 5.6,
    "seguidores": null,
@@ -267,8 +267,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 662.9,
-   "views": 1061.3,
+   "alcance": 663.1,
+   "views": 1062.5,
    "compart": 2.4,
    "salvos": 3.8,
    "seguidores": 2.8,
@@ -286,18 +286,18 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6407,
-   "alcance": 4417,
-   "compart": 264,
+   "views": 6414,
+   "alcance": 4425,
+   "compart": 265,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5250,
+   "views": 5251,
    "alcance": 3739,
-   "compart": 46,
+   "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
    "link": "https://www.instagram.com/reel/DfgEggAE2g5/",
@@ -322,7 +322,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2830,
+   "views": 2831,
    "alcance": 2172,
    "compart": 2,
    "formato": "reels",
@@ -331,8 +331,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2742,
-   "alcance": 2110,
+   "views": 2750,
+   "alcance": 2118,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -340,7 +340,7 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 2709,
+   "views": 2710,
    "alcance": 1765,
    "compart": 6,
    "formato": "carrossel",
@@ -350,7 +350,7 @@
   }
  ],
  "canais": {
-  "instagram": 454,
+  "instagram": 456,
   "comentario": 103,
   "whatsapp": 132
  },
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   8
+   10
   ]
  ],
- "repositorio": 38,
- "total_publico": 689
+ "repositorio": 39,
+ "total_publico": 691
 }
