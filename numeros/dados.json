@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-11T14:02:45",
- "seguidores": 2240,
+ "atualizado_em": "2026-11-11T14:46:58",
+ "seguidores": 2256,
  "posts": 57,
  "t28": {
-  "views": 133408,
-  "accounts_engaged": 3324,
-  "total_interactions": 8907,
-  "profile_views": 4253,
-  "likes": 4222,
-  "comments": 311,
-  "shares": 1441,
+  "views": 133648,
+  "accounts_engaged": 3340,
+  "total_interactions": 8930,
+  "profile_views": 4261,
+  "likes": 4236,
+  "comments": 315,
+  "shares": 1442,
   "saves": 652,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 1709
+   "valor": 1872
   }
  ],
  "seguidores_serie": [
@@ -257,8 +257,8 @@
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1049.1,
-   "views": 1362.1,
+   "alcance": 1049.8,
+   "views": 1363.5,
    "compart": 25.5,
    "salvos": 5.6,
    "seguidores": null,
@@ -267,7 +267,7 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 665.0,
+   "alcance": 665.3,
    "views": 1066.5,
    "compart": 2.4,
    "salvos": 3.8,
@@ -286,7 +286,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6454,
+   "views": 6460,
    "alcance": 4434,
    "compart": 266,
    "formato": "reels",
@@ -331,8 +331,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2788,
-   "alcance": 2149,
+   "views": 2798,
+   "alcance": 2155,
    "compart": 284,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -350,7 +350,7 @@
   }
  ],
  "canais": {
-  "instagram": 461,
+  "instagram": 465,
   "comentario": 104,
   "whatsapp": 139
  },
@@ -445,9 +445,9 @@
   ],
   [
    "2026-11-11",
-   23
+   27
   ]
  ],
- "repositorio": 40,
- "total_publico": 704
+ "repositorio": 41,
+ "total_publico": 708
 }
