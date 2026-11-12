@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T05:41:35",
- "seguidores": 2631,
+ "atualizado_em": "2026-11-12T06:52:33",
+ "seguidores": 2658,
  "posts": 59,
  "t28": {
-  "views": 140106,
-  "accounts_engaged": 3834,
-  "total_interactions": 9742,
-  "profile_views": 4543,
-  "likes": 4669,
-  "comments": 358,
-  "shares": 1504,
-  "saves": 740,
+  "views": 140380,
+  "accounts_engaged": 3860,
+  "total_interactions": 9797,
+  "profile_views": 4557,
+  "likes": 4703,
+  "comments": 360,
+  "shares": 1505,
+  "saves": 745,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 76
+   "valor": 381
   }
  ],
  "seguidores_serie": [
@@ -252,14 +252,14 @@
   "2026-11-09": 9,
   "2026-11-10": 8,
   "2026-11-11": 11,
-  "2026-11-12": 1
+  "2026-11-12": 2
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1070.1,
-   "views": 1386.6,
+   "alcance": 1070.7,
+   "views": 1387.1,
    "compart": 25.9,
    "salvos": 5.7,
    "seguidores": null,
@@ -268,8 +268,8 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 711.3,
-   "views": 1122.1,
+   "alcance": 712.9,
+   "views": 1123.8,
    "compart": 3.8,
    "salvos": 4.0,
    "seguidores": 3.0,
@@ -287,8 +287,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6600,
-   "alcance": 4607,
+   "views": 6606,
+   "alcance": 4616,
    "compart": 269,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -297,7 +297,7 @@
   },
   {
    "views": 5293,
-   "alcance": 3783,
+   "alcance": 3789,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -323,8 +323,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2943,
-   "alcance": 2255,
+   "views": 2948,
+   "alcance": 2258,
    "compart": 287,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -353,7 +353,7 @@
  "canais": {
   "instagram": 477,
   "comentario": 105,
-  "whatsapp": 150
+  "whatsapp": 152
  },
  "por_dia": [
   [
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   1
+   3
   ]
  ],
  "repositorio": 41,
- "total_publico": 732
+ "total_publico": 734
 }
