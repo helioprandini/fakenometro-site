@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T15:00:59",
- "seguidores": 2826,
+ "atualizado_em": "2026-11-12T15:35:23",
+ "seguidores": 2838,
  "posts": 60,
  "t28": {
-  "views": 143330,
-  "accounts_engaged": 4053,
-  "total_interactions": 10312,
-  "profile_views": 4685,
-  "likes": 4966,
+  "views": 143505,
+  "accounts_engaged": 4061,
+  "total_interactions": 10346,
+  "profile_views": 4692,
+  "likes": 4988,
   "comments": 391,
   "shares": 1564,
-  "saves": 784,
+  "saves": 792,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 2645
+   "valor": 2823
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 0
+   "valor": 513
   },
   {
    "dia": "2026-11-12",
@@ -258,8 +258,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1106.9,
-   "views": 1434.4,
+   "alcance": 1107.6,
+   "views": 1435.1,
    "compart": 26.8,
    "salvos": 5.9,
    "seguidores": null,
@@ -268,8 +268,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 684.9,
-   "views": 1081.9,
+   "alcance": 687.4,
+   "views": 1084.6,
    "compart": 3.8,
    "salvos": 3.9,
    "seguidores": 2.8,
@@ -287,7 +287,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6658,
+   "views": 6660,
    "alcance": 4655,
    "compart": 271,
    "formato": "reels",
@@ -314,8 +314,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3148,
-   "alcance": 2411,
+   "views": 3163,
+   "alcance": 2424,
    "compart": 288,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -333,7 +333,7 @@
   },
   {
    "views": 2848,
-   "alcance": 2187,
+   "alcance": 2190,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -341,8 +341,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2730,
-   "alcance": 1782,
+   "views": 2731,
+   "alcance": 1784,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -351,9 +351,9 @@
   }
  ],
  "canais": {
-  "instagram": 482,
+  "instagram": 485,
   "comentario": 106,
-  "whatsapp": 174
+  "whatsapp": 175
  },
  "por_dia": [
   [
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   31
+   35
   ]
  ],
  "repositorio": 41,
- "total_publico": 762
+ "total_publico": 766
 }
