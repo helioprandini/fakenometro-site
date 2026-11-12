@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T15:35:23",
- "seguidores": 2838,
+ "atualizado_em": "2026-11-12T16:39:41",
+ "seguidores": 2869,
  "posts": 60,
  "t28": {
-  "views": 143505,
-  "accounts_engaged": 4061,
-  "total_interactions": 10346,
-  "profile_views": 4692,
-  "likes": 4988,
-  "comments": 391,
-  "shares": 1564,
-  "saves": 792,
+  "views": 143956,
+  "accounts_engaged": 4097,
+  "total_interactions": 10413,
+  "profile_views": 4713,
+  "likes": 5031,
+  "comments": 394,
+  "shares": 1567,
+  "saves": 795,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 2823
+   "valor": 3126
   }
  ],
  "seguidores_serie": [
@@ -252,14 +252,14 @@
   "2026-11-09": 9,
   "2026-11-10": 8,
   "2026-11-11": 11,
-  "2026-11-12": 12
+  "2026-11-12": 15
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1107.6,
-   "views": 1435.1,
+   "alcance": 1109.4,
+   "views": 1437.2,
    "compart": 26.8,
    "salvos": 5.9,
    "seguidores": null,
@@ -268,17 +268,17 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 687.4,
-   "views": 1084.6,
+   "alcance": 691.6,
+   "views": 1089.9,
    "compart": 3.8,
    "salvos": 3.9,
    "seguidores": 2.8,
-   "visitas_perfil": 10.0
+   "visitas_perfil": 10.1
   }
  ],
  "top": [
   {
-   "views": 7047,
+   "views": 7048,
    "alcance": 5427,
    "compart": 33,
    "formato": "reels",
@@ -287,16 +287,16 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6660,
+   "views": 6663,
    "alcance": 4655,
-   "compart": 271,
+   "compart": 272,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5317,
+   "views": 5319,
    "alcance": 3802,
    "compart": 47,
    "formato": "reels",
@@ -305,8 +305,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3250,
-   "alcance": 2187,
+   "views": 3251,
+   "alcance": 2190,
    "compart": 0,
    "formato": "reels",
    "quando": "2026-10-26",
@@ -314,8 +314,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3163,
-   "alcance": 2424,
+   "views": 3207,
+   "alcance": 2457,
    "compart": 288,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -351,7 +351,7 @@
   }
  ],
  "canais": {
-  "instagram": 485,
+  "instagram": 488,
   "comentario": 106,
   "whatsapp": 175
  },
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   35
+   38
   ]
  ],
  "repositorio": 41,
- "total_publico": 766
+ "total_publico": 769
 }
