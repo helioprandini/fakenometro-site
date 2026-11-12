@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T17:43:27",
- "seguidores": 2900,
- "posts": 60,
+ "atualizado_em": "2026-11-12T18:50:04",
+ "seguidores": 2933,
+ "posts": 61,
  "t28": {
-  "views": 144368,
-  "accounts_engaged": 4142,
-  "total_interactions": 10468,
-  "profile_views": 4728,
-  "likes": 5068,
-  "comments": 394,
-  "shares": 1572,
-  "saves": 796,
+  "views": 144926,
+  "accounts_engaged": 4188,
+  "total_interactions": 10557,
+  "profile_views": 4760,
+  "likes": 5119,
+  "comments": 402,
+  "shares": 1575,
+  "saves": 803,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 3455
+   "valor": 3880
   }
  ],
  "seguidores_serie": [
@@ -258,8 +258,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1110.0,
-   "views": 1438.7,
+   "alcance": 1108.6,
+   "views": 1437.0,
    "compart": 26.9,
    "salvos": 5.9,
    "seguidores": null,
@@ -268,8 +268,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 694.9,
-   "views": 1097.1,
+   "alcance": 698.8,
+   "views": 1103.9,
    "compart": 3.8,
    "salvos": 3.9,
    "seguidores": 2.8,
@@ -287,7 +287,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6664,
+   "views": 6666,
    "alcance": 4655,
    "compart": 272,
    "formato": "reels",
@@ -296,13 +296,22 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5320,
+   "views": 5322,
    "alcance": 3802,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
    "link": "https://www.instagram.com/reel/DfgEggAE2g5/",
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
+  },
+  {
+   "views": 3282,
+   "alcance": 2501,
+   "compart": 291,
+   "formato": "reels",
+   "quando": "2026-11-05",
+   "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
+   "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
    "views": 3251,
@@ -312,15 +321,6 @@
    "quando": "2026-10-26",
    "link": "https://www.instagram.com/reel/De796_oJyzn/",
    "titulo": "LULA É REELEITO PRESIDENTE"
-  },
-  {
-   "views": 3242,
-   "alcance": 2464,
-   "compart": 291,
-   "formato": "reels",
-   "quando": "2026-11-05",
-   "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
-   "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
    "views": 3104,
@@ -351,7 +351,7 @@
   }
  ],
  "canais": {
-  "instagram": 488,
+  "instagram": 489,
   "comentario": 106,
   "whatsapp": 178
  },
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   41
+   42
   ]
  ],
- "repositorio": 41,
- "total_publico": 772
+ "repositorio": 42,
+ "total_publico": 773
 }
