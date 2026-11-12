@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-12T04:02:39",
- "seguidores": 2597,
+ "atualizado_em": "2026-11-12T04:34:52",
+ "seguidores": 2603,
  "posts": 59,
  "t28": {
-  "views": 139842,
-  "accounts_engaged": 3815,
-  "total_interactions": 9709,
-  "profile_views": 4530,
-  "likes": 4651,
+  "views": 139868,
+  "accounts_engaged": 3827,
+  "total_interactions": 9715,
+  "profile_views": 4534,
+  "likes": 4656,
   "comments": 355,
   "shares": 1502,
   "saves": 737,
@@ -15,10 +15,6 @@
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-15",
-   "valor": 0
-  },
   {
    "dia": "2026-10-16",
    "valor": 0
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 6095
+   "valor": 6144
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-15",
-   "valor": 0
-  },
   {
    "dia": "2026-10-16",
    "valor": 1
@@ -259,7 +251,7 @@
    "grupo": "reels",
    "posts": 37,
    "alcance": 1069.9,
-   "views": 1386.3,
+   "views": 1386.4,
    "compart": 25.9,
    "salvos": 5.7,
    "seguidores": null,
@@ -268,10 +260,10 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 709.7,
-   "views": 1120.8,
+   "alcance": 709.9,
+   "views": 1121.2,
    "compart": 3.8,
-   "salvos": 3.9,
+   "salvos": 4.0,
    "seguidores": 3.0,
    "visitas_perfil": 10.5
   }
@@ -287,7 +279,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6595,
+   "views": 6596,
    "alcance": 4607,
    "compart": 269,
    "formato": "reels",
@@ -323,7 +315,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2940,
+   "views": 2941,
    "alcance": 2252,
    "compart": 287,
    "formato": "reels",
