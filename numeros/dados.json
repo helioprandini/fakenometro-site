@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T10:52:06",
- "seguidores": 2737,
+ "atualizado_em": "2026-11-12T11:57:51",
+ "seguidores": 2753,
  "posts": 59,
  "t28": {
-  "views": 141678,
-  "accounts_engaged": 3961,
-  "total_interactions": 10060,
-  "profile_views": 4616,
-  "likes": 4827,
+  "views": 142003,
+  "accounts_engaged": 3975,
+  "total_interactions": 10098,
+  "profile_views": 4625,
+  "likes": 4848,
   "comments": 374,
-  "shares": 1547,
-  "saves": 764,
+  "shares": 1553,
+  "saves": 766,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 1382
+   "valor": 1643
   }
  ],
  "seguidores_serie": [
@@ -252,24 +252,24 @@
   "2026-11-09": 9,
   "2026-11-10": 8,
   "2026-11-11": 11,
-  "2026-11-12": 4
+  "2026-11-12": 6
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1073.6,
-   "views": 1390.4,
+   "alcance": 1074.6,
+   "views": 1392.3,
    "compart": 26.0,
-   "salvos": 5.7,
+   "salvos": 5.8,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 723.7,
-   "views": 1140.9,
+   "alcance": 726.4,
+   "views": 1144.4,
    "compart": 3.8,
    "salvos": 4.2,
    "seguidores": 3.0,
@@ -287,7 +287,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6632,
+   "views": 6636,
    "alcance": 4635,
    "compart": 270,
    "formato": "reels",
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5311,
+   "views": 5313,
    "alcance": 3802,
    "compart": 47,
    "formato": "reels",
@@ -323,17 +323,17 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2964,
-   "alcance": 2276,
-   "compart": 287,
+   "views": 3015,
+   "alcance": 2307,
+   "compart": 288,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 2845,
-   "alcance": 2184,
+   "views": 2846,
+   "alcance": 2187,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -353,7 +353,7 @@
  "canais": {
   "instagram": 480,
   "comentario": 106,
-  "whatsapp": 160
+  "whatsapp": 162
  },
  "por_dia": [
   [
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   15
+   17
   ]
  ],
  "repositorio": 41,
- "total_publico": 746
+ "total_publico": 748
 }
