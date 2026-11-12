@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T13:56:30",
- "seguidores": 2802,
+ "atualizado_em": "2026-11-12T15:00:59",
+ "seguidores": 2826,
  "posts": 60,
  "t28": {
-  "views": 142933,
-  "accounts_engaged": 4039,
-  "total_interactions": 10256,
-  "profile_views": 4670,
-  "likes": 4934,
-  "comments": 389,
-  "shares": 1562,
-  "saves": 781,
+  "views": 143330,
+  "accounts_engaged": 4053,
+  "total_interactions": 10312,
+  "profile_views": 4685,
+  "likes": 4966,
+  "comments": 391,
+  "shares": 1564,
+  "saves": 784,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 2392
+   "valor": 2645
   }
  ],
  "seguidores_serie": [
@@ -252,14 +252,14 @@
   "2026-11-09": 9,
   "2026-11-10": 8,
   "2026-11-11": 11,
-  "2026-11-12": 8
+  "2026-11-12": 12
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1105.6,
-   "views": 1432.6,
+   "alcance": 1106.9,
+   "views": 1434.4,
    "compart": 26.8,
    "salvos": 5.9,
    "seguidores": null,
@@ -268,8 +268,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 680.7,
-   "views": 1075.1,
+   "alcance": 684.9,
+   "views": 1081.9,
    "compart": 3.8,
    "salvos": 3.9,
    "seguidores": 2.8,
@@ -287,7 +287,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6652,
+   "views": 6658,
    "alcance": 4655,
    "compart": 271,
    "formato": "reels",
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5315,
+   "views": 5317,
    "alcance": 3802,
    "compart": 47,
    "formato": "reels",
@@ -314,8 +314,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3115,
-   "alcance": 2379,
+   "views": 3148,
+   "alcance": 2411,
    "compart": 288,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -323,7 +323,7 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 3103,
+   "views": 3104,
    "alcance": 2514,
    "compart": 6,
    "formato": "reels",
@@ -332,7 +332,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2847,
+   "views": 2848,
    "alcance": 2187,
    "compart": 2,
    "formato": "reels",
@@ -353,7 +353,7 @@
  "canais": {
   "instagram": 482,
   "comentario": 106,
-  "whatsapp": 166
+  "whatsapp": 174
  },
  "por_dia": [
   [
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   23
+   31
   ]
  ],
  "repositorio": 41,
- "total_publico": 754
+ "total_publico": 762
 }
