@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T18:50:04",
- "seguidores": 2933,
+ "atualizado_em": "2026-11-12T19:55:37",
+ "seguidores": 2959,
  "posts": 61,
  "t28": {
-  "views": 144926,
-  "accounts_engaged": 4188,
-  "total_interactions": 10557,
-  "profile_views": 4760,
-  "likes": 5119,
-  "comments": 402,
-  "shares": 1575,
-  "saves": 803,
+  "views": 145448,
+  "accounts_engaged": 4227,
+  "total_interactions": 10619,
+  "profile_views": 4776,
+  "likes": 5154,
+  "comments": 404,
+  "shares": 1579,
+  "saves": 808,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 3880
+   "valor": 4307
   }
  ],
  "seguidores_serie": [
@@ -252,24 +252,24 @@
   "2026-11-09": 9,
   "2026-11-10": 8,
   "2026-11-11": 11,
-  "2026-11-12": 15
+  "2026-11-12": 16
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1108.6,
-   "views": 1437.0,
-   "compart": 26.9,
-   "salvos": 5.9,
+   "alcance": 1109.9,
+   "views": 1439.3,
+   "compart": 27.0,
+   "salvos": 6.0,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 698.8,
-   "views": 1103.9,
+   "alcance": 701.6,
+   "views": 1107.4,
    "compart": 3.8,
    "salvos": 3.9,
    "seguidores": 2.8,
@@ -287,8 +287,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6666,
-   "alcance": 4655,
+   "views": 6674,
+   "alcance": 4664,
    "compart": 272,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5322,
+   "views": 5327,
    "alcance": 3802,
    "compart": 47,
    "formato": "reels",
@@ -305,9 +305,9 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3282,
-   "alcance": 2501,
-   "compart": 291,
+   "views": 3332,
+   "alcance": 2528,
+   "compart": 294,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
@@ -332,7 +332,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2848,
+   "views": 2851,
    "alcance": 2190,
    "compart": 2,
    "formato": "reels",
@@ -351,9 +351,9 @@
   }
  ],
  "canais": {
-  "instagram": 489,
+  "instagram": 490,
   "comentario": 106,
-  "whatsapp": 178
+  "whatsapp": 179
  },
  "por_dia": [
   [
@@ -450,9 +450,9 @@
   ],
   [
    "2026-11-12",
-   42
+   44
   ]
  ],
  "repositorio": 42,
- "total_publico": 773
+ "total_publico": 775
 }
