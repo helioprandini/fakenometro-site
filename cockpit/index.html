@@ -535,15 +535,39 @@ function cartaoAmao(m, i){
   return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px${m.revisao ? ";opacity:.55" : ""}">
     <div style="font-weight:800">${esc(titulo)}</div>
     <div class="sub">${m.canal === "whatsapp" ? "" : esc(CANAIS[m.canal]) + " · "}${esc(m.autor)} · ${esc((m.em || "").slice(8, 10) + "/" + (m.em || "").slice(5, 7) + ", " + (m.em || "").slice(11, 16))}${janelaAmao(m)}</div>
-    ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">Marcado. Na sessão do Theo, escreva: revisar os marcados.</div>` : ""}
+    ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">${m.revisao.consultas ? "Marcada a consulta " + m.revisao.consultas.join(" e ") + "." : "Marcado."} Na sessão do Theo, escreva: revisar os marcados.</div>` : ""}
     ${blocoAmao("O que a pessoa disse", m.pergunta)}
     ${blocoAmao("Sobre a checagem", sobre)}
     ${blocoAmao("O que ela mandou", m.recebido)}
     ${blocoAmao("Resultado que demos", nomeRotulo(m.resultado || "") === "—" ? "" : nomeRotulo(m.resultado))}
     ${m.resposta ? `<div class="sub" style="margin-top:10px;font-weight:700">Resposta proposta (pode editar)</div>
       <textarea id="amao-t-${i}" rows="9" style="width:100%;box-sizing:border-box;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit">${esc(m.resposta)}</textarea>`
-      : blocoAmao("O que temos", m.texto)}
+      : (consultasAmao(m) || blocoAmao("O que temos", m.texto))}
     <div class="acoes">${acoes}</div></div>`;
+}
+// Um botão por consulta no cartão agrupado (Roberta, 12/11: "Pode manter grupado, mas me coloca um botão de revisão por
+// consulta? Assim consigo encerrar um e marcar o outro pra revisão"). Cada consulta começa por "PESSOA:" no texto.
+function consultasAmao(m){
+  if (!enviadoAmao(m) || m.canal === "comentario") return "";
+  const partes = String(m.texto || "").replace(/^RESPOSTAS DO ROBÔ \(revisar em 24 h\)\s*/, "").split(/\n\n(?=PESSOA: )/).filter(p => p.trim());
+  if (partes.filter(p => p.startsWith("PESSOA: ")).length < 2) return "";
+  let n = 0;
+  return partes.map(p => {
+    if (!p.startsWith("PESSOA: ")) return `<div style="white-space:pre-wrap;margin-top:10px">${esc(p)}</div>`;
+    n++;
+    const est = (m.consultas || {})[n] || {}, rev = est.acao === "revisar", enc = est.acao === "encerrar";
+    return `<div style="margin-top:12px;padding:10px;border:1px solid var(--linha);border-radius:10px${enc ? ";opacity:.45" : ""}">
+      <div class="sub" style="font-weight:700">Consulta ${n}${rev ? " · marcada para revisão ✓" : enc ? " · encerrada" : ""}</div>
+      <div style="white-space:pre-wrap">${esc(p)}</div>
+      <div class="acoes" style="margin-top:8px">
+        <button class="${rev ? "b-feito" : "b-copiar"}" onclick="consultaAmao('${esc(m.comentario)}',${n},'revisar')">${rev ? "Marcada ✓ (desfazer)" : "Revisar esta com o Theo"}</button>
+        <button class="${enc ? "b-feito" : "b-desc"}" onclick="consultaAmao('${esc(m.comentario)}',${n},'encerrar')">${enc ? "Encerrada (desfazer)" : "Encerrar esta"}</button>
+      </div></div>`;
+  }).join("");
+}
+async function consultaAmao(c, n, acao){
+  try{ await pedirAmao(c, "consulta", new URLSearchParams({n, acao})); toast(acao === "revisar" ? "Consulta marcada" : "Consulta encerrada"); }
+  catch(e){ toast("Não consegui marcar"); }
 }
 // Três botões na aba (Roberta, 9/11: "To preocupada de ficar mto extenso e eu me perder. Um botão para validações,
 // que seriam as amostras diárias… Um botão para as falhas… E um para Revisar em 24h").
