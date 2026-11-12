@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-12T00:30:46",
- "seguidores": 2556,
+ "atualizado_em": "2026-11-12T01:39:41",
+ "seguidores": 2579,
  "posts": 59,
  "t28": {
-  "views": 139148,
-  "accounts_engaged": 3739,
-  "total_interactions": 9625,
-  "profile_views": 4485,
-  "likes": 4596,
-  "comments": 352,
-  "shares": 1501,
-  "saves": 727,
+  "views": 139556,
+  "accounts_engaged": 3789,
+  "total_interactions": 9673,
+  "profile_views": 4513,
+  "likes": 4625,
+  "comments": 355,
+  "shares": 1502,
+  "saves": 731,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-11",
-   "valor": 5718
+   "valor": 5947
   }
  ],
  "seguidores_serie": [
@@ -251,14 +251,15 @@
   "2026-11-08": 12,
   "2026-11-09": 9,
   "2026-11-10": 8,
-  "2026-11-11": 11
+  "2026-11-11": 11,
+  "2026-11-12": 1
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 37,
-   "alcance": 1068.3,
-   "views": 1385.1,
+   "alcance": 1069.3,
+   "views": 1385.6,
    "compart": 25.9,
    "salvos": 5.6,
    "seguidores": null,
@@ -267,12 +268,12 @@
   {
    "grupo": "carrossel",
    "posts": 13,
-   "alcance": 703.5,
-   "views": 1113.5,
+   "alcance": 707.0,
+   "views": 1118.9,
    "compart": 3.8,
    "salvos": 3.9,
-   "seguidores": 2.9,
-   "visitas_perfil": 10.4
+   "seguidores": 3.0,
+   "visitas_perfil": 10.5
   }
  ],
  "top": [
@@ -286,8 +287,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6590,
-   "alcance": 4588,
+   "views": 6595,
+   "alcance": 4607,
    "compart": 269,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -295,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5288,
+   "views": 5290,
    "alcance": 3783,
    "compart": 47,
    "formato": "reels",
@@ -322,8 +323,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2932,
-   "alcance": 2246,
+   "views": 2936,
+   "alcance": 2252,
    "compart": 287,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -331,8 +332,8 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 2842,
-   "alcance": 2181,
+   "views": 2845,
+   "alcance": 2184,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -340,8 +341,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2722,
-   "alcance": 1779,
+   "views": 2723,
+   "alcance": 1782,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
