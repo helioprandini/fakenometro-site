@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T16:51:13",
- "seguidores": 3373,
+ "atualizado_em": "2026-11-13T17:57:47",
+ "seguidores": 3391,
  "posts": 61,
  "t28": {
-  "views": 154439,
-  "accounts_engaged": 4785,
-  "total_interactions": 11620,
-  "profile_views": 5035,
-  "likes": 5728,
-  "comments": 424,
-  "shares": 1658,
-  "saves": 905,
+  "views": 154827,
+  "accounts_engaged": 4806,
+  "total_interactions": 11684,
+  "profile_views": 5046,
+  "likes": 5752,
+  "comments": 428,
+  "shares": 1668,
+  "saves": 912,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 3684
+   "valor": 3900
   }
  ],
  "seguidores_serie": [
@@ -259,8 +259,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1138.1,
-   "views": 1471.4,
+   "alcance": 1139.1,
+   "views": 1472.3,
    "compart": 28.1,
    "salvos": 6.2,
    "seguidores": null,
@@ -269,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 727.4,
-   "views": 1151.9,
+   "alcance": 727.9,
+   "views": 1153.1,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
@@ -288,8 +288,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6750,
-   "alcance": 4754,
+   "views": 6754,
+   "alcance": 4764,
    "compart": 278,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -306,8 +306,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3660,
-   "alcance": 2784,
+   "views": 3664,
+   "alcance": 2792,
    "compart": 327,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -333,7 +333,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2877,
+   "views": 2879,
    "alcance": 2216,
    "compart": 2,
    "formato": "reels",
@@ -342,7 +342,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2759,
+   "views": 2761,
    "alcance": 1794,
    "compart": 6,
    "formato": "carrossel",
@@ -352,7 +352,7 @@
   }
  ],
  "canais": {
-  "instagram": 510,
+  "instagram": 511,
   "comentario": 113,
   "whatsapp": 197
  },
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   22
+   23
   ]
  ],
  "repositorio": 44,
- "total_publico": 820
+ "total_publico": 821
 }
