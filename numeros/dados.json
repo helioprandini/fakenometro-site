@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T04:36:33",
- "seguidores": 3108,
+ "atualizado_em": "2026-11-13T05:40:20",
+ "seguidores": 3119,
  "posts": 61,
  "t28": {
-  "views": 148017,
-  "accounts_engaged": 4443,
-  "total_interactions": 11056,
-  "profile_views": 4863,
-  "likes": 5389,
-  "comments": 411,
+  "views": 148112,
+  "accounts_engaged": 4460,
+  "total_interactions": 11072,
+  "profile_views": 4867,
+  "likes": 5397,
+  "comments": 413,
   "shares": 1627,
-  "saves": 848,
+  "saves": 851,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -121,7 +121,11 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 6212
+   "valor": 6248
+  },
+  {
+   "dia": "2026-11-13",
+   "valor": 34
   }
  ],
  "seguidores_serie": [
@@ -232,6 +236,10 @@
   {
    "dia": "2026-11-12",
    "valor": 0
+  },
+  {
+   "dia": "2026-11-13",
+   "valor": 0
   }
  ],
  "cliques_whatsapp": {
@@ -251,8 +259,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1122.3,
-   "views": 1453.3,
+   "alcance": 1122.6,
+   "views": 1453.7,
    "compart": 27.8,
    "salvos": 6.1,
    "seguidores": null,
@@ -261,10 +269,10 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 715.9,
-   "views": 1131.0,
+   "alcance": 716.1,
+   "views": 1131.2,
    "compart": 3.9,
-   "salvos": 4.0,
+   "salvos": 4.1,
    "seguidores": 2.8,
    "visitas_perfil": 10.1
   }
@@ -298,8 +306,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3517,
-   "alcance": 2667,
+   "views": 3525,
+   "alcance": 2670,
    "compart": 324,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -346,7 +354,7 @@
  "canais": {
   "instagram": 502,
   "comentario": 106,
-  "whatsapp": 190
+  "whatsapp": 191
  },
  "por_dia": [
   [
@@ -444,8 +452,12 @@
   [
    "2026-11-12",
    67
+  ],
+  [
+   "2026-11-13",
+   1
   ]
  ],
  "repositorio": 43,
- "total_publico": 798
+ "total_publico": 799
 }
