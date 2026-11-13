@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T05:40:20",
- "seguidores": 3119,
+ "atualizado_em": "2026-11-13T06:54:47",
+ "seguidores": 3146,
  "posts": 61,
  "t28": {
-  "views": 148112,
-  "accounts_engaged": 4460,
-  "total_interactions": 11072,
-  "profile_views": 4867,
-  "likes": 5397,
-  "comments": 413,
-  "shares": 1627,
-  "saves": 851,
+  "views": 148503,
+  "accounts_engaged": 4505,
+  "total_interactions": 11132,
+  "profile_views": 4880,
+  "likes": 5432,
+  "comments": 416,
+  "shares": 1630,
+  "saves": 854,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 34
+   "valor": 362
   }
  ],
  "seguidores_serie": [
@@ -259,8 +259,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1122.6,
-   "views": 1453.7,
+   "alcance": 1124.5,
+   "views": 1456.1,
    "compart": 27.8,
    "salvos": 6.1,
    "seguidores": null,
@@ -269,12 +269,12 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 716.1,
-   "views": 1131.2,
+   "alcance": 716.6,
+   "views": 1132.9,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
-   "visitas_perfil": 10.1
+   "visitas_perfil": 10.2
   }
  ],
  "top": [
@@ -288,8 +288,8 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6709,
-   "alcance": 4704,
+   "views": 6713,
+   "alcance": 4724,
    "compart": 272,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -297,7 +297,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5336,
+   "views": 5339,
    "alcance": 3815,
    "compart": 47,
    "formato": "reels",
@@ -306,8 +306,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3525,
-   "alcance": 2670,
+   "views": 3552,
+   "alcance": 2681,
    "compart": 324,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -342,7 +342,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2739,
+   "views": 2740,
    "alcance": 1789,
    "compart": 6,
    "formato": "carrossel",
@@ -354,7 +354,7 @@
  "canais": {
   "instagram": 502,
   "comentario": 106,
-  "whatsapp": 191
+  "whatsapp": 192
  },
  "por_dia": [
   [
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   1
+   2
   ]
  ],
  "repositorio": 43,
- "total_publico": 799
+ "total_publico": 800
 }
