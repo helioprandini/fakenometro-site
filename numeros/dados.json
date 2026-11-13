@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T06:54:47",
- "seguidores": 3146,
+ "atualizado_em": "2026-11-13T07:57:45",
+ "seguidores": 3178,
  "posts": 61,
  "t28": {
-  "views": 148503,
-  "accounts_engaged": 4505,
-  "total_interactions": 11132,
-  "profile_views": 4880,
-  "likes": 5432,
+  "views": 148868,
+  "accounts_engaged": 4551,
+  "total_interactions": 11192,
+  "profile_views": 4896,
+  "likes": 5467,
   "comments": 416,
-  "shares": 1630,
-  "saves": 854,
+  "shares": 1635,
+  "saves": 858,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 362
+   "valor": 671
   }
  ],
  "seguidores_serie": [
@@ -259,9 +259,9 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1124.5,
-   "views": 1456.1,
-   "compart": 27.8,
+   "alcance": 1126.9,
+   "views": 1458.1,
+   "compart": 28.0,
    "salvos": 6.1,
    "seguidores": null,
    "visitas_perfil": null
@@ -269,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 716.6,
-   "views": 1132.9,
+   "alcance": 718.1,
+   "views": 1134.9,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
@@ -288,9 +288,9 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6713,
-   "alcance": 4724,
-   "compart": 272,
+   "views": 6719,
+   "alcance": 4734,
+   "compart": 277,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
@@ -306,8 +306,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3552,
-   "alcance": 2681,
+   "views": 3565,
+   "alcance": 2711,
    "compart": 324,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -353,7 +353,7 @@
  ],
  "canais": {
   "instagram": 502,
-  "comentario": 106,
+  "comentario": 107,
   "whatsapp": 192
  },
  "por_dia": [
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   2
+   3
   ]
  ],
  "repositorio": 43,
- "total_publico": 800
+ "total_publico": 801
 }
