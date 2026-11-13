@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T15:47:16",
- "seguidores": 3347,
+ "atualizado_em": "2026-11-13T16:51:13",
+ "seguidores": 3373,
  "posts": 61,
  "t28": {
-  "views": 153884,
-  "accounts_engaged": 4764,
-  "total_interactions": 11574,
-  "profile_views": 5020,
-  "likes": 5698,
+  "views": 154439,
+  "accounts_engaged": 4785,
+  "total_interactions": 11620,
+  "profile_views": 5035,
+  "likes": 5728,
   "comments": 424,
-  "shares": 1657,
-  "saves": 898,
+  "shares": 1658,
+  "saves": 905,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 3319
+   "valor": 3684
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-12",
-   "valor": 0
+   "valor": 500
   },
   {
    "dia": "2026-11-13",
@@ -259,8 +259,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1136.6,
-   "views": 1470.1,
+   "alcance": 1138.1,
+   "views": 1471.4,
    "compart": 28.1,
    "salvos": 6.2,
    "seguidores": null,
@@ -269,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 726.8,
-   "views": 1151.0,
+   "alcance": 727.4,
+   "views": 1151.9,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
@@ -288,7 +288,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6748,
+   "views": 6750,
    "alcance": 4754,
    "compart": 278,
    "formato": "reels",
@@ -297,8 +297,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5353,
-   "alcance": 3827,
+   "views": 5357,
+   "alcance": 3834,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -306,8 +306,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3654,
-   "alcance": 2780,
+   "views": 3660,
+   "alcance": 2784,
    "compart": 327,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -324,8 +324,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3111,
-   "alcance": 2521,
+   "views": 3112,
+   "alcance": 2525,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -333,7 +333,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2876,
+   "views": 2877,
    "alcance": 2216,
    "compart": 2,
    "formato": "reels",
@@ -342,7 +342,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2758,
+   "views": 2759,
    "alcance": 1794,
    "compart": 6,
    "formato": "carrossel",
@@ -352,7 +352,7 @@
   }
  ],
  "canais": {
-  "instagram": 509,
+  "instagram": 510,
   "comentario": 113,
   "whatsapp": 197
  },
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   21
+   22
   ]
  ],
  "repositorio": 44,
- "total_publico": 819
+ "total_publico": 820
 }
