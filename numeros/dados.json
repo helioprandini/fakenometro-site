@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T13:02:10",
- "seguidores": 3286,
+ "atualizado_em": "2026-11-13T13:35:05",
+ "seguidores": 3299,
  "posts": 61,
  "t28": {
-  "views": 152549,
-  "accounts_engaged": 4655,
-  "total_interactions": 11465,
-  "profile_views": 4984,
-  "likes": 5630,
+  "views": 152771,
+  "accounts_engaged": 4694,
+  "total_interactions": 11490,
+  "profile_views": 4989,
+  "likes": 5647,
   "comments": 424,
-  "shares": 1652,
-  "saves": 887,
+  "shares": 1654,
+  "saves": 888,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 2535
+   "valor": 2678
   }
  ],
  "seguidores_serie": [
@@ -259,9 +259,9 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1134.9,
-   "views": 1467.3,
-   "compart": 28.0,
+   "alcance": 1135.2,
+   "views": 1467.6,
+   "compart": 28.1,
    "salvos": 6.2,
    "seguidores": null,
    "visitas_perfil": null
@@ -269,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 724.3,
-   "views": 1144.6,
+   "alcance": 724.4,
+   "views": 1145.2,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
@@ -288,9 +288,9 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6738,
+   "views": 6739,
    "alcance": 4754,
-   "compart": 277,
+   "compart": 278,
    "formato": "reels",
    "quando": "2026-11-08",
    "link": "https://www.instagram.com/reel/DffBzJ6kRDm/",
@@ -306,9 +306,9 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3636,
+   "views": 3640,
    "alcance": 2772,
-   "compart": 324,
+   "compart": 326,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
@@ -333,8 +333,8 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2870,
-   "alcance": 2210,
+   "views": 2871,
+   "alcance": 2213,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -352,9 +352,9 @@
   }
  ],
  "canais": {
-  "instagram": 508,
-  "comentario": 109,
-  "whatsapp": 195
+  "instagram": 509,
+  "comentario": 112,
+  "whatsapp": 196
  },
  "por_dia": [
   [
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   14
+   19
   ]
  ],
  "repositorio": 44,
- "total_publico": 812
+ "total_publico": 817
 }
