@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-13T14:39:50",
- "seguidores": 3328,
+ "atualizado_em": "2026-11-13T15:47:16",
+ "seguidores": 3347,
  "posts": 61,
  "t28": {
-  "views": 153410,
-  "accounts_engaged": 4724,
-  "total_interactions": 11537,
-  "profile_views": 5000,
-  "likes": 5673,
+  "views": 153884,
+  "accounts_engaged": 4764,
+  "total_interactions": 11574,
+  "profile_views": 5020,
+  "likes": 5698,
   "comments": 424,
   "shares": 1657,
-  "saves": 892,
+  "saves": 898,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-13",
-   "valor": 3010
+   "valor": 3319
   }
  ],
  "seguidores_serie": [
@@ -253,14 +253,14 @@
   "2026-11-10": 8,
   "2026-11-11": 11,
   "2026-11-12": 19,
-  "2026-11-13": 5
+  "2026-11-13": 6
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1135.7,
-   "views": 1468.5,
+   "alcance": 1136.6,
+   "views": 1470.1,
    "compart": 28.1,
    "salvos": 6.2,
    "seguidores": null,
@@ -269,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 725.3,
-   "views": 1149.0,
+   "alcance": 726.8,
+   "views": 1151.0,
    "compart": 3.9,
    "salvos": 4.1,
    "seguidores": 2.8,
@@ -288,7 +288,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6740,
+   "views": 6748,
    "alcance": 4754,
    "compart": 278,
    "formato": "reels",
@@ -297,7 +297,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5350,
+   "views": 5353,
    "alcance": 3827,
    "compart": 47,
    "formato": "reels",
@@ -306,9 +306,9 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3647,
-   "alcance": 2776,
-   "compart": 326,
+   "views": 3654,
+   "alcance": 2780,
+   "compart": 327,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
@@ -324,8 +324,8 @@
    "titulo": "LULA É REELEITO PRESIDENTE"
   },
   {
-   "views": 3110,
-   "alcance": 2518,
+   "views": 3111,
+   "alcance": 2521,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -333,7 +333,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2872,
+   "views": 2876,
    "alcance": 2216,
    "compart": 2,
    "formato": "reels",
@@ -353,8 +353,8 @@
  ],
  "canais": {
   "instagram": 509,
-  "comentario": 112,
-  "whatsapp": 196
+  "comentario": 113,
+  "whatsapp": 197
  },
  "por_dia": [
   [
@@ -455,9 +455,9 @@
   ],
   [
    "2026-11-13",
-   19
+   21
   ]
  ],
  "repositorio": 44,
- "total_publico": 817
+ "total_publico": 819
 }
