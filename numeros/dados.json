@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-14T12:06:16",
- "seguidores": 3739,
+ "atualizado_em": "2026-11-14T12:40:20",
+ "seguidores": 3743,
  "posts": 62,
  "t28": {
-  "views": 160980,
-  "accounts_engaged": 5295,
-  "total_interactions": 12470,
-  "profile_views": 5295,
-  "likes": 6188,
+  "views": 161188,
+  "accounts_engaged": 5306,
+  "total_interactions": 12490,
+  "profile_views": 5304,
+  "likes": 6202,
   "comments": 450,
-  "shares": 1734,
-  "saves": 992,
+  "shares": 1735,
+  "saves": 995,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 1194
+   "valor": 1380
   }
  ],
  "seguidores_serie": [
@@ -254,14 +254,14 @@
   "2026-11-11": 11,
   "2026-11-12": 19,
   "2026-11-13": 14,
-  "2026-11-14": 5
+  "2026-11-14": 6
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1142.2,
-   "views": 1477.8,
+   "alcance": 1144.6,
+   "views": 1480.6,
    "compart": 28.6,
    "salvos": 6.2,
    "seguidores": null,
@@ -270,8 +270,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 740.9,
-   "views": 1173.1,
+   "alcance": 741.1,
+   "views": 1173.3,
    "compart": 4.0,
    "salvos": 4.4,
    "seguidores": 2.8,
@@ -289,7 +289,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6808,
+   "views": 6809,
    "alcance": 4816,
    "compart": 290,
    "formato": "reels",
@@ -307,7 +307,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3715,
+   "views": 3716,
    "alcance": 2835,
    "compart": 328,
    "formato": "reels",
@@ -355,7 +355,7 @@
  "canais": {
   "instagram": 520,
   "comentario": 115,
-  "whatsapp": 207
+  "whatsapp": 208
  },
  "por_dia": [
   [
@@ -460,9 +460,9 @@
   ],
   [
    "2026-11-14",
-   9
+   10
   ]
  ],
  "repositorio": 44,
- "total_publico": 842
+ "total_publico": 843
 }
