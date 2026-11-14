@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-14T07:48:48",
- "seguidores": 3679,
+ "atualizado_em": "2026-11-14T08:53:55",
+ "seguidores": 3691,
  "posts": 61,
  "t28": {
-  "views": 159945,
-  "accounts_engaged": 5220,
-  "total_interactions": 12346,
-  "profile_views": 5242,
-  "likes": 6104,
+  "views": 160221,
+  "accounts_engaged": 5231,
+  "total_interactions": 12365,
+  "profile_views": 5258,
+  "likes": 6118,
   "comments": 446,
-  "shares": 1729,
-  "saves": 983,
+  "shares": 1730,
+  "saves": 984,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 473
+   "valor": 657
   }
  ],
  "seguidores_serie": [
@@ -260,8 +260,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1145.2,
-   "views": 1479.7,
+   "alcance": 1145.6,
+   "views": 1480.2,
    "compart": 28.6,
    "salvos": 6.2,
    "seguidores": null,
@@ -270,8 +270,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 737.9,
-   "views": 1168.5,
+   "alcance": 738.6,
+   "views": 1169.6,
    "compart": 4.0,
    "salvos": 4.4,
    "seguidores": 2.8,
@@ -289,7 +289,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6802,
+   "views": 6803,
    "alcance": 4806,
    "compart": 290,
    "formato": "reels",
@@ -298,7 +298,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5374,
+   "views": 5376,
    "alcance": 3847,
    "compart": 47,
    "formato": "reels",
@@ -307,7 +307,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3710,
+   "views": 3711,
    "alcance": 2835,
    "compart": 328,
    "formato": "reels",
@@ -354,7 +354,7 @@
  ],
  "canais": {
   "instagram": 520,
-  "comentario": 113,
+  "comentario": 115,
   "whatsapp": 206
  },
  "por_dia": [
@@ -460,9 +460,9 @@
   ],
   [
    "2026-11-14",
-   6
+   8
   ]
  ],
  "repositorio": 44,
- "total_publico": 839
+ "total_publico": 841
 }
