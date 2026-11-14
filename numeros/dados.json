@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-14T15:00:57",
- "seguidores": 3785,
+ "atualizado_em": "2026-11-14T15:47:45",
+ "seguidores": 3796,
  "posts": 62,
  "t28": {
-  "views": 162155,
-  "accounts_engaged": 5341,
-  "total_interactions": 12580,
-  "profile_views": 5344,
-  "likes": 6245,
-  "comments": 457,
-  "shares": 1743,
-  "saves": 1002,
+  "views": 162423,
+  "accounts_engaged": 5354,
+  "total_interactions": 12617,
+  "profile_views": 5347,
+  "likes": 6265,
+  "comments": 460,
+  "shares": 1747,
+  "saves": 1005,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 2063
+   "valor": 2307
   }
  ],
  "seguidores_serie": [
@@ -260,8 +260,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1156.4,
-   "views": 1493.2,
+   "alcance": 1159.8,
+   "views": 1496.9,
    "compart": 28.6,
    "salvos": 6.3,
    "seguidores": null,
@@ -270,9 +270,9 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 743.2,
-   "views": 1176.4,
-   "compart": 4.0,
+   "alcance": 743.7,
+   "views": 1177.2,
+   "compart": 4.6,
    "salvos": 4.5,
    "seguidores": 2.8,
    "visitas_perfil": 10.4
@@ -289,7 +289,7 @@
    "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
   },
   {
-   "views": 6816,
+   "views": 6817,
    "alcance": 4816,
    "compart": 290,
    "formato": "reels",
@@ -298,7 +298,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5382,
+   "views": 5383,
    "alcance": 3860,
    "compart": 47,
    "formato": "reels",
@@ -343,8 +343,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2799,
-   "alcance": 1820,
+   "views": 2801,
+   "alcance": 1823,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
