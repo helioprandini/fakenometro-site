@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-14T11:01:59",
- "seguidores": 3721,
- "posts": 61,
+ "atualizado_em": "2026-11-14T12:06:16",
+ "seguidores": 3739,
+ "posts": 62,
  "t28": {
-  "views": 160594,
-  "accounts_engaged": 5261,
-  "total_interactions": 12420,
-  "profile_views": 5270,
-  "likes": 6152,
-  "comments": 448,
-  "shares": 1733,
-  "saves": 989,
+  "views": 160980,
+  "accounts_engaged": 5295,
+  "total_interactions": 12470,
+  "profile_views": 5295,
+  "likes": 6188,
+  "comments": 450,
+  "shares": 1734,
+  "saves": 992,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 951
+   "valor": 1194
   }
  ],
  "seguidores_serie": [
@@ -254,14 +254,14 @@
   "2026-11-11": 11,
   "2026-11-12": 19,
   "2026-11-13": 14,
-  "2026-11-14": 3
+  "2026-11-14": 5
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1145.7,
-   "views": 1481.0,
+   "alcance": 1142.2,
+   "views": 1477.8,
    "compart": 28.6,
    "salvos": 6.2,
    "seguidores": null,
@@ -270,8 +270,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 739.5,
-   "views": 1171.4,
+   "alcance": 740.9,
+   "views": 1173.1,
    "compart": 4.0,
    "salvos": 4.4,
    "seguidores": 2.8,
@@ -290,7 +290,7 @@
   },
   {
    "views": 6808,
-   "alcance": 4806,
+   "alcance": 4816,
    "compart": 290,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -298,8 +298,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5376,
-   "alcance": 3847,
+   "views": 5378,
+   "alcance": 3854,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -307,7 +307,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3714,
+   "views": 3715,
    "alcance": 2835,
    "compart": 328,
    "formato": "reels",
@@ -326,7 +326,7 @@
   },
   {
    "views": 3114,
-   "alcance": 2525,
+   "alcance": 2528,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -355,7 +355,7 @@
  "canais": {
   "instagram": 520,
   "comentario": 115,
-  "whatsapp": 206
+  "whatsapp": 207
  },
  "por_dia": [
   [
@@ -460,9 +460,9 @@
   ],
   [
    "2026-11-14",
-   8
+   9
   ]
  ],
  "repositorio": 44,
- "total_publico": 841
+ "total_publico": 842
 }
