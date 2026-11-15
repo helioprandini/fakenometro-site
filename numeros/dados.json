@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-15T05:47:07",
- "seguidores": 3949,
+ "atualizado_em": "2026-11-15T06:59:10",
+ "seguidores": 3968,
  "posts": 64,
  "t28": {
-  "views": 165724,
-  "accounts_engaged": 5503,
-  "total_interactions": 12986,
-  "profile_views": 5432,
-  "likes": 6477,
+  "views": 165890,
+  "accounts_engaged": 5511,
+  "total_interactions": 13001,
+  "profile_views": 5442,
+  "likes": 6487,
   "comments": 481,
-  "shares": 1766,
-  "saves": 1043,
+  "shares": 1767,
+  "saves": 1044,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-15",
-   "valor": 18
+   "valor": 162
   }
  ],
  "seguidores_serie": [
@@ -260,8 +260,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1034.7,
-   "views": 1330.0,
+   "alcance": 1035.1,
+   "views": 1330.8,
    "compart": 27.8,
    "salvos": 5.8,
    "seguidores": null,
@@ -270,8 +270,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 748.8,
-   "views": 1185.7,
+   "alcance": 749.1,
+   "views": 1186.2,
    "compart": 4.6,
    "salvos": 4.6,
    "seguidores": 2.8,
@@ -280,7 +280,7 @@
  ],
  "top": [
   {
-   "views": 6838,
+   "views": 6841,
    "alcance": 4827,
    "compart": 291,
    "formato": "reels",
@@ -289,7 +289,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5389,
+   "views": 5390,
    "alcance": 3860,
    "compart": 47,
    "formato": "reels",
@@ -334,8 +334,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2815,
-   "alcance": 1830,
+   "views": 2816,
+   "alcance": 1833,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
