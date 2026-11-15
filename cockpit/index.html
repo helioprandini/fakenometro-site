@@ -607,11 +607,15 @@ function janelaAmao(m){
   return resta > 0 ? ` · faltam ${Math.ceil(resta)} h para a janela de resposta fechar` : " · janela de 24 h já fechou";
 }
 function blocoAmao(titulo, texto){ return texto ? `<div class="sub" style="margin-top:10px;font-weight:700">${titulo}</div><div style="white-space:pre-wrap">${esc(texto)}</div>` : ""; }
+function sistemaAmao(m){ return String(m.comentario || "").startsWith("sistema_") ? 1 : 0; }
 function cartaoAmao(m, i){
-  const titulo = String(m.veredito || "").startsWith("CONTESTAÇÃO") ? "Contestação" : nomeRotulo(m.veredito);
+  const sistema = sistemaAmao(m);
+  const titulo = sistema ? String(m.veredito || "Falha do robô") : String(m.veredito || "").startsWith("CONTESTAÇÃO") ? "Contestação" : nomeRotulo(m.veredito);
   const sobre = m.checagem || (String(m.veredito || "").startsWith("CONTESTAÇÃO:") ? m.veredito.slice(12).trim() : "");
   let acoes;
-  if (m.canal === "comentario") acoes = `${(m.link_comentario || m.permalink) ? `<a class="b-insta" href="${esc(m.link_comentario || m.permalink)}" target="_blank" rel="noopener">${m.link_comentario ? "Abrir o comentário" : "Abrir o post"}</a>` : ""}
+  if (sistema) acoes = `<button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')">Revisar com o Theo</button>
+      <button class="b-desc" onclick="feitoAmao('${esc(m.comentario)}')">Resolvido</button>`;
+  else if (m.canal === "comentario") acoes = `${(m.link_comentario || m.permalink) ? `<a class="b-insta" href="${esc(m.link_comentario || m.permalink)}" target="_blank" rel="noopener">${m.link_comentario ? "Abrir o comentário" : "Abrir o post"}</a>` : ""}
       ${m.resposta ? `<button class="b-copiar" onclick="copiarAmao(${i})">Copiar resposta</button>
       <button class="b-feito" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Já respondi</button>` : `<button class="b-copiar" onclick="revisarAmao('${esc(m.comentario)}')">Revisar com o Theo</button>
       <button class="b-desc" onclick="feitoAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`}`;
@@ -620,7 +624,7 @@ function cartaoAmao(m, i){
       ${m.pode_enviar ? `<button class="b-feito" onclick="enviarAmao(${i})">Enviar para a pessoa</button>` : ""}
       <button class="${m.revisao ? "b-feito" : "b-copiar"}" onclick="revisarAmao('${esc(m.comentario)}')" ${m.pode_enviar ? "" : 'style="grid-column:1/-1"'}>${m.revisao ? "Marcado para revisão ✓" : "Revisar com o Theo"}</button>
       <button class="b-desc" onclick="encerrarAmao('${esc(m.comentario)}')" style="grid-column:1/-1">Encerrar sem responder</button>`;
-  return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px${m.revisao ? ";opacity:.55" : ""}">
+  return `<div class="cartao" id="caso-${esc(m.comentario)}" style="margin-bottom:12px${sistema ? ";border:2px solid #c0392b" : ""}${m.revisao ? ";opacity:.55" : ""}">
     <div style="font-weight:800">${esc(titulo)}</div>
     <div class="sub">${m.canal === "whatsapp" ? "" : esc(CANAIS[m.canal]) + " · "}${esc(m.autor)} · ${esc((m.em || "").slice(8, 10) + "/" + (m.em || "").slice(5, 7) + ", " + (m.em || "").slice(11, 16))}${janelaAmao(m)}</div>
     ${m.revisao ? `<div class="sub" style="margin-top:8px;font-weight:700">${m.revisao.consultas ? "Marcada a consulta " + m.revisao.consultas.join(" e ") + "." : "Marcado."} Na sessão do Theo, escreva: revisar os marcados.</div>` : ""}
@@ -678,7 +682,8 @@ function desenharAmao(){
   desenharValBotoes();
   if (valSub === "amostra") return;
   const lista = amao.map((m, i) => [m, i]).filter(([m]) => valSub === "revisar" ? enviadoAmao(m) : !enviadoAmao(m))
-    .sort((a, b) => String(b[0].em || "") < String(a[0].em || "") ? -1 : 1);
+    // Falha do robô (a ferramenta parou) vem sempre primeiro (Helio, 15/11: "precisa ser sempre o primeiro").
+    .sort((a, b) => (sistemaAmao(b[0]) - sistemaAmao(a[0])) || (String(b[0].em || "") < String(a[0].em || "") ? -1 : 1));
   const topo = `<div class="cartao" style="margin:0 0 12px"><div style="font-weight:800">${TEXTO_VAL[valSub][0]} (${lista.length})</div><div class="sub">${TEXTO_VAL[valSub][1]}</div></div>`;
   $("amao").innerHTML = topo + (lista.length ? lista.map(([m, i]) => cartaoAmao(m, i)).join("") : '<div class="vazio">Nada aqui agora.</div>');
   const caso = new URLSearchParams(location.hash.slice(1)).get("caso");
