@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-15T16:41:38",
- "seguidores": 4102,
+ "atualizado_em": "2026-11-15T17:58:30",
+ "seguidores": 4117,
  "posts": 65,
  "t28": {
-  "views": 168252,
-  "accounts_engaged": 5628,
-  "total_interactions": 13289,
-  "profile_views": 5543,
-  "likes": 6668,
-  "comments": 497,
-  "shares": 1775,
-  "saves": 1067,
+  "views": 168534,
+  "accounts_engaged": 5670,
+  "total_interactions": 13376,
+  "profile_views": 5555,
+  "likes": 6708,
+  "comments": 504,
+  "shares": 1785,
+  "saves": 1071,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-15",
-   "valor": 1833
+   "valor": 2055
   }
  ],
  "seguidores_serie": [
@@ -255,25 +255,25 @@
   "2026-11-12": 19,
   "2026-11-13": 14,
   "2026-11-14": 10,
-  "2026-11-15": 2
+  "2026-11-15": 3
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1019.0,
-   "views": 1296.5,
+   "alcance": 1019.5,
+   "views": 1297.6,
    "compart": 28.7,
-   "salvos": 5.9,
+   "salvos": 6.0,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 709.9,
-   "views": 1128.5,
-   "compart": 4.3,
+   "alcance": 711.7,
+   "views": 1132.3,
+   "compart": 4.9,
    "salvos": 4.5,
    "seguidores": 2.6,
    "visitas_perfil": 9.7
@@ -281,7 +281,7 @@
  ],
  "top": [
   {
-   "views": 6876,
+   "views": 6881,
    "alcance": 4837,
    "compart": 291,
    "formato": "reels",
@@ -299,7 +299,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3770,
+   "views": 3772,
    "alcance": 2892,
    "compart": 330,
    "formato": "reels",
@@ -335,7 +335,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2682,
+   "views": 2683,
    "alcance": 2325,
    "compart": 20,
    "formato": "reels",
@@ -354,8 +354,8 @@
   }
  ],
  "canais": {
-  "instagram": 538,
-  "comentario": 125,
+  "instagram": 539,
+  "comentario": 127,
   "whatsapp": 231
  },
  "por_dia": [
@@ -465,9 +465,9 @@
   ],
   [
    "2026-11-15",
-   28
+   31
   ]
  ],
  "repositorio": 45,
- "total_publico": 894
+ "total_publico": 897
 }
