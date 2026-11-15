@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-15T15:50:45",
- "seguidores": 4090,
+ "atualizado_em": "2026-11-15T16:41:38",
+ "seguidores": 4102,
  "posts": 65,
  "t28": {
-  "views": 168059,
-  "accounts_engaged": 5622,
-  "total_interactions": 13276,
-  "profile_views": 5530,
-  "likes": 6657,
-  "comments": 496,
+  "views": 168252,
+  "accounts_engaged": 5628,
+  "total_interactions": 13289,
+  "profile_views": 5543,
+  "likes": 6668,
+  "comments": 497,
   "shares": 1775,
-  "saves": 1066,
+  "saves": 1067,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-15",
-   "valor": 1691
+   "valor": 1833
   }
  ],
  "seguidores_serie": [
@@ -255,14 +255,14 @@
   "2026-11-12": 19,
   "2026-11-13": 14,
   "2026-11-14": 10,
-  "2026-11-15": 1
+  "2026-11-15": 2
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1017.9,
-   "views": 1295.6,
+   "alcance": 1019.0,
+   "views": 1296.5,
    "compart": 28.7,
    "salvos": 5.9,
    "seguidores": null,
@@ -271,8 +271,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 709.1,
-   "views": 1127.1,
+   "alcance": 709.9,
+   "views": 1128.5,
    "compart": 4.3,
    "salvos": 4.5,
    "seguidores": 2.6,
@@ -281,7 +281,7 @@
  ],
  "top": [
   {
-   "views": 6866,
+   "views": 6876,
    "alcance": 4837,
    "compart": 291,
    "formato": "reels",
@@ -290,7 +290,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5399,
+   "views": 5401,
    "alcance": 3860,
    "compart": 47,
    "formato": "reels",
@@ -299,8 +299,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3768,
-   "alcance": 2875,
+   "views": 3770,
+   "alcance": 2892,
    "compart": 330,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -354,7 +354,7 @@
   }
  ],
  "canais": {
-  "instagram": 535,
+  "instagram": 538,
   "comentario": 125,
   "whatsapp": 231
  },
@@ -465,9 +465,9 @@
   ],
   [
    "2026-11-15",
-   25
+   28
   ]
  ],
  "repositorio": 45,
- "total_publico": 891
+ "total_publico": 894
 }
