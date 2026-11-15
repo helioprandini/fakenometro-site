@@ -353,7 +353,12 @@ function indInvestidor(v){
     ${caixa("Custo por usuário ativo", m.custo_por_ativo_rs === null ? "–" : "R$ " + nf(m.custo_por_ativo_rs, 2), "no mês, contra a assinatura de R$ 9,90", m.custo_por_ativo_rs > 9.9 ? "ind-ruim" : "")}
     ${caixa("Seguidores", nf(v.seguidores), "@fakenometro")}
     ${caixa("Pela Meta", pc(v.concentracao.pela_meta_pct), "das consultas de 30 dias (direct, comentários e WhatsApp)", v.concentracao.pela_meta_pct > 80 ? "ind-alerta" : "")}
-  </div><div class="ind-h">Semana a semana</div>`;
+  </div>`;
+  const O = (v.origem || {}).semanas || [];
+  html += `<div class="ind-h">Por onde chegaram as pessoas novas</div>` + (O.length ? tabela(["Semana de", "Pessoas novas", "Portas de entrada"],
+    O.slice().reverse().map(x => [dm(x.semana) + (x.parcial ? " (em curso)" : ""), nf(x.total), `<span style="white-space:normal">${Object.entries(x.por_origem).map(([k, n]) => `${esc(k)} ${nf(100 * n / x.total)}%`).join(" · ")}</span>`]))
+    : `<div class="cartao" style="margin-bottom:12px"><div class="sub">Marcação ligada em 15/11. As primeiras pessoas novas aparecem aqui na próxima atualização.</div></div>`);
+  html += `<div class="ind-h">Semana a semana</div>`;
   html += tabela(["Semana de", "Consultas novas", "Crescimento", "Pessoas", "Pessoas novas"],
     v.semanas.slice().reverse().map(x => [dm(x.semana) + (x.parcial ? " (em curso)" : ""), nf(x.consultas_novas), x.crescimento_pct === null ? "–" : (x.crescimento_pct >= 0 ? "+" : "") + nf(x.crescimento_pct) + "%", nf(x.pessoas), nf(x.pessoas_novas)]));
   html += `<div class="ind-h">Retorno por coorte</div>` + tabela(["Chegou na semana de", "Pessoas", "Voltou em 7 dias", "Voltou em 30 dias"],
