@@ -71,6 +71,12 @@ nav.abas button{flex:1;border:0;background:transparent;color:var(--apagado);font
 .pd-add button,.pd-novo{border:0;border-radius:10px;background:var(--amarelo);color:#111;font-weight:800;padding:10px 14px}.pd details{margin-top:8px;color:var(--apagado);font-size:13px}
 @media (max-width:520px){nav.abas{gap:2px;flex-wrap:wrap}nav.abas button{font-size:12px;padding:9px 2px;min-width:0;flex:1 1 30%}}
 nav.abas button.ativa{background:var(--linha);color:var(--texto)}
+.ind-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.ind-num{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;margin-top:4px}
+.ind-tab{overflow-x:auto;margin-bottom:12px}.ind-tab table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+.ind-tab th,.ind-tab td{padding:6px 8px;border-top:1px solid var(--linha);text-align:right;white-space:nowrap}.ind-tab th{color:var(--apagado);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.3px}
+.ind-tab td:first-child,.ind-tab th:first-child{text-align:left}.ind-h{font-weight:800;margin:6px 0 8px}
+.ind-alerta{color:var(--amarelo)}.ind-ruim{color:var(--vermelho)}
 .filtros{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
 .filtros button{border:1px solid var(--linha);background:transparent;color:var(--apagado);border-radius:20px;padding:6px 12px;font-size:13px;font-weight:600}
 .filtros button.ativa{background:var(--amarelo);border-color:var(--amarelo);color:#111}
@@ -107,9 +113,10 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
-<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Resumo Diário</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button></nav>
+<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Resumo Diário</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button><button onclick="aba('ind')" id="t-ind">Indicadores</button></nav>
 <div id="com-view" hidden><div id="com"><div class="vazio">Carregando…</div></div></div>
 <div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Resumo Diário</div><div class="sub">O que chegou e o que o robô respondeu no dia, por canal, sem os avisos automáticos. Toque num texto longo para ver inteiro. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
+<div id="ind-view" hidden><div class="filtros" style="display:flex;gap:6px;margin-bottom:12px"><button id="ind-b-op" class="b-feito" onclick="indQual('op')" style="flex:1">Operação · diário</button><button id="ind-b-inv" class="b-copiar" onclick="indQual('inv')" style="flex:1">Investidor · mensal</button></div><div id="ind"><div class="vazio">Carregando…</div></div></div>
 <div id="val-view" hidden><div class="filtros" id="val-botoes"></div><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
 
 <div id="pend-view" hidden>
@@ -275,12 +282,88 @@ function aba(qual){
   if (qual === "resp") carregarResp();
   $("com-view").hidden = qual !== "com"; $("t-com").classList.toggle("ativa", qual === "com");
   if (qual === "com") carregarCom();
+  $("ind-view").hidden = qual !== "ind"; $("t-ind").classList.toggle("ativa", qual === "ind");
+  if (qual === "ind") carregarInd();
   $("painel").hidden = qual !== "painel"; $("cur-view").hidden = qual !== "cur"; $("ig-view").hidden = qual !== "ig"; $("pend-view").hidden = qual !== "pend"; $("val-view").hidden = qual !== "val";
   $("t-painel").classList.toggle("ativa", qual === "painel"); $("t-cur").classList.toggle("ativa", qual === "cur"); $("t-ig").classList.toggle("ativa", qual === "ig"); $("t-pend").classList.toggle("ativa", qual === "pend"); $("t-val").classList.toggle("ativa", qual === "val");
   if (qual === "cur") carregarCur();
   if (qual === "ig") carregarIG(false);
   if (qual === "pend") carregarPend();
   if (qual === "val") { carregarAmostra(); carregarAmao(); }
+}
+// ---------- Indicadores: dois painéis (Roberta, 15/11). Dados de saida/indicadores.json, gerado de hora em hora no servidor, sem IA. ----------
+let indDados = null, indVista = "op";
+async function carregarInd(){
+  try{ const r = await fetch(`${BASE}/cockpit/indicadores`, {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status); indDados = await r.json(); desenharInd(); }
+  catch(e){ $("ind").innerHTML = '<div class="vazio">Não consegui abrir os indicadores.</div>'; }
+}
+function indQual(q){ indVista = q; $("ind-b-op").className = q === "op" ? "b-feito" : "b-copiar"; $("ind-b-inv").className = q === "inv" ? "b-feito" : "b-copiar"; desenharInd(); }
+const nf = (v, c = 0) => v === null || v === undefined ? "–" : Number(v).toLocaleString("pt-BR", {minimumFractionDigits: c, maximumFractionDigits: c});
+const pc = v => v === null || v === undefined ? "–" : nf(v) + "%";
+const dm = d => d.slice(8, 10) + "/" + d.slice(5, 7);
+const somaV = o => Object.values(o || {}).reduce((a, b) => a + b, 0);
+const caixa = (rot, num, sub, cls = "") => `<div class="cartao"><div class="rotulo">${rot}</div><div class="ind-num ${cls}">${num}</div>${sub ? `<div class="sub">${sub}</div>` : ""}</div>`;
+const barra = (v, t) => `<div class="barra"><i style="width:${Math.min(100, t ? 100 * v / t : 0)}%;background:${t && v / t >= .8 ? "var(--vermelho)" : t && v / t >= .6 ? "var(--amarelo)" : "var(--verde)"}"></i></div>`;
+const tabela = (cab, linhas) => `<div class="cartao ind-tab"><table><tr>${cab.map(c => `<th>${c}</th>`).join("")}</tr>${linhas.map(l => `<tr>${l.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}</table></div>`;
+function desenharInd(){
+  const d = indDados; if (!d) return;
+  const quando = new Date(d.atualizado_em).toLocaleString("pt-BR", {day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit"});
+  const rod = `<div class="sub" style="margin:4px 0 16px">Atualizado em ${quando}, de hora em hora. Só consultas do público: os testes do Helio e da Roberta ficam fora.</div>`;
+  $("ind").innerHTML = (indVista === "op" ? indOperacao(d.operacao) : indInvestidor(d.investidor)) + rod;
+}
+function indOperacao(o){
+  const D = o.dias, h = D[D.length - 1], s7 = D.slice(-7), t = o.tetos, f = o.fila_validacoes || {};
+  const novas7 = s7.reduce((a, x) => a + x.novas_total, 0);
+  const am7 = s7.reduce((a, x) => [a[0] + x.amostra.aprovados, a[1] + x.amostra.votados], [0, 0]);
+  const falhasH = somaV(h.falhas);
+  const canais = Object.entries(h.novas).map(([c, n]) => `${c} ${n}`).join(" · ");
+  let html = `<div class="ind-h">Hoje, ${dm(h.dia)}</div><div class="ind-grade">
+    ${caixa("Consultas novas", nf(h.novas_total), canais || "nenhuma ainda")}
+    ${caixa("Pessoas", nf(h.pessoas), `${nf(h.voltaram)} já tinham vindo antes`)}
+    ${caixa("Tempo até a resposta", h.tempo_mediana_min === null ? "–" : nf(h.tempo_mediana_min, 1) + " min", `mediana · ${pc(h.tempo_acima_5min_pct)} passaram de 5 min`, h.tempo_acima_5min_pct > 15 ? "ind-alerta" : "")}
+    ${caixa("Falhas", nf(falhasH), Object.entries(h.falhas).filter(([, n]) => n).map(([k, n]) => `${k} ${n}`).join(" · ") || "nenhuma", falhasH > 5 ? "ind-alerta" : "")}
+    ${caixa("Amostra do dia", `${nf(h.amostra.aprovados)} de ${nf(h.amostra.votados)}`, `aprovadas · ${nf(h.amostra.sem_prova_errado)} “sem prova” errado · ${nf(h.amostra.sorteados)} sorteadas`)}
+    ${caixa("Custo do dia", "US$ " + nf(h.custo_usd, 2), `US$ ${nf(h.custo_por_nova_usd, 3)} por consulta · “sem prova” ${pc(h.sem_prova_pct)}`)}
+  </div>
+  <div class="ind-h">Fila e tetos</div><div class="ind-grade">
+    ${caixa("Validações abertas", nf(f.total), Object.entries(f.por_tipo || {}).map(([k, n]) => `${k} ${n}`).join(" · ") || (f.erro ? "não consegui ler a fila" : ""), f.total > 30 ? "ind-alerta" : "")}
+    <div class="cartao"><div class="rotulo">IA no mês</div><div class="ind-num">US$ ${nf(t.ia_mes_usd)}</div><div class="sub">de US$ ${nf(t.ia_teto_usd)} do teto</div>${barra(t.ia_mes_usd, t.ia_teto_usd)}</div>
+    <div class="cartao"><div class="rotulo">WhatsApp no mês</div><div class="ind-num">${nf(t.whatsapp_enviadas)}</div><div class="sub">de ${nf(t.whatsapp_referencia)} mensagens (o robô para em 2.900)</div>${barra(t.whatsapp_enviadas, t.whatsapp_referencia)}</div>
+    ${caixa("Seguidores", nf(t.seguidores), "@fakenometro")}
+  </div>
+  <div class="ind-h">Últimos 7 dias</div><div class="ind-grade">
+    ${caixa("Consultas novas", nf(novas7), `média de ${nf(novas7 / 7)} por dia`)}
+    ${caixa("Amostra aprovada", am7[1] ? pc(100 * am7[0] / am7[1]) : "–", `${am7[0]} de ${am7[1]} votadas`)}
+    ${caixa("Correções e complementos", nf(s7.reduce((a, x) => a + x.correcoes + x.complementos, 0)), `${nf(s7.reduce((a, x) => a + x.contestacoes, 0))} contestações · ${nf(s7.reduce((a, x) => a + x.seguradas, 0))} seguradas`)}
+  </div>
+  <div class="ind-h">Dia a dia (14 dias)</div>`;
+  html += tabela(["Dia", "Novas", "Pessoas", "Voltaram", "Repositório", "Tempo", "> 5 min", "Falhas", "Amostra", "Sem prova", "Custo US$", "Contest.", "Correções"],
+    D.slice().reverse().map(x => [dm(x.dia), nf(x.novas_total), nf(x.pessoas), nf(x.voltaram), pc(x.repositorio_pct), x.tempo_mediana_min === null ? "–" : nf(x.tempo_mediana_min, 1), pc(x.tempo_acima_5min_pct), nf(somaV(x.falhas)),
+      x.amostra.votados ? `${x.amostra.aprovados}/${x.amostra.votados}` : "–", pc(x.sem_prova_pct), nf(x.custo_usd, 2), nf(x.contestacoes), nf(x.correcoes + x.complementos)]));
+  return html;
+}
+function indInvestidor(v){
+  const M = v.meses, m = M[M.length - 1], S = v.semanas.filter(x => !x.parcial), ult = S[S.length - 1] || {};
+  const c7 = v.coortes.filter(x => x["7d_completo"]), cU = c7[c7.length - 1];
+  let html = `<div class="sub" style="margin-bottom:10px">Uso interno. A taxa de acerto não se divulga em público; mostrar ao investidor em conversa fechada é decisão da Roberta e do Helio.</div>
+  <div class="ind-grade">
+    ${caixa("Consultas na última semana", nf(ult.consultas_novas), ult.crescimento_pct === null || ult.crescimento_pct === undefined ? "" : `${ult.crescimento_pct >= 0 ? "+" : ""}${nf(ult.crescimento_pct)}% sobre a semana anterior`)}
+    ${caixa("Usuários ativos no mês", nf(m.usuarios_ativos), `${m.mes.slice(5, 7)}/${m.mes.slice(0, 4)}${m.parcial ? ", mês em curso" : ""}`)}
+    ${caixa("Voltaram em 7 dias", cU ? pc(cU.voltou_7d_pct) : "–", cU ? `de ${nf(cU.pessoas)} que chegaram na semana de ${dm(cU.semana)}` : "")}
+    ${caixa("Custo por usuário ativo", m.custo_por_ativo_rs === null ? "–" : "R$ " + nf(m.custo_por_ativo_rs, 2), "no mês, contra a assinatura de R$ 9,90", m.custo_por_ativo_rs > 9.9 ? "ind-ruim" : "")}
+    ${caixa("Seguidores", nf(v.seguidores), "@fakenometro")}
+    ${caixa("Pela Meta", pc(v.concentracao.pela_meta_pct), "das consultas de 30 dias (direct, comentários e WhatsApp)", v.concentracao.pela_meta_pct > 80 ? "ind-alerta" : "")}
+  </div><div class="ind-h">Semana a semana</div>`;
+  html += tabela(["Semana de", "Consultas novas", "Crescimento", "Pessoas", "Pessoas novas"],
+    v.semanas.slice().reverse().map(x => [dm(x.semana) + (x.parcial ? " (em curso)" : ""), nf(x.consultas_novas), x.crescimento_pct === null ? "–" : (x.crescimento_pct >= 0 ? "+" : "") + nf(x.crescimento_pct) + "%", nf(x.pessoas), nf(x.pessoas_novas)]));
+  html += `<div class="ind-h">Retorno por coorte</div>` + tabela(["Chegou na semana de", "Pessoas", "Voltou em 7 dias", "Voltou em 30 dias"],
+    v.coortes.slice().reverse().map(x => [dm(x.semana), nf(x.pessoas), x["7d_completo"] ? pc(x.voltou_7d_pct) : pc(x.voltou_7d_pct) + " (parcial)", pc(x.voltou_30d_pct)]));
+  html += `<div class="ind-h">Mês a mês</div>` + tabela(["Mês", "Consultas novas", "Repositório", "Ativos", "IA por consulta", "Custo total", "Por ativo", "Boatos desmentidos"],
+    M.slice().reverse().map(x => [x.mes.slice(5, 7) + "/" + x.mes.slice(2, 4) + (x.parcial ? "*" : ""), nf(x.consultas_novas), nf(x.repositorio), nf(x.usuarios_ativos), "US$ " + nf(x.custo_ia_por_consulta_publico_usd, 3), "US$ " + nf(x.custo_total_usd), x.custo_por_ativo_rs === null ? "–" : "R$ " + nf(x.custo_por_ativo_rs, 2), nf(x.boatos_desmentidos)]));
+  html += `<div class="sub" style="margin:-6px 0 12px">* mês em curso. Custo total = toda a IA do mês (inclui auditoria e testes) + WhatsApp + servidor e túnel (US$ 22). Boatos desmentidos = selos falso e engana.</div>`;
+  html += `<div class="ind-h">Concentração de risco</div><div class="cartao" style="margin-bottom:12px">Consultas de 30 dias por canal: ${Object.entries(v.concentracao.consultas_30d_por_canal).map(([c, n]) => `${esc(c)} ${nf(n)}`).join(" · ")}<div class="sub">${esc(v.concentracao.ia)}</div><div class="sub">Contestações registradas até hoje: ${nf(v.contestacoes_total)}</div></div>`;
+  html += `<div class="ind-h">Ainda não medido</div><div class="cartao" style="margin-bottom:12px">${v.faltam.map(x => `<div style="padding:6px 0;border-top:1px solid var(--linha)"><b>${esc(x.item)}</b><div class="sub">${esc(x.porque)}</div></div>`).join("")}</div>`;
+  return html;
 }
 // ---------- Pendências: um quadro por frente de trabalho ----------
 let pendQuadros = [];
