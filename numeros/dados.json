@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-15T15:01:58",
- "seguidores": 4077,
+ "atualizado_em": "2026-11-15T15:50:45",
+ "seguidores": 4090,
  "posts": 65,
  "t28": {
-  "views": 167887,
-  "accounts_engaged": 5617,
-  "total_interactions": 13242,
-  "profile_views": 5518,
-  "likes": 6640,
-  "comments": 492,
-  "shares": 1774,
-  "saves": 1062,
+  "views": 168059,
+  "accounts_engaged": 5622,
+  "total_interactions": 13276,
+  "profile_views": 5530,
+  "likes": 6657,
+  "comments": 496,
+  "shares": 1775,
+  "saves": 1066,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-15",
-   "valor": 1595
+   "valor": 1691
   }
  ],
  "seguidores_serie": [
@@ -261,8 +261,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1017.6,
-   "views": 1294.6,
+   "alcance": 1017.9,
+   "views": 1295.6,
    "compart": 28.7,
    "salvos": 5.9,
    "seguidores": null,
@@ -271,17 +271,17 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 708.3,
-   "views": 1124.9,
+   "alcance": 709.1,
+   "views": 1127.1,
    "compart": 4.3,
-   "salvos": 4.4,
+   "salvos": 4.5,
    "seguidores": 2.6,
    "visitas_perfil": 9.7
   }
  ],
  "top": [
   {
-   "views": 6864,
+   "views": 6866,
    "alcance": 4837,
    "compart": 291,
    "formato": "reels",
@@ -290,7 +290,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5396,
+   "views": 5399,
    "alcance": 3860,
    "compart": 47,
    "formato": "reels",
@@ -299,7 +299,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3761,
+   "views": 3768,
    "alcance": 2875,
    "compart": 330,
    "formato": "reels",
@@ -335,8 +335,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2680,
-   "alcance": 2322,
+   "views": 2682,
+   "alcance": 2325,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
