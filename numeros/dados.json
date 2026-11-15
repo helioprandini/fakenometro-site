@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-14T20:54:00",
- "seguidores": 3862,
- "posts": 63,
+ "atualizado_em": "2026-11-14T22:06:44",
+ "seguidores": 3887,
+ "posts": 64,
  "t28": {
-  "views": 164042,
-  "accounts_engaged": 5433,
-  "total_interactions": 12788,
-  "profile_views": 5389,
-  "likes": 6357,
-  "comments": 472,
-  "shares": 1759,
-  "saves": 1022,
+  "views": 164578,
+  "accounts_engaged": 5463,
+  "total_interactions": 12850,
+  "profile_views": 5407,
+  "likes": 6392,
+  "comments": 478,
+  "shares": 1761,
+  "saves": 1026,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 3510
+   "valor": 3934
   }
  ],
  "seguidores_serie": [
@@ -260,18 +260,18 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1174.4,
-   "views": 1512.5,
-   "compart": 28.6,
-   "salvos": 6.3,
+   "alcance": 1026.6,
+   "views": 1320.8,
+   "compart": 27.7,
+   "salvos": 5.8,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 746.3,
-   "views": 1181.9,
+   "alcance": 747.4,
+   "views": 1182.6,
    "compart": 4.6,
    "salvos": 4.6,
    "seguidores": 2.8,
@@ -280,16 +280,7 @@
  ],
  "top": [
   {
-   "views": 7048,
-   "alcance": 5430,
-   "compart": 33,
-   "formato": "reels",
-   "quando": "2026-10-25",
-   "link": "https://www.instagram.com/reel/De7u0AfJtJp/",
-   "titulo": "O STF PODE PASSAR POR CIMA DO TSE? O que diz a Lei"
-  },
-  {
-   "views": 6828,
+   "views": 6831,
    "alcance": 4827,
    "compart": 291,
    "formato": "reels",
@@ -307,7 +298,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3725,
+   "views": 3728,
    "alcance": 2851,
    "compart": 328,
    "formato": "reels",
@@ -350,12 +341,21 @@
    "quando": "2026-11-02",
    "link": "https://www.instagram.com/p/DfP64KUicug/",
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
+  },
+  {
+   "views": 2677,
+   "alcance": 2316,
+   "compart": 20,
+   "formato": "reels",
+   "quando": "2026-10-30",
+   "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
+   "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   }
  ],
  "canais": {
   "instagram": 524,
-  "comentario": 119,
-  "whatsapp": 215
+  "comentario": 121,
+  "whatsapp": 216
  },
  "por_dia": [
   [
@@ -460,9 +460,9 @@
   ],
   [
    "2026-11-14",
-   25
+   28
   ]
  ],
  "repositorio": 44,
- "total_publico": 858
+ "total_publico": 861
 }
