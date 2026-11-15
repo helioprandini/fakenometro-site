@@ -17,7 +17,7 @@
 <a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/" class="ativo">Termômetro</a><a href="/numeros/">Números</a><a href="/contato/">Contato</a>
 </nav></div>
 <main>
-<style>.cx #pontos{grid-template-columns:repeat(4,minmax(0,1fr))}.cx #pontos .ponto{grid-column:auto}</style>
+<style>.cx #pontos,.cx #selo{grid-template-columns:repeat(4,minmax(0,1fr))}.cx #pontos .ponto,.cx #selo .ponto{grid-column:auto}</style>
 <section class="capa"><div>
 <p class="etiqueta">O termômetro</p>
 <h1>Não é opinião. <span class="mt">É conta.</span></h1>
@@ -60,7 +60,7 @@
 <script>
 // Regra do ponteiro de 15/11 (Roberta): o resultado escolhe a faixa; no "confere", 60% força da prova + 40% os outros pontos;
 // ponto sem prova não conta; sem outros pontos, o resto fica no meio.
-const FX={confere:[75,97],parte:[42,70],engana:[20,38]},NS={confere:"Confere",parte:"Em parte",engana:"Engana"},
+const FX={confere:[75,97],parte:[42,70],engana:[20,38],nao:null},NS={confere:"Confere",parte:"Em parte",engana:"Engana",nao:"Não confere"},
 FR={1:[40,"um veículo"],2:[70,"dois veículos"],3:[100,"documento oficial ou três veículos"]},
 P=[["Quem disse",0],["O número",0],["A data",0],["O lugar",2]],C=["sim","nao","sem"],T={sim:"confere",nao:"não confere",sem:"sem prova"};
 let S="confere",F=3;
@@ -69,9 +69,12 @@ function d(){
  const vp=S=="confere";document.getElementById("prova").style.display=document.getElementById("rotulo-prova").style.display=vp?"":"none";
  document.getElementById("prova").innerHTML=[1,2,3].map(k=>`<button class="ponto" data-f="${k}" data-e="${k==F?"sim":"sem"}">${k==3?"oficial ou 3":k}<br><small>${k==3?"veículos":k==1?"veículo":"veículos"}</small></button>`).join("");
  let c=0,t=0;document.getElementById("pontos").innerHTML=P.map(([n,e],i)=>{if(e<2){t++;if(e==0)c++}return `<button class="ponto" data-i="${i}" data-e="${C[e]}">${n}<br><small>${T[C[e]]}</small></button>`}).join("");
+ const fx=document.getElementById("faixa"),pt=document.getElementById("ponteiro");
+ if(S=="nao"){fx.style.display=pt.style.display="none";document.getElementById("leitura").innerHTML="<b>Não confere.</b> Sem tracinho: o card vem preto, com o selo FAKE. O ponto principal é falso, e aí os outros pontos não mudam nada.";return}
+ fx.style.display=pt.style.display="";
  const resto=t?100*c/t:50,v=vp?0.6*FR[F][0]+0.4*resto:resto,[a,b]=FX[S],pos=Math.round(a+(b-a)*v/100);
- const fx=document.getElementById("faixa");fx.style.left=a+"%";fx.style.width=(b-a)+"%";
- document.getElementById("ponteiro").style.left=pos+"%";
+ fx.style.left=a+"%";fx.style.width=(b-a)+"%";
+ pt.style.left=pos+"%";
  document.getElementById("leitura").innerHTML=vp?`<b>Confere, com ${FR[F][1]}.</b> ${t?`Dos outros pontos, ${c} de ${t} conferem.`:"Sem outros pontos para conferir."} O tracinho fica em ${pos}.`
   :`<b>${S=="parte"?"Confere, em parte":"A notícia engana"}.</b> O tracinho anda dentro da faixa conforme os outros pontos: ${t?`${c} de ${t} conferem`:"sem outros pontos, fica no meio"}.`}
 document.querySelector(".cx").addEventListener("click",e=>{const b=e.target.closest(".ponto");if(!b)return;
