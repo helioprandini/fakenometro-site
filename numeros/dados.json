@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-15T00:56:36",
- "seguidores": 3931,
+ "atualizado_em": "2026-11-15T01:31:29",
+ "seguidores": 3936,
  "posts": 64,
  "t28": {
-  "views": 165478,
-  "accounts_engaged": 5488,
-  "total_interactions": 12955,
-  "profile_views": 5434,
-  "likes": 6454,
+  "views": 165542,
+  "accounts_engaged": 5490,
+  "total_interactions": 12964,
+  "profile_views": 5438,
+  "likes": 6459,
   "comments": 479,
   "shares": 1766,
-  "saves": 1041,
+  "saves": 1043,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-14",
-   "valor": 4744
+   "valor": 4806
   }
  ],
  "seguidores_serie": [
@@ -260,8 +260,8 @@
   {
    "grupo": "reels",
    "posts": 36,
-   "alcance": 1032.6,
-   "views": 1327.6,
+   "alcance": 1033.0,
+   "views": 1328.2,
    "compart": 27.8,
    "salvos": 5.8,
    "seguidores": null,
@@ -270,8 +270,8 @@
   {
    "grupo": "carrossel",
    "posts": 14,
-   "alcance": 748.2,
-   "views": 1184.5,
+   "alcance": 748.4,
+   "views": 1184.8,
    "compart": 4.6,
    "salvos": 4.6,
    "seguidores": 2.8,
@@ -334,7 +334,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2811,
+   "views": 2813,
    "alcance": 1830,
    "compart": 6,
    "formato": "carrossel",
@@ -353,9 +353,9 @@
   }
  ],
  "canais": {
-  "instagram": 526,
+  "instagram": 529,
   "comentario": 122,
-  "whatsapp": 218
+  "whatsapp": 220
  },
  "por_dia": [
   [
@@ -461,8 +461,12 @@
   [
    "2026-11-14",
    33
+  ],
+  [
+   "2026-11-15",
+   5
   ]
  ],
  "repositorio": 44,
- "total_publico": 866
+ "total_publico": 871
 }
