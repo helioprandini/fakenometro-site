@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-16T14:40:55",
- "seguidores": 4247,
+ "atualizado_em": "2026-11-16T15:44:42",
+ "seguidores": 4249,
  "posts": 67,
  "t28": {
-  "views": 172843,
-  "accounts_engaged": 5802,
-  "total_interactions": 13712,
-  "profile_views": 5720,
-  "likes": 6928,
+  "views": 173157,
+  "accounts_engaged": 5803,
+  "total_interactions": 13720,
+  "profile_views": 5728,
+  "likes": 6935,
   "comments": 518,
   "shares": 1797,
-  "saves": 1105,
+  "saves": 1106,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-16",
-   "valor": 1000
+   "valor": 1140
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-15",
-   "valor": 0
+   "valor": 269
   },
   {
    "dia": "2026-11-16",
@@ -262,8 +262,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1016.7,
-   "views": 1304.5,
+   "alcance": 1017.3,
+   "views": 1305.1,
    "compart": 29.6,
    "salvos": 6.2,
    "seguidores": null,
@@ -272,9 +272,9 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 693.2,
-   "views": 1108.8,
-   "compart": 4.6,
+   "alcance": 695.8,
+   "views": 1113.4,
+   "compart": 5.0,
    "salvos": 4.4,
    "seguidores": 2.6,
    "visitas_perfil": 9.8
@@ -282,7 +282,7 @@
  ],
  "top": [
   {
-   "views": 6920,
+   "views": 6921,
    "alcance": 4848,
    "compart": 291,
    "formato": "reels",
@@ -319,7 +319,7 @@
   },
   {
    "views": 2883,
-   "alcance": 2219,
+   "alcance": 2222,
    "compart": 2,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -327,8 +327,8 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2839,
-   "alcance": 1855,
+   "views": 2841,
+   "alcance": 1860,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -355,9 +355,9 @@
   }
  ],
  "canais": {
-  "instagram": 551,
-  "comentario": 132,
-  "whatsapp": 238
+  "instagram": 552,
+  "comentario": 133,
+  "whatsapp": 239
  },
  "por_dia": [
   [
@@ -470,9 +470,9 @@
   ],
   [
    "2026-11-16",
-   12
+   15
   ]
  ],
  "repositorio": 45,
- "total_publico": 921
+ "total_publico": 924
 }
