@@ -1,14 +1,14 @@
 {
- "atualizado_em": "2026-11-16T06:47:48",
- "seguidores": 4221,
+ "atualizado_em": "2026-11-16T07:39:38",
+ "seguidores": 4222,
  "posts": 66,
  "t28": {
-  "views": 170940,
-  "accounts_engaged": 5773,
-  "total_interactions": 13615,
-  "profile_views": 5676,
-  "likes": 6870,
-  "comments": 509,
+  "views": 171024,
+  "accounts_engaged": 5775,
+  "total_interactions": 13623,
+  "profile_views": 5678,
+  "likes": 6873,
+  "comments": 511,
   "shares": 1790,
   "saves": 1097,
   "follows_and_unfollows": 0,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-16",
-   "valor": 156
+   "valor": 206
   }
  ],
  "seguidores_serie": [
@@ -261,8 +261,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1022.1,
-   "views": 1305.9,
+   "alcance": 1022.5,
+   "views": 1306.7,
    "compart": 28.8,
    "salvos": 6.1,
    "seguidores": null,
@@ -271,17 +271,17 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 728.5,
-   "views": 1162.3,
+   "alcance": 729.2,
+   "views": 1164.8,
    "compart": 4.9,
    "salvos": 4.6,
    "seguidores": 2.8,
-   "visitas_perfil": 10.2
+   "visitas_perfil": 10.3
   }
  ],
  "top": [
   {
-   "views": 6906,
+   "views": 6910,
    "alcance": 4837,
    "compart": 291,
    "formato": "reels",
@@ -299,7 +299,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3794,
+   "views": 3795,
    "alcance": 2904,
    "compart": 332,
    "formato": "reels",
@@ -326,7 +326,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2829,
+   "views": 2832,
    "alcance": 1850,
    "compart": 6,
    "formato": "carrossel",
