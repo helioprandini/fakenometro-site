@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-16T12:02:19",
- "seguidores": 4225,
- "posts": 66,
+ "atualizado_em": "2026-11-16T13:05:31",
+ "seguidores": 4232,
+ "posts": 67,
  "t28": {
-  "views": 171290,
-  "accounts_engaged": 5781,
-  "total_interactions": 13652,
-  "profile_views": 5688,
-  "likes": 6892,
+  "views": 171989,
+  "accounts_engaged": 5799,
+  "total_interactions": 13672,
+  "profile_views": 5703,
+  "likes": 6905,
   "comments": 516,
   "shares": 1791,
-  "saves": 1098,
+  "saves": 1104,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-16",
-   "valor": 307
+   "valor": 560
   }
  ],
  "seguidores_serie": [
@@ -261,29 +261,29 @@
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 35,
-   "alcance": 1024.1,
-   "views": 1309.0,
-   "compart": 28.8,
-   "salvos": 6.1,
+   "posts": 34,
+   "alcance": 1015.8,
+   "views": 1303.1,
+   "compart": 29.6,
+   "salvos": 6.2,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 15,
-   "alcance": 732.1,
-   "views": 1170.3,
-   "compart": 4.9,
-   "salvos": 4.6,
-   "seguidores": 2.8,
-   "visitas_perfil": 10.3
+   "posts": 16,
+   "alcance": 688.1,
+   "views": 1101.2,
+   "compart": 4.6,
+   "salvos": 4.4,
+   "seguidores": 2.6,
+   "visitas_perfil": 9.8
   }
  ],
  "top": [
   {
-   "views": 6919,
-   "alcance": 4837,
+   "views": 6920,
+   "alcance": 4848,
    "compart": 291,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -300,8 +300,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3799,
-   "alcance": 2912,
+   "views": 3802,
+   "alcance": 2917,
    "compart": 332,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -328,7 +328,7 @@
   },
   {
    "views": 2834,
-   "alcance": 1852,
+   "alcance": 1855,
    "compart": 6,
    "formato": "carrossel",
    "quando": "2026-11-02",
@@ -336,7 +336,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2689,
+   "views": 2691,
    "alcance": 2325,
    "compart": 20,
    "formato": "reels",
@@ -355,7 +355,7 @@
   }
  ],
  "canais": {
-  "instagram": 549,
+  "instagram": 550,
   "comentario": 132,
   "whatsapp": 238
  },
@@ -470,9 +470,9 @@
   ],
   [
    "2026-11-16",
-   10
+   11
   ]
  ],
  "repositorio": 45,
- "total_publico": 919
+ "total_publico": 920
 }
