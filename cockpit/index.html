@@ -450,10 +450,12 @@ function desenharDia(){
     const reels = p.formato === "reels";
     return `<div style="font-weight:700;margin-top:18px">${p.hora ? `🕗 ${p.hora.replace(":00", "h")} · ` : ""}${icone(p.formato)} ${esc(p.nome)}${reels ? "" : ` (${p.arquivos.length} telas)`} ${feito(p) ? "✅" : ""}</div>
     <div class="meta">${esc(p.titulo)} · ${lado(p.lado)}</div>
-    ${reels ? `<video id="dia-${p.slot}-0" controls playsinline style="width:100%;max-width:320px;border-radius:10px;margin-top:8px;background:#000"></video>`
+    ${reels ? `<video id="dia-${p.slot}-0" controls playsinline style="width:100%;max-width:320px;border-radius:10px;margin-top:8px;background:#000"></video>` +
+              (p.arquivos[1] ? `<div class="meta" style="margin-top:8px">Capa</div><img id="dia-${p.slot}-1" alt="Capa do Reels" style="width:100%;max-width:160px;border-radius:8px;margin-top:4px">` : "")
             : `<div class="fotos">${p.arquivos.map((a, i) => `<div class="n"><img id="dia-${p.slot}-${i}" alt=""><span>${i + 1}</span></div>`).join("")}</div>`}
     <div class="acoes">${feito(p) ? `<button class="b-desc" onclick="marcarDia('${p.slot}','desfazer')" style="grid-column:1/-1">↩︎ Desfazer · publicado por ${esc(p.publicado_por)}</button>` :
-      (reels ? `<button class="b-salvar" onclick="salvarDia('${p.arquivos[0]}','video/mp4')">📲 Salvar Reels</button>`
+      (reels ? `<button class="b-salvar" onclick="salvarDia('${p.arquivos[0]}','video/mp4')">📲 Salvar Reels</button>` +
+               (p.arquivos[1] ? `<button class="b-salvar" onclick="salvarDia('${p.arquivos[1]}','image/jpeg')">📲 Salvar capa</button>` : "")
              : p.arquivos.map((a, i) => `<button class="b-salvar" onclick="salvarDia('${a}','image/jpeg')">📲 Salvar ${i + 1}</button>`).join("")) +
       `<button class="b-copiar" onclick="copiarDia('${p.slot}')">📋 Copiar legenda</button>
        <a class="b-insta" href="instagram://app">📷 Abrir Instagram</a>
