@@ -1,14 +1,14 @@
 {
- "atualizado_em": "2026-11-16T15:44:42",
- "seguidores": 4249,
+ "atualizado_em": "2026-11-16T16:36:50",
+ "seguidores": 4254,
  "posts": 67,
  "t28": {
-  "views": 173157,
+  "views": 173520,
   "accounts_engaged": 5803,
-  "total_interactions": 13720,
-  "profile_views": 5728,
-  "likes": 6935,
-  "comments": 518,
+  "total_interactions": 13727,
+  "profile_views": 5737,
+  "likes": 6941,
+  "comments": 519,
   "shares": 1797,
   "saves": 1106,
   "follows_and_unfollows": 0,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-16",
-   "valor": 1140
+   "valor": 1307
   }
  ],
  "seguidores_serie": [
@@ -262,8 +262,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1017.3,
-   "views": 1305.1,
+   "alcance": 1017.8,
+   "views": 1305.6,
    "compart": 29.6,
    "salvos": 6.2,
    "seguidores": null,
@@ -272,8 +272,8 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 695.8,
-   "views": 1113.4,
+   "alcance": 697.2,
+   "views": 1115.7,
    "compart": 5.0,
    "salvos": 4.4,
    "seguidores": 2.6,
@@ -291,8 +291,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5416,
-   "alcance": 3867,
+   "views": 5417,
+   "alcance": 3873,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -300,7 +300,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3805,
+   "views": 3807,
    "alcance": 2917,
    "compart": 332,
    "formato": "reels",
@@ -336,8 +336,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2693,
-   "alcance": 2325,
+   "views": 2695,
+   "alcance": 2328,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -357,7 +357,7 @@
  "canais": {
   "instagram": 552,
   "comentario": 133,
-  "whatsapp": 239
+  "whatsapp": 240
  },
  "por_dia": [
   [
@@ -470,9 +470,9 @@
   ],
   [
    "2026-11-16",
-   15
+   16
   ]
  ],
  "repositorio": 45,
- "total_publico": 924
+ "total_publico": 925
 }
