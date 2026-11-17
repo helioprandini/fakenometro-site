@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-17T17:56:42",
- "seguidores": 4375,
+ "atualizado_em": "2026-11-17T19:01:04",
+ "seguidores": 4385,
  "posts": 69,
  "t28": {
-  "views": 180062,
-  "accounts_engaged": 5874,
-  "total_interactions": 14121,
-  "profile_views": 5956,
-  "likes": 7150,
-  "comments": 540,
-  "shares": 1843,
-  "saves": 1133,
+  "views": 180389,
+  "accounts_engaged": 5882,
+  "total_interactions": 14154,
+  "profile_views": 5973,
+  "likes": 7168,
+  "comments": 542,
+  "shares": 1847,
+  "saves": 1137,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 1920
+   "valor": 2202
   }
  ],
  "seguidores_serie": [
@@ -257,14 +257,14 @@
   "2026-11-14": 10,
   "2026-11-15": 5,
   "2026-11-16": 1,
-  "2026-11-17": 3
+  "2026-11-17": 4
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1030.4,
-   "views": 1322.0,
+   "alcance": 1032.0,
+   "views": 1324.3,
    "compart": 29.5,
    "salvos": 6.2,
    "seguidores": null,
@@ -273,8 +273,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 708.5,
-   "views": 1124.5,
+   "alcance": 709.3,
+   "views": 1125.5,
    "compart": 5.5,
    "salvos": 4.4,
    "seguidores": 2.6,
@@ -283,7 +283,7 @@
  ],
  "top": [
   {
-   "views": 6948,
+   "views": 6949,
    "alcance": 4869,
    "compart": 292,
    "formato": "reels",
@@ -292,7 +292,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5435,
+   "views": 5437,
    "alcance": 3893,
    "compart": 47,
    "formato": "reels",
@@ -337,7 +337,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2715,
+   "views": 2716,
    "alcance": 2357,
    "compart": 20,
    "formato": "reels",
@@ -356,9 +356,9 @@
   }
  ],
  "canais": {
-  "instagram": 570,
-  "comentario": 143,
-  "whatsapp": 258
+  "instagram": 577,
+  "comentario": 144,
+  "whatsapp": 259
  },
  "por_dia": [
   [
@@ -475,9 +475,9 @@
   ],
   [
    "2026-11-17",
-   24
+   33
   ]
  ],
  "repositorio": 46,
- "total_publico": 971
+ "total_publico": 980
 }
