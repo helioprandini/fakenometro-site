@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-17T13:40:26",
- "seguidores": 4349,
+ "atualizado_em": "2026-11-17T14:44:23",
+ "seguidores": 4353,
  "posts": 69,
  "t28": {
-  "views": 178839,
-  "accounts_engaged": 5859,
-  "total_interactions": 14036,
-  "profile_views": 5901,
-  "likes": 7105,
+  "views": 179157,
+  "accounts_engaged": 5865,
+  "total_interactions": 14060,
+  "profile_views": 5912,
+  "likes": 7112,
   "comments": 539,
-  "shares": 1831,
-  "saves": 1126,
+  "shares": 1837,
+  "saves": 1130,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 1131
+   "valor": 1316
   }
  ],
  "seguidores_serie": [
@@ -257,14 +257,14 @@
   "2026-11-14": 10,
   "2026-11-15": 5,
   "2026-11-16": 1,
-  "2026-11-17": 2
+  "2026-11-17": 3
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1018.7,
-   "views": 1307.0,
+   "alcance": 1021.6,
+   "views": 1313.0,
    "compart": 29.3,
    "salvos": 6.2,
    "seguidores": null,
@@ -273,8 +273,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 705.3,
-   "views": 1121.1,
+   "alcance": 706.2,
+   "views": 1121.9,
    "compart": 5.5,
    "salvos": 4.4,
    "seguidores": 2.6,
@@ -283,8 +283,8 @@
  ],
  "top": [
   {
-   "views": 6946,
-   "alcance": 4859,
+   "views": 6948,
+   "alcance": 4869,
    "compart": 292,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -301,7 +301,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3825,
+   "views": 3826,
    "alcance": 2933,
    "compart": 335,
    "formato": "reels",
@@ -337,7 +337,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2712,
+   "views": 2714,
    "alcance": 2354,
    "compart": 20,
    "formato": "reels",
@@ -356,9 +356,9 @@
   }
  ],
  "canais": {
-  "instagram": 563,
+  "instagram": 566,
   "comentario": 142,
-  "whatsapp": 254
+  "whatsapp": 256
  },
  "por_dia": [
   [
@@ -475,9 +475,9 @@
   ],
   [
    "2026-11-17",
-   12
+   17
   ]
  ],
  "repositorio": 46,
- "total_publico": 959
+ "total_publico": 964
 }
