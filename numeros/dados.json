@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-18T01:04:15",
- "seguidores": 4462,
+ "atualizado_em": "2026-11-18T01:35:37",
+ "seguidores": 4470,
  "posts": 69,
  "t28": {
-  "views": 182212,
+  "views": 182285,
   "accounts_engaged": 5949,
-  "total_interactions": 14325,
-  "profile_views": 6063,
-  "likes": 7268,
+  "total_interactions": 14331,
+  "profile_views": 6070,
+  "likes": 7272,
   "comments": 556,
-  "shares": 1855,
+  "shares": 1856,
   "saves": 1152,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 3714
+   "valor": 3739
   }
  ],
  "seguidores_serie": [
@@ -263,8 +263,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1042.1,
-   "views": 1337.0,
+   "alcance": 1042.2,
+   "views": 1337.3,
    "compart": 29.6,
    "salvos": 6.3,
    "seguidores": null,
@@ -273,8 +273,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 712.5,
-   "views": 1131.3,
+   "alcance": 712.7,
+   "views": 1131.5,
    "compart": 5.7,
    "salvos": 4.4,
    "seguidores": 2.6,
