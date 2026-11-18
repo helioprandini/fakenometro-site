@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-17T20:04:06",
- "seguidores": 4402,
+ "atualizado_em": "2026-11-17T20:36:03",
+ "seguidores": 4406,
  "posts": 69,
  "t28": {
-  "views": 180727,
-  "accounts_engaged": 5896,
-  "total_interactions": 14178,
-  "profile_views": 5986,
-  "likes": 7184,
-  "comments": 544,
-  "shares": 1847,
+  "views": 180917,
+  "accounts_engaged": 5906,
+  "total_interactions": 14197,
+  "profile_views": 6000,
+  "likes": 7192,
+  "comments": 546,
+  "shares": 1850,
   "saves": 1140,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 2487
+   "valor": 2627
   }
  ],
  "seguidores_serie": [
@@ -263,8 +263,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1033.8,
-   "views": 1327.5,
+   "alcance": 1034.8,
+   "views": 1328.5,
    "compart": 29.5,
    "salvos": 6.2,
    "seguidores": null,
@@ -273,8 +273,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 709.9,
-   "views": 1126.7,
+   "alcance": 710.1,
+   "views": 1126.9,
    "compart": 5.7,
    "salvos": 4.4,
    "seguidores": 2.6,
@@ -356,9 +356,9 @@
   }
  ],
  "canais": {
-  "instagram": 580,
+  "instagram": 588,
   "comentario": 144,
-  "whatsapp": 259
+  "whatsapp": 260
  },
  "por_dia": [
   [
@@ -475,9 +475,9 @@
   ],
   [
    "2026-11-17",
-   36
+   45
   ]
  ],
  "repositorio": 46,
- "total_publico": 983
+ "total_publico": 992
 }
