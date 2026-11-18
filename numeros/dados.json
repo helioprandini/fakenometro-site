@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-18T10:01:34",
- "seguidores": 4526,
+ "atualizado_em": "2026-11-18T11:05:05",
+ "seguidores": 4529,
  "posts": 69,
  "t28": {
-  "views": 182977,
+  "views": 183048,
   "accounts_engaged": 5984,
-  "total_interactions": 14428,
-  "profile_views": 6111,
-  "likes": 7326,
+  "total_interactions": 14437,
+  "profile_views": 6114,
+  "likes": 7332,
   "comments": 558,
   "shares": 1862,
-  "saves": 1162,
+  "saves": 1163,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-18",
-   "valor": 478
+   "valor": 538
   }
  ],
  "seguidores_serie": [
@@ -258,25 +258,25 @@
   "2026-11-15": 5,
   "2026-11-16": 1,
   "2026-11-17": 6,
-  "2026-11-18": 5
+  "2026-11-18": 6
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1044.9,
-   "views": 1341.4,
+   "alcance": 1045.1,
+   "views": 1342.1,
    "compart": 29.7,
-   "salvos": 6.4,
+   "salvos": 6.5,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 715.1,
-   "views": 1135.9,
-   "compart": 5.8,
+   "alcance": 715.9,
+   "views": 1136.6,
+   "compart": 5.9,
    "salvos": 4.5,
    "seguidores": 2.6,
    "visitas_perfil": 9.2
@@ -293,7 +293,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5453,
+   "views": 5454,
    "alcance": 3893,
    "compart": 47,
    "formato": "reels",
@@ -302,7 +302,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3850,
+   "views": 3855,
    "alcance": 2946,
    "compart": 341,
    "formato": "reels",
@@ -338,7 +338,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2733,
+   "views": 2734,
    "alcance": 2379,
    "compart": 20,
    "formato": "reels",
@@ -357,9 +357,9 @@
   }
  ],
  "canais": {
-  "instagram": 599,
+  "instagram": 600,
   "comentario": 146,
-  "whatsapp": 267
+  "whatsapp": 269
  },
  "por_dia": [
   [
@@ -480,9 +480,9 @@
   ],
   [
    "2026-11-18",
-   15
+   18
   ]
  ],
  "repositorio": 47,
- "total_publico": 1012
+ "total_publico": 1015
 }
