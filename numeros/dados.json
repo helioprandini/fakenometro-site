@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-18T01:35:37",
- "seguidores": 4470,
+ "atualizado_em": "2026-11-18T02:39:13",
+ "seguidores": 4473,
  "posts": 69,
  "t28": {
-  "views": 182285,
-  "accounts_engaged": 5949,
-  "total_interactions": 14331,
-  "profile_views": 6070,
-  "likes": 7272,
+  "views": 182365,
+  "accounts_engaged": 5955,
+  "total_interactions": 14343,
+  "profile_views": 6072,
+  "likes": 7280,
   "comments": 556,
-  "shares": 1856,
+  "shares": 1857,
   "saves": 1152,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 3739
+   "valor": 3821
   }
  ],
  "seguidores_serie": [
@@ -275,7 +275,7 @@
    "posts": 15,
    "alcance": 712.7,
    "views": 1131.5,
-   "compart": 5.7,
+   "compart": 5.8,
    "salvos": 4.4,
    "seguidores": 2.6,
    "visitas_perfil": 9.2
