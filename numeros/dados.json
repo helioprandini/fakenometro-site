@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-18T03:43:39",
- "seguidores": 4479,
+ "atualizado_em": "2026-11-18T04:47:09",
+ "seguidores": 4483,
  "posts": 69,
  "t28": {
-  "views": 182458,
-  "accounts_engaged": 5955,
+  "views": 182307,
+  "accounts_engaged": 5958,
   "total_interactions": 14354,
-  "profile_views": 6078,
-  "likes": 7288,
+  "profile_views": 6062,
+  "likes": 7287,
   "comments": 556,
   "shares": 1858,
   "saves": 1152,
@@ -15,10 +15,6 @@
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-21",
-   "valor": 11
-  },
   {
    "dia": "2026-10-22",
    "valor": 54
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-17",
-   "valor": 3873
+   "valor": 3934
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-21",
-   "valor": 2
-  },
   {
    "dia": "2026-10-22",
    "valor": 2
@@ -263,8 +255,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1042.3,
-   "views": 1337.5,
+   "alcance": 1043.0,
+   "views": 1338.0,
    "compart": 29.6,
    "salvos": 6.3,
    "seguidores": null,
@@ -273,8 +265,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 712.9,
-   "views": 1131.7,
+   "alcance": 713.3,
+   "views": 1132.3,
    "compart": 5.8,
    "salvos": 4.4,
    "seguidores": 2.6,
@@ -283,7 +275,7 @@
  ],
  "top": [
   {
-   "views": 6957,
+   "views": 6958,
    "alcance": 4880,
    "compart": 292,
    "formato": "reels",
@@ -301,8 +293,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3843,
-   "alcance": 2942,
+   "views": 3844,
+   "alcance": 2946,
    "compart": 341,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -337,8 +329,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2726,
-   "alcance": 2373,
+   "views": 2727,
+   "alcance": 2376,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -358,7 +350,7 @@
  "canais": {
   "instagram": 591,
   "comentario": 145,
-  "whatsapp": 262
+  "whatsapp": 264
  },
  "por_dia": [
   [
@@ -479,9 +471,9 @@
   ],
   [
    "2026-11-18",
-   1
+   3
   ]
  ],
  "repositorio": 46,
- "total_publico": 998
+ "total_publico": 1000
 }
