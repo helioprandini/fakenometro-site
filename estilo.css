@@ -255,3 +255,14 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 .painel{background:var(--papel)}
 /* Legenda do card centrada de verdade: compensa o espaço que o espaçamento entre letras deixa depois da última letra (Roberta, 19/11) */
 .card-ex figcaption{padding-left:.12em}
+/* Ajustes pedidos pela Roberta em 19/11, à tarde */
+/* Onde a gente está: uma linha contínua só, em vez de um traço por coluna */
+.canais{border-top:1.5px solid var(--linha);padding-top:4px}
+.canais>div,.canais>div.depois{border-top:0}
+/* Para quem é: link sem a linha amarela */
+.pessoa a{font:600 16px var(--sans);letter-spacing:0;text-transform:none;border-bottom:0;text-decoration:underline;text-decoration-color:var(--linha);text-underline-offset:4px}
+.pessoa a::after{content:" →"}
+/* Contadores: largura fixa, o texto em volta não anda enquanto o número sobe */
+[data-conta]{font-variant-numeric:tabular-nums}
+.debate-p .num{min-width:3ch;text-align:left}
+h1 [data-conta]{display:inline-block;min-width:3ch;text-align:right}
