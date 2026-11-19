@@ -9,26 +9,27 @@
 <meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
 <link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
 <script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Spline+Sans+Mono:wght@400;500&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 <link rel="stylesheet" href="/debate/debate.css">
 <script src="/site.js" defer></script>
 </head><body>
-<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
-<div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/">Números</a><a href="/contato/">Contato</a>
-</nav></div>
+<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="36" height="36">Fakenômetro</a>
+<nav class="menu" aria-label="Seções">
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/">Números</a><a href="/parceiros/">Parceiros</a><a href="/contato/">Contato</a>
+</nav></header>
 <main>
 <section class="capa"><div>
 <p class="etiqueta">Edição especial · Eleição 2026 · Debate da Globo, 23/10</p>
 <h1><span data-conta="455">455</span> falas.<br>Uma régua.</h1>
 <p class="sub">Cada afirmação de fato de Lula e Flávio, conferida uma a uma, com fonte. Opinião e promessa não entram.</p>
-<p class="mao">a mesma para os dois</p>
+<img class="mao-img" src="/marca/mao/a_mesma_para_os_dois.png" alt="a mesma para os dois" width="360">
 </div><div class="cx"><div class="detalhe" id="detalhe">Escolha um quadradinho.</div></div></section>
 
 <section data-aba="Quadradinhos">
 <div class="placar" id="waffles"></div>
 <div class="legenda" id="legenda"></div>
-<p class="mao">sem prova não é mentira: é falta de fonte</p>
+<p class="mini">Sem prova não é mentira: é falta de fonte.</p>
 </section>
 
 <section data-aba="Maiores erros">
@@ -89,5 +90,5 @@ fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{dados=d;waffle
 [...new Set(d.itens.map(i=>i.tema))].sort().forEach(t=>$("f-tema").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
 ["f-quem","f-grupo","f-tema","f-busca"].forEach(id=>$(id).addEventListener("input",()=>{mostrar=30;lista()}));$("mais").addEventListener("click",()=>{mostrar+=30;lista()});lista();observar()});
 </script>
-<footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
-<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
+<footer id="contato"><div class="miolo"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
+<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></div></footer></body></html>

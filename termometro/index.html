@@ -9,20 +9,21 @@
 <meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
 <link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
 <script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Spline+Sans+Mono:wght@400;500&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 <script src="/site.js" defer></script>
 </head><body>
-<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
-<div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/" class="ativo">Termômetro</a><a href="/numeros/">Números</a><a href="/contato/">Contato</a>
-</nav></div>
+<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="36" height="36">Fakenômetro</a>
+<nav class="menu" aria-label="Seções">
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/" class="ativo">Termômetro</a><a href="/numeros/">Números</a><a href="/parceiros/">Parceiros</a><a href="/contato/">Contato</a>
+</nav></header>
 <main>
 <style>.cx #pontos,.cx #selo{grid-template-columns:repeat(4,minmax(0,1fr))}.cx #pontos .ponto,.cx #selo .ponto{grid-column:auto}</style>
 <section class="capa"><div>
 <p class="etiqueta">O termômetro</p>
 <h1>Não é opinião. <span class="mt">É conta.</span></h1>
 <p class="sub">A gente separa o que o post afirma e confere ponto por ponto. A frase do card diz o resultado. O tracinho mostra o quanto está provado.</p>
-<p class="mao">repetição não é prova</p>
+<img class="mao-img" src="/marca/mao/repeticao_nao_e_prova.png" alt="repetição não é prova" width="360">
 </div><div class="cx">
 <p class="etiqueta">Testa aí: escolhe e o tracinho mexe</p>
 <p class="mini"><b>O resultado</b></p>
@@ -34,8 +35,23 @@
 <div class="termo"><b id="faixa" style="position:absolute;top:-4px;bottom:-4px;border:3px solid var(--texto);border-radius:6px;transition:all .45s"></b><i id="ponteiro" style="left:90%"></i></div>
 <div class="termo-pontas"><span>mentira</span><span>verdade</span></div>
 <p class="mini" id="leitura"></p>
-<p class="mao">falta de prova não puxa para nenhum lado</p>
+<p class="mini">Falta de prova não puxa para nenhum lado.</p>
 </div></section>
+
+<section data-aba="As quatro provas" id="provas">
+<h2 style="max-width:900px">Nenhum veredito sai <span class="mt">sem passar por quatro provas.</span></h2>
+<div class="provas">
+<div class="trilho"><i></i></div>
+<div class="passos">
+<div class="p"><i class="ponto-l"></i><b>1</b><h3>Post inteiro</h3><span>O vídeo do começo ao fim, todas as lâminas e a legenda. Faltou uma peça, não há veredito.</span></div>
+<div class="p"><i class="ponto-l"></i><b>2</b><h3>Vai à fonte</h3><span>Dado oficial, quem noticiou e o que os checadores já disseram. As páginas são lidas, não só os títulos.</span></div>
+<div class="p"><i class="ponto-l"></i><b>3</b><h3>Conselho de três IAs</h3><span>Anthropic, Google e OpenAI avaliam cada checagem. Se discordam, a certeza cai.</span></div>
+<div class="p"><i class="ponto-l"></i><b>4</b><h3>Régua do Manifesto</h3><span>Os princípios do <a href="/manifesto">Manifesto</a> entram em toda avaliação: o mesmo método para qualquer lado. Sem fonte, não sai.</span></div>
+</div>
+<p class="depois"><b>E depois de sair:</b> todo dia uma checagem sorteada é refeita por um modelo maior, e a equipe confere uma amostra das respostas. A IA pode errar: achou erro, responde que a gente revê.</p>
+<button class="botao sec de-novo" type="button">Ver de novo</button>
+</div>
+</section>
 
 <section data-aba="Os cards">
 <p class="sub">O card é o que chega no direct e no WhatsApp, pronto para mandar no grupo. Cada resultado tem o seu lugar na barra.</p>
@@ -48,14 +64,6 @@
 <p class="sub">"Confere, em parte" põe o tracinho no meio da barra. "A notícia engana", no laranja.</p>
 </section>
 
-<section data-aba="Quatro regras">
-<div class="quatro">
-<div class="sobe"><div class="passo-n">1</div><h3>Post inteiro</h3>O vídeo na íntegra ou todas as lâminas, mais a legenda.</div>
-<div class="sobe"><div class="passo-n">2</div><h3>Vai à fonte</h3>Dado oficial, quem noticiou e o que os checadores já disseram.</div>
-<div class="sobe"><div class="passo-n">3</div><h3>Mais de uma IA</h3>Inteligências artificiais de empresas diferentes avaliam o mesmo dossiê.</div>
-<div class="sobe"><div class="passo-n">4</div><h3>Sem fonte, não sai</h3>A régua é uma só. A IA pode errar: achou erro, responde que a gente revê.</div>
-</div>
-</section>
 </main>
 <script>
 // Regra do ponteiro de 15/11 (Roberta): o resultado escolhe a faixa; no "confere", 60% força da prova + 40% os outros pontos;
@@ -80,5 +88,18 @@ function d(){
 document.querySelector(".cx").addEventListener("click",e=>{const b=e.target.closest(".ponto");if(!b)return;
  if(b.dataset.s)S=b.dataset.s;else if(b.dataset.f)F=+b.dataset.f;else P[b.dataset.i][1]=(P[b.dataset.i][1]+1)%3;d()});d();
 </script>
-<footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
-<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
+<script>
+// Quatro provas: a linha se preenche passo a passo quando a seção aparece (mesma animação do deck).
+(function(){const s=document.getElementById("provas");if(!s)return;const ps=[...s.querySelectorAll(".p")],f=s.querySelector(".trilho i"),dp=s.querySelector(".depois");let tt=[],feito=false;
+const pos=i=>{const a=f.parentNode.getBoundingClientRect(),b=ps[i].querySelector(".ponto-l").getBoundingClientRect();return Math.max(0,(b.left+b.width/2-a.left)/a.width*100)};
+function marca(i){ps.forEach((p,j)=>p.classList.toggle("on",j<=i));f.style.width=(i<0?0:pos(i))+"%"}
+function roda(){tt.forEach(clearTimeout);tt=[];dp.classList.remove("on");f.style.transition="none";marca(-1);f.getBoundingClientRect();f.style.transition="";
+ps.forEach((p,i)=>tt.push(setTimeout(()=>marca(i),400+i*1200)));tt.push(setTimeout(()=>{dp.classList.add("on");f.style.width="100%"},400+ps.length*1200))}
+ps.forEach((p,i)=>p.onclick=e=>{if(e.target.closest("a"))return;tt.forEach(clearTimeout);marca(i);if(i===ps.length-1){dp.classList.add("on");f.style.width="100%"}});
+s.querySelector(".de-novo").onclick=roda;
+if(matchMedia("(prefers-reduced-motion:reduce)").matches){marca(3);dp.classList.add("on");return}
+new IntersectionObserver((es,o)=>es.forEach(x=>{if(x.isIntersecting&&!feito){feito=true;roda();o.disconnect()}}),{threshold:.3}).observe(s);
+document.addEventListener("click",e=>{const b=e.target.closest(".abas-p button");if(b&&b.textContent==="As quatro provas")setTimeout(roda,50)})})();
+</script>
+<footer id="contato"><div class="miolo"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
+<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></div></footer></body></html>

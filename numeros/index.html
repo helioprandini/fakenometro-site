@@ -9,14 +9,15 @@
 <meta property="og:image" content="https://fakenometro.com.br/marca/capa.png">
 <link rel="icon" href="/marca/icone-192.png"><link rel="apple-touch-icon" href="/marca/icone-192.png">
 <script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Spline+Sans+Mono:wght@400;500&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="/estilo.css">
 <meta name="robots" content="noindex">
 <script src="/site.js" defer></script>
 </head><body>
-<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="40" height="40">Fakenômetro</a></header>
-<div class="menu"><nav aria-label="Seções">
-<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/" class="ativo">Números</a><a href="/contato/">Contato</a>
-</nav></div>
+<header class="topo"><a class="marca" href="/"><img src="/marca/icone-192.png" alt="" width="36" height="36">Fakenômetro</a>
+<nav class="menu" aria-label="Seções">
+<a href="/">Início</a><a href="/manifesto">Manifesto</a><a href="/golpes/">Golpes</a><a href="/termometro/">Termômetro</a><a href="/numeros/" class="ativo">Números</a><a href="/parceiros/">Parceiros</a><a href="/contato/">Contato</a>
+</nav></header>
 <main>
 <section class="capa"><div>
 <p class="etiqueta">Números · nasceu em 17/10/2026</p>
@@ -57,8 +58,8 @@ const corta=s=>s.length<90?s:s.slice(0,s.lastIndexOf(" "))+"…";
 document.getElementById("top").innerHTML=d.top.map(p=>`<a href="${esc(p.link)}"><img src="capas/${esc(p.link.replace(/\/$/,"").split("/").pop())}.jpg" alt="${esc(p.titulo||"Post")}" loading="lazy" width="600" height="800"><span>${N(p.views)}</span></a>`).join("")+`<p class="fontes">Visualizações por post. Toque na capa para abrir no Instagram.</p>`;
 document.getElementById("cons").innerHTML=tile(d.total_publico,"consultas desde 20/10")+tile(c.instagram||0,"no direct")+tile(c.whatsapp||0,"no WhatsApp, desde 26/10")+tile(c.comentario||0,"nos comentários");
 document.getElementById("porDia").innerHTML=colunas(d.por_dia,"consultas");
-document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)}. Fonte: Instagram Insights (API oficial da Meta) e registro interno do robô. As consultas incluem testes da nossa equipe, que o registro não separa. O WhatsApp só tem contagem de consultas, sem alcance. A checagem em lote do debate não entra nas consultas.`;
+document.getElementById("nota").textContent=`Atualizado em ${dm(d.atualizado_em)}. Fonte: Instagram Insights (API oficial da Meta) e registro interno do robô. Consultas: cada pedido de checagem que o robô respondeu no direct, nos comentários e no WhatsApp. Desde 02/11/2026 sem os testes da equipe; antes disso, incluem. O e-mail ainda não entra na conta. O WhatsApp só tem contagem de consultas, sem alcance. A checagem em lote do debate não entra nas consultas.`;
 observar()});
 </script>
-<footer id="contato"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
-<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></footer></body></html>
+<footer id="contato"><div class="miolo"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
+<p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></div></footer></body></html>
