@@ -229,3 +229,8 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 .golpe .abre{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--tinta);display:flex;align-items:center;justify-content:center;font:600 20px/1 var(--sans);transition:transform .2s}
 .golpe details[open] .abre{transform:rotate(45deg)}
 .dica{font-weight:600;color:var(--tinta);margin:10px 0 0}
+/* Golpes: fontes mais discretas dentro do card (Roberta, 19/11: "tá brigando com o resto do texto") */
+.golpe .fontes{font:400 14px/1.5 var(--sans);letter-spacing:0;color:#8A8E99;margin-top:18px;padding-top:12px;border-top:1px solid var(--linha)}
+.golpe .fontes a{color:#8A8E99;text-decoration-color:#C9C5BD}
+/* Logo do topo: só o termômetro, sem o quadrado preto (Roberta, 19/11). O ícone com fundo fica na aba, perfil e WhatsApp. */
+.marca img{width:auto;height:24px;border-radius:0}
