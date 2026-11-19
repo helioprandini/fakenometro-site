@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-19T17:57:58",
- "seguidores": 4726,
+ "atualizado_em": "2026-11-19T19:03:56",
+ "seguidores": 4743,
  "posts": 69,
  "t28": {
-  "views": 186265,
-  "accounts_engaged": 6203,
-  "total_interactions": 15074,
-  "profile_views": 6263,
-  "likes": 7552,
-  "comments": 570,
+  "views": 186562,
+  "accounts_engaged": 6214,
+  "total_interactions": 15107,
+  "profile_views": 6277,
+  "likes": 7570,
+  "comments": 574,
   "shares": 2006,
-  "saves": 1208,
+  "saves": 1212,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-19",
-   "valor": 1331
+   "valor": 1615
   }
  ],
  "seguidores_serie": [
@@ -265,8 +265,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1055.6,
-   "views": 1354.3,
+   "alcance": 1055.7,
+   "views": 1354.7,
    "compart": 31.7,
    "salvos": 6.5,
    "seguidores": null,
@@ -275,8 +275,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 739.4,
-   "views": 1168.5,
+   "alcance": 739.6,
+   "views": 1168.9,
    "compart": 5.9,
    "salvos": 4.6,
    "seguidores": 2.6,
@@ -285,7 +285,7 @@
  ],
  "top": [
   {
-   "views": 6972,
+   "views": 6974,
    "alcance": 4891,
    "compart": 292,
    "formato": "reels",
@@ -303,7 +303,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3912,
+   "views": 3913,
    "alcance": 3006,
    "compart": 345,
    "formato": "reels",
@@ -339,7 +339,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2746,
+   "views": 2749,
    "alcance": 2385,
    "compart": 20,
    "formato": "reels",
@@ -358,9 +358,9 @@
   }
  ],
  "canais": {
-  "instagram": 636,
+  "instagram": 637,
   "comentario": 148,
-  "whatsapp": 291
+  "whatsapp": 292
  },
  "por_dia": [
   [
@@ -485,9 +485,9 @@
   ],
   [
    "2026-11-19",
-   41
+   43
   ]
  ],
  "repositorio": 50,
- "total_publico": 1075
+ "total_publico": 1077
 }
