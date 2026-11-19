@@ -281,3 +281,13 @@ footer .miolo{font:400 15px/1.6 var(--sans);letter-spacing:0;text-transform:none
 .nc{text-decoration-thickness:.045em}
 .tres{border-top:1.5px solid var(--tinta);padding-top:4px}.tres>div{border-top:0}
 .nq{white-space:nowrap}
+/* Só no celular (Roberta, 19/11, noite) */
+@media(max-width:700px){
+.topo{gap:22px}
+footer .miolo{font-size:14px}footer a{white-space:nowrap;margin:0 14px 0 0;display:inline-block}
+.abas-p{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;gap:18px;font:500 15px var(--sans);letter-spacing:0;text-transform:none;scrollbar-width:none}
+.abas-p::-webkit-scrollbar{display:none}
+.abas-p button{white-space:nowrap;flex:none}
+.botoes{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:480px}
+.botoes .botao{margin:0!important;padding:14px 8px;letter-spacing:.06em;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.3}
+}
