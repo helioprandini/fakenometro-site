@@ -266,3 +266,12 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 [data-conta]{font-variant-numeric:tabular-nums}
 .debate-p .num{min-width:3ch;text-align:left}
 h1 [data-conta]{display:inline-block;min-width:3ch;text-align:right}
+/* Ajustes da Roberta, 19/11, fim da tarde */
+.nota-t{font:600 19px/1.3 var(--sans);letter-spacing:-.01em;color:var(--tinta);margin:18px 0 0}
+.card-ex figcaption{font:400 15px var(--sans);letter-spacing:0;text-transform:none;padding-left:0;color:var(--cinza)}
+.nota-cards{max-width:none;margin-top:36px}
+#numeros .fontes,.corpo-p#nota,#nota,.painel .fontes,#semanas .fontes,#top .fontes{font:400 13px/1.5 var(--sans);letter-spacing:0;color:#8A8E99}
+.pessoa a{text-decoration:none;font-weight:700}
+.etapas .etiqueta{font:600 15px var(--sans);letter-spacing:0;text-transform:none;color:var(--cinza);margin-bottom:6px}
+.email-c{font:600 clamp(18px,2vw,26px)/1.2 var(--sans);letter-spacing:-.01em;margin:0 0 14px;white-space:nowrap}
+@media(max-width:420px){.email-c{font-size:17px}}

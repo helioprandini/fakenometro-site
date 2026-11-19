@@ -23,15 +23,15 @@
 <p class="etiqueta">O termômetro</p>
 <h1>Não é opinião. <span class="mt">É conta.</span></h1>
 <p class="sub">A gente separa o que o post afirma e confere ponto por ponto. A frase do card diz o resultado. O tracinho mostra o quanto está provado.</p>
-<img class="mao-img" src="/marca/mao/repeticao_nao_e_prova.png" alt="repetição não é prova" width="360">
+<p class="nota-t">Repetição não é prova.</p>
 </div><div class="cx">
 <p class="etiqueta">Testa aí: escolhe e o tracinho mexe</p>
 <p class="mini"><b>O resultado</b></p>
 <div class="pontos" id="selo"></div>
-<p class="mini" id="rotulo-prova"><b>A prova do ponto principal</b></p>
+<p class="mini" id="rotulo-prova" style="display:none"><b>A prova do ponto principal</b></p>
 <div class="pontos" id="prova"></div>
-<p class="mini"><b>Os outros pontos</b> (toca para mudar)</p>
-<div class="pontos" id="pontos"></div>
+<p class="mini" style="display:none"><b>Os outros pontos</b> (toca para mudar)</p>
+<div class="pontos" id="pontos" style="display:none"></div>
 <div class="termo"><b id="faixa" style="position:absolute;top:-4px;bottom:-4px;border:3px solid var(--texto);border-radius:6px;transition:all .45s"></b><i id="ponteiro" style="left:90%"></i></div>
 <div class="termo-pontas"><span>mentira</span><span>verdade</span></div>
 <p class="mini" id="leitura"></p>
@@ -61,7 +61,7 @@
 <figure class="sobe" style="margin:0"><img src="/marca/cards/card_semprova.png" alt="Card claro sem tracinho: Vem aí um apagão mundial. Estoque água e comida. Não repasse como fato." loading="lazy" width="1080" height="1080"><h3>Sem prova</h3>Sem tracinho. Pode ser verdade, mas falta prova. Não repasse como fato.</figure>
 <figure class="sobe" style="margin:0"><img src="/marca/cards/card_opiniao.png" alt="Card claro com a barra sem cor: Segunda-feira é o pior dia da semana. Não é notícia." loading="lazy" width="1080" height="1080"><h3>Não é notícia</h3>Barra sem cor. Opinião e sátira não têm grau de verdade. Este é um exemplo ilustrativo.</figure>
 </div>
-<p class="sub">"Confere, em parte" põe o tracinho no meio da barra. "A notícia engana", no laranja.</p>
+<p class="sub nota-cards">"Confere, em parte" põe o tracinho no meio da barra. "A notícia engana", no laranja.</p>
 </section>
 
 </main>
@@ -74,7 +74,7 @@ P=[["Quem disse",0],["O número",0],["A data",0],["O lugar",2]],C=["sim","nao","
 let S="confere",F=3;
 function d(){
  document.getElementById("selo").innerHTML=Object.keys(FX).map(k=>`<button class="ponto" data-s="${k}" data-e="${k==S?"sim":"sem"}">${NS[k]}</button>`).join("");
- const vp=S=="confere";document.getElementById("prova").style.display=document.getElementById("rotulo-prova").style.display=vp?"":"none";
+ const vp=S=="confere";document.getElementById("prova").style.display=document.getElementById("rotulo-prova").style.display="none";
  document.getElementById("prova").innerHTML=[1,2,3].map(k=>`<button class="ponto" data-f="${k}" data-e="${k==F?"sim":"sem"}">${k==3?"oficial ou 3":k}<br><small>${k==3?"veículos":k==1?"veículo":"veículos"}</small></button>`).join("");
  let c=0,t=0;document.getElementById("pontos").innerHTML=P.map(([n,e],i)=>{if(e<2){t++;if(e==0)c++}return `<button class="ponto" data-i="${i}" data-e="${C[e]}">${n}<br><small>${T[C[e]]}</small></button>`}).join("");
  const fx=document.getElementById("faixa"),pt=document.getElementById("ponteiro");
@@ -83,8 +83,8 @@ function d(){
  const resto=t?100*c/t:50,v=vp?0.6*FR[F][0]+0.4*resto:resto,[a,b]=FX[S],pos=Math.round(a+(b-a)*v/100);
  fx.style.left=a+"%";fx.style.width=(b-a)+"%";
  pt.style.left=pos+"%";
- document.getElementById("leitura").innerHTML=vp?`<b>Confere, com ${FR[F][1]}.</b> ${t?`Dos outros pontos, ${c} de ${t} conferem.`:"Sem outros pontos para conferir."} O tracinho fica em ${pos}.`
-  :`<b>${S=="parte"?"Confere, em parte":"A notícia engana"}.</b> O tracinho anda dentro da faixa conforme os outros pontos: ${t?`${c} de ${t} conferem`:"sem outros pontos, fica no meio"}.`}
+ document.getElementById("leitura").innerHTML=vp?"<b>Confere.</b> O tracinho vai para o verde. Quanto mais forte a prova, mais perto da ponta."
+  :(S=="parte"?"<b>Confere, em parte.</b> O tracinho fica no meio da barra.":"<b>A notícia engana.</b> O tracinho fica no laranja.")}
 document.querySelector(".cx").addEventListener("click",e=>{const b=e.target.closest(".ponto");if(!b)return;
  if(b.dataset.s)S=b.dataset.s;else if(b.dataset.f)F=+b.dataset.f;else P[b.dataset.i][1]=(P[b.dataset.i][1]+1)%3;d()});d();
 </script>
