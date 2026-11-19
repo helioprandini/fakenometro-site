@@ -21,20 +21,23 @@
 <main>
 <section class="capa"><div>
 <p class="etiqueta">Edição especial · Eleição 2026 · Debate da Globo, 23/10</p>
-<h1><span data-conta="455">455</span> falas.<br>Uma régua.</h1>
+<h1><span data-conta="452">452</span> falas.<br>Uma régua.</h1>
 <p class="sub">Cada afirmação de fato de Lula e Flávio, conferida uma a uma, com fonte. Opinião e promessa não entram.</p>
 <p class="nota-t">A mesma régua para os dois.</p>
-</div><div class="cx"><div class="detalhe" id="detalhe">Escolha um quadradinho.</div></div></section>
+</div><div class="cx" id="placar-capa"></div></section>
 
 <section data-aba="Quadradinhos">
+<p class="criterio">Cada quadradinho é uma fala. Toque num deles para ver o que foi dito e o que a gente achou.</p>
+<div class="quad"><div>
 <div class="placar" id="waffles"></div>
 <div class="legenda" id="legenda"></div>
-<p class="mini">Sem prova não é mentira: é falta de fonte.</p>
+</div>
+<div class="cx detalhe" id="detalhe" aria-live="polite"></div></div>
 </section>
 
 <section data-aba="Maiores erros">
-<p class="fontes" id="criterio"></p>
-<div class="carrossel" id="lista-erros"></div>
+<p class="criterio" id="criterio"></p>
+<div class="erros" id="lista-erros"></div>
 </section>
 
 <section data-aba="Reels">
@@ -42,7 +45,7 @@
 </section>
 
 <section data-aba="Raio-X">
-<div class="grade" id="raio"></div>
+<div id="raio"></div>
 </section>
 
 <section data-aba="Temas">
@@ -51,17 +54,17 @@
 </section>
 
 <section data-aba="Momentos">
-<div class="carrossel" id="lista-momentos"></div>
+<div class="momentos" id="lista-momentos"></div>
 </section>
 
 <section data-aba="Todas as checagens">
+<div class="chips" id="c-quem" aria-label="Candidato"></div>
+<div class="chips" id="c-grupo" aria-label="Veredito"></div>
 <div class="filtros">
-  <select id="f-quem" aria-label="Candidato"><option value="">Os dois</option><option>Flávio</option><option>Lula</option></select>
-  <select id="f-grupo" aria-label="Veredito"><option value="">Todos os vereditos</option><option value="verdade">Verdade</option><option value="em_parte">Em parte</option><option value="falso">Falso ou enganoso</option><option value="sem_prova">Sem prova</option></select>
   <select id="f-tema" aria-label="Tema"><option value="">Todos os temas</option></select>
   <input id="f-busca" type="search" placeholder="Buscar (ex.: juros, SUS, obras)">
 </div>
-<p class="fontes" id="contagem"></p>
+<p class="contagem" id="contagem"></p>
 <div id="lista"></div>
 <button id="mais" class="botao sec" hidden>Mostrar mais</button>
 <details style="margin-top:32px"><summary>Como checamos</summary><div id="metodo"></div></details>
@@ -70,25 +73,42 @@
 <script>
 const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),num=x=>String(x).replace(".",",");
 const ORDEM=["Flávio","Lula"],GR=[["verdade","Verdade"],["em_parte","Em parte"],["falso","Falso ou enganoso"],["sem_prova","Sem prova"]];
-let dados={itens:[]},mostrar=30;
-function cartao(it){return `<div class="q">${esc(it.quem)} · ${esc(it.tema)}</div><div class="frase">${esc(it.resumo)}</div><span class="selo v-${it.grupo}">${esc(it.story)}</span>${it.porque?`<p>${esc(it.porque)}</p>`:""}<p class="fontes">Fontes: ${esc((it.fontes||[]).join(", "))}${it.cruza?` · Agências: ${esc(it.cruza)}`:""}</p>`}
-function waffles(){const P=dados.por_candidato;$("waffles").innerHTML=ORDEM.map(q=>{const l=dados.itens.filter(i=>i.quem===q).sort((a,b)=>GR.findIndex(g=>g[0]===a.grupo)-GR.findIndex(g=>g[0]===b.grupo));
-return `<div><div class="num-q">${q}</div><div class="fontes">${P[q].afirmacoes} afirmações · ${P[q].verdade} verdade · ${P[q].em_parte} em parte · ${P[q].falso} falso ou enganoso · ${P[q].sem_prova} sem prova</div><div class="waffle">${l.map(i=>`<button class="v-${i.grupo}" data-n="${i.n}" aria-label="${esc(i.resumo)}"></button>`).join("")}</div></div>`}).join("");
-$("legenda").innerHTML=GR.map(([g,n])=>`<span><i class="v-${g}"></i>${n}</span>`).join("");
-$("waffles").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll(".waffle .on").forEach(x=>x.classList.remove("on"));b.classList.add("on");$("detalhe").innerHTML=cartao(dados.itens.find(i=>i.n==b.dataset.n))})}
-function erros(){$("criterio").textContent=dados.erros.criterio;$("lista-erros").innerHTML=dados.erros.erros.map((e,i,a)=>{const f=e.rotulo==="FALSO";return `<div class="lamina ${f?"esc":""}"><div class="topo-l"><span>${esc(e.quem)} disse</span><span>${i+1}/${a.length}</span></div><div class="frase-l">“${esc(e.frase)}”</div>${f?'<div><span class="selo-f" style="font-size:30px">FAKE</span></div>':`<div class="mao" style="font-size:24px;margin:0">${esc(e.rotulo.toLowerCase())}.</div>`}<div class="mini">${esc(e.explica)}</div><div class="rod-l">Fonte: ${esc(e.fonte)}</div></div>`}).join("")}
-function raio(){const P=dados.por_candidato,ev=dados.eventos;$("raio").innerHTML=ORDEM.map(q=>`<div class="lamina sobe"><div class="topo-l"><span>${q}</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px">${num(P[q].minutos.toFixed(0))}</b><span>minutos de fala</span></div></div><div>${P[q].intervencoes} intervenções · ${P[q].palavras.toLocaleString("pt-BR")} palavras<br>${num(P[q].fatos_por_minuto)} afirmações de fato por minuto<br>${Math.round(100*P[q].sobre_adversario/(P[q].sobre_adversario+P[q].sobre_si))}% delas sobre o adversário</div></div>`).join("")+`<div class="lamina sobe"><div class="topo-l"><span>Mediador</span><i>Fakenômetro</i></div><div class="grande-n"><div><b style="font-size:84px" >${ev.tempo_esgotado}</b><span>vezes “tempo esgotado”</span></div></div><div>${num(ev.minutos_mediador)} minutos de fala</div></div>`}
+const SELO_ERRO={"FALSO":["FAKE","falso"],"EM PARTE":["EM PARTE","em_parte"],"ENGANOSO":["ENGANOSO","em_parte"]};
+let dados={itens:[]},mostrar=30,fq="",fg="";
+const conta=(q,g)=>dados.itens.filter(i=>(!q||i.quem===q)&&(!g||i.grupo===g)).length;
+const cab=()=>`<thead><tr><th></th>${ORDEM.map(q=>`<th>${q}</th>`).join("")}</tr></thead>`;
+function cartao(it){const f=(it.fontes||[]).join(", ");return `<div class="q"><b>${esc(it.quem)}</b><span>${esc(it.tema)}</span></div><div class="c"><div class="frase">${esc(it.resumo)}</div>${it.porque?`<p class="pq">${esc(it.porque)}</p>`:""}<span class="selo v-${it.grupo}">${esc(it.story)}</span>${f||it.cruza?`<p class="fontes-d">${f?`Fontes: ${esc(f)}`:""}${f&&it.cruza?" · ":""}${it.cruza?`Agências: ${esc(it.cruza)}`:""}</p>`:""}</div>`}
+function placar(){$("placar-capa").innerHTML=`<table class="pl">${cab()}<tbody>${GR.map(([g,n])=>`<tr><td><i class="sw v-${g}"></i>${n}</td>${ORDEM.map(q=>`<td>${conta(q,g)}</td>`).join("")}</tr>`).join("")}<tr class="tot"><td>Falas checadas</td>${ORDEM.map(q=>`<td>${conta(q,"")}</td>`).join("")}</tr></tbody></table><p class="fontes-d">Sem prova não é mentira: é falta de fonte.</p>`}
+function escolhe(n){document.querySelectorAll(".waffle .on").forEach(x=>x.classList.remove("on"));const b=document.querySelector(`.waffle [data-n="${n}"]`),it=dados.itens.find(i=>i.n==n);if(b)b.classList.add("on");if(it)$("detalhe").innerHTML=cartao(it)}
+function waffles(){$("waffles").innerHTML=ORDEM.map(q=>{const l=dados.itens.filter(i=>i.quem===q).sort((a,b)=>GR.findIndex(g=>g[0]===a.grupo)-GR.findIndex(g=>g[0]===b.grupo));
+return `<div><div class="num-q">${q}</div><div class="fontes-d" style="margin-top:4px">${l.length} falas checadas</div><div class="waffle">${l.map(i=>`<button class="v-${i.grupo}" data-n="${i.n}" aria-label="${esc(i.resumo)}"></button>`).join("")}</div></div>`}).join("");
+$("legenda").innerHTML=GR.map(([g,n])=>`<span><i class="sw v-${g}"></i>${n}</span>`).join("");
+$("waffles").addEventListener("click",e=>{const b=e.target.closest("button");if(b)escolhe(b.dataset.n)});
+const p=document.querySelector(".waffle button");if(p)escolhe(p.dataset.n)}
+// marcas: {"confere":[trechos], "nao_confere":[trechos]}, cada trecho copiado igual da frase
+function marca(e){let h=esc(e.frase);const m=e.marcas||{};[["confere","mt"],["nao_confere","nc"]].forEach(([k,c])=>(m[k]||[]).forEach(t=>{const x=esc(t);if(h.includes(x))h=h.replace(x,`<span class="${c}">${x}</span>`)}));return h}
+function erros(){$("criterio").textContent=dados.erros.criterio;const E=dados.erros.erros,por=ORDEM.map(q=>E.filter(e=>e.quem===q)),n=Math.max(...por.map(l=>l.length));let h=ORDEM.map(q=>`<h3 class="cab">${q}</h3>`).join("");
+for(let i=0;i<n;i++)por.forEach(l=>{const e=l[i];if(!e){h+='<div class="vazio"></div>';return}const s=SELO_ERRO[e.rotulo]||[e.rotulo,"em_parte"];
+h+=`<div class="erro"><div class="q">${esc(e.quem)} disse</div><div class="frase">“${marca(e)}”</div><p class="pq">${esc(e.explica)}</p><div class="pe"><span class="selo v-${s[1]}">${esc(s[0])}</span><p class="fontes-d">Fonte: ${esc(e.fonte)}</p></div></div>`});
+$("lista-erros").innerHTML=h}
+function raio(){const P=dados.por_candidato,ev=dados.eventos,L=[["Minutos de fala",q=>num(P[q].minutos.toFixed(0))],["Vezes em que falou",q=>P[q].intervencoes],["Palavras",q=>P[q].palavras.toLocaleString("pt-BR")],["Afirmações de fato por minuto",q=>num(P[q].fatos_por_minuto)],["Delas, sobre o adversário",q=>Math.round(100*P[q].sobre_adversario/(P[q].sobre_adversario+P[q].sobre_si))+"%"]];
+$("raio").innerHTML=`<table class="raio">${cab()}<tbody>${L.map(([n,f])=>`<tr><td>${n}</td>${ORDEM.map(q=>`<td>${f(q)}</td>`).join("")}</tr>`).join("")}</tbody></table><p class="pq" style="margin-top:22px">O mediador disse “tempo esgotado” ${ev.tempo_esgotado} vezes e falou por ${num(ev.minutos_mediador)} minutos.</p>`}
 function temas(){const t=dados.temas.filter(([n])=>n!=="Outros").slice(0,8),m=Math.max(...t.flatMap(([,q])=>ORDEM.map(n=>q[n])));
 $("barras-temas").innerHTML=`<div class="barra-t"><span></span><b>Flávio</b><b>Lula</b></div>`+t.map(([n,q])=>`<div class="barra-t"><span>${esc(n)}</span>${ORDEM.map(o=>`<div class="b"><span style="width:${80*q[o]/m}%"></span>${q[o]}</div>`).join("")}</div>`).join("");
 $("lista-versus").innerHTML=dados.versus.map(v=>`<div class="versus"><h3>${esc(v.tema)}</h3><div class="lados">${ORDEM.map(q=>`<div><div class="q">${q}</div>${esc(v[q]||"Não falou deste tema.")}</div>`).join("")}</div></div>`).join("");
-$("lista-momentos").innerHTML=dados.momentos.map(m=>`<div class="lamina"><div class="topo-l"><span>${esc(m.quem)}</span><i>Fakenômetro</i></div><div class="frase-l">“${esc(m.frase)}”</div><div class="rod-l">${esc(m.contexto||"")}</div></div>`).join("");
+$("lista-momentos").innerHTML=dados.momentos.map(m=>`<div class="momento"><div class="q">${esc(m.quem)}</div><div><p class="fala">“${esc(m.frase)}”</p>${m.contexto?`<p class="ctx">${esc(m.contexto)}</p>`:""}</div></div>`).join("");
 $("metodo").innerHTML=dados.metodo.map(l=>`<p>${esc(l)}</p>`).join("")}
-function lista(){const q=$("f-quem").value,g=$("f-grupo").value,t=$("f-tema").value,b=$("f-busca").value.trim().toLowerCase();
-const l=dados.itens.filter(i=>(!q||i.quem===q)&&(!g||i.grupo===g)&&(!t||i.tema===t)&&(!b||(i.resumo+" "+i.porque+" "+(i.fontes||[]).join(" ")).toLowerCase().includes(b)));
-$("contagem").textContent=`${l.length} de ${dados.itens.length} afirmações publicadas`;$("lista").innerHTML=l.slice(0,mostrar).map(i=>`<div class="item">${cartao(i)}</div>`).join("");$("mais").hidden=l.length<=mostrar}
-fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{dados=d;waffles();erros();raio();temas();
+function chips(){const bt=(v,n,on,c)=>`<button type="button" data-v="${v}" class="${on?"on":""}" aria-pressed="${on}">${n}${c===undefined?"":` <small>${c}</small>`}</button>`;
+$("c-quem").innerHTML=[["","Os dois"],...ORDEM.map(q=>[q,q])].map(([v,n])=>bt(v,n,v===fq)).join("");
+$("c-grupo").innerHTML=[["","Todos"],...GR].map(([v,n])=>bt(v,n,v===fg,conta(fq,v))).join("")}
+function lista(){const t=$("f-tema").value,b=$("f-busca").value.trim().toLowerCase();
+const l=dados.itens.filter(i=>(!fq||i.quem===fq)&&(!fg||i.grupo===fg)&&(!t||i.tema===t)&&(!b||(i.resumo+" "+i.porque+" "+(i.fontes||[]).join(" ")).toLowerCase().includes(b)));
+$("contagem").textContent=`${l.length} de ${dados.itens.length} falas`;$("lista").innerHTML=l.slice(0,mostrar).map(i=>`<div class="item">${cartao(i)}</div>`).join("");$("mais").hidden=l.length<=mostrar}
+fetch("dados.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{dados=d;placar();waffles();erros();raio();temas();chips();
 [...new Set(d.itens.map(i=>i.tema))].sort().forEach(t=>$("f-tema").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
-["f-quem","f-grupo","f-tema","f-busca"].forEach(id=>$(id).addEventListener("input",()=>{mostrar=30;lista()}));$("mais").addEventListener("click",()=>{mostrar+=30;lista()});lista();observar()});
+$("c-quem").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;fq=b.dataset.v;mostrar=30;chips();lista()});
+$("c-grupo").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;fg=b.dataset.v;mostrar=30;chips();lista()});
+["f-tema","f-busca"].forEach(id=>$(id).addEventListener("input",()=>{mostrar=30;lista()}));$("mais").addEventListener("click",()=>{mostrar+=30;lista()});lista();if(window.observar)observar()});
 </script>
 <footer id="contato"><div class="miolo"><p>É inteligência artificial e pode errar. O Fakenômetro é um projeto brasileiro independente.</p>
 <p><a href="/debate/">Eleição 2026</a><a href="https://www.instagram.com/fakenometro/">Instagram</a><a href="/termos">Termos</a><a href="/privacidade">Privacidade</a><a href="/exclusao-de-dados">Exclusão de dados</a></p></div></footer></body></html>

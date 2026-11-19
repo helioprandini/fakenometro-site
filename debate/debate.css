@@ -1,22 +1,86 @@
-/* Debate na identidade do deck (Roberta, 17/11, em teste) */
-.placar{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr));gap:34px;margin-top:10px}
-.waffle{display:flex;flex-wrap:wrap;gap:3px;margin-top:12px}
-.waffle button{width:12px;height:12px;padding:0;border:1px solid var(--tinta);border-radius:2px;cursor:pointer}
+/* Debate: página nova aprovada pela Roberta em 19/11/2026 (cores opção 1, marcas nos maiores erros). */
+
+/* cores dos quadradinhos: cor cheia, sem listra (sugestão da Roberta, 19/11: amarelo, amarelo claro, pêssego, cinza) */
+.v-verdade{background:var(--amarelo)}
+.v-em_parte{background:#FFF3B0}
+.v-falso{background:var(--pessego)}
+.v-sem_prova{background:var(--linha)}
+.sw{display:inline-block;width:14px;height:14px;border:1px solid rgba(20,21,26,.3);border-radius:2px;vertical-align:-2px;margin-right:9px}
+
+/* na frase: amarelo no que confere, pêssego riscado no que não confere */
+.frase .mt,.frase .nc{transition:none;background-size:100% 100%!important}
+
+/* textos pequenos do debate em letra comum */
+.q{font:600 15px/1.35 var(--sans);color:var(--cinza);margin-bottom:8px}
+.q b{color:var(--tinta);font-weight:700}.q span::before{content:" · "}
+.frase{font:600 22px/1.25 var(--sans);letter-spacing:-.01em;color:var(--tinta);margin:0 0 10px}
+.pq{font-size:17px;line-height:1.5;color:var(--corpo);margin:0 0 16px}
+.fontes-d{font:400 14px/1.5 var(--sans);color:var(--apagado);margin:10px 0 0}
+
+/* o carimbo: sempre do mesmo tamanho, sempre embaixo, antes das fontes */
+.selo{display:inline-block;font:400 18px/1 'Special Elite',monospace;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;border:3px solid currentColor;border-radius:0;padding:8px 12px 5px;color:var(--carimbo);background:none!important}
+.selo.v-falso{color:var(--fake)}
+
+/* quadro do topo: o placar em tabela */
+.pl,.raio{width:100%;border-collapse:collapse}
+.pl th,.raio th{font:700 18px var(--sans);letter-spacing:0;text-transform:none;color:var(--tinta);text-align:right;padding:0 6px 10px}
+.pl td,.raio td{padding:11px 6px;font-size:17px;color:var(--corpo)}
+.pl td+td,.raio td+td{text-align:right;font:600 22px/1 var(--sans);color:var(--tinta);font-variant-numeric:tabular-nums;width:26%}
+.pl .tot td{border-bottom:0;border-top:1.5px solid var(--tinta);color:var(--tinta);font-weight:600}
+.pl tr:nth-last-child(2) td{border-bottom:0}
+
+/* quadradinhos: os dois candidatos à esquerda, a fala escolhida à direita */
+.quad{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:start}
+.placar{display:grid;gap:30px}
+.num-q{font:700 clamp(26px,3vw,34px)/1 var(--sans);letter-spacing:-.02em}
+.waffle{display:flex;flex-wrap:wrap;gap:4px;margin-top:12px}
+.waffle button{width:14px;height:14px;padding:0;border:1px solid rgba(20,21,26,.3);border-radius:2px;cursor:pointer}
 .waffle button:hover,.waffle button.on{outline:3px solid var(--tinta);outline-offset:1px}
-.v-verdade{background:var(--amarelo)}.v-em_parte{background:repeating-linear-gradient(135deg,var(--amarelo) 0 3px,#fff 3px 6px)}.v-falso{background:var(--tinta)}.v-sem_prova{background:var(--linha)}
-.legenda{display:flex;flex-wrap:wrap;gap:8px 20px;margin:20px 0 0;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--corpo)}.legenda i{display:inline-block;width:14px;height:14px;margin-right:7px;vertical-align:-2px;border:1px solid var(--tinta);border-radius:2px}
-.detalhe{min-height:90px;max-height:46vh;overflow:auto;font-size:15px;color:var(--corpo)}.detalhe .frase{font-size:21px}
-.num-q{font:600 clamp(26px,3vw,34px)/1 var(--sans);letter-spacing:-.02em}
-.selo{display:inline-block;font:500 11px var(--mono);padding:4px 9px;letter-spacing:.12em;text-transform:uppercase;border:1.5px solid var(--tinta);border-radius:4px;color:var(--tinta)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px 22px;margin:24px 0 0;font:400 15px var(--sans);color:var(--corpo)}
+.detalhe{position:sticky;top:16px;max-height:80vh;overflow:auto}
+.detalhe .q span::before{content:" · "}
+
+/* maiores erros: Flávio de um lado, Lula do outro, todos os cartões iguais */
+.criterio{font-size:16px;color:var(--corpo);max-width:720px;margin:0 0 24px}
+.erros{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.erros .cab{margin:0 0 -4px}
+.erro{background:var(--branco);border:1.5px solid var(--linha);border-radius:10px;padding:22px;display:flex;flex-direction:column}
+.erro .pe{margin-top:auto;padding-top:4px}
+.erro .fontes-d{min-height:3em}
+
+/* raio-x: uma tabela só */
+.raio{max-width:760px}
+.raio td+td{font-size:clamp(24px,3vw,32px)}
+
+/* temas (sem mudança) */
 .versus{border-top:1.5px solid var(--tinta);padding:20px 0}.versus .lados{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:24px;margin-top:10px;color:var(--corpo)}
-.q{font:500 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cinza);margin-bottom:6px}
-.item{border-top:1.5px solid var(--linha);padding:18px 0;color:var(--corpo)}.item p{margin:8px 0 2px}.frase{font:600 22px/1.25 var(--sans);letter-spacing:-.01em;color:var(--tinta);margin:4px 0 10px}
-details summary{cursor:pointer;font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase}
 .barra-t{display:grid;grid-template-columns:minmax(90px,1.4fr) 2fr 2fr;gap:8px;align-items:center;padding:8px 0;border-top:1.5px solid var(--linha);font-size:15px}
-.barra-t>b{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cinza)}
+.barra-t>b{font:600 15px var(--sans);color:var(--cinza)}
 .barra-t .b{display:flex;align-items:center;gap:6px}.barra-t .b span{display:block;height:14px;background:var(--amarelo);border-radius:2px}.barra-t .b+.b span{background:var(--tinta)}
 
-/* Veredito com o carimbo do Instagram (Roberta, 19/11) */
-.selo{font:400 19px/1.1 'Special Elite',monospace;letter-spacing:.03em;text-transform:uppercase;border:3px solid currentColor;border-radius:0;padding:5px 12px;color:var(--carimbo);background:none!important}
-.selo.v-falso{color:var(--fake)}
-.legenda,.q,.barra-t>b,details summary{font-size:14px}
+/* momentos: as falas em lista, grandes, uma embaixo da outra */
+.momentos{max-width:860px}
+.momento{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 24px;border-top:1.5px solid var(--linha);padding:24px 0}
+.momento .q{color:var(--tinta);font-size:17px;font-weight:700;margin:6px 0 0}
+.momento .fala{font:600 clamp(22px,2.6vw,30px)/1.2 var(--sans);letter-spacing:-.015em;color:var(--tinta);margin:0 0 8px}
+.momento .ctx{font-size:16px;color:var(--corpo);margin:0}
+
+/* todas as checagens: botões de filtro e uma fala por linha */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.chips button{font:500 16px var(--sans);padding:10px 14px;border:1.5px solid var(--linha);border-radius:6px;background:var(--branco);color:var(--corpo);cursor:pointer}
+.chips button small{font-size:14px;color:var(--apagado);margin-left:4px}
+.chips button.on{border-color:var(--tinta);background:var(--tinta);color:var(--papel)}.chips button.on small{color:var(--tracejado)}
+.chips button:focus-visible{outline:2px solid var(--tinta);outline-offset:2px}
+.contagem{font:400 15px var(--sans);color:var(--cinza);margin:14px 0 6px}
+.item{display:grid;grid-template-columns:170px minmax(0,1fr);gap:6px 28px;border-top:1.5px solid var(--linha);padding:24px 0}
+.item .q{margin:3px 0 0}.item .q b,.item .q span{display:block}.item .q b{font-size:17px}.item .q span::before{content:""}
+details summary{cursor:pointer;font:600 16px var(--sans)}
+
+@media(max-width:900px){
+.quad{grid-template-columns:1fr;gap:24px}
+.detalhe{position:sticky;top:auto;bottom:10px;max-height:46vh;box-shadow:0 -8px 28px rgba(20,21,26,.12)}
+.erros{grid-template-columns:1fr}.erros .cab,.erros .vazio{display:none}.erro .fontes-d{min-height:0}
+.momento,.item{grid-template-columns:1fr}
+.item .q b,.item .q span{display:inline}.item .q span::before{content:" · "}
+.selo{font-size:16px}
+}
