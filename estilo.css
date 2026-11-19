@@ -275,3 +275,9 @@ h1 [data-conta]{display:inline-block;min-width:3ch;text-align:right}
 .etapas .etiqueta{font:600 15px var(--sans);letter-spacing:0;text-transform:none;color:var(--cinza);margin-bottom:6px}
 .email-c{font:600 clamp(18px,2vw,26px)/1.2 var(--sans);letter-spacing:-.01em;margin:0 0 14px;white-space:nowrap}
 @media(max-width:420px){.email-c{font-size:17px}}
+/* Ajustes da Roberta, 19/11, noite */
+footer .miolo{font:400 15px/1.6 var(--sans);letter-spacing:0;text-transform:none}
+.barras i.and{background:var(--papel);border:1.5px solid var(--tinta)}
+.nc{text-decoration-thickness:.045em}
+.tres{border-top:1.5px solid var(--tinta);padding-top:4px}.tres>div{border-top:0}
+.nq{white-space:nowrap}
