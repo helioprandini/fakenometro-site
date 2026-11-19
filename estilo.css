@@ -251,3 +251,5 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 .barras i.and{background:repeating-linear-gradient(135deg,var(--tinta) 0 3px,var(--papel) 3px 6px);border:1.5px solid var(--tinta)}
 .barras small{font-size:12px;color:#8A8E99;margin-top:4px;white-space:nowrap}
 .barras em{font-style:normal;font-size:13px;font-weight:600;margin-bottom:3px;white-space:nowrap}
+/* Painéis dos gráficos no mesmo fundo da página (Roberta, 19/11) */
+.painel{background:var(--papel)}
