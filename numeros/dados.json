@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-18T19:38:43",
- "seguidores": 4576,
+ "atualizado_em": "2026-11-18T20:45:16",
+ "seguidores": 4588,
  "posts": 69,
  "t28": {
-  "views": 184273,
-  "accounts_engaged": 6074,
-  "total_interactions": 14745,
-  "profile_views": 6179,
-  "likes": 7396,
-  "comments": 564,
-  "shares": 1963,
-  "saves": 1177,
+  "views": 184417,
+  "accounts_engaged": 6083,
+  "total_interactions": 14766,
+  "profile_views": 6191,
+  "likes": 7405,
+  "comments": 565,
+  "shares": 1966,
+  "saves": 1178,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-18",
-   "valor": 1514
+   "valor": 1646
   }
  ],
  "seguidores_serie": [
@@ -264,8 +264,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1048.2,
-   "views": 1346.2,
+   "alcance": 1048.3,
+   "views": 1346.5,
    "compart": 31.4,
    "salvos": 6.5,
    "seguidores": null,
@@ -274,8 +274,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 727.9,
-   "views": 1153.0,
+   "alcance": 729.0,
+   "views": 1154.2,
    "compart": 5.9,
    "salvos": 4.5,
    "seguidores": 2.6,
@@ -284,7 +284,7 @@
  ],
  "top": [
   {
-   "views": 6969,
+   "views": 6970,
    "alcance": 4880,
    "compart": 292,
    "formato": "reels",
@@ -293,7 +293,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5456,
+   "views": 5458,
    "alcance": 3893,
    "compart": 47,
    "formato": "reels",
@@ -302,9 +302,9 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3862,
+   "views": 3864,
    "alcance": 2954,
-   "compart": 342,
+   "compart": 343,
    "formato": "reels",
    "quando": "2026-11-05",
    "link": "https://www.instagram.com/reel/DfYLdF9j5Ko/",
@@ -359,7 +359,7 @@
  "canais": {
   "instagram": 607,
   "comentario": 148,
-  "whatsapp": 276
+  "whatsapp": 277
  },
  "por_dia": [
   [
@@ -480,9 +480,9 @@
   ],
   [
    "2026-11-18",
-   34
+   35
   ]
  ],
  "repositorio": 50,
- "total_publico": 1031
+ "total_publico": 1032
 }
