@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-19T11:05:06",
- "seguidores": 4667,
+ "atualizado_em": "2026-11-19T11:54:40",
+ "seguidores": 4670,
  "posts": 69,
  "t28": {
-  "views": 185242,
-  "accounts_engaged": 6164,
-  "total_interactions": 14953,
-  "profile_views": 6198,
-  "likes": 7483,
+  "views": 185330,
+  "accounts_engaged": 6166,
+  "total_interactions": 14965,
+  "profile_views": 6203,
+  "likes": 7491,
   "comments": 567,
-  "shares": 1997,
-  "saves": 1197,
+  "shares": 1998,
+  "saves": 1198,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-19",
-   "valor": 445
+   "valor": 499
   }
  ],
  "seguidores_serie": [
@@ -265,8 +265,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1053.0,
-   "views": 1351.7,
+   "alcance": 1053.8,
+   "views": 1352.4,
    "compart": 31.6,
    "salvos": 6.5,
    "seguidores": null,
@@ -275,8 +275,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 737.4,
-   "views": 1165.7,
+   "alcance": 738.0,
+   "views": 1166.5,
    "compart": 5.9,
    "salvos": 4.6,
    "seguidores": 2.6,
@@ -285,8 +285,8 @@
  ],
  "top": [
   {
-   "views": 6971,
-   "alcance": 4880,
+   "views": 6972,
+   "alcance": 4891,
    "compart": 292,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -294,7 +294,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5465,
+   "views": 5467,
    "alcance": 3893,
    "compart": 47,
    "formato": "reels",
@@ -303,7 +303,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3897,
+   "views": 3898,
    "alcance": 2988,
    "compart": 344,
    "formato": "reels",
@@ -360,7 +360,7 @@
  "canais": {
   "instagram": 614,
   "comentario": 148,
-  "whatsapp": 284
+  "whatsapp": 285
  },
  "por_dia": [
   [
@@ -485,9 +485,9 @@
   ],
   [
    "2026-11-19",
-   12
+   13
   ]
  ],
  "repositorio": 50,
- "total_publico": 1046
+ "total_publico": 1047
 }
