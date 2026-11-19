@@ -291,3 +291,27 @@ footer .miolo{font-size:14px}footer a{white-space:nowrap;margin:0 14px 0 0;displ
 .botoes{display:grid;grid-template-columns:1fr 1fr;gap:8px;max-width:480px}
 .botoes .botao{margin:0!important;padding:14px 8px;letter-spacing:.06em;display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.3}
 }
+/* Celular: mais ar entre os blocos (Roberta, 19/11, noite: "tudo meio perto demais") */
+@media(max-width:700px){
+.faixa{padding-block:68px}
+.capa{gap:44px;padding-bottom:52px}
+.como{gap:44px}
+[data-aba],.corpo-p{padding-top:36px;padding-bottom:56px}
+h2{margin-bottom:22px}
+.etiqueta{margin-bottom:18px}
+.sub{margin-bottom:28px}
+.pessoas,.tres,.etapas,.canais,.quatro{gap:34px}
+.passo-c{padding:28px 0}
+.contagem>div{padding:20px 0 18px}
+.cx{padding:22px}
+.botoes{margin-top:8px}
+footer{margin-top:40px}
+}
+/* Celular: Como funciona alinhado à margem (Roberta, 19/11, noite: "feio a diagramação dessa parte") */
+@media(max-width:700px){
+.passo-c{display:block}
+.passo-c .num{float:left;font:600 22px/1.3 var(--sans);letter-spacing:-.01em;margin-right:10px}
+.passo-c p b{font-size:22px;line-height:1.3;margin-bottom:8px}
+.passo-c p{font-size:17px}
+.como .card-ex{margin:0}.como .card-ex figcaption{text-align:left}
+}
