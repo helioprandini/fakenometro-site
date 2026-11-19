@@ -240,3 +240,14 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 /* Quadro dos números mais limpo (Roberta, 19/11: "tá poluído") */
 .contagem>div>span{font:400 16px/1.35 var(--sans);letter-spacing:0;text-transform:none;color:var(--cinza);margin-top:6px}
 .rod-q{font:400 14px var(--sans);color:#8A8E99;margin:16px 0 0}.rod-q a{color:var(--cinza)}
+/* Números: sem as linhas em cima dos números, legendas leves, semanas em gráficos pequenos (Roberta, 19/11) */
+.grande-n>div{border-top:0}
+.grande-n span{font:400 16px/1.35 var(--sans);letter-spacing:0;text-transform:none;color:var(--cinza);margin-top:6px}
+.minis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:28px;margin-top:14px}
+.minis .tit{font-weight:700;margin:0}.minis .sub,#semanas .sub{font-size:14px;color:#8A8E99;margin:0 0 10px}
+.barras{display:flex;gap:8px;align-items:flex-end;height:160px}
+.barras .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;min-width:0}
+.barras i{display:block;width:100%;background:var(--tinta);border-radius:3px 3px 0 0}
+.barras i.and{background:repeating-linear-gradient(135deg,var(--tinta) 0 3px,var(--papel) 3px 6px);border:1.5px solid var(--tinta)}
+.barras small{font-size:12px;color:#8A8E99;margin-top:4px;white-space:nowrap}
+.barras em{font-style:normal;font-size:13px;font-weight:600;margin-bottom:3px;white-space:nowrap}
