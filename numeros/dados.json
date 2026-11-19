@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-19T13:38:56",
- "seguidores": 4686,
+ "atualizado_em": "2026-11-19T14:43:31",
+ "seguidores": 4690,
  "posts": 69,
  "t28": {
-  "views": 185557,
+  "views": 185675,
   "accounts_engaged": 6176,
-  "total_interactions": 14992,
-  "profile_views": 6213,
-  "likes": 7509,
-  "comments": 568,
-  "shares": 1998,
-  "saves": 1199,
+  "total_interactions": 15012,
+  "profile_views": 6222,
+  "likes": 7515,
+  "comments": 569,
+  "shares": 2002,
+  "saves": 1200,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-19",
-   "valor": 707
+   "valor": 811
   }
  ],
  "seguidores_serie": [
@@ -265,8 +265,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1054.4,
-   "views": 1352.9,
+   "alcance": 1054.7,
+   "views": 1353.3,
    "compart": 31.7,
    "salvos": 6.5,
    "seguidores": null,
@@ -275,8 +275,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 738.4,
-   "views": 1167.1,
+   "alcance": 738.5,
+   "views": 1167.3,
    "compart": 5.9,
    "salvos": 4.6,
    "seguidores": 2.6,
@@ -303,8 +303,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3905,
-   "alcance": 3001,
+   "views": 3906,
+   "alcance": 3006,
    "compart": 345,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -358,7 +358,7 @@
   }
  ],
  "canais": {
-  "instagram": 616,
+  "instagram": 619,
   "comentario": 148,
   "whatsapp": 288
  },
@@ -485,9 +485,9 @@
   ],
   [
    "2026-11-19",
-   18
+   21
   ]
  ],
  "repositorio": 50,
- "total_publico": 1052
+ "total_publico": 1055
 }
