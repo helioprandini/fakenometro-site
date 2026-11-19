@@ -234,3 +234,9 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 .golpe .fontes a{color:#8A8E99;text-decoration-color:#C9C5BD}
 /* Logo do topo: só o termômetro, sem o quadrado preto (Roberta, 19/11). O ícone com fundo fica na aba, perfil e WhatsApp. */
 .marca img{width:auto;height:24px;border-radius:0}
+/* Primeira tela: texto alinhado ao topo do bloco da direita e botões visíveis sem rolar (Roberta, 19/11) */
+.capa{align-items:start;padding-top:clamp(24px,3.2vw,44px)}
+.capa h1{font-size:clamp(38px,4.6vw,58px)}
+/* Quadro dos números mais limpo (Roberta, 19/11: "tá poluído") */
+.contagem>div>span{font:400 16px/1.35 var(--sans);letter-spacing:0;text-transform:none;color:var(--cinza);margin-top:6px}
+.rod-q{font:400 14px var(--sans);color:#8A8E99;margin:16px 0 0}.rod-q a{color:var(--cinza)}
