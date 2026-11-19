@@ -253,3 +253,5 @@ footer p{margin:0}footer a{color:var(--corpo);text-decoration:none;margin-left:1
 .barras em{font-style:normal;font-size:13px;font-weight:600;margin-bottom:3px;white-space:nowrap}
 /* Painéis dos gráficos no mesmo fundo da página (Roberta, 19/11) */
 .painel{background:var(--papel)}
+/* Legenda do card centrada de verdade: compensa o espaço que o espaçamento entre letras deixa depois da última letra (Roberta, 19/11) */
+.card-ex figcaption{padding-left:.12em}
