@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-20T09:55:01",
- "seguidores": 4872,
+ "atualizado_em": "2026-11-20T10:59:06",
+ "seguidores": 4878,
  "posts": 69,
  "t28": {
-  "views": 187704,
-  "accounts_engaged": 6327,
-  "total_interactions": 15438,
-  "profile_views": 6339,
-  "likes": 7729,
-  "comments": 589,
+  "views": 187845,
+  "accounts_engaged": 6342,
+  "total_interactions": 15477,
+  "profile_views": 6348,
+  "likes": 7748,
+  "comments": 590,
   "shares": 2030,
-  "saves": 1255,
+  "saves": 1262,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-20",
-   "valor": 605
+   "valor": 728
   }
  ],
  "seguidores_serie": [
@@ -266,8 +266,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1061.7,
-   "views": 1361.7,
+   "alcance": 1062.3,
+   "views": 1362.3,
    "compart": 32.1,
    "salvos": 6.7,
    "seguidores": null,
@@ -276,8 +276,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 743.7,
-   "views": 1175.4,
+   "alcance": 744.1,
+   "views": 1175.9,
    "compart": 6.0,
    "salvos": 4.7,
    "seguidores": 2.6,
@@ -286,7 +286,7 @@
  ],
  "top": [
   {
-   "views": 6977,
+   "views": 6978,
    "alcance": 4891,
    "compart": 292,
    "formato": "reels",
@@ -295,7 +295,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5470,
+   "views": 5471,
    "alcance": 3900,
    "compart": 47,
    "formato": "reels",
@@ -304,8 +304,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 3939,
-   "alcance": 3028,
+   "views": 3942,
+   "alcance": 3032,
    "compart": 347,
    "formato": "reels",
    "quando": "2026-11-05",
