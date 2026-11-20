@@ -315,3 +315,15 @@ footer{margin-top:40px}
 .passo-c p{font-size:17px}
 .como .card-ex{margin:0}.como .card-ex figcaption{text-align:left}
 }
+/* 19/11 (Roberta): "fonte" fixo com o amarelo entrando ao abrir a página; quadro no formato da versão original, menor */
+.capa h1 .mt{transition-duration:.9s;transition-delay:.5s}
+.cx .fr{font:600 clamp(22px,2.3vw,28px)/1.25 var(--sans);letter-spacing:-.02em;color:var(--tinta)}
+.cx .pq2{font:400 17px/1.4 var(--sans);color:var(--corpo);margin:12px 0 0}
+.cx .rod-q{font-size:13px;margin-top:12px}
+/* 20/11 (Roberta): quadro centralizado na altura do texto da esquerda; rodapé com letra menor */
+.capa{align-items:center}
+footer .miolo,footer a{font-size:12px}
+/* 20/11 (Roberta): rodapé sem a linha de cima e com as duas linhas de texto mais juntas */
+footer{border-top:0}
+footer .miolo{row-gap:2px;padding-top:10px}
+footer p{line-height:1.4}
