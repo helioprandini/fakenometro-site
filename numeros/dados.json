@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-21T07:02:43",
- "seguidores": 4996,
+ "atualizado_em": "2026-11-21T07:36:19",
+ "seguidores": 4999,
  "posts": 69,
  "t28": {
-  "views": 178534,
-  "accounts_engaged": 6462,
-  "total_interactions": 15598,
-  "profile_views": 5848,
-  "likes": 7786,
+  "views": 178613,
+  "accounts_engaged": 6466,
+  "total_interactions": 15601,
+  "profile_views": 5856,
+  "likes": 7789,
   "comments": 593,
   "shares": 2024,
   "saves": 1301,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 85
+   "valor": 154
   }
  ],
  "seguidores_serie": [
@@ -267,7 +267,7 @@
    "grupo": "reels",
    "posts": 35,
    "alcance": 1068.3,
-   "views": 1370.7,
+   "views": 1370.8,
    "compart": 32.2,
    "salvos": 6.8,
    "seguidores": null,
@@ -277,7 +277,7 @@
    "grupo": "carrossel",
    "posts": 15,
    "alcance": 749.5,
-   "views": 1184.9,
+   "views": 1185.4,
    "compart": 6.0,
    "salvos": 4.9,
    "seguidores": 2.6,
@@ -304,7 +304,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4052,
+   "views": 4053,
    "alcance": 3103,
    "compart": 348,
    "formato": "reels",
@@ -359,7 +359,7 @@
   }
  ],
  "canais": {
-  "instagram": 666,
+  "instagram": 667,
   "comentario": 149,
   "whatsapp": 313
  },
@@ -494,9 +494,9 @@
   ],
   [
    "2026-11-21",
-   2
+   3
   ]
  ],
  "repositorio": 54,
- "total_publico": 1128
+ "total_publico": 1129
 }
