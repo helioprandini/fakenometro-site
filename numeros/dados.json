@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-21T11:53:51",
- "seguidores": 5084,
+ "atualizado_em": "2026-11-21T12:52:17",
+ "seguidores": 5091,
  "posts": 69,
  "t28": {
-  "views": 179900,
+  "views": 180105,
   "accounts_engaged": 6579,
-  "total_interactions": 15815,
-  "profile_views": 5950,
-  "likes": 7926,
+  "total_interactions": 15862,
+  "profile_views": 5959,
+  "likes": 7933,
   "comments": 601,
-  "shares": 2032,
-  "saves": 1321,
+  "shares": 2048,
+  "saves": 1325,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 1098
+   "valor": 1207
   }
  ],
  "seguidores_serie": [
@@ -267,8 +267,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1072.3,
-   "views": 1375.3,
+   "alcance": 1072.4,
+   "views": 1375.7,
    "compart": 32.3,
    "salvos": 6.9,
    "seguidores": null,
@@ -277,8 +277,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 752.9,
-   "views": 1190.4,
+   "alcance": 753.0,
+   "views": 1190.7,
    "compart": 6.0,
    "salvos": 5.0,
    "seguidores": 2.6,
@@ -341,7 +341,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2779,
+   "views": 2780,
    "alcance": 2424,
    "compart": 20,
    "formato": "reels",
@@ -360,7 +360,7 @@
   }
  ],
  "canais": {
-  "instagram": 671,
+  "instagram": 672,
   "comentario": 149,
   "whatsapp": 321
  },
@@ -495,9 +495,9 @@
   ],
   [
    "2026-11-21",
-   15
+   16
   ]
  ],
  "repositorio": 54,
- "total_publico": 1141
+ "total_publico": 1142
 }
