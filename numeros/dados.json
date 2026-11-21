@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-21T07:36:19",
- "seguidores": 4999,
+ "atualizado_em": "2026-11-21T08:41:05",
+ "seguidores": 5027,
  "posts": 69,
  "t28": {
-  "views": 178613,
-  "accounts_engaged": 6466,
-  "total_interactions": 15601,
-  "profile_views": 5856,
-  "likes": 7789,
-  "comments": 593,
-  "shares": 2024,
-  "saves": 1301,
+  "views": 178950,
+  "accounts_engaged": 6496,
+  "total_interactions": 15631,
+  "profile_views": 5881,
+  "likes": 7810,
+  "comments": 594,
+  "shares": 2025,
+  "saves": 1302,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 154
+   "valor": 408
   }
  ],
  "seguidores_serie": [
@@ -266,8 +266,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1068.3,
-   "views": 1370.8,
+   "alcance": 1069.5,
+   "views": 1372.1,
    "compart": 32.2,
    "salvos": 6.8,
    "seguidores": null,
@@ -276,8 +276,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 749.5,
-   "views": 1185.4,
+   "alcance": 750.5,
+   "views": 1187.3,
    "compart": 6.0,
    "salvos": 4.9,
    "seguidores": 2.6,
@@ -286,7 +286,7 @@
  ],
  "top": [
   {
-   "views": 6983,
+   "views": 6984,
    "alcance": 4891,
    "compart": 292,
    "formato": "reels",
@@ -295,7 +295,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5474,
+   "views": 5477,
    "alcance": 3900,
    "compart": 47,
    "formato": "reels",
@@ -304,8 +304,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4053,
-   "alcance": 3103,
+   "views": 4058,
+   "alcance": 3108,
    "compart": 348,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -314,7 +314,7 @@
   },
   {
    "views": 3126,
-   "alcance": 2531,
+   "alcance": 2535,
    "compart": 6,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -340,8 +340,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2768,
-   "alcance": 2408,
+   "views": 2771,
+   "alcance": 2414,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -359,9 +359,9 @@
   }
  ],
  "canais": {
-  "instagram": 667,
+  "instagram": 668,
   "comentario": 149,
-  "whatsapp": 313
+  "whatsapp": 314
  },
  "por_dia": [
   [
@@ -494,9 +494,9 @@
   ],
   [
    "2026-11-21",
-   3
+   5
   ]
  ],
  "repositorio": 54,
- "total_publico": 1129
+ "total_publico": 1131
 }
