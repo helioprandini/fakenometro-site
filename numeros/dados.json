@@ -1,12 +1,12 @@
 {
- "atualizado_em": "2026-11-20T23:03:03",
- "seguidores": 4976,
+ "atualizado_em": "2026-11-21T00:06:21",
+ "seguidores": 4978,
  "posts": 69,
  "t28": {
-  "views": 189620,
+  "views": 189664,
   "accounts_engaged": 6486,
   "total_interactions": 15751,
-  "profile_views": 6436,
+  "profile_views": 6441,
   "likes": 7897,
   "comments": 599,
   "shares": 2039,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-20",
-   "valor": 2210
+   "valor": 2246
   }
  ],
  "seguidores_serie": [
@@ -266,8 +266,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1067.7,
-   "views": 1369.7,
+   "alcance": 1067.8,
+   "views": 1369.8,
    "compart": 32.2,
    "salvos": 6.8,
    "seguidores": null,
@@ -276,8 +276,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 748.3,
-   "views": 1182.3,
+   "alcance": 748.5,
+   "views": 1182.5,
    "compart": 6.0,
    "salvos": 4.9,
    "seguidores": 2.6,
@@ -304,7 +304,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4044,
+   "views": 4046,
    "alcance": 3099,
    "compart": 348,
    "formato": "reels",
@@ -313,7 +313,7 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 3124,
+   "views": 3126,
    "alcance": 2531,
    "compart": 6,
    "formato": "reels",
@@ -361,7 +361,7 @@
  "canais": {
   "instagram": 665,
   "comentario": 149,
-  "whatsapp": 311
+  "whatsapp": 312
  },
  "por_dia": [
   [
@@ -490,9 +490,9 @@
   ],
   [
    "2026-11-20",
-   30
+   31
   ]
  ],
  "repositorio": 54,
- "total_publico": 1125
+ "total_publico": 1126
 }
