@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-21T16:37:26",
- "seguidores": 5131,
+ "atualizado_em": "2026-11-21T17:42:39",
+ "seguidores": 5139,
  "posts": 69,
  "t28": {
-  "views": 181524,
-  "accounts_engaged": 6633,
-  "total_interactions": 15986,
-  "profile_views": 6002,
-  "likes": 7991,
-  "comments": 603,
-  "shares": 2061,
-  "saves": 1341,
+  "views": 181833,
+  "accounts_engaged": 6640,
+  "total_interactions": 16032,
+  "profile_views": 6014,
+  "likes": 8004,
+  "comments": 612,
+  "shares": 2068,
+  "saves": 1346,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 2063
+   "valor": 2207
   }
  ],
  "seguidores_serie": [
@@ -261,14 +261,14 @@
   "2026-11-18": 15,
   "2026-11-19": 7,
   "2026-11-20": 5,
-  "2026-11-21": 6
+  "2026-11-21": 7
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1074.5,
-   "views": 1378.0,
+   "alcance": 1075.2,
+   "views": 1378.5,
    "compart": 32.3,
    "salvos": 7.0,
    "seguidores": null,
@@ -277,10 +277,10 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 756.3,
-   "views": 1195.6,
-   "compart": 6.0,
-   "salvos": 5.0,
+   "alcance": 756.7,
+   "views": 1196.4,
+   "compart": 6.1,
+   "salvos": 5.1,
    "seguidores": 2.6,
    "visitas_perfil": 9.3
   }
@@ -288,7 +288,7 @@
  "top": [
   {
    "views": 6986,
-   "alcance": 4891,
+   "alcance": 4902,
    "compart": 292,
    "formato": "reels",
    "quando": "2026-11-08",
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5484,
+   "views": 5485,
    "alcance": 3900,
    "compart": 47,
    "formato": "reels",
@@ -305,8 +305,8 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4070,
-   "alcance": 3122,
+   "views": 4071,
+   "alcance": 3126,
    "compart": 348,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -341,8 +341,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2782,
-   "alcance": 2424,
+   "views": 2784,
+   "alcance": 2427,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -360,7 +360,7 @@
   }
  ],
  "canais": {
-  "instagram": 675,
+  "instagram": 683,
   "comentario": 149,
   "whatsapp": 326
  },
@@ -495,9 +495,9 @@
   ],
   [
    "2026-11-21",
-   24
+   32
   ]
  ],
  "repositorio": 54,
- "total_publico": 1150
+ "total_publico": 1158
 }
