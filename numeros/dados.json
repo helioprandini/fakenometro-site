@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-21T16:05:54",
- "seguidores": 5127,
+ "atualizado_em": "2026-11-21T16:37:26",
+ "seguidores": 5131,
  "posts": 69,
  "t28": {
-  "views": 181358,
-  "accounts_engaged": 6622,
-  "total_interactions": 15977,
-  "profile_views": 5997,
-  "likes": 7986,
+  "views": 181524,
+  "accounts_engaged": 6633,
+  "total_interactions": 15986,
+  "profile_views": 6002,
+  "likes": 7991,
   "comments": 603,
   "shares": 2061,
-  "saves": 1338,
+  "saves": 1341,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 1935
+   "valor": 2063
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-20",
-   "valor": 0
+   "valor": 179
   },
   {
    "dia": "2026-11-21",
@@ -261,14 +261,14 @@
   "2026-11-18": 15,
   "2026-11-19": 7,
   "2026-11-20": 5,
-  "2026-11-21": 4
+  "2026-11-21": 6
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1074.3,
-   "views": 1377.9,
+   "alcance": 1074.5,
+   "views": 1378.0,
    "compart": 32.3,
    "salvos": 7.0,
    "seguidores": null,
@@ -277,8 +277,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 756.1,
-   "views": 1194.9,
+   "alcance": 756.3,
+   "views": 1195.6,
    "compart": 6.0,
    "salvos": 5.0,
    "seguidores": 2.6,
@@ -287,7 +287,7 @@
  ],
  "top": [
   {
-   "views": 6985,
+   "views": 6986,
    "alcance": 4891,
    "compart": 292,
    "formato": "reels",
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5482,
+   "views": 5484,
    "alcance": 3900,
    "compart": 47,
    "formato": "reels",
@@ -360,9 +360,9 @@
   }
  ],
  "canais": {
-  "instagram": 673,
+  "instagram": 675,
   "comentario": 149,
-  "whatsapp": 325
+  "whatsapp": 326
  },
  "por_dia": [
   [
@@ -495,9 +495,9 @@
   ],
   [
    "2026-11-21",
-   21
+   24
   ]
  ],
  "repositorio": 54,
- "total_publico": 1147
+ "total_publico": 1150
 }
