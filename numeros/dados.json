@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-21T18:50:51",
- "seguidores": 5151,
+ "atualizado_em": "2026-11-21T19:55:23",
+ "seguidores": 5159,
  "posts": 69,
  "t28": {
-  "views": 182118,
-  "accounts_engaged": 6650,
-  "total_interactions": 16060,
-  "profile_views": 6027,
-  "likes": 8024,
-  "comments": 613,
-  "shares": 2068,
-  "saves": 1348,
+  "views": 182543,
+  "accounts_engaged": 6654,
+  "total_interactions": 16370,
+  "profile_views": 6034,
+  "likes": 8034,
+  "comments": 615,
+  "shares": 2210,
+  "saves": 1354,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 2411
+   "valor": 2648
   }
  ],
  "seguidores_serie": [
@@ -267,8 +267,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1075.3,
-   "views": 1379.0,
+   "alcance": 1076.0,
+   "views": 1379.6,
    "compart": 32.3,
    "salvos": 7.0,
    "seguidores": null,
@@ -277,8 +277,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 756.8,
-   "views": 1197.1,
+   "alcance": 757.7,
+   "views": 1198.1,
    "compart": 6.1,
    "salvos": 5.1,
    "seguidores": 2.6,
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5487,
+   "views": 5488,
    "alcance": 3900,
    "compart": 47,
    "formato": "reels",
@@ -306,7 +306,7 @@
   },
   {
    "views": 4072,
-   "alcance": 3126,
+   "alcance": 3131,
    "compart": 348,
    "formato": "reels",
    "quando": "2026-11-05",
@@ -341,8 +341,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2785,
-   "alcance": 2427,
+   "views": 2786,
+   "alcance": 2431,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -360,7 +360,7 @@
   }
  ],
  "canais": {
-  "instagram": 684,
+  "instagram": 686,
   "comentario": 150,
   "whatsapp": 326
  },
@@ -495,9 +495,9 @@
   ],
   [
    "2026-11-21",
-   34
+   36
   ]
  ],
  "repositorio": 54,
- "total_publico": 1160
+ "total_publico": 1162
 }
