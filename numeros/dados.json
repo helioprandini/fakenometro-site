@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-22T11:57:14",
+ "atualizado_em": "2026-11-22T13:00:53",
  "seguidores": 5222,
- "posts": 69,
+ "posts": 70,
  "t28": {
-  "views": 172640,
+  "views": 172827,
   "accounts_engaged": 6730,
-  "total_interactions": 16480,
-  "profile_views": 5899,
-  "likes": 8084,
+  "total_interactions": 16491,
+  "profile_views": 5900,
+  "likes": 8095,
   "comments": 625,
   "shares": 2212,
   "saves": 1372,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-22",
-   "valor": 468
+   "valor": 526
   }
  ],
  "seguidores_serie": [
@@ -266,23 +266,23 @@
  "formatos": [
   {
    "grupo": "reels",
-   "posts": 35,
-   "alcance": 1082.1,
-   "views": 1385.4,
-   "compart": 32.3,
-   "salvos": 7.1,
+   "posts": 34,
+   "alcance": 1080.6,
+   "views": 1383.1,
+   "compart": 32.4,
+   "salvos": 6.6,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
-   "posts": 15,
-   "alcance": 764.3,
-   "views": 1209.1,
-   "compart": 6.3,
-   "salvos": 5.1,
-   "seguidores": 2.6,
-   "visitas_perfil": 9.3
+   "posts": 16,
+   "alcance": 719.1,
+   "views": 1138.9,
+   "compart": 5.9,
+   "salvos": 4.8,
+   "seguidores": 2.4,
+   "visitas_perfil": 8.7
   }
  ],
  "top": [
@@ -296,7 +296,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5494,
+   "views": 5495,
    "alcance": 3913,
    "compart": 47,
    "formato": "reels",
@@ -305,7 +305,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4089,
+   "views": 4090,
    "alcance": 3150,
    "compart": 348,
    "formato": "reels",
@@ -341,7 +341,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2801,
+   "views": 2802,
    "alcance": 2454,
    "compart": 21,
    "formato": "reels",
@@ -360,7 +360,7 @@
   }
  ],
  "canais": {
-  "instagram": 691,
+  "instagram": 692,
   "comentario": 150,
   "whatsapp": 329
  },
@@ -499,9 +499,9 @@
   ],
   [
    "2026-11-22",
-   4
+   5
   ]
  ],
  "repositorio": 55,
- "total_publico": 1170
+ "total_publico": 1171
 }
