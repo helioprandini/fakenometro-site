@@ -1,24 +1,20 @@
 {
- "atualizado_em": "2026-11-22T03:50:59",
+ "atualizado_em": "2026-11-22T04:53:46",
  "seguidores": 5206,
  "posts": 69,
  "t28": {
-  "views": 184308,
-  "accounts_engaged": 6714,
-  "total_interactions": 16508,
-  "profile_views": 6099,
-  "likes": 8102,
+  "views": 171755,
+  "accounts_engaged": 6688,
+  "total_interactions": 16380,
+  "profile_views": 5866,
+  "likes": 8018,
   "comments": 624,
-  "shares": 2220,
-  "saves": 1371,
+  "shares": 2204,
+  "saves": 1364,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
  "alcance": [
-  {
-   "dia": "2026-10-25",
-   "valor": 3294
-  },
   {
    "dia": "2026-10-26",
    "valor": 8369
@@ -125,14 +121,10 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 3601
+   "valor": 3636
   }
  ],
  "seguidores_serie": [
-  {
-   "dia": "2026-10-25",
-   "valor": 28
-  },
   {
    "dia": "2026-10-26",
    "valor": 39
@@ -267,8 +259,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1080.3,
-   "views": 1383.4,
+   "alcance": 1080.7,
+   "views": 1383.6,
    "compart": 32.3,
    "salvos": 7.1,
    "seguidores": null,
@@ -277,8 +269,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 762.1,
-   "views": 1204.7,
+   "alcance": 762.2,
+   "views": 1204.9,
    "compart": 6.1,
    "salvos": 5.1,
    "seguidores": 2.6,
@@ -296,8 +288,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5491,
-   "alcance": 3907,
+   "views": 5492,
+   "alcance": 3913,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -341,8 +333,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2798,
-   "alcance": 2447,
+   "views": 2799,
+   "alcance": 2450,
    "compart": 21,
    "formato": "reels",
    "quando": "2026-10-30",
