@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-21T19:55:23",
- "seguidores": 5159,
+ "atualizado_em": "2026-11-21T20:42:45",
+ "seguidores": 5164,
  "posts": 69,
  "t28": {
-  "views": 182543,
+  "views": 182865,
   "accounts_engaged": 6654,
-  "total_interactions": 16370,
-  "profile_views": 6034,
-  "likes": 8034,
+  "total_interactions": 16380,
+  "profile_views": 6043,
+  "likes": 8041,
   "comments": 615,
   "shares": 2210,
   "saves": 1354,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 2648
+   "valor": 2811
   }
  ],
  "seguidores_serie": [
@@ -261,14 +261,14 @@
   "2026-11-18": 15,
   "2026-11-19": 7,
   "2026-11-20": 5,
-  "2026-11-21": 9
+  "2026-11-21": 10
  },
  "formatos": [
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1076.0,
-   "views": 1379.6,
+   "alcance": 1076.9,
+   "views": 1380.1,
    "compart": 32.3,
    "salvos": 7.0,
    "seguidores": null,
@@ -277,8 +277,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 757.7,
-   "views": 1198.1,
+   "alcance": 758.5,
+   "views": 1199.5,
    "compart": 6.1,
    "salvos": 5.1,
    "seguidores": 2.6,
@@ -296,8 +296,8 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5488,
-   "alcance": 3900,
+   "views": 5489,
+   "alcance": 3907,
    "compart": 47,
    "formato": "reels",
    "quando": "2026-11-09",
@@ -305,7 +305,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4072,
+   "views": 4074,
    "alcance": 3131,
    "compart": 348,
    "formato": "reels",
@@ -341,8 +341,8 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2786,
-   "alcance": 2431,
+   "views": 2788,
+   "alcance": 2434,
    "compart": 20,
    "formato": "reels",
    "quando": "2026-10-30",
@@ -360,7 +360,7 @@
   }
  ],
  "canais": {
-  "instagram": 686,
+  "instagram": 689,
   "comentario": 150,
   "whatsapp": 326
  },
@@ -495,9 +495,9 @@
   ],
   [
    "2026-11-21",
-   36
+   39
   ]
  ],
- "repositorio": 54,
- "total_publico": 1162
+ "repositorio": 55,
+ "total_publico": 1165
 }
