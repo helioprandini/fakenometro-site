@@ -1,14 +1,14 @@
 {
- "atualizado_em": "2026-11-21T23:02:40",
- "seguidores": 5182,
+ "atualizado_em": "2026-11-21T23:34:44",
+ "seguidores": 5183,
  "posts": 69,
  "t28": {
-  "views": 183572,
+  "views": 183698,
   "accounts_engaged": 6687,
-  "total_interactions": 16455,
-  "profile_views": 6064,
-  "likes": 8073,
-  "comments": 621,
+  "total_interactions": 16461,
+  "profile_views": 6070,
+  "likes": 8076,
+  "comments": 623,
   "shares": 2218,
   "saves": 1364,
   "follows_and_unfollows": 0,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-21",
-   "valor": 3192
+   "valor": 3269
   }
  ],
  "seguidores_serie": [
@@ -267,8 +267,8 @@
   {
    "grupo": "reels",
    "posts": 35,
-   "alcance": 1078.2,
-   "views": 1381.3,
+   "alcance": 1078.6,
+   "views": 1381.4,
    "compart": 32.3,
    "salvos": 7.1,
    "seguidores": null,
@@ -277,8 +277,8 @@
   {
    "grupo": "carrossel",
    "posts": 15,
-   "alcance": 759.8,
-   "views": 1202.1,
+   "alcance": 760.3,
+   "views": 1202.3,
    "compart": 6.1,
    "salvos": 5.1,
    "seguidores": 2.6,
@@ -342,8 +342,8 @@
   },
   {
    "views": 2792,
-   "alcance": 2437,
-   "compart": 20,
+   "alcance": 2441,
+   "compart": 21,
    "formato": "reels",
    "quando": "2026-10-30",
    "link": "https://www.instagram.com/reel/DfGXLQEk5PC/",
