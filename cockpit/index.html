@@ -113,7 +113,7 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
-<nav class="abas" id="abas" hidden><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Hoje</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('ind')" id="t-ind">Indicadores</button><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button></nav>
+<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Hoje</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('ind')" id="t-ind">Indicadores</button><button onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button></nav>
 <div id="com-view" hidden><div id="com"><div class="vazio">Carregando…</div></div></div>
 <div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Hoje</div><div class="sub">O que chegou e o que o robô respondeu no dia, por canal, sem os avisos automáticos. Toque num texto longo para ver inteiro. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
 <div id="ind-view" hidden><div class="filtros" style="display:flex;gap:6px;margin-bottom:12px"><button id="ind-b-op" class="b-feito" onclick="indQual('op')" style="flex:1">Operação · diário</button><button id="ind-b-inv" class="b-copiar" onclick="indQual('inv')" style="flex:1">Investidor · mensal</button></div><div id="ind"><div class="vazio">Carregando…</div></div></div>
@@ -194,7 +194,8 @@ function iniciar(){
   document.getElementById("abas").hidden = false;
   atualizar(); setInterval(atualizar, CADA);
   if (location.hash.includes("coment=")) aba("com");
-  if (location.hash.includes("caso=")) aba("val");  // link do e-mail da fila (Roberta, 2/11)
+  else if (location.hash.includes("caso=")) aba("val");  // link do e-mail da fila (Roberta, 2/11)
+  else aba("val");  // abre sempre em Validações (Roberta, 23/11)
   document.addEventListener("visibilitychange", () => { if (!document.hidden) atualizar(); });
 }
 function salvarChave(){
@@ -414,13 +415,20 @@ async function novoQuadro(){
 function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pau").classList.toggle("ativa", f === "pautas"); $("f-bib").classList.toggle("ativa", f === "biblioteca"); $("f-pro").classList.toggle("ativa", f === "producao"); $("producao-view").hidden = f !== "producao"; $("biblioteca-view").hidden = f !== "biblioteca";
   $("pautas-view").hidden = f !== "pautas"; { const x = f === "pautas" || f === "biblioteca" || f === "producao", c = $("cands"); c.hidden = x; if (c.previousElementSibling) c.previousElementSibling.hidden = x; if (c.previousElementSibling && c.previousElementSibling.previousElementSibling) c.previousElementSibling.previousElementSibling.hidden = x; }
   if (f === "pautas") carregarPautas(); else if (f === "biblioteca") carregarBiblioteca(); else if (f === "producao") carregarProducao(); else desenharCur(); }
+let bibDados = null, bibTipo = ler("bibTipo") || "Stories";
+function tipoPeca(c){ const f = (c.formato || "").toLowerCase(); return f.startsWith("reels") ? "Reels" : f.startsWith("carrossel") ? "Carrossel" : "Stories"; }
+function trocarBib(t){ bibTipo = t; gravar("bibTipo", t); desenharBiblioteca(); }
+function desenharBiblioteca(){
+  const d = bibDados, T = ["Stories", "Reels", "Carrossel"], todas = d.itens || [], L = todas.filter(c => tipoPeca(c) === bibTipo);
+  $("biblioteca").innerHTML = `<div class="filtros" style="margin:10px 0;justify-content:center">` + T.map(t => `<button class="${bibTipo === t ? "ativa" : ""}" onclick="trocarBib('${t}')">${t} (${todas.filter(c => tipoPeca(c) === t).length})</button>`).join("") + `</div>` +
+    `<div class="sub" style="margin:0 2px 8px">${L.length} em ${bibTipo} · lista de ${esc(d.atualizado || "")}</div>` + (d.aviso ? `<div class="sub" style="margin:0 2px 10px">${esc(d.aviso)}</div>` : "") +
+    (L.length ? L.map((c, i) => `<div class="cartao" style="margin-bottom:8px"><div style="font-weight:800">${i + 1}. ${esc(c.titulo)}</div><div class="sub">${esc(c.formato)}</div><div style="margin-top:6px;line-height:1.4">${esc(c.estado)}</div>${c.nota ? `<div class="sub" style="margin-top:4px">${esc(c.nota)}</div>` : ""}</div>`).join("") : '<div class="vazio">Nada aqui ainda.</div>');
+}
 async function carregarBiblioteca(){
-  try{ const r = await fetch(BASE + "/cockpit/biblioteca", {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status);
-       const d = await r.json(), L = d.itens || [];
-       $("biblioteca").innerHTML = `<div class="sub" style="margin:8px 2px">${L.length} peças na fila · lista de ${esc(d.atualizado || "")}</div>` + (d.aviso ? `<div class="sub" style="margin:0 2px 10px">${esc(d.aviso)}</div>` : "") +
-         L.map((c, i) => `<div class="cartao" style="margin-bottom:8px"><div style="font-weight:800">${i + 1}. ${esc(c.titulo)}</div><div class="sub">${esc(c.formato)}</div><div style="margin-top:6px;line-height:1.4">${esc(c.estado)}</div>${c.nota ? `<div class="sub" style="margin-top:4px">${esc(c.nota)}</div>` : ""}</div>`).join(""); }
+  try{ const r = await fetch(BASE + "/cockpit/biblioteca", {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status); bibDados = await r.json(); desenharBiblioteca(); }
   catch(e){ $("biblioteca").innerHTML = '<div class="vazio">Não consegui abrir a biblioteca.</div>'; }
 }
+
 async function carregarPautas(){
   try{ const r = await fetch(BASE + "/cockpit/pautas", {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status); desenharPautas(await r.json()); }
   catch(e){ $("pautas").innerHTML = '<div class="vazio">Não consegui abrir as pautas.</div>'; }
