@@ -759,7 +759,7 @@ async function carregarAmao(){
   catch(e){}
 }
 async function carregarCur(){
-  carregarLicoes();
+  // Lições da auditoria fora da Curadoria por enquanto (Roberta, 23/11; volta a ser decidido na quinta, 26/11).
   carregarDia();
   try{
     const r = await fetch(BASE + "/cockpit/curadoria", {headers: H(), cache: "no-store"});
