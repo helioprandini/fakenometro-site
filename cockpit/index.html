@@ -62,14 +62,14 @@ ol.top{margin:0;padding-left:20px}ol.top li{margin:6px 0;font-size:14px;overflow
 #chave input{width:100%;padding:12px;border-radius:12px;border:1px solid var(--linha);background:var(--cartao);color:var(--texto);font-size:16px;margin:12px 0}
 #chave button{padding:12px 22px;border-radius:12px;border:0;background:var(--amarelo);color:#111;font-weight:800;font-size:16px}
 a{color:var(--azul)}
-nav.abas{display:flex;gap:6px;background:var(--cartao);border-radius:12px;padding:4px;margin-bottom:12px}
+nav.abas{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--cartao);border-radius:12px;padding:4px;margin-bottom:12px}
 nav.abas button{flex:1;border:0;background:transparent;color:var(--apagado);font-weight:700;font-size:14px;padding:9px;border-radius:9px}
 .cartao.pd{margin-bottom:10px}.pd h2{font-size:14px;letter-spacing:.3px;margin:0 0 8px}.pd-item{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--linha)}
 .pd-item button{flex:none;width:24px;height:24px;border-radius:7px;border:2px solid var(--apagado);background:transparent;color:var(--texto);padding:0;font-weight:800;line-height:1}
 .pd-com{margin-top:6px;padding:6px 10px;border-radius:8px;background:var(--linha);font-size:14px}.pd-com small{color:var(--apagado)}.pd-mais{display:flex;gap:14px;margin-top:6px}.pd-item .pd-mais button{width:auto;height:auto;border:0;border-radius:0;color:var(--apagado);font-size:13px;font-weight:600;text-decoration:underline}
 .pd-feita{color:var(--apagado);text-decoration:line-through}.pd-add{display:flex;gap:8px;margin-top:10px}.pd-add input{flex:1;min-width:0;border:1px solid var(--linha);border-radius:10px;background:transparent;color:var(--texto);padding:10px;font-size:16px}
 .pd-add button,.pd-novo{border:0;border-radius:10px;background:var(--amarelo);color:#111;font-weight:800;padding:10px 14px}.pd details{margin-top:8px;color:var(--apagado);font-size:13px}
-@media (max-width:520px){nav.abas{gap:2px;flex-wrap:wrap}nav.abas button{font-size:12px;padding:9px 2px;min-width:0;flex:1 1 30%}}
+@media (max-width:520px){nav.abas{gap:2px}nav.abas button{font-size:12px;padding:9px 2px;min-width:0}}
 nav.abas button.ativa{background:var(--linha);color:var(--texto)}
 .ind-grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
 .ind-num{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;margin-top:4px}
@@ -113,9 +113,9 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
   <button onclick="salvarChave()">Entrar</button>
 </section>
 
-<nav class="abas" id="abas" hidden><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Resumo Diário</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button><button onclick="aba('ind')" id="t-ind">Indicadores</button></nav>
+<nav class="abas" id="abas" hidden><button onclick="aba('val')" id="t-val">Validações<span id="val-n"></span></button><button onclick="aba('resp')" id="t-resp">Hoje</button><button onclick="aba('com')" id="t-com">Comentários<span id="com-n"></span></button><button onclick="aba('cur')" id="t-cur">🗳️ Curadoria</button><button onclick="aba('pend')" id="t-pend">Pendências</button><button onclick="aba('ind')" id="t-ind">Indicadores</button><button class="ativa" onclick="aba('painel')" id="t-painel">📊 Painel</button><button onclick="aba('ig')" id="t-ig">📈 Instagram</button></nav>
 <div id="com-view" hidden><div id="com"><div class="vazio">Carregando…</div></div></div>
-<div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Resumo Diário</div><div class="sub">O que chegou e o que o robô respondeu no dia, por canal, sem os avisos automáticos. Toque num texto longo para ver inteiro. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
+<div id="resp-view" hidden><div class="cartao" style="margin-bottom:12px"><div style="font-weight:800">Hoje</div><div class="sub">O que chegou e o que o robô respondeu no dia, por canal, sem os avisos automáticos. Toque num texto longo para ver inteiro. Só para consulta: nada aqui pede ação sua.</div><div class="acoes" style="margin-top:10px"><input id="resp-dia" type="date" onchange="carregarResp()" style="font:inherit;padding:8px;border-radius:8px;border:1px solid var(--linha);background:transparent;color:inherit"></div></div><div id="resp"><div class="vazio">Carregando…</div></div></div>
 <div id="ind-view" hidden><div class="filtros" style="display:flex;gap:6px;margin-bottom:12px"><button id="ind-b-op" class="b-feito" onclick="indQual('op')" style="flex:1">Operação · diário</button><button id="ind-b-inv" class="b-copiar" onclick="indQual('inv')" style="flex:1">Investidor · mensal</button></div><div id="ind"><div class="vazio">Carregando…</div></div></div>
 <div id="val-view" hidden><div class="filtros" id="val-botoes"></div><div id="amostra"></div><div id="amao"><div class="vazio">Carregando…</div></div></div>
 
@@ -139,7 +139,9 @@ pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:
 <div id="cur-view" hidden>
   <div id="licoes"></div>
   <div id="dia"></div>
-  <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button></div>
+  <div class="filtros"><button class="ativa" id="f-pend" onclick="filtro('pendente')">Para postar</button><button id="f-pub" onclick="filtro('publicado_manual')">Já publicados</button><button id="f-pau" onclick="filtro('pautas')">Pautas</button><button id="f-bib" onclick="filtro('biblioteca')">Biblioteca</button></div>
+  <div id="biblioteca-view" hidden><div class="cartao"><div style="font-weight:800">Biblioteca</div><div class="sub">Conteúdos prontos que ainda não têm data para sair, em fila. Para escolher um quando faltar ideia. Só para ler: nada aqui publica. Antes de postar, confira a pauta e a data.</div></div><div id="biblioteca"><div class="vazio">Carregando…</div></div></div>
+  <div id="pautas-view" hidden><div class="cartao"><div style="font-weight:800">Banco de pautas</div><div class="sub">Todas as ideias de conteúdo, em um só lugar. Só para ler: nada aqui publica nem muda nada.</div></div><div id="pautas" class="cartao" style="margin-top:10px"><div class="vazio">Carregando…</div></div></div>
   <div class="sub" style="margin:6px 2px 10px">Poste de cima para baixo: a ordem alterna um post que favorece a direita, um que favorece a esquerda e um neutro ou sem prova.</div>
   <div class="sub" style="margin-bottom:10px">Toque num item para abrir. Salve as imagens (já na ordem do carrossel), copie a legenda, poste no Instagram e marque como publicado: aparece para os dois.</div>
   <div id="cands"><div class="vazio">Carregando…</div></div>
@@ -406,7 +408,21 @@ async function novoQuadro(){
   const nome = (prompt("Nome do quadro novo") || "").trim(); if (!nome) return;
   try{ await pedirPend("", new URLSearchParams({quadro: nome})); }catch(e){ toast("Não consegui criar"); }
 }
-function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f !== "pendente"); desenharCur(); }
+function filtro(f){ filtroAtual = f; $("f-pend").classList.toggle("ativa", f === "pendente"); $("f-pub").classList.toggle("ativa", f === "publicado_manual"); $("f-pau").classList.toggle("ativa", f === "pautas"); $("f-bib").classList.toggle("ativa", f === "biblioteca"); $("biblioteca-view").hidden = f !== "biblioteca";
+  $("pautas-view").hidden = f !== "pautas"; { const x = f === "pautas" || f === "biblioteca", c = $("cands"); c.hidden = x; if (c.previousElementSibling) c.previousElementSibling.hidden = x; if (c.previousElementSibling && c.previousElementSibling.previousElementSibling) c.previousElementSibling.previousElementSibling.hidden = x; }
+  if (f === "pautas") carregarPautas(); else if (f === "biblioteca") carregarBiblioteca(); else desenharCur(); }
+async function carregarBiblioteca(){
+  try{ const r = await fetch(BASE + "/cockpit/biblioteca", {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status);
+       const d = await r.json(), L = d.itens || [];
+       $("biblioteca").innerHTML = `<div class="sub" style="margin:8px 2px">${L.length} peças na fila · lista de ${esc(d.atualizado || "")}</div>` + (d.aviso ? `<div class="sub" style="margin:0 2px 10px">${esc(d.aviso)}</div>` : "") +
+         L.map((c, i) => `<div class="cartao" style="margin-bottom:8px"><div style="font-weight:800">${i + 1}. ${esc(c.titulo)}</div><div class="sub">${esc(c.formato)}</div><div style="margin-top:6px;line-height:1.4">${esc(c.estado)}</div>${c.nota ? `<div class="sub" style="margin-top:4px">${esc(c.nota)}</div>` : ""}</div>`).join(""); }
+  catch(e){ $("biblioteca").innerHTML = '<div class="vazio">Não consegui abrir a biblioteca.</div>'; }
+}
+async function carregarPautas(){
+  try{ const r = await fetch(BASE + "/cockpit/pautas", {headers: H(), cache: "no-store"}); if (!r.ok) throw new Error(r.status);
+       const d = await r.json(); $("pautas").innerHTML = `<div class="sub" style="margin-bottom:8px">Atualizado em ${esc(d.atualizado || "")}</div><div style="white-space:pre-wrap;line-height:1.45;font-size:14px">${esc(d.texto)}</div>`; }
+  catch(e){ $("pautas").innerHTML = '<div class="vazio">Não consegui abrir o banco de pautas.</div>'; }
+}
 // ---------- Do dia: a grade de 6 posts (às 7h) ----------
 let pacote = {}, diaBlobs = {}, desloc = 0;
 function dataDia(k){ return new Date(Date.now() + k * 864e5).toLocaleDateString("en-CA", {timeZone: "America/Sao_Paulo"}); }
