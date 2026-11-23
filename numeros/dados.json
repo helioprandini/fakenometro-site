@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-23T12:43:25",
- "seguidores": 5236,
+ "atualizado_em": "2026-11-23T13:46:48",
+ "seguidores": 5237,
  "posts": 69,
  "t28": {
-  "views": 164801,
+  "views": 164951,
   "accounts_engaged": 6460,
-  "total_interactions": 16201,
-  "profile_views": 5874,
-  "likes": 7821,
+  "total_interactions": 16208,
+  "profile_views": 5875,
+  "likes": 7827,
   "comments": 619,
   "shares": 2222,
   "saves": 1358,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-23",
-   "valor": 646
+   "valor": 700
   }
  ],
  "seguidores_serie": [
@@ -268,8 +268,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1094.6,
-   "views": 1403.4,
+   "alcance": 1096.1,
+   "views": 1405.4,
    "compart": 31.3,
    "salvos": 7.1,
    "seguidores": null,
@@ -278,8 +278,8 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 785.2,
-   "views": 1219.9,
+   "alcance": 788.2,
+   "views": 1225.0,
    "compart": 6.0,
    "salvos": 4.8,
    "seguidores": 2.6,
@@ -297,7 +297,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5496,
+   "views": 5497,
    "alcance": 3913,
    "compart": 47,
    "formato": "reels",
@@ -361,7 +361,7 @@
   }
  ],
  "canais": {
-  "instagram": 698,
+  "instagram": 702,
   "comentario": 150,
   "whatsapp": 338
  },
@@ -504,9 +504,9 @@
   ],
   [
    "2026-11-23",
-   8
+   12
   ]
  ],
  "repositorio": 55,
- "total_publico": 1186
+ "total_publico": 1190
 }
