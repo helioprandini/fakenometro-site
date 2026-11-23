@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-23T18:02:56",
- "seguidores": 5240,
+ "atualizado_em": "2026-11-23T19:06:35",
+ "seguidores": 5246,
  "posts": 70,
  "t28": {
-  "views": 165857,
+  "views": 166221,
   "accounts_engaged": 6472,
-  "total_interactions": 16229,
-  "profile_views": 5886,
-  "likes": 7841,
+  "total_interactions": 16231,
+  "profile_views": 5892,
+  "likes": 7843,
   "comments": 619,
   "shares": 2225,
   "saves": 1359,
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-23",
-   "valor": 1058
+   "valor": 1227
   }
  ],
  "seguidores_serie": [
@@ -268,8 +268,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1066.2,
-   "views": 1366.4,
+   "alcance": 1066.6,
+   "views": 1367.1,
    "compart": 30.5,
    "salvos": 6.4,
    "seguidores": null,
@@ -278,12 +278,12 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 820.0,
-   "views": 1270.2,
+   "alcance": 833.9,
+   "views": 1287.3,
    "compart": 6.1,
    "salvos": 4.9,
    "seguidores": 2.6,
-   "visitas_perfil": 9.3
+   "visitas_perfil": 9.5
   }
  ],
  "top": [
@@ -306,7 +306,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4090,
+   "views": 4092,
    "alcance": 3150,
    "compart": 348,
    "formato": "reels",
