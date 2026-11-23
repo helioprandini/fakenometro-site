@@ -96,7 +96,7 @@ nav.abas button.ativa{background:var(--linha);color:var(--texto)}
 pre.leg{white-space:pre-wrap;font:13px/1.45 -apple-system,sans-serif;background:var(--fundo);border-radius:10px;padding:10px;margin:10px 0 0;max-height:220px;overflow:auto}
 .aviso{font-size:12px;color:var(--apagado);margin-top:8px}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#fff;color:#111;font-weight:700;padding:10px 16px;border-radius:24px;box-shadow:0 6px 24px rgba(0,0,0,.4);z-index:9;display:none}
-#cur-view .filtros{gap:4px}#cur-view .filtros button{padding:7px 9px;font-size:12.5px}.tiras{display:flex;gap:8px;overflow-x:auto;margin-top:8px;padding-bottom:4px}.mini{position:relative;flex:0 0 auto;width:96px}.mini img{width:96px;height:120px;object-fit:cover;border-radius:8px;background:#222;display:block}.mini span{position:absolute;left:5px;bottom:5px;background:rgba(0,0,0,.7);color:#fff;font-size:11px;font-weight:700;border-radius:8px;padding:1px 6px}</style>
+#cur-view .filtros{gap:4px}#cur-view .filtros button{padding:7px 9px;font-size:12.5px}.tiras{display:flex;gap:8px;overflow-x:auto;margin-top:8px;padding-bottom:4px}.mini{position:relative;flex:0 0 auto;width:96px}.mini img{width:96px;height:120px;object-fit:cover;border-radius:8px;background:#222;display:block}.mini span{position:absolute;left:5px;bottom:5px;background:rgba(0,0,0,.7);color:#fff;font-size:11px;font-weight:700;border-radius:8px;padding:1px 6px}.mini.vid,.mini.vid img{width:120px}.mini.vid img{height:213px}.mini .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:34px;color:#fff;text-shadow:0 1px 8px #000}</style>
 </head>
 <body>
 <main>
@@ -422,14 +422,26 @@ function desenharBiblioteca(){
   const d = bibDados, T = ["Stories", "Reels", "Carrossel"], todas = d.itens || [], L = todas.filter(c => tipoPeca(c) === bibTipo);
   $("biblioteca").innerHTML = `<div class="filtros" style="margin:10px 0;justify-content:center">` + T.map(t => `<button class="${bibTipo === t ? "ativa" : ""}" onclick="trocarBib('${t}')">${t} (${todas.filter(c => tipoPeca(c) === t).length})</button>`).join("") + `</div>` +
     `<div class="sub" style="margin:0 2px 8px">${L.length} em ${bibTipo} · lista de ${esc(d.atualizado || "")}</div>` + (d.aviso ? `<div class="sub" style="margin:0 2px 10px">${esc(d.aviso)}</div>` : "") +
-    (L.length ? L.map((c, i) => `<div class="cartao" style="margin-bottom:8px"><div style="font-weight:800">${i + 1}. ${esc(c.titulo)}</div><div class="sub">${esc(c.formato)}</div><div style="margin-top:6px;line-height:1.4">${esc(c.estado)}</div>${c.nota ? `<div class="sub" style="margin-top:4px">${esc(c.nota)}</div>` : ""}${c.id && c.n_imagens ? `<div class="tiras">${Array.from({length: c.n_imagens}, (_, k) => `<div class="mini" onclick="ampliarBib('${c.id}',${k + 1})"><img id="bib-${c.id}-${k + 1}" alt=""><span>${k + 1}</span></div>`).join("")}</div><div class="sub" style="margin-top:4px">Toque numa tela para ampliar.</div>` : ""}</div>`).join("") : '<div class="vazio">Nada aqui ainda.</div>');
+    (L.length ? L.map((c, i) => `<div class="cartao" style="margin-bottom:8px"><div style="font-weight:800">${i + 1}. ${esc(c.titulo)}</div><div class="sub">${esc(c.formato)}</div><div style="margin-top:6px;line-height:1.4">${esc(c.estado)}</div>${c.nota ? `<div class="sub" style="margin-top:4px">${esc(c.nota)}</div>` : ""}${c.id && c.n_imagens ? `<div class="tiras">${Array.from({length: c.n_imagens}, (_, k) => `<div class="mini${c.video ? " vid" : ""}" onclick="${c.video ? `videoBib('${c.id}')` : `ampliarBib('${c.id}',${k + 1})`}"><img id="bib-${c.id}-${k + 1}" alt="">${c.video ? '<b class="play">▶</b>' : `<span>${k + 1}</span>`}</div>`).join("")}</div><div class="sub" style="margin-top:4px">${c.video ? "Toque na capa para ver o vídeo." : "Toque numa tela para ampliar."}</div>` : ""}</div>`).join("") : '<div class="vazio">Nada aqui ainda.</div>');
   L.filter(c => c.id && c.n_imagens).forEach(c => { for (let k = 1; k <= c.n_imagens; k++) bibImg(c.id, "t" + k).then(b => { const e = $(`bib-${c.id}-${k}`); if (e) e.src = URL.createObjectURL(b); }).catch(() => {}); });
 }
 const bibImgs = {};
 async function bibImg(id, arq){
   const k = id + "/" + arq;
-  if (!bibImgs[k]){ const r = await fetch(`${BASE}/cockpit/biblioteca/img/${id}/${arq}.jpg`, {headers: H()}); if (!r.ok) throw new Error(r.status); bibImgs[k] = await r.blob(); }
+  if (!bibImgs[k]){ const r = await fetch(`${BASE}/cockpit/biblioteca/img/${id}/${arq.includes(".") ? arq : arq + ".jpg"}`, {headers: H()}); if (!r.ok) throw new Error(r.status); bibImgs[k] = await r.blob(); }
   return bibImgs[k];
+}
+async function videoBib(id){
+  toast("Carregando o vídeo…");
+  try{
+    const url = URL.createObjectURL(await bibImg(id, "v.mp4"));
+    let v = document.getElementById("ampliada"); if (v) v.remove();
+    v = document.createElement("div"); v.id = "ampliada";
+    v.style.cssText = "position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;gap:12px";
+    v.onclick = e => { if (e.target === v) v.remove(); };
+    v.innerHTML = `<video src="${url}" controls autoplay playsinline style="max-width:100%;max-height:82vh;border-radius:10px"></video><button class="b-copiar" style="padding:10px 28px;border:0;border-radius:12px;font-weight:800" onclick="document.getElementById('ampliada').remove()">Fechar</button>`;
+    document.body.appendChild(v);
+  }catch(e){ toast("Não consegui abrir o vídeo"); }
 }
 async function ampliarBib(id, k){ try{ ampliar(URL.createObjectURL(await bibImg(id, "g" + k))); }catch(e){ toast("Não consegui abrir a tela"); } }
 async function carregarBiblioteca(){
