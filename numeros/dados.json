@@ -1,13 +1,13 @@
 {
- "atualizado_em": "2026-11-24T04:03:14",
+ "atualizado_em": "2026-11-24T05:06:07",
  "seguidores": 5425,
  "posts": 70,
  "t28": {
-  "views": 170538,
+  "views": 170572,
   "accounts_engaged": 6536,
-  "total_interactions": 16753,
-  "profile_views": 6004,
-  "likes": 7926,
+  "total_interactions": 16754,
+  "profile_views": 6005,
+  "likes": 7927,
   "comments": 617,
   "shares": 2437,
   "saves": 1372,
@@ -121,7 +121,11 @@
   },
   {
    "dia": "2026-11-23",
-   "valor": 5293
+   "valor": 5342
+  },
+  {
+   "dia": "2026-11-24",
+   "valor": 0
   }
  ],
  "seguidores_serie": [
@@ -232,6 +236,10 @@
   {
    "dia": "2026-11-23",
    "valor": 0
+  },
+  {
+   "dia": "2026-11-24",
+   "valor": 0
   }
  ],
  "cliques_whatsapp": {
@@ -270,8 +278,8 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 883.3,
-   "views": 1351.6,
+   "alcance": 883.8,
+   "views": 1352.3,
    "compart": 6.4,
    "salvos": 4.9,
    "seguidores": 2.8,
