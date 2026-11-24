@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-23T21:45:01",
- "seguidores": 5321,
+ "atualizado_em": "2026-11-23T22:48:36",
+ "seguidores": 5359,
  "posts": 70,
  "t28": {
-  "views": 168688,
-  "accounts_engaged": 6525,
-  "total_interactions": 16305,
-  "profile_views": 5955,
-  "likes": 7902,
-  "comments": 620,
-  "shares": 2228,
-  "saves": 1366,
+  "views": 170424,
+  "accounts_engaged": 6557,
+  "total_interactions": 16360,
+  "profile_views": 5992,
+  "likes": 7946,
+  "comments": 622,
+  "shares": 2230,
+  "saves": 1370,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-23",
-   "valor": 2474
+   "valor": 3504
   }
  ],
  "seguidores_serie": [
@@ -268,8 +268,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1069.7,
-   "views": 1371.0,
+   "alcance": 1071.5,
+   "views": 1372.8,
    "compart": 30.5,
    "salvos": 6.5,
    "seguidores": null,
@@ -278,12 +278,12 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 857.7,
-   "views": 1321.8,
+   "alcance": 869.6,
+   "views": 1334.6,
    "compart": 6.2,
    "salvos": 4.9,
-   "seguidores": 2.6,
-   "visitas_perfil": 9.7
+   "seguidores": 2.7,
+   "visitas_perfil": 9.8
   }
  ],
  "top": [
@@ -306,7 +306,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4098,
+   "views": 4102,
    "alcance": 3154,
    "compart": 348,
    "formato": "reels",
@@ -363,7 +363,7 @@
  "canais": {
   "instagram": 714,
   "comentario": 150,
-  "whatsapp": 343
+  "whatsapp": 345
  },
  "por_dia": [
   [
@@ -504,9 +504,9 @@
   ],
   [
    "2026-11-23",
-   29
+   31
   ]
  ],
  "repositorio": 56,
- "total_publico": 1207
+ "total_publico": 1209
 }
