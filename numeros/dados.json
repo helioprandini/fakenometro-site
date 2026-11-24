@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-23T23:51:18",
- "seguidores": 5393,
+ "atualizado_em": "2026-11-24T00:54:32",
+ "seguidores": 5416,
  "posts": 70,
  "t28": {
-  "views": 171606,
-  "accounts_engaged": 6587,
-  "total_interactions": 16826,
-  "profile_views": 6019,
-  "likes": 7979,
+  "views": 172711,
+  "accounts_engaged": 6604,
+  "total_interactions": 16844,
+  "profile_views": 6038,
+  "likes": 7995,
   "comments": 624,
   "shares": 2444,
-  "saves": 1372,
+  "saves": 1374,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-23",
-   "valor": 4203
+   "valor": 4785
   }
  ],
  "seguidores_serie": [
@@ -268,8 +268,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1072.2,
-   "views": 1373.7,
+   "alcance": 1073.4,
+   "views": 1375.4,
    "compart": 30.6,
    "salvos": 6.5,
    "seguidores": null,
@@ -278,9 +278,9 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 876.2,
-   "views": 1343.5,
-   "compart": 6.3,
+   "alcance": 880.5,
+   "views": 1348.3,
+   "compart": 6.4,
    "salvos": 4.9,
    "seguidores": 2.8,
    "visitas_perfil": 9.9
@@ -288,7 +288,7 @@
  ],
  "top": [
   {
-   "views": 6994,
+   "views": 6995,
    "alcance": 4924,
    "compart": 292,
    "formato": "reels",
@@ -297,7 +297,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5498,
+   "views": 5499,
    "alcance": 3913,
    "compart": 47,
    "formato": "reels",
@@ -306,7 +306,7 @@
    "titulo": "O que é fato no pronunciamento de domingo? A gente checou cada número."
   },
   {
-   "views": 4106,
+   "views": 4107,
    "alcance": 3154,
    "compart": 348,
    "formato": "reels",
@@ -315,7 +315,7 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 3127,
+   "views": 3128,
    "alcance": 2538,
    "compart": 6,
    "formato": "reels",
@@ -324,7 +324,7 @@
    "titulo": "Einstein reprovou em matemática? A desculpa é boa, mas é fake."
   },
   {
-   "views": 2886,
+   "views": 2887,
    "alcance": 2225,
    "compart": 2,
    "formato": "reels",
@@ -333,7 +333,7 @@
    "titulo": "Charuto engorda? Segundo a revista piauí, Daniel Vorcaro perguntou isso ao ChatGPT. A gent"
   },
   {
-   "views": 2851,
+   "views": 2852,
    "alcance": 1867,
    "compart": 6,
    "formato": "carrossel",
@@ -342,7 +342,7 @@
    "titulo": "O Instagram vai ficar 6 horas fora do ar toda madrugada? Calma."
   },
   {
-   "views": 2802,
+   "views": 2803,
    "alcance": 2457,
    "compart": 21,
    "formato": "reels",
@@ -351,7 +351,7 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2412,
+   "views": 2413,
    "alcance": 1684,
    "compart": 3,
    "formato": "carrossel",
