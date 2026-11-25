@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-25T12:46:17",
- "seguidores": 6304,
+ "atualizado_em": "2026-11-25T13:49:42",
+ "seguidores": 6328,
  "posts": 71,
  "t28": {
-  "views": 188647,
-  "accounts_engaged": 7163,
-  "total_interactions": 17890,
-  "profile_views": 6774,
-  "likes": 8618,
-  "comments": 636,
-  "shares": 2581,
-  "saves": 1451,
+  "views": 189429,
+  "accounts_engaged": 7199,
+  "total_interactions": 17926,
+  "profile_views": 6794,
+  "likes": 8640,
+  "comments": 638,
+  "shares": 2584,
+  "saves": 1456,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-25",
-   "valor": 3860
+   "valor": 4315
   }
  ],
  "seguidores_serie": [
@@ -235,7 +235,7 @@
   },
   {
    "dia": "2026-11-24",
-   "valor": 0
+   "valor": 612
   },
   {
    "dia": "2026-11-25",
@@ -270,8 +270,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1090.1,
-   "views": 1392.6,
+   "alcance": 1091.1,
+   "views": 1393.8,
    "compart": 30.9,
    "salvos": 6.6,
    "seguidores": null,
@@ -280,8 +280,8 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 870.4,
-   "views": 1340.8,
+   "alcance": 871.5,
+   "views": 1341.9,
    "compart": 6.6,
    "salvos": 4.9,
    "seguidores": 2.8,
@@ -353,17 +353,17 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2413,
-   "alcance": 1684,
-   "compart": 3,
+   "views": 2422,
+   "alcance": 1758,
+   "compart": 14,
    "formato": "carrossel",
-   "quando": "2026-10-30",
-   "link": "https://www.instagram.com/p/DfHz_2slpMS/",
-   "titulo": "Seu feed concorda com tudo o que você pensa? Não é coincidência. É fato: o feed é escolhid"
+   "quando": "2026-11-23",
+   "link": "https://www.instagram.com/p/DgFt5AwlqNp/",
+   "titulo": "O que é o fakenometro?"
   }
  ],
  "canais": {
-  "instagram": 732,
+  "instagram": 733,
   "comentario": 152,
   "whatsapp": 378
  },
@@ -514,9 +514,9 @@
   ],
   [
    "2026-11-25",
-   28
+   29
   ]
  ],
  "repositorio": 58,
- "total_publico": 1262
+ "total_publico": 1263
 }
