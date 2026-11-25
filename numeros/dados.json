@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-24T20:58:39",
- "seguidores": 5746,
+ "atualizado_em": "2026-11-24T22:03:09",
+ "seguidores": 5815,
  "posts": 71,
  "t28": {
-  "views": 178928,
-  "accounts_engaged": 6692,
-  "total_interactions": 17137,
-  "profile_views": 6301,
-  "likes": 8160,
+  "views": 180163,
+  "accounts_engaged": 6723,
+  "total_interactions": 17193,
+  "profile_views": 6353,
+  "likes": 8205,
   "comments": 628,
-  "shares": 2488,
-  "saves": 1399,
+  "shares": 2489,
+  "saves": 1403,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-24",
-   "valor": 4891
+   "valor": 5875
   }
  ],
  "seguidores_serie": [
@@ -269,8 +269,8 @@
   {
    "grupo": "reels",
    "posts": 34,
-   "alcance": 1075.4,
-   "views": 1375.9,
+   "alcance": 1076.4,
+   "views": 1377.8,
    "compart": 30.6,
    "salvos": 6.5,
    "seguidores": null,
@@ -279,8 +279,8 @@
   {
    "grupo": "carrossel",
    "posts": 16,
-   "alcance": 852.0,
-   "views": 1314.1,
+   "alcance": 853.3,
+   "views": 1316.9,
    "compart": 6.1,
    "salvos": 4.7,
    "seguidores": 2.7,
@@ -289,7 +289,7 @@
  ],
  "top": [
   {
-   "views": 6999,
+   "views": 7001,
    "alcance": 4924,
    "compart": 292,
    "formato": "reels",
@@ -298,7 +298,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5502,
+   "views": 5503,
    "alcance": 3920,
    "compart": 47,
    "formato": "reels",
@@ -362,7 +362,7 @@
   }
  ],
  "canais": {
-  "instagram": 726,
+  "instagram": 727,
   "comentario": 151,
   "whatsapp": 353
  },
@@ -509,9 +509,9 @@
   ],
   [
    "2026-11-24",
-   21
+   22
   ]
  ],
  "repositorio": 56,
- "total_publico": 1230
+ "total_publico": 1231
 }
