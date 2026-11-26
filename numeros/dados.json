@@ -1,15 +1,15 @@
 {
- "atualizado_em": "2026-11-26T17:37:34",
- "seguidores": 7115,
+ "atualizado_em": "2026-11-26T18:40:30",
+ "seguidores": 7130,
  "posts": 74,
  "t28": {
-  "views": 206443,
-  "accounts_engaged": 7746,
-  "total_interactions": 19068,
-  "profile_views": 7464,
-  "likes": 9440,
+  "views": 206786,
+  "accounts_engaged": 7764,
+  "total_interactions": 19098,
+  "profile_views": 7479,
+  "likes": 9461,
   "comments": 655,
-  "shares": 2656,
+  "shares": 2659,
   "saves": 1539,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-26",
-   "valor": 6339
+   "valor": 6555
   }
  ],
  "seguidores_serie": [
@@ -271,8 +271,8 @@
   {
    "grupo": "reels",
    "posts": 33,
-   "alcance": 1137.2,
-   "views": 1450.5,
+   "alcance": 1137.9,
+   "views": 1451.2,
    "compart": 32.8,
    "salvos": 7.0,
    "seguidores": null,
@@ -281,8 +281,8 @@
   {
    "grupo": "carrossel",
    "posts": 17,
-   "alcance": 857.5,
-   "views": 1315.8,
+   "alcance": 858.7,
+   "views": 1317.1,
    "compart": 6.3,
    "salvos": 4.6,
    "seguidores": 2.8,
@@ -354,8 +354,8 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2593,
-   "alcance": 1872,
+   "views": 2595,
+   "alcance": 1875,
    "compart": 15,
    "formato": "carrossel",
    "quando": "2026-11-23",
@@ -364,9 +364,9 @@
   }
  ],
  "canais": {
-  "instagram": 755,
+  "instagram": 756,
   "comentario": 153,
-  "whatsapp": 401
+  "whatsapp": 403
  },
  "por_dia": [
   [
@@ -519,9 +519,9 @@
   ],
   [
    "2026-11-26",
-   24
+   27
   ]
  ],
  "repositorio": 61,
- "total_publico": 1309
+ "total_publico": 1312
 }
