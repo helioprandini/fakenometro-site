@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-26T00:55:38",
- "seguidores": 6668,
+ "atualizado_em": "2026-11-26T01:58:20",
+ "seguidores": 6688,
  "posts": 73,
  "t28": {
-  "views": 196591,
-  "accounts_engaged": 7412,
-  "total_interactions": 18349,
-  "profile_views": 7083,
-  "likes": 8955,
+  "views": 196948,
+  "accounts_engaged": 7418,
+  "total_interactions": 18388,
+  "profile_views": 7103,
+  "likes": 8979,
   "comments": 643,
-  "shares": 2598,
-  "saves": 1489,
+  "shares": 2600,
+  "saves": 1496,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-25",
-   "valor": 9009
+   "valor": 9242
   }
  ],
  "seguidores_serie": [
@@ -271,8 +271,8 @@
   {
    "grupo": "reels",
    "posts": 33,
-   "alcance": 1122.8,
-   "views": 1434.2,
+   "alcance": 1123.5,
+   "views": 1434.9,
    "compart": 32.1,
    "salvos": 6.8,
    "seguidores": null,
@@ -281,8 +281,8 @@
   {
    "grupo": "carrossel",
    "posts": 17,
-   "alcance": 835.7,
-   "views": 1286.6,
+   "alcance": 836.8,
+   "views": 1287.6,
    "compart": 6.2,
    "salvos": 4.6,
    "seguidores": 2.6,
@@ -318,7 +318,7 @@
    "titulo": "Chegou agora? Hoje a gente te ensina como o Fakenômetro funciona, com um exemplo que está "
   },
   {
-   "views": 3131,
+   "views": 3132,
    "alcance": 2545,
    "compart": 6,
    "formato": "reels",
@@ -354,8 +354,8 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2506,
-   "alcance": 1806,
+   "views": 2510,
+   "alcance": 1808,
    "compart": 14,
    "formato": "carrossel",
    "quando": "2026-11-23",
@@ -364,7 +364,7 @@
   }
  ],
  "canais": {
-  "instagram": 743,
+  "instagram": 744,
   "comentario": 153,
   "whatsapp": 391
  },
@@ -519,9 +519,9 @@
   ],
   [
    "2026-11-26",
-   2
+   3
   ]
  ],
  "repositorio": 59,
- "total_publico": 1287
+ "total_publico": 1288
 }
