@@ -1,16 +1,16 @@
 {
- "atualizado_em": "2026-11-26T23:36:12",
- "seguidores": 7327,
+ "atualizado_em": "2026-11-27T00:38:44",
+ "seguidores": 7353,
  "posts": 76,
  "t28": {
-  "views": 210948,
-  "accounts_engaged": 7895,
-  "total_interactions": 19328,
-  "profile_views": 7655,
-  "likes": 9632,
-  "comments": 659,
-  "shares": 2665,
-  "saves": 1549,
+  "views": 212061,
+  "accounts_engaged": 7935,
+  "total_interactions": 19414,
+  "profile_views": 7675,
+  "likes": 9688,
+  "comments": 661,
+  "shares": 2672,
+  "saves": 1557,
   "follows_and_unfollows": 0,
   "profile_links_taps": 0
  },
@@ -125,7 +125,7 @@
   },
   {
    "dia": "2026-11-26",
-   "valor": 9380
+   "valor": 10080
   }
  ],
  "seguidores_serie": [
@@ -271,18 +271,18 @@
   {
    "grupo": "reels",
    "posts": 33,
-   "alcance": 1144.7,
-   "views": 1460.0,
+   "alcance": 1147.1,
+   "views": 1462.5,
    "compart": 32.8,
-   "salvos": 7.0,
+   "salvos": 7.1,
    "seguidores": null,
    "visitas_perfil": null
   },
   {
    "grupo": "carrossel",
    "posts": 17,
-   "alcance": 865.6,
-   "views": 1328.8,
+   "alcance": 867.4,
+   "views": 1330.6,
    "compart": 6.4,
    "salvos": 4.6,
    "seguidores": 2.8,
@@ -300,7 +300,7 @@
    "titulo": "33 países deram alerta para estocar comida? Não. É recomendação, não alerta."
   },
   {
-   "views": 5518,
+   "views": 5519,
    "alcance": 3927,
    "compart": 47,
    "formato": "reels",
@@ -354,8 +354,8 @@
    "titulo": "Seu advogado nunca te pediu Pix. Esse aqui pediu."
   },
   {
-   "views": 2633,
-   "alcance": 1897,
+   "views": 2638,
+   "alcance": 1900,
    "compart": 15,
    "formato": "carrossel",
    "quando": "2026-11-23",
@@ -366,7 +366,7 @@
  "canais": {
   "instagram": 757,
   "comentario": 153,
-  "whatsapp": 410
+  "whatsapp": 411
  },
  "por_dia": [
   [
@@ -520,8 +520,12 @@
   [
    "2026-11-26",
    35
+  ],
+  [
+   "2026-11-27",
+   1
   ]
  ],
  "repositorio": 62,
- "total_publico": 1320
+ "total_publico": 1321
 }
